@@ -1,0 +1,113 @@
+[BaseClass]
+Solid = "Should this object be able to collide with others and block movement in the level?"
+Visible = "Should this object be visible in the level when the game runs?"
+ClassDescription = "DO NOT CREATE OBJECTS OF THIS TYPE.  BAD THINGS **WILL** HAPPEN!!!!"
+Name = "Name of the object.  The name is NOT case sensitive.  Multiple objects can share the same name, although this can cause script and triggering problems."
+Pos = "Position of the object in the world. Does not affect brushes."
+Rotation = "Rotation of the object in the world (i.e., Pitch, Yaw, Roll of the object). Does not affect brushes."
+
+[DemoSkyWorldModel]
+Flags = "Zis property does nothing, nada, zip, squat, rien, zilch. If it hasn't been removed, it soon will be."
+Index = "Specifies drawing order of sky objects. Objects with a low index draw before objects with a high index. Each layer of objects should be associated with one SkyPointer or DemoSkyWorldModel, each of which should have its own index."
+InnerPercentX = "Percent of player's X movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+InnerPercentY = "Percent of player's Y movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+InnerPercentZ = "Percent of player's Z movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+SkyDims = "Defines X, Y and Z of the bounding box around all objects in the sky. Only set for one Demoskyworldmodel or Skypointer per level."
+ClassDescription = "Combines a worldmodel and a sky pointer object. Bind brushes to a DemoSkyWorldModel to make them show up in the sky."
+
+[DirLight]
+CastShadows = "Does this light generate shadows on models if they also have shadows enabled?"
+LightAttenuation = "Sets the light falloff equation for this light; can usually be left alone."
+FastLightObjects = "If TRUE, uses model's bounding box and a few sample points to light model. If FLASE, does extensive, careful calculation of light for the whole model."
+LightObjects = "Does the light illuminate LTB model objects in the game?"
+FOV = "Field of view. Set from 1 to 180 to change the tightness of the cone of light projected by the DirLight."
+Time = "Zis property does nothing, nada, zip, squat, rien, zilch. If it hasn't been removed, it soon will be."
+LightRadius = "Determines how far from its center point the light will travel."
+BrightScale = "Determines the intensity of the light's color, like a dimmer. Default 1, reasonable range 0.25-2.0."
+InnerColor = "Sets the color of the light at its absolute center."
+OuterColor = "Sets the color of the light at its absolute edge. Light fades linerarly to this color from its Innercolor."
+ClipLight = "If TRUE, the light will be interrupted when it hits a wall. Otherwise, passes through the wall after lighting it."
+ClassDescription = "Lights the world like a cone, as a spotlight would."
+
+[Light]
+CastShadows = "Does this light generate shadows on models if they also have shadows enabled?"
+LightAttenuation = "Sets the light falloff equation for this light; can usually be left alone."
+FastLightObjects = "If TRUE, uses model's bounding box and a few sample points to light model. If FLASE, does extensive, careful calculation of light for the whole model."
+LightObjects = "Does the light illuminate LTB model objects in the game?"
+BrightScale = "Determines the intensity of the light's color, like a dimmer. Default 1, reasonable range 0.25-2.0."
+Time = "Zis property does nothing, nada, zip, squat, rien, zilch. If it hasn't been removed, it soon will be."
+LightRadius = "Determines how far from its center point the light will travel."
+LightColor = "Sets the color of the light at its absolute center."
+OuterColor = "Sets the color of the light at its absolute edge. Light fades linerarly to this color from its Innercolor."
+ClipLight = "If TRUE, the light will be interrupted when it hits a wall. Otherwise, passes through the wall after lighting it."
+ClassDescription = "Lights the world in a sphere from a central point."
+
+[Brush]
+VisBlocker = "If TRUE, this brush will cut off line of sight as a normal brush would, but will not be drawn."
+TerrainOccluder = "If TRUE, this brush will turn into a terrain occluder, becoming nonsolid and block line of sight passing through it as described in the documentation."
+NotAStep = "If set, the engine's stairstepping code will not allow players to climb up onto this brush regardless of its height. Obsolete; replaced by Physics Materials."
+LightPenScale = "Sets the margin of error for light leaks under and around the seams of brushes. Values below 1 reduce light leaking onto this brush, while values above 1 help reduce darkness leaking."
+ReceiveSunlight = "If TRUE, this brush will see if it's being hit by sunlight. If FALSE, the brush will ignore light from a StaticSunlight. Can be used to speed up processing on mixed indoor/outdoor levels and to stop light leaks."
+ReceiveShadows = "If TRUE, this brush will clip its own lighting based on brushes between it and its light sources. If FALSE, it will be lit as if only it and the lights in the level existed."
+ClipLight = "Causes this brush to block light, thereby casting shadows on objects behind it."
+ReceiveLight = "If TRUE, this brush will be included in the lighting BSP, and will be lit by lights in the world. If FALSE, the brush will not be inn the lighting BSP and will only be lit by its AmbientLight property."
+LMGridSize = "Sets the ratio of lightmap pixels to texture pixels on this brush. 0 means use the world's default LMGridSize."
+AmbientLight = "Sets an ambient lightcolor to add to the current brush. Select the color you want and it is added to all faces of the brush in-game, regardless of the lighting in the world. For fullbright, use white."
+Additive = "Zis property does nothing, nada, zip, squat, rien, zilch. If it hasn't been removed, it soon will be."
+Translucent = "If TRUE and the brush is bound to a WorldModel game object, the brush can be translucent."
+HullMaker = "If TRUE, then the brush will be non-solid but still split the BSP. See Game Content Creation Guide for details."
+Portal = "If TRUE, this brush can be used in conjunction with a Door object as a DoorPortal to block visibility through the door."
+LightMap = "When set TRUE, this brush will be lit using lightmap textures on cards that support it."
+DirectionalLight = "If TRUE and the brush is bound to a Terrain object, the brush will be lit by StaticSunLight objects in the skybox."
+DetailLevel = "Set to 0 or 1. If 0, brush blocks engine visibility. If set to 1, brush is transparent to the engine."
+FlatShade = "When TRUE, the whole brush is lit flat, at the average of the light across its whole surface."
+NoSnap = "When FALSE, Processor will force-snap all vertices in the brush to an integer grid. Best left TRUE."
+Invisible = "If TRUE, the brush will not render. However, it will still block light and may still alter visibility."
+Effect = "Can be used to make visual effects (swirl, mirror) appear on the surface of a brush."
+EffectParam = "Used to set any parameters needed for a brush's Effect setting."
+GouraudShade = "If TRUE, brush will have gouraud shade lighting added. You can still use this option with Lightmap."
+Solid = "If TRUE, the brush will stop player and projectile movement."
+ClassDescription = "BRUSH objects are the basic unit of geometry that makes up the game world."
+Subdivide = "When TRUE, the brush will subdivide into smaller polies as needed when lightmapped. Should always be TRUE when Lightmap is true and FALSE otherwise."
+SkyPortal = "If TRUE, the brush will render the contents of the skybox instead of its own surface. See the Game Content Creation Guide for details."
+SkyPan = "If TRUE and Lightmap is FALSE, this level will accept a skypan texture for cloud shadows. See Game Content Creation Guide for details."
+
+[SkyPointer]
+Flags = "Zis property does nothing, nada, zip, squat, rien, zilch. If it hasn't been removed, it soon will be."
+Index = "Specifies drawing order of sky objects. Objects with a low index draw before objects with a high index. Each layer of objects should be associated with one SkyPointer or DemoSkyWorldModel, each of which should have its own index."
+InnerPercentX = "Percent of player's X movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+InnerPercentY = "Percent of player's Y movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+InnerPercentZ = "Percent of player's Z movement that's passed on to this skybox camera. Differences between cameras are used to create parallax."
+SkyObjectName = "Enter name of a worldmodel from the Nodes list here to have it rendered in the skybox. "
+ClassDescription = "SkyPointer objects cause the worldmodel that they target to be rendered in the skybox."
+SkyDims = "Defines X, Y and Z of the bounding box around all objects in the sky. Only set for one Demoskyworldmodel or Skypointer per level."
+
+[OutsideDef]
+ClassDescription = "Used by the leakfinder; place outside the level to give Processor a point to end the leakfile path at."
+
+[ObjectLight]
+LightAttenuation = "Sets the light falloff equation for this light; can usually be left alone."
+CastShadows = "Does this light generate shadows on models if they also have shadows enabled?"
+FastLightObjects = "If TRUE, uses model's bounding box and a few sample points to light model. If FLASE, does extensive, careful calculation of light for the whole model."
+LightRadius = "Determines how far from its center point the light will travel."
+BrightScale = "Determines the intensity of the light's color, like a dimmer. Default 1, reasonable range 0.25-2.0."
+LightColor = "Sets the color of the light at its absolute center."
+OuterColor = "Sets the color of the light at its absolute edge. Light fades linerarly to this color from its Lightcolor."
+ClassDescription = "Lights only models, NOT the world. Used to fine-tune the level lighting for models."
+
+[InsideDef]
+ClassDescription = "Used by the leakfinder; place inside the level to give Processor a point to start the leakfile path at"
+
+[StaticSunlight]
+ClassDescription = "Projects light through all skyportals as if from an infinite distance, like a sun. The angle at which the light hits is determined only by the object's rotation, not its location. "
+Bias = "Changes the ratio of light to shadow (InnerColor to OuterColor) cast by the sun on the level. If you want, you can use this property to make shadows or sunlight reach further than they normally would based on their angle."
+BrightScale = "Determines the intensity of the light's color, like a dimmer. Default 1, reasonable range 0.25-2.0."
+OuterColor = "Sets the light color to be used on any brush faces that are pointed away from the Sunlight object. If set to black, then this flag has no effect. "
+InnerColor = "Sets the color of light that will be used on any brush face that is pointed towards the SunLight object."
+
+[CClientFX]
+StartOn = "Should this object be running when the level starts?"
+Loop = "Should the effect play once or loop?"
+FxName = "The name of the ClientFX object that this object should play back."
+SmootShutdown = "For particle emitters, this tells the object that when it shuts down, it should stop emitting particles, but not remove itself until all existing particles have faded out."
+

@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="build\CRUD.exe"/>
+    <OBJFILES value="build\CRUD.obj build\FMain.obj build\crud_proc.obj build\crud_util.obj"/>
+    <RESFILES value="CRUD.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) FMain.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="VCLX50.lib VCL50.lib"/>
+    <SPARELIBS value="VCL50.lib VCLX50.lib"/>
+    <PACKAGES value="VCL50.bpi VCLX50.bpi bcbsmp50.bpi dclocx50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="CRUD.cpp"/>
+    <INCLUDEPATH value="C:\Programming\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="C:\Programming\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl50.csm -Hc -Vx -Ve -C -X- -a8 -5 -b- -k- -vi -c -tW 
+      -tWM"/>
+    <PFLAGS value="-N2build -N0build -$Y- -$L- -$D- -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-Ibuild -D&quot;&quot; -aa -Tpe -x -Gn"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=C:\Programming\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Programming\Borland\CBuilder5\Projects\;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\source\stlport
+Item2=C:\Programming\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\source\stlport
+Item3=C:\Programming\Borland\CBuilder5\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item4=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=C:\Programming\Borland\CBuilder5\Projects\;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Programming\Borland\CBuilder5\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=4
+Item0=build
+Item1=debug
+Item2=release
+Item3=C:\proj\LT\tools\crudgui\release
+
+[HistoryLists\hlFinalOutputDir]
+Count=7
+Item0=build\
+Item1=build
+Item2=debug\
+Item3=debug
+Item4=release
+Item5=release\
+Item6=C:\proj\LT\tools\crudgui\release
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=c:\nolf\nolf\thelist.lst
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>

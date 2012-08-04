@@ -1,0 +1,1220 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\ModelEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MODELEDIT_DIALOG DIALOGEX 0, 0, 510, 369
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ModelEdit for LithTech Jupiter"
+MENU IDR_MODELEDITMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_RENDER,"Static",SS_BLACKRECT | NOT WS_VISIBLE,3,2,
+                    209,240
+    CONTROL         "PREVKEY",IDC_PREVKEY,"Button",BS_OWNERDRAW,105,245,21,
+                    14
+    CONTROL         "STOP",IDC_STOP,"Button",BS_OWNERDRAW,129,245,21,14
+    CONTROL         "FPLAY",IDC_FPLAY,"Button",BS_OWNERDRAW,153,245,21,14
+    CONTROL         "NEXTKEY",IDC_NEXTKEY,"Button",BS_OWNERDRAW,177,245,21,
+                    14
+    CTEXT           "Nodes",IDC_STATIC,234,0,77,8
+    CONTROL         "List1",IDC_NODELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,215,9,114,90,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "Pieces",IDC_STATIC,234,103,77,8
+    CTEXT           "Animations",IDC_STATIC,337,0,75,8
+    CONTROL         "List1",IDC_ANIMLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,331,9,87,193,
+                    WS_EX_CLIENTEDGE
+    CTEXT           "Child Models",IDC_STATIC,429,0,75,8
+    LISTBOX         IDC_CHILDMODELS,420,10,87,76,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    CTEXT           "Sockets",IDC_STATIC,421,89,87,8
+    LISTBOX         IDC_SOCKETLIST,420,98,87,104,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL
+    GROUPBOX        "Animation Edit",IDC_STATIC,333,203,84,59
+    CONTROL         "User Dimensions",IDC_DIMS_EDIT,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT,336,218,62,10
+    CONTROL         "Translation",IDC_TRANSLATION_EDIT,"Button",
+                    BS_AUTORADIOBUTTON | BS_LEFT,336,228,51,10
+    PUSHBUTTON      "+",IDC_XADD,344,244,14,6
+    PUSHBUTTON      "+",IDC_YADD,358,244,14,6
+    PUSHBUTTON      "+",IDC_ZADD,372,244,14,6
+    PUSHBUTTON      "-",IDC_XSUB,344,250,14,6
+    PUSHBUTTON      "-",IDC_YSUB,358,250,14,6
+    PUSHBUTTON      "-",IDC_ZSUB,372,250,14,6
+    CONTROL         "DELETE",IDC_DELETE,"Button",BS_OWNERDRAW,401,215,13,11
+    CONTROL         "NUMBER",IDC_NUMBER,"Button",BS_OWNERDRAW,401,226,13,11
+    CONTROL         "MOVEDOWN",IDC_MOVEDOWN,"Button",BS_OWNERDRAW,401,237,13,
+                    11
+    CONTROL         "MOVEUP",IDC_MOVEUP,"Button",BS_OWNERDRAW,401,248,13,11
+    GROUPBOX        "Transform Edit",IDC_STATIC,419,203,89,59
+    CONTROL         "&Global",IDC_GLOBAL_SPACE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,425,216,36,10
+    CONTROL         "Socket",IDC_SOCKET_EDIT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | BS_RIGHT,464,211,39,10
+    CONTROL         "Relation",IDC_SOCKET_EDIT2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | BS_RIGHT,462,221,41,10
+    RTEXT           "Rotation",IDC_STATIC,428,232,35,8
+    CONTROL         "",IDC_SOCKETROTRIGHT,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,466,231,10,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SOCKETROTUP,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,480,231,10,10
+    CONTROL         "",IDC_SOCKETROTFORWARD,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,493,231,10,10
+    RTEXT           "Translation",IDC_STATIC,427,241,36,8
+    CONTROL         "",IDC_SOCKETPOSRIGHT,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,466,240,10,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SOCKETPOSUP,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,480,240,10,10
+    CONTROL         "",IDC_SOCKETPOSFORWARD,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,493,240,10,10
+    CONTROL         "",IDC_ANIMACTIVE1,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,8,272,10,17,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Animation",IDC_ANIMATION1,24,272,69,17
+    CONTROL         "",IDC_KEYFRAME1,"Static",SS_BLACKRECT | NOT WS_VISIBLE,
+                    96,272,406,17
+    CONTROL         "",IDC_ANIMACTIVE2,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,8,291,10,17,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Animation",IDC_ANIMATION2,24,291,69,17
+    CONTROL         "",IDC_KEYFRAME2,"Static",SS_BLACKRECT | NOT WS_VISIBLE,
+                    96,291,406,17
+    CONTROL         "",IDC_ANIMACTIVE3,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,8,310,10,17,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Animation",IDC_ANIMATION3,24,310,69,17
+    CONTROL         "",IDC_KEYFRAME3,"Static",SS_BLACKRECT | NOT WS_VISIBLE,
+                    96,310,406,17
+    CONTROL         "",IDC_ANIMACTIVE4,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,8,329,10,17,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Animation",IDC_ANIMATION4,24,329,69,17
+    CONTROL         "",IDC_KEYFRAME4,"Static",SS_BLACKRECT | NOT WS_VISIBLE,
+                    96,329,406,17
+    RTEXT           "Frame Time:",IDC_STATIC,11,350,44,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FRAMETIME,56,351,37,12,ES_AUTOHSCROLL
+    RTEXT           "Frame String:",IDC_STATIC,97,350,47,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_FRAMESTRING,145,351,357,12,ES_AUTOHSCROLL
+    GROUPBOX        "Animation Keyframes",IDC_STATIC,2,262,506,105
+    EDITTEXT        IDC_CURRENT_DIST,256,235,34,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIN_LODOFF,262,216,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOD_OFFSET,287,216,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIN_LOD,235,216,19,12,ES_AUTOHSCROLL
+    SCROLLBAR       IDC_LOD_SCROLL,220,248,106,11
+    CONTROL         "Tree1",IDC_PIECES,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | 
+                    TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,215,112,114,
+                    90,WS_EX_CLIENTEDGE
+    GROUPBOX        "LOD",IDC_STATIC,215,203,115,59
+    LTEXT           "0.00",IDC_MIN_DIST,220,239,31,8
+    RTEXT           "0.00",IDC_MAX_DIST,295,239,31,8
+    CONTROL         "Movement Encoding",IDC_MOVEMENT_ENCODING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,247,81,10
+    RTEXT           "Scale",IDC_STATIC,427,250,36,8
+    CONTROL         "",IDC_SOCKETSCLRIGHT,"Static",SS_BLACKRECT | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_BORDER,466,249,10,10,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SOCKETSCLUP,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,480,249,10,10
+    CONTROL         "",IDC_SOCKETSCLFORWARD,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,493,249,10,10
+END
+
+IDD_DIALOG_RENAME DIALOG  0, 0, 168, 42
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Animation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter new name for animation:",IDC_STATIC,5,7,96,8
+    EDITTEXT        IDC_EDIT1,5,20,96,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,3,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,111,20,50,14
+END
+
+IDD_EDIT_KEYFRAME_TIME DIALOG  0, 0, 181, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Current Time:",IDC_STATIC,7,7,43,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CURRENT_TIME,56,7,46,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "ms",IDC_STATIC,105,7,10,12,SS_CENTERIMAGE
+    LTEXT           "New Time:",IDC_STATIC,7,27,35,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NEW_TIME,56,27,46,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,105,27,10,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,123,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,25,50,14
+END
+
+IDD_CONTINUOUS_DIALOG DIALOG  0, 0, 175, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Make Animation Continuous"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter delay from last frame to first frame:",IDC_STATIC,
+                    6,10,126,8
+    EDITTEXT        IDC_DELAY,133,8,23,12,ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,158,10,10,8
+    DEFPUSHBUTTON   "OK",IDOK,60,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,27,50,14
+END
+
+IDD_MODELINFO DIALOG  0, 0, 242, 214
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Model Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MODELINFOTEXT,5,10,230,180,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,95,195,50,14
+END
+
+IDD_COMMANDSTRINGEDIT DIALOG  0, 0, 277, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Model Command String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COMMANDSTRING,10,10,260,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,80,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,30,50,14
+END
+
+IDD_KEYFRAMESTRING DIALOG  0, 0, 217, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Keyframe String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_THESTRING,5,5,205,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,55,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,25,50,14
+END
+
+IDD_DIMENSIONS DIALOGEX 0, 0, 159, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Dimensions"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "X:",IDC_STATIC,7,7,9,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_XDIM,26,7,43,14,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,7,26,9,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_YDIM,26,25,43,14,ES_AUTOHSCROLL
+    LTEXT           "Z:",IDC_STATIC,7,43,9,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ZDIM,26,43,43,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&Apply",ID_APPLY,79,7,74,14
+    PUSHBUTTON      "&Done",ID_DONE,79,43,74,14
+    PUSHBUTTON      "Use Current Anim",ID_USEANIMDIMS,79,25,73,14
+END
+
+IDD_IMPORTANIM DIALOG  0, 0, 245, 48
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Animations",IDC_IMPORT_ANIMATIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,19,48,9
+    CONTROL         "&UV Coords",IDC_IMPORT_USEUVCOORDS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,19,51,9
+    CONTROL         "User &Dims",IDC_IMPORT_USERDIMS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,130,19,48,9
+    CONTROL         "&Translations",IDC_IMPORT_TRANSLATIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,190,19,51,9
+    CONTROL         "&Sockets",IDC_IMPORT_SOCKETS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,31,42,10
+    CONTROL         "&Weight Sets",IDC_IMPORT_WEIGHTSETS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,32,51,9
+    LTEXT           "Import:",IDC_STATIC,7,7,44,9
+END
+
+IDD_ANIMATIONFRAMERATE DIALOG  0, 0, 186, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Animation Framerate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FRAMERATESTRING,45,7,110,15,ES_AUTOHSCROLL
+    CONTROL         "All Animations",IDC_ALLANIMATIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,30,110,10
+    DEFPUSHBUTTON   "OK",IDOK,35,45,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,45,50,14
+    RTEXT           "Framerate",IDC_STATIC,5,10,35,8
+END
+
+IDD_TRANSLATIONDLG DIALOG  0, 0, 186, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Translation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "X:",IDC_STATIC,5,8,8,8
+    EDITTEXT        IDC_XTRANS,15,5,40,14,ES_AUTOHSCROLL
+    LTEXT           "Y:",IDC_STATIC,5,27,8,8
+    EDITTEXT        IDC_YTRANS,15,24,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z:",IDC_STATIC,5,46,8,8
+    EDITTEXT        IDC_ZTRANS,15,43,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_UVIMPORT2 DIALOG  0, 0, 325, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import UV Coordinates"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "This model has different geometry.  Animations cannot be imported.  The only way to import UV coordinates is to match vertex positions on an animation.  If this is what you want to do, please enter the animation name to try to match and click OK.",
+                    IDC_STATIC,7,7,311,26
+    RTEXT           "Animation Name:",IDC_STATIC,86,47,55,8
+    EDITTEXT        IDC_ANIMATIONNAME,145,44,95,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,101,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,74,50,14
+END
+
+IDD_ANIMNUMBER DIALOG  0, 0, 240, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Animation Move"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MOVENUMBER,89,38,46,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,42,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,74,50,14
+    LTEXT           "Please enter the index to move the selected animation(s) to:",
+                    IDC_STATIC,27,25,188,8
+END
+
+IDD_RENAMENODE DIALOG  0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Node"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_OLDNAME,5,29,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWNAME,121,28,58,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,39,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,55,50,14
+    LTEXT           "Old Node Name",IDC_STATIC,7,16,52,8
+    LTEXT           "New Node Name",IDC_STATIC,123,16,56,8
+END
+
+IDD_ROTATIONDLG DIALOG  0, 0, 147, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rotate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROTX,17,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROTY,17,26,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROTZ,17,45,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,90,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,90,24,50,14
+    LTEXT           "X:",IDC_STATIC,7,10,8,8
+    LTEXT           "Y:",IDC_STATIC,7,29,8,8
+    LTEXT           "Z:",IDC_STATIC,7,48,8,8
+END
+
+IDD_ABOUT DIALOG  0, 0, 236, 97
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ModelEdit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ModelEdit For LithTech Jupiter\r\nCopyright © LithTech, Inc. 2000-2002",
+                    IDC_STATIC,7,7,168,19
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,34,
+                    222,56
+    LTEXT           "Warning:  this computer program is protected by copyright law and international treaties.",
+                    IDC_STATIC,14,39,210,17
+    LTEXT           "Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.",
+                    IDC_STATIC,14,60,210,27
+    DEFPUSHBUTTON   "OK",IDOK,186,7,43,14
+END
+
+IDD_STRINGDLG DIALOG  0, 0, 272, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_MSGTEXT,30,20,210,10
+    EDITTEXT        IDC_ENTEREDTEXT,30,35,210,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,74,50,14
+END
+
+IDD_ADDSOCKET DIALOG  0, 0, 186, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Socket"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SOCKETNAME,37,7,142,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NODENAME,37,24,142,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,48,50,14
+    LTEXT           "Name:",IDC_STATIC,12,10,21,8
+    LTEXT           "Node:",IDC_STATIC,13,27,21,8
+END
+
+IDD_ANIMMERGE DIALOG  0, 0, 186, 68
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mood"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEWANIMNAME,75,7,110,14,ES_AUTOHSCROLL
+    CONTROL         "Single Frame Difference",IDC_SINGLEFRAMEDIFFERENCE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,29,172,10
+    DEFPUSHBUTTON   "OK",IDOK,41,47,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,47,50,14
+    RTEXT           "New Animation",IDC_STATIC,7,12,61,8
+END
+
+IDD_WEIGHTEDIT DIALOG  0, 0, 206, 167
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Weighted Animation Blending  "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Animation Blending Sets",IDC_STATIC,7,7,92,8
+    LISTBOX         IDC_WEIGHTSETS,7,18,92,120,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nodes",IDC_STATIC,106,7,92,8
+    LISTBOX         IDC_NODES,105,18,92,92,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Current Node Weight",IDC_STATIC,105,113,69,8
+    EDITTEXT        IDC_WEIGHT,105,124,48,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Add Set",IDC_ADDSET,20,146,50,14
+    PUSHBUTTON      "&Remove Set",IDC_REMOVESET,77,146,50,14
+    DEFPUSHBUTTON   "Close",IDOK,134,146,50,14
+END
+
+IDD_TIMEOFFSET DIALOG  0, 0, 177, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Time Offset"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Time Offset in Milliseconds:",IDC_STATIC,7,11,87,8
+    EDITTEXT        IDC_TIME_OFFSET,95,8,61,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,26,31,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,31,50,14
+END
+
+IDD_SOCKETEDIT DIALOG  0, 0, 244, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Socket Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&Name",IDC_STATIC,9,8,20,8
+    EDITTEXT        IDC_SOCKETEDIT_NAME,31,7,150,12,ES_AUTOHSCROLL
+    LTEXT           "O&rientation",IDC_STATIC,8,44,35,8
+    RTEXT           "X",IDC_STATIC,18,57,8,8
+    EDITTEXT        IDC_SOCKETEDIT_ROTX,28,54,40,12,ES_AUTOHSCROLL
+    RTEXT           "Y",IDC_STATIC,74,57,8,8
+    EDITTEXT        IDC_SOCKETEDIT_ROTY,84,54,40,12,ES_AUTOHSCROLL
+    RTEXT           "Z",IDC_STATIC,132,57,8,8
+    EDITTEXT        IDC_SOCKETEDIT_ROTZ,142,54,40,12,ES_AUTOHSCROLL
+    LTEXT           "&Position",IDC_STATIC,8,71,26,8
+    RTEXT           "X",IDC_STATIC,18,83,8,8
+    EDITTEXT        IDC_SOCKETEDIT_POSX,28,81,40,12,ES_AUTOHSCROLL
+    RTEXT           "Y",IDC_STATIC,74,83,8,8
+    EDITTEXT        IDC_SOCKETEDIT_POSY,84,81,40,12,ES_AUTOHSCROLL
+    RTEXT           "Z",IDC_STATIC,132,83,8,8
+    EDITTEXT        IDC_SOCKETEDIT_POSZ,142,81,40,12,ES_AUTOHSCROLL
+    RTEXT           "A&ttachment",IDC_STATIC,8,128,37,8
+    EDITTEXT        IDC_SOCKETEDIT_ATTACHMENT,48,124,158,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SOCKETEDIT_ATTACHMENT_LOAD,208,124,11,12
+    PUSHBUTTON      "&Apply",IDC_APPLY,186,7,50,14
+    DEFPUSHBUTTON   "&OK",IDOK,186,24,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,186,41,50,14
+    LTEXT           "&Scale",IDC_STATIC,8,97,19,8
+    RTEXT           "X",IDC_STATIC,18,110,8,8
+    EDITTEXT        IDC_SOCKETEDIT_SCLX,28,107,40,12,ES_AUTOHSCROLL
+    RTEXT           "Y",IDC_STATIC,74,110,8,8
+    EDITTEXT        IDC_SOCKETEDIT_SCLY,84,107,40,12,ES_AUTOHSCROLL
+    RTEXT           "Z",IDC_STATIC,132,110,8,8
+    EDITTEXT        IDC_SOCKETEDIT_SCLZ,142,107,40,12,ES_AUTOHSCROLL
+    RTEXT           "&Node Name",IDC_STATIC,8,26,40,8
+    EDITTEXT        IDC_SOCKETEDIT_NODENAME,64,25,116,12,ES_AUTOHSCROLL
+END
+
+IDD_WEIGHTSETSELECT DIALOG  0, 0, 186, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Animation Blending Weight Set"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_WEIGHTSETS,7,7,172,168,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,38,181,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,97,181,50,14
+END
+
+IDD_SETFOV DIALOGEX 0, 0, 195, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Set Field of View"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FOV_EDIT,151,6,37,12,ES_AUTOHSCROLL
+    LTEXT           "Min",IDC_MIN,7,23,26,8
+    CTEXT           "Mid",IDC_MID,79,23,37,8
+    RTEXT           "Max",IDC_MAX,163,23,25,8
+    CONTROL         "Slider1",IDC_FOV_SLIDER,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,7,34,181,22
+END
+
+IDD_EXPORT_D3D DIALOGEX 0, 0, 370, 113
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Force Max Bones per Vert",
+                    IDC_EXPORT_D3D_FORCE_BONES_PER_VERT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,17,113,9
+    EDITTEXT        IDC_EXPORT_D3D_BONES_PER_VERT,13,29,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min Bone Weight",IDC_STATIC,13,47,56,8
+    EDITTEXT        IDC_EXPORT_MINBONEWEIGHT,13,56,40,14,ES_AUTOHSCROLL
+    CONTROL         "Use Matrix Palette",IDC_EXPORT_USEMATRIXPALETTES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,76,101,9
+    CONTROL         "Exclude Model Geometry",IDC_NO_GEOM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,88,94,12
+    CONTROL         "Force Max Bones per Tri",
+                    IDC_EXPORT_D3D_FORCE_BONES_PER_TRI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,129,17,113,9
+    EDITTEXT        IDC_EXPORT_D3D_BONES_PER_TRI,129,28,40,14,ES_AUTOHSCROLL
+    LTEXT           "Compression Type ",IDC_STATIC,127,46,116,8
+    COMBOBOX        IDC_COMBO_COMPRESSION_TYPE,127,57,81,38,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Position",IDC_STREAM0_OPTIONS_POSITION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,22,41,10
+    CONTROL         "Normal",IDC_STREAM0_OPTIONS_NORMAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,33,38,10
+    CONTROL         "Color",IDC_STREAM0_OPTIONS_COLOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,44,32,10
+    CONTROL         "Basis Vectors",IDC_STREAM0_OPTIONS_TANGENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,254,56,59,10
+    CONTROL         "UV1",IDC_STREAM0_OPTIONS_UV1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,22,30,10
+    CONTROL         "UV2",IDC_STREAM0_OPTIONS_UV2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,33,30,10
+    CONTROL         "UV3",IDC_STREAM0_OPTIONS_UV3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,44,30,10
+    CONTROL         "UV4",IDC_STREAM0_OPTIONS_UV4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,56,30,10
+    CONTROL         "Pause After Compile",IDC_EXPORT_PAUSE_AFTER_COMPILE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,250,90,79,10
+    GROUPBOX        "Export Options",IDC_STATIC,2,3,366,104
+    GROUPBOX        "-Stream0 Options",IDC_STATIC,249,11,105,63
+END
+
+IDD_LOADLTA DIALOG  0, 0, 244, 212
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Please Wait..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Loading <filename goes here>",IDC_LOADFILENAME,7,7,230,
+                    178
+    EDITTEXT        IDC_LOADLOG,12,18,220,161,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "&Save Log...",IDC_SAVELOADLOG,7,191,50,14
+    DEFPUSHBUTTON   "OK",IDOK,187,191,50,14
+END
+
+IDD_ADDCHILDMODEL DIALOG  0, 0, 275, 36
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CLIPSIBLINGS
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Scale Skeleton",IDC_SCALESKELETON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,20,70,9
+    LTEXT           "Child Model Options:",IDC_STATIC,7,7,66,8
+END
+
+IDD_IMPSTRINGKEYS DIALOG  0, 0, 388, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,169,226,50,14
+    EDITTEXT        IDC_PROGRESS,7,7,374,208,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_PIECEMATERIAL DIALOG  0, 0, 174, 211
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Piece LOD Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Texture Properties",IDC_STATIC,3,4,166,85
+    RTEXT           "Number of Textures:",IDC_STATIC,24,22,65,8
+    COMBOBOX        IDC_NUMTEXTURES,91,20,48,87,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Texture Indices:",IDC_TEXTUREINDEX_LABEL,13,42,69,8
+    RTEXT           "0:",IDC_STATIC,13,57,10,8
+    EDITTEXT        IDC_TEXTUREINDEX0,25,55,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin2",IDC_SPIN5,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,76,55,11,
+                    14
+    RTEXT           "1:",IDC_STATIC,93,57,10,8
+    EDITTEXT        IDC_TEXTUREINDEX1,105,55,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin2",IDC_SPIN6,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,156,54,11,
+                    14
+    RTEXT           "2:",IDC_STATIC,13,73,10,8
+    EDITTEXT        IDC_TEXTUREINDEX2,25,71,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin2",IDC_SPIN7,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,76,71,11,
+                    14
+    RTEXT           "3:",IDC_STATIC,93,73,10,8
+    EDITTEXT        IDC_TEXTUREINDEX3,105,71,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin2",IDC_SPIN8,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,156,70,11,
+                    14
+    GROUPBOX        "Rendering Properties",IDC_STATIC,3,95,166,53
+    RTEXT           "RenderStyle Index",IDC_STATIC,30,109,59,8
+    EDITTEXT        IDC_RENDERSTYLEINDEX,93,107,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,144,107,
+                    11,14
+    RTEXT           "Render Priority",IDC_STATIC,30,126,47,8
+    EDITTEXT        IDC_RENDERPRIORITY,93,124,50,14,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    CONTROL         "Spin1",IDC_SPINRENDERPRIORITY,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,144,124,11,14
+    GROUPBOX        "LOD Properties",IDC_STATIC,3,150,166,31
+    RTEXT           "Distance",IDC_STATIC,78,163,31,8
+    EDITTEXT        IDC_LODDISTANCE,111,161,50,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_GROUP
+    DEFPUSHBUTTON   "OK",IDOK,64,191,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,191,50,14
+    CHECKBOX        "Null LOD",IDC_CHECK_NULL_LOD,13,163,45,10
+END
+
+IDD_EDIT_OBB DIALOGEX 0, 0, 224, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Oriented Bounding Box"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,166,72,50,14
+    EDITTEXT        IDC_EDIT_OBB_POS_X,41,5,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_POS_Y,103,5,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_POS_Z,164,5,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_ROT_X,41,21,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_ROT_Y,103,21,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_ROT_Z,164,21,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_SIZ_X,41,37,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_SIZ_Y,103,37,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OBB_SIZ_Z,164,37,40,12,ES_AUTOHSCROLL
+    RTEXT           "Position:",IDC_STATIC,6,7,32,8
+    RTEXT           "Rotation:",IDC_STATIC,6,23,32,8
+    RTEXT           "Size:",IDC_STATIC,6,39,32,8
+    CONTROL         "Enable OBB",IDC_ENABLE_OBB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,59,54,59,10
+    CONTROL         "",IDC_EDIT_OBB_POS_X_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,83,6,10,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_EDIT_OBB_POS_Y_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,145,6,10,10
+    CONTROL         "",IDC_EDIT_OBB_POS_Z_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,206,6,10,10
+    CONTROL         "",IDC_EDIT_OBB_ROT_X_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,83,22,10,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_EDIT_OBB_ROT_Y_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,145,22,10,10
+    CONTROL         "",IDC_EDIT_OBB_ROT_Z_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,206,22,10,10
+    CONTROL         "",IDC_EDIT_OBB_SIZ_X_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,83,38,10,10,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_EDIT_OBB_SIZ_Y_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,145,38,10,10
+    CONTROL         "",IDC_EDIT_OBB_SIZ_Z_TRACK,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE | WS_BORDER,206,38,10,10
+END
+
+IDD_PIECE_LOD_GEN DIALOG  0, 0, 159, 101
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Level of Detail Generation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DISTANCE,88,9,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRI_PERCENT,88,25,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_EDGE_LENGTH,88,42,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRI_MIN,88,58,65,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,28,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,81,50,14
+    RTEXT           "Minimum Number of Tris:",IDC_STATIC,5,60,80,10
+    RTEXT           "Maximum Edge Length:",IDC_STATIC,5,44,80,10
+    RTEXT           "% Triangles:",IDC_STATIC,5,27,80,8
+    RTEXT           "Distance:",IDC_STATIC,5,11,80,8
+END
+
+IDD_IMPORT_LODS DIALOGEX 0, 0, 194, 281
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Custom LODs"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_PIECES,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | 
+                    TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,3,16,187,244,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",IDOK,86,263,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,263,50,14
+    LTEXT           "Select the LODs to be imported:",IDC_STATIC,5,5,102,8
+END
+
+IDD_INVALIDANIMDIMS DIALOG  0, 0, 183, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resolve Invalid Anim Dims"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,126,53,50,14
+    PUSHBUTTON      "Ignore",IDCANCEL,126,70,50,14
+    PUSHBUTTON      "Use &X",IDC_BUTTON_USE_X,126,7,50,14
+    PUSHBUTTON      "Use &Z",IDC_BUTTON_USE_Z,126,24,50,14
+    LTEXT           "X",IDC_STATIC,7,25,9,8
+    LTEXT           "Y",IDC_STATIC,7,41,9,8
+    LTEXT           "Z",IDC_STATIC,7,56,9,8
+    EDITTEXT        IDC_EDIT_DIMS_X,21,23,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DIMS_Y,21,39,64,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DIMS_Z,21,54,64,12,ES_AUTOHSCROLL
+    LTEXT           "Animation name",IDC_STATIC_ANIM_NAME,7,7,109,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "ModelEdit MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ModelEdit"
+            VALUE "LegalCopyright", "Copyright (C) 1997"
+            VALUE "OriginalFilename", "ModelEdit.EXE"
+            VALUE "ProductName", "ModelEdit Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MODELEDIT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 503
+        BOTTOMMARGIN, 363
+    END
+
+    IDD_EDIT_KEYFRAME_TIME, DIALOG
+    BEGIN
+        RIGHTMARGIN, 140
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_SOCKETEDIT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 241
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_SETFOV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_EXPORT_D3D, DIALOG
+    BEGIN
+        VERTGUIDE, 7
+        HORZGUIDE, 23
+        HORZGUIDE, 42
+        HORZGUIDE, 58
+    END
+
+    IDD_LOADLTA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_ADDCHILDMODEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 29
+    END
+
+    IDD_IMPSTRINGKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_PIECEMATERIAL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_EDIT_OBB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_IMPORT_LODS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 274
+    END
+
+    IDD_INVALIDANIMDIMS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+FPLAYU                  BITMAP                  "res\\fplayu.bmp"
+FPLAYD                  BITMAP                  "res\\fplayd.bmp"
+RPLAYU                  BITMAP                  "res\\rplayu.bmp"
+RPLAYD                  BITMAP                  "res\\rplayd.bmp"
+STOPU                   BITMAP                  "res\\stopu.bmp"
+STOPD                   BITMAP                  "res\\stopd.bmp"
+NEXTKEYU                BITMAP                  "res\\nextkeyu.bmp"
+PREVKEYU                BITMAP                  "res\\prevkeyu.bmp"
+PREVKEYD                BITMAP                  "res\\prevkeyd.bmp"
+NEXTKEYD                BITMAP                  "res\\nextkeyd.bmp"
+DELETED                 BITMAP                  "res\\delete.bmp"
+MOVEUPU                 BITMAP                  "res\\moveup.bmp"
+DELETEU                 BITMAP                  "res\\deleteu.bmp"
+MOVEDOWNU               BITMAP                  "res\\bmp00001.bmp"
+MOVEDOWND               BITMAP                  "res\\movedown.bmp"
+MOVEUPD                 BITMAP                  "res\\moveupd.bmp"
+IDB_MARKER_TOP          BITMAP                  "res\\bitmap1.bmp"
+IDB_MARKER_BOTTOM       BITMAP                  "res\\bitmap2.bmp"
+NUMBERD                 BITMAP                  "res\\numberd.bmp"
+NUMBERU                 BITMAP                  "res\\numberu.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_KEYFRAME_MENU MENU 
+BEGIN
+    POPUP "Keyframe Menu"
+    BEGIN
+        MENUITEM "Tag &All",                    ID_TAGALL
+        MENUITEM "Untag &All",                  ID_UNTAGALL
+        MENUITEM "Edit Tagged Keyframe &Strings", ID_EDITKEYFRAMESTRING
+        MENUITEM "&Delete Keyframe",            ID_DELETE_KEYFRAME
+        MENUITEM "Delete Tagged &Keyframes",    ID_DELETE_TAGGED_KEYFRAMES
+        MENUITEM "Clip &After Keyframe",        ID_CLIP_AFTER
+        MENUITEM "Clip &Before Keyframe",       ID_CLIP_BEFORE
+        MENUITEM "&Insert Time Delay...",       ID_INSERT_TIME_DELAY
+    END
+END
+
+IDR_MODELEDITMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            IDC_LOADMODEL
+        MENUITEM "&Import...",                  IDC_IMPORT
+        MENUITEM "Import Custom LODs...",       IDC_IMPORT_LODS
+        MENUITEM SEPARATOR
+        MENUITEM "I&mport User Model Data",     ID_IMPORTMODELSTRINGKEYS
+        MENUITEM "&Export User Model Data",     ID_EXPORTMODELSTRINGKEYS
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               IDC_SAVE
+        MENUITEM "Save &As...",                 IDC_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "C&ompile...",                 IDC_COMPILE
+        MENUITEM "Save And &Compile...",        IDC_SAVE_AND_COMPILE
+        MENUITEM "Set &Project Directory...",   IDC_SET_PROJ_DIR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               IDCANCEL
+    END
+    POPUP "&Model"
+    BEGIN
+        MENUITEM "Model &Info",                 IDC_MODELINFO
+        MENUITEM "&Command String...",          IDC_COMMANDSTRING_BUTTON
+        MENUITEM "&Unrotate Top Node",          IDC_UNROTATE_TOP_NODE
+        MENUITEM "&Rename Node...",             IDC_RENAMENODE
+        MENUITEM "&Generate Vertex Normals",    ID_GENERATE_VERTEX_NORMALS
+        MENUITEM "Remove Node",                 ID_MODEL_REMOVENODE
+        MENUITEM "Select Null Nodes",           ID_SELECT_NULL_NODES
+        MENUITEM "Set &Internal Radius...",     ID_INTERNAL_RADIUS
+        MENUITEM "Edit &Weighted Animation Blending ", ID_EDIT_WEIGHTS
+        MENUITEM "C&alculate Internal Radius...", ID_CALC_INTERNAL_RADIUS
+        MENUITEM "Auto-Generate OBBs From Model...", IDC_CALC_OBB
+        MENUITEM SEPARATOR
+        MENUITEM "&Export Weight Sets",         ID_MODEL_EXPORTWEIGHTSETS
+        MENUITEM "I&mport Weight Sets",         ID_MODEL_IMPORTWEIGHTSETS
+    END
+    POPUP "&Animation"
+    BEGIN
+        MENUITEM "&Rename...",                  IDC_RENAME
+        MENUITEM "&Duplicate",                  IDC_DUPLICATEANIM
+        MENUITEM "Create Anim From Bind Pose",  ID_ANIMATION_CREATEANIMFROMBINDPOSE
+
+        MENUITEM "&Dimensions...",              IDC_DIMENSIONS_BUTTON
+        MENUITEM "&Reverse",                    ID_REVERSE_ANIMATION
+        MENUITEM "&Make Continuous",            IDC_CONTINUOUS
+        MENUITEM "&Set Animation Rate...",      IDC_ANIMATION_FRAMERATE
+        MENUITEM "&Set Animation Length",       IDC_ANIMATIONLENGTH
+        MENUITEM "&Set Animation Interpolation", IDC_ANIMATIONINTERPOLAION
+        MENUITEM "&Create Single Frame",        IDC_CREATE_SINGLE_FRAME
+        MENUITEM "Animation Merge...",          ID_ANIMATION_MERGE
+        MENUITEM "&Translation...",             IDC_TRANSLATION_BUTTON
+        MENUITEM "R&otate...",                  IDC_ROTATION_BUTTON
+    END
+    POPUP "&Child Model"
+    BEGIN
+        MENUITEM "&Add Child Model...",         ID_ADDCHILDMODEL
+        MENUITEM "&Remove Child Model",         ID_REMOVECHILDMODEL
+        MENUITEM "Re&build Tree",               ID_REBUILDCHILDMODELTREE
+    END
+    POPUP "&Sockets"
+    BEGIN
+        MENUITEM "&Add Socket...",              ID_ADD_SOCKET
+        MENUITEM "&Remove Socket",              ID_REMOVE_SOCKET
+        MENUITEM "Re&name Socket...",           ID_RENAME_SOCKET
+    END
+    POPUP "&Piece"
+    BEGIN
+        MENUITEM "Piece &Info...",              ID_PIECE_INFO
+        MENUITEM "Set Preview &Texture...",     ID_PIECE_SET_TEXTURE
+        MENUITEM "Build &LODs...",              ID_PIECE_BUILD_LODS
+        MENUITEM "Remove Selected LODs",        ID_PIECE_REMOVE_LODS
+        MENUITEM "Merge Selected",              ID_PIECE_MERGE
+        MENUITEM "&Clear Selection",            ID_PIECE_SELECT_NONE
+        MENUITEM "Create Null LOD...",          ID_CREATE_NULL_LOD
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Lights Follow Camera",       IDC_CAMERA_FOLLOW
+        MENUITEM "&Wireframe",                  IDC_WIREFRAME
+        MENUITEM "Show &Textures",              ID_SHOW_TEXTURES
+        MENUITEM "Show &User Dimensions",       IDC_DIMS
+        MENUITEM "Show &Internal Dimensions",   IDC_ANIM_BOX
+        MENUITEM "Show &Skeleton",              IDC_DRAWSKELETON
+        MENUITEM "Show Original Model",         ID_OPTIONS_SHOWORIGINALMODEL
+        MENUITEM "Show S&ockets",               ID_SHOW_SOCKETS
+        MENUITEM "Show V&ertex Weighting",      ID_OPTIONS_SHOWVERTEXWEIGHTING
+
+        MENUITEM "Show &Attachments",           ID_SHOW_ATTACHMENTS
+        MENUITEM "Show &Normals",               ID_SHOW_NORMALS
+        MENUITEM "Show Normal&Ref",             ID_SHOW_NORMALREF
+        MENUITEM "Solid A&ttachments",          ID_SOLID_ATTACHMENTS
+        MENUITEM "&Profile",                    ID_OPTIONS_PROFILE
+        MENUITEM "New Background Color",        ID_OPTIONS_NEWBACKGROUND
+        MENUITEM "Change Field of View",        IDC_CHANGE_FOV
+        MENUITEM "Edit Amibent Color",          ID_CHANGE_AMBIENT_COLOR
+        MENUITEM "Require Load Confirmation",   ID_OPTIONS_LOADCONFIRM
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ModelEdit...",         ID_HELP_ABOUT
+    END
+END
+
+IDR_MENU_ANIMLIST MENU 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Rename...",                   IDC_RENAME
+        MENUITEM "Duplicate...",                IDC_DUPLICATEANIM
+        MENUITEM "Delete",                      IDC_DELETEANIM
+        MENUITEM SEPARATOR
+        MENUITEM "Sort by name",                IDC_SORTANIM_NAME
+        MENUITEM "Sort by child",               IDC_SORTANIM_RELATION
+    END
+END
+
+IDR_NODE_EDIT MENU 
+BEGIN
+    POPUP "Node Edit"
+    BEGIN
+        MENUITEM "Center On",                   ID_NODEEDIT_LOOKAT
+        MENUITEM "Edit OBB...",                 ID_NODEEDIT_EDITOBB
+        MENUITEM "Rename...",                   ID_NODEEDIT_RENAME
+    END
+END
+
+IDR_PIECE_EDIT MENU 
+BEGIN
+    POPUP "Piece Edit"
+    BEGIN
+        MENUITEM "Expand All",                  ID_PIECEEDIT_EXPANDALL
+        MENUITEM "Collapse All",                ID_PIECEEDIT_COLLAPSEALL
+    END
+END
+
+IDR_IMPORTLODS MENU 
+BEGIN
+    POPUP "Import LODs"
+    BEGIN
+        MENUITEM "Expand All",                  ID_IMPORTLODS_EXPANDALL
+        MENUITEM "Collapse All",                ID_IMPORTLODS_COLLAPSEALL
+    END
+END
+
+IDR_SOCKET_EDIT MENU 
+BEGIN
+    POPUP "Socket Edit"
+    BEGIN
+        MENUITEM "Center On",                   ID_SOCKETEDIT_LOOKAT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "O",            IDC_LOADMODEL,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDC_SAVE,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_LOD_NUM_TEXT        "LOD %1!d! / %2!d!"
+    IDS_INVALIDMODEL        "Unable to generate LODs.  This model has an edge attached to more than two triangles (on node '%1!s!')."
+    IDS_GENERIC_NUM_STRING  "%1!d!"
+    IDS_TITLE_TEXT          "ModelEdit - %1!s!"
+    IDS_DUPLICATESOCKETNAME "Please enter a unique socket name."
+    IDS_INVALIDNODENAME     "Please enter a valid node name."
+    IDS_VERSION_NUM         "3.2"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDITKEYFRAMESTRING   "Edit tagged keyframe strings\nKeyframe String"
+    ID_SELECTALL            "Select all\nSelect All"
+    ID_TAGALL               "Tag all\nTag All"
+    ID_UNTAGALL             "Untag all\nUntag All"
+    IDS_NODUPLICATECHILDMODELNAMES "Duplicate child model names not allowed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_INVALIDANIMINDEX    "Internal error: invalid anim index."
+    IDS_CANTEDITBASEMODEL   "Animation '%1!s!' is from a base model and cannot be edited from the parent model."
+    IDC_ROTATION_BUTTON     "Rotate around origin.\nRotate"
+    IDS_ADDCHILDMODEL       "Please enter the filename for the child model."
+    IDS_MODELEDIT_CAPTION   "ModelEdit"
+    IDS_CANTADDCHILDMODEL   "ERROR: %1!s!."
+    IDS_ASKSAVERELOAD       "In order for the changes to take effect, the model must be saved and reloaded.  Continue?"
+    IDS_CANT_LOAD_CHILD_MODEL 
+                            "Unable to load child model '%1!s!'.  If you save this model, animation dimensions will be lost."
+    IDS_NEED_TO_CALC_BOUNDING "Recalculate bounding boxes for '%1!s!'?"
+    IDS_CANTLOADCHILDMODEL  "Unable to load '%1!s!'."
+    IDS_ADDEDCHILDSUCCESSFULLY "Added child '%1!s!' successfully."
+    IDS_NOTSKELETAL         "This operation only works on skeletal-animation models."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TREESINVALID        "One or more child model trees are invalid.  Recalculate?"
+    IDS_CANTCREATETREE      "Unable to create tree for model '%1!s!'."
+    IDS_CANTCALCBOUNDRADIUS "Warning: unable to calculate bounding radii."
+    IDS_ENTER_SOCKETNAME    "Please enter the new socket name."
+    IDS_SOCKET_EDIT         "Socket Edit"
+    IDS_RELATION_EDIT       "Relation Edit"
+    IDS_ENTER_UNIQUE_ANIM_NAME 
+                            "%1!s! is not a unique animation name.  Try again?"
+    IDS_ENTER_GLOBAL_RADIUS "Please enter a new global radius.  This radius should enclose ALL animations."
+    IDS_NEWWEIGHTSET        "New Weight Set"
+    IDS_ENTERWEIGHTSETNAME  "Please enter a name for the new weight set."
+    ID_SOLID_ATTACHMENTS    "Draw solid attachments"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUPLICATE_ANIM_NAME "Duplicate animation name: %1!s!. This can cause problems at runtime. Rename?"
+    IDC_CHANGE_FOV          "change the field of view in the render window."
+    IDS_DEFLTALOGFILENAME   "*.txt"
+    EXPORT_PS2_LTB          "create binary version of lta file for the Playstation2 engine"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DEFLTALOGEXTENSION  "*.lta"
+    IDS_LTALOGFILTER        "Text Files(*.txt)|*.txt|All Files(*.*)|*.*||"
+    IDS_LOADMODELFILTER     "Model Files (*.lta;*.ltc)|*.lta;*.ltc|All Files (*.*)|*.*||"
+    IDS_ADDCHILDMODELEXT    "*.lta"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADDCHILDMODELFILTER "Model Files (*.lta;*.ltc)|*.lta;*.ltc|All Files (*.*)|*.*||"
+    IDS_IMPORTFILTER        "Model Files (*.lta;*.ltc)|*.lta;*.ltc|All Files (*.*)|*.*||"
+    IDS_IMPORTDEFEXT        "*.lta"
+    IDS_SAVEASFILTER        "Model Files (*.lta)|*.lta|Compressed Model Files(*.ltc)|*.ltc|All Files (*.*)|*.*||"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHANGE_AMBIENT_COLOR "change Light Source Ambient Color"
+    ID_SET_PROJ_DIR         "sets the project directory root."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CREATE_NULL_LOD      "Creates a null LOD for the selected model piece\nCreate Null LOD..."
+    IDS_ENTER_NULL_LOD_DISTANCE "Enter the distance for the NULL LOD"
+    IDS_ENTER_NULL_LOD_DISTANCE_CAPTION "Enter Distance"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\ModelEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

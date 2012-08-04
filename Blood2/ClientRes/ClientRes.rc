@@ -1,0 +1,1968 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\Shared\ClientRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\Shared\\ClientRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_REG)
+#if defined(APSTUDIO_INVOKED)
+BLOOD2$(_REG)           BITMAP  DISCARDABLE     "bitmap1.bmp"
+#else
+BLOOD2                  BITMAP  DISCARDABLE     "bitmap1.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_ADDON)
+#if defined(APSTUDIO_INVOKED)
+BLOOD2$(_ADDON)         BITMAP  DISCARDABLE     "AddOn.bmp"
+#else
+BLOOD2                  BITMAP  DISCARDABLE     "AddOn.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+NET_FINISHED DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "You have provided all the information necessary to start a mutliplayer game of Blood2.  Click on ""Finished"" to start the game.",
+                    IDC_STATIC,50,10,213,32
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_GAMEDAMAGE DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow falling damage",IDC_FALLDAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,24,100,10
+    COMBOBOX        IDC_HEALRATE,70,64,80,110,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Would you like to allow falling damage?",IDC_STATIC,50,
+                    10,213,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "Which healing rate would you like?",IDC_STATIC,50,50,
+                    213,8
+END
+
+NET_GAMEEND DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTORADIOBUTTON,90,30,
+                    30,10
+    EDITTEXT        IDC_FRAGS,122,29,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTORADIOBUTTON,90,
+                    46,30,10
+    EDITTEXT        IDC_MINUTES,122,45,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "How would you like each level to end?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "frags",IDC_STATIC,157,30,50,8
+    LTEXT           "minutes",IDC_STATIC,157,46,50,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_GAMEITEMS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_AMMO_LEVEL,60,35,80,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_AMMO_RESPAWN,103,52,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_ARMOR_LEVEL,173,35,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ARMOR_RESPAWN,216,52,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_HEALTH_LEVEL,60,95,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_HEALTH_RESPAWN,103,112,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_POWERUPS_LEVEL,173,95,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_POWERUPS_RESPAWN,216,112,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    GROUPBOX        "Ammo",IDC_STATIC,50,20,102,52
+    GROUPBOX        "Armor",IDC_STATIC,161,20,102,52
+    GROUPBOX        "Health",IDC_STATIC,50,80,102,52
+    GROUPBOX        "Powerups",IDC_STATIC,161,80,102,52
+    LTEXT           "What items would you like to make available?",
+                    IDC_STATIC,50,7,213,8
+    RTEXT           "Respawn:",IDC_STATIC,56,54,44,8
+    RTEXT           "Respawn:",IDC_STATIC,169,54,44,8
+    RTEXT           "Respawn:",IDC_STATIC,56,114,44,8
+    RTEXT           "Respawn:",IDC_STATIC,169,114,44,8
+END
+
+NET_JOINHOST DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Join an existing session",IDC_JOIN,"Button",
+                    BS_AUTORADIOBUTTON,90,30,120,10
+    CONTROL         "Host a new session",IDC_HOST,"Button",
+                    BS_AUTORADIOBUTTON,90,45,120,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Would you like to host a new session, or join an existing one?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_NOSESSIONS DIALOG DISCARDABLE  0, 0, 187, 75
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Blood2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",ID_YES,35,38,50,14
+    PUSHBUTTON      "&No",ID_NO,101,38,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,55,173,1
+    CONTROL         "Don't display this message again",IDC_DONTDISPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,173,10
+    LTEXT           "No game sessions were found, would you like to continue looking for game sessions?",
+                    IDC_STATIC,7,7,173,20
+END
+
+NET_PLAYER DIALOG DISCARDABLE  0, 0, 350, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,55,37,79,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_CONFIGS,55,72,79,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Team Blue",IDC_TEAM1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,260,35,70,10
+    CONTROL         "Team Red",IDC_TEAM2,"Button",BS_AUTORADIOBUTTON,260,45,
+                    70,10
+    CONTROL         "Automatic",IDC_AUTOTEAM,"Button",BS_AUTORADIOBUTTON,260,
+                    55,50,10
+    COMBOBOX        IDC_NETCONNECTION,258,82,80,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Limit to",IDC_LIMIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,260,116,34,10
+    EDITTEXT        IDC_FPS,296,115,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,125,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,175,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,293,149,50,14
+    LTEXT           "What player settings would you like?",IDC_STATIC,50,10,
+                    293,8
+    GROUPBOX        "Name",IDC_STATIC,50,25,90,30
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,50,142,
+                    293,1
+    GROUPBOX        "Settings",IDC_STATIC,144,25,105,107
+    GROUPBOX        "Configs",IDC_STATIC,50,60,90,72
+    LTEXT           "Caleb (Normal)",IDC_CHARACTER,151,37,90,8
+    LTEXT           "0",IDC_STRENGTH,201,52,40,8
+    LTEXT           "0",IDC_SPEED,201,72,40,8
+    LTEXT           "0",IDC_RESIST,201,62,40,8
+    LTEXT           "0",IDC_FOCUS,201,82,40,8
+    LTEXT           "",IDC_WEAP1,169,97,72,8
+    LTEXT           "",IDC_WEAP2,169,107,72,8
+    LTEXT           "",IDC_WEAP3,169,117,72,8
+    RTEXT           "Strength:",IDC_STATIC,151,52,42,8
+    RTEXT           "Speed:",IDC_STATIC,151,72,42,8
+    RTEXT           "Resistance:",IDC_STATIC,151,62,42,8
+    RTEXT           "Focus:",IDC_STATIC,151,82,42,8
+    RTEXT           "7-9:",IDC_STATIC,151,117,13,8
+    RTEXT           "4-6:",IDC_STATIC,151,107,13,8
+    RTEXT           "1-3:",IDC_STATIC,151,97,13,8
+    LTEXT           "fps",IDC_STATIC,322,116,20,8
+    GROUPBOX        "Connection Speed",IDC_STATIC,253,71,90,29
+    GROUPBOX        "Frame Rate",IDC_STATIC,253,104,90,28
+    GROUPBOX        "Team",IDC_STATIC,253,25,90,42
+END
+
+NET_SERVICES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SERVICELIST,50,22,213,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Join an existing session",IDC_JOIN,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,70,112,120,10
+    CONTROL         "Host a new session",IDC_HOST,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,70,122,120,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which networking service you would like to use?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "Would you like to host a new session, or join an existing one?",
+                    IDC_JOINHOST_TITLE,50,100,213,8,NOT WS_VISIBLE
+    LTEXT           "Note: When hosting a multiplayer game, it is recommended that you run the stand-alone Blood2 server on a separate machine for improved performance.",
+                    IDC_HOSTNOTE,50,64,213,28,NOT WS_VISIBLE
+END
+
+NET_SESSIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SESSIONLIST,50,22,213,42,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_HOSTNAME,86,85,60,8
+    LTEXT           "",IDC_GAMETYPE,86,95,60,8
+    LTEXT           "",IDC_NUMPLAYERS,86,105,60,8
+    LTEXT           "",IDC_LEVEL,86,115,60,8
+    LISTBOX         IDC_PLAYERLIST,159,84,100,40,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which game session would you like to join?",IDC_STATIC,
+                    50,10,213,8
+    GROUPBOX        "Session Info",IDC_STATIC,50,70,100,60
+    RTEXT           "Host:",IDC_STATIC,54,85,30,8
+    RTEXT           "Type:",IDC_STATIC,54,95,30,8
+    RTEXT           "Players:",IDC_STATIC,54,105,30,8
+    RTEXT           "Level:",IDC_STATIC,54,115,30,8
+    GROUPBOX        "Session Players",IDC_STATIC,154,70,110,60
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_WELCOME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Welcome to the Blood2 Multiplayer Wizard.  This wizard will guide you through the steps necessary to start a multiplayer game of Blood2.",
+                    IDC_STATIC,50,10,213,40
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_GAMELEVELS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_RETAILLIST,50,35,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CUSTOMLIST,50,92,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add >",IDC_ADDRETAIL,142,49,35,14
+    PUSHBUTTON      "< &Remove",IDC_REMOVE,142,77,35,14
+    PUSHBUTTON      "A&dd >",IDC_ADDCUSTOM,142,105,35,14
+    LISTBOX         IDC_GAMELIST,183,35,80,85,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save Levels",IDC_SAVELEVELS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,124,80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which levels would you like to play?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "Retail Levels:",IDC_STATIC,50,25,80,8
+    LTEXT           "Custom Levels:",IDC_STATIC,50,82,80,8
+    LTEXT           "Game Levels:",IDC_STATIC,183,25,80,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_OPTIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MAXPLAYERS,200,37,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PORTNUM,200,53,30,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What server options would you like for this game?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    RTEXT           "How many players would you like to allow?",IDC_STATIC,
+                    57,39,140,8
+    RTEXT           "What port would you like to host on?",IDC_PORTNUMTEXT,
+                    62,55,134,8,NOT WS_VISIBLE
+    GROUPBOX        "Misc",IDC_STATIC,50,25,213,48
+END
+
+NET_SESSIONS_TCPIP DIALOG DISCARDABLE  0, 0, 270, 250
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SESSIONLIST,50,22,213,42,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_PLAYERLIST,159,84,100,40,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_IPLIST,58,150,100,55,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add...",IDC_ADD,165,150,91,15
+    PUSHBUTTON      "&Remove",IDC_REMOVE,165,170,91,15
+    PUSHBUTTON      "R&emove All",IDC_REMOVEALL,165,190,91,15
+    PUSHBUTTON      "< &Back",IDC_BACK,85,229,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,229,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,229,50,14
+    LTEXT           "",IDC_HOSTNAME,86,85,60,8
+    LTEXT           "",IDC_GAMETYPE,86,95,60,8
+    LTEXT           "",IDC_NUMPLAYERS,86,105,60,8
+    LTEXT           "",IDC_LEVEL,86,115,60,8
+    LTEXT           "Which game session would you like to join?",IDC_STATIC,
+                    50,10,213,8
+    GROUPBOX        "Session Info",IDC_STATIC,50,70,100,60
+    RTEXT           "Host:",IDC_STATIC,54,85,30,8
+    RTEXT           "Type:",IDC_STATIC,54,95,30,8
+    RTEXT           "Players:",IDC_STATIC,54,105,30,8
+    RTEXT           "Level:",IDC_STATIC,54,115,30,8
+    GROUPBOX        "Session Players",IDC_STATIC,154,70,110,60
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,205
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,222,
+                    256,1
+    GROUPBOX        "IP Addresses",IDC_STATIC,50,137,213,75
+END
+
+NET_SETTINGS DIALOG DISCARDABLE  0, 0, 250, 155
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,14,22,100,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CONFIGS,14,57,100,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NETCONNECTION,14,92,100,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Team Blue",IDC_TEAM1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,140,23,70,10
+    CONTROL         "Team Red",IDC_TEAM2,"Button",BS_AUTORADIOBUTTON,140,35,
+                    70,10
+    CONTROL         "Automatic",IDC_AUTOTEAM,"Button",BS_AUTORADIOBUTTON,140,
+                    47,70,10
+    CONTROL         "Limit to",IDC_LIMIT,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,136,93,34,10
+    EDITTEXT        IDC_FPS,172,92,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,67,120,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,133,120,50,14
+    CONTROL         "Don't display this dialog again",IDC_DONTDISPLAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,143,236,10
+    GROUPBOX        "Team",IDC_STATIC,129,10,114,65
+    GROUPBOX        "Name",IDC_STATIC,7,10,114,30
+    GROUPBOX        "Config",IDC_STATIC,7,45,114,30
+    GROUPBOX        "Connection Speed",IDC_STATIC,7,80,114,30
+    GROUPBOX        "Frame Rate",IDC_STATIC,129,80,114,30
+    LTEXT           "fps",IDC_STATIC,198,93,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,7,141,236,1
+END
+
+NET_TCPIPADDRESS DIALOG DISCARDABLE  0, 0, 200, 63
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TCP/IP Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IPADDRESS,7,20,186,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,42,50,14
+    LTEXT           "Please enter a TCP/IP address to search for games on:",
+                    IDC_STATIC,7,7,186,8
+END
+
+NET_ADDIP DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IP Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IPADDRESS,7,50,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,39,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,74,50,14
+    LTEXT           "Please enter the IP to add (such as 243.23.4.1).  \n\nIf you want to specify a specific port to look on, add a colon and the port number like this:  243.23.4.1:1532.",
+                    IDC_STATIC,7,7,172,37
+END
+
+NET_GAME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,38,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,78,27,10
+    EDITTEXT        IDC_FRAGS,88,77,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,94,27,10
+    EDITTEXT        IDC_MINUTES,88,93,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "Bloodbath",IDC_BB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,171,77,80,10
+    CONTROL         "Capture the flag",IDC_CTF,"Button",BS_AUTORADIOBUTTON,
+                    171,87,80,10
+    CONTROL         "Teams",IDC_TEAMS,"Button",BS_AUTORADIOBUTTON,171,97,80,
+                    10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What settings would you like for this game session?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Session Name",IDC_STATIC,50,26,213,30
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "frags",IDC_STATIC,120,78,32,8
+    LTEXT           "minutes",IDC_STATIC,120,94,32,8
+    GROUPBOX        "Levels End",IDC_STATIC,50,64,105,50
+    GROUPBOX        "Game Type",IDC_STATIC,163,64,100,50
+END
+
+NET_OPTIONS_TEAMS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,40,140,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,75,140,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What Team-play options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,25,213,30
+    GROUPBOX        "Scoring",IDC_STATIC,50,62,213,30
+END
+
+NET_OPTIONS_CTF DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,35,140,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,70,140,10
+    CONTROL         "Only flag capturing scores points",IDC_ONLYFLAGSCORES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,80,174,10
+    CONTROL         "Use enemy team size as flag score multiplier",
+                    IDC_USETEAMSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    90,193,10
+    EDITTEXT        IDC_FLAGVALUE,113,109,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What CTF-play options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,20,213,30
+    GROUPBOX        "Scoring",IDC_STATIC,50,57,213,75
+    RTEXT           "Flag value:",IDC_STATIC,60,110,50,8
+END
+
+NET_OPTIONS_SOCCER DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,60,35,75,10
+    CONTROL         "Soccer ball skin",IDC_SKIN_SOCCER,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,168,35,80,10
+    CONTROL         "Zombie head skin",IDC_SKIN_ZOMBIE,"Button",
+                    BS_AUTORADIOBUTTON,168,45,80,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,60,80,
+                    140,10
+    CONTROL         "Only scoring goals scores points",IDC_ONLYGOALSCORES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,90,174,10
+    CONTROL         "Use enemy team size as goal score multiplier",
+                    IDC_USETEAMSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    100,193,10
+    EDITTEXT        IDC_GOALVALUE,113,115,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What soccer options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,20,100,40
+    GROUPBOX        "Scoring",IDC_STATIC,50,67,213,65
+    RTEXT           "Goal value:",IDC_STATIC,60,116,50,8
+    GROUPBOX        "Soccer Ball",IDC_STATIC,158,20,105,40
+END
+
+NET_GAME_AO DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,38,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,81,27,10
+    EDITTEXT        IDC_FRAGS,88,80,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,97,27,10
+    EDITTEXT        IDC_MINUTES,88,96,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "Bloodbath",IDC_BB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,171,77,80,10
+    CONTROL         "Capture the flag",IDC_CTF,"Button",BS_AUTORADIOBUTTON,
+                    171,87,80,10
+    CONTROL         "Teams",IDC_TEAMS,"Button",BS_AUTORADIOBUTTON,171,97,80,
+                    10
+    CONTROL         "Soccer",IDC_SOCCER,"Button",BS_AUTORADIOBUTTON,171,107,
+                    80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What settings would you like for this game session?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Session Name",IDC_STATIC,50,26,213,30
+    CONTROL         "BLOOD2",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "frags",IDC_STATIC,120,81,32,8
+    LTEXT           "minutes",IDC_STATIC,120,97,32,8
+    GROUPBOX        "Levels End",IDC_STATIC,50,64,105,55
+    GROUPBOX        "Game Type",IDC_STATIC,163,64,100,55
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+NET_GAMEITEMS DLGINIT
+BEGIN
+    IDC_AMMO_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_ARMOR_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_HEALTH_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_POWERUPS_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+CREDITS                 TEXT    DISCARDABLE     "credits.txt"
+CREDITS_AO              TEXT    DISCARDABLE     "credits_ao.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "NET_FINISHED", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMEDAMAGE", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMEEND", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMEITEMS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_JOINHOST", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_NOSESSIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    "NET_PLAYER", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SERVICES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SESSIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_WELCOME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMELEVELS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SESSIONS_TCPIP", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    "NET_SETTINGS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    "NET_TCPIPADDRESS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    "NET_ADDIP", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    "NET_GAME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_TEAMS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_CTF", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_SOCCER", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAME_AO", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VERSION             "Ver 1.0.192"
+    IDS_SINGLEPLAYER        "singlHI"
+    IDS_MULTIPLAYER         "bathHI"
+    IDS_OPTIONS             "optHI"
+    IDS_LOADCUSTOM          "custHI"
+    IDS_EXIT                "quitHI"
+    IDS_NEWGAME             "newgHI"
+    IDS_LOADGAME            "loadHI"
+    IDS_SAVEGAME            "saveHI"
+    IDS_JOINGAME            "joinHI"
+    IDS_HOSTGAME            "hostHI"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_SELECTSERVICE 
+                            "ERROR - Unable to use the selected network service."
+    IDS_NETERR_GENERIC      "ERROR - Unable to setup the network game."
+    IDS_NETERR_FILLSERVICE  "ERROR - Unable to access the available network services."
+    IDS_NETERR_JOINSESSION  "ERROR - Unable to join the selected game session."
+    IDS_NETERR_HOSTSESSION  "ERROR - Unable to host the game session."
+    IDS_NETERR_INIT         "ERROR - Unable to initialize the networking system."
+    IDS_NETWIZ_DEFAULTSESSIONNAME "Multiplayer Blood2"
+    IDS_NETWIZ_DEFAULTPLAYERNAME "Caleb"
+    IDS_NETWIZ_PLAYERINFONOTSENT "(player info not sent)"
+    IDS_HELP_RUNSPEED       "Multiplies the player's run speed.\n\nDefault value is 1.0."
+    IDS_TITLE_RUNSPEED      "Server Option: Run Speed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INITERR_STATUS      "ERROR - Unable to initialize the Status Bar"
+    IDS_INITERR_COMMLINK    "ERROR - Unable to initialize the Communications Link"
+    IDS_INITERR_MENUS       "ERROR - Unable to initialize the Menus"
+    IDS_INITERR_SFX         "ERROR - Unable to initialize the Special FX Manager"
+    IDS_INITERR_VOICE       "ERROR - Unable to initialize the Voice Manager"
+    IDS_INITERR_CAMERA      "ERROR - Unable to initialize the Player Camera"
+    IDS_CREDITSFONT         "Arial"
+    IDS_NETWIZ_DEFAULTDEMOSESSIONNAME "Multiplayer Blood2 Demo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENERAL_SHUTDOWN    "Server shutdown!"
+    IDS_GENERAL_AUTORUN     "Auto Run "
+    IDS_GENERAL_ON          "ON"
+    IDS_GENERAL_OFF         "OFF"
+    IDS_GENERAL_FOVY        "FOV Y Scale: %1!f!"
+    IDS_GENERAL_FOVX        "FOV X: %1!f! deg."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SETUP               "setHI"
+    IDS_BACK                "back"
+    IDS_HELP                "helpHI"
+    IDS_EDITMACROS          "Edit Chat Macros"
+    IDS_NEWGAME_EASY        "Easy"
+    IDS_NEWGAME_NORMAL      "Normal"
+    IDS_NEWGAME_HARD        "Hard"
+    IDS_NEWGAME_INSANE      "INSANE!"
+    IDS_ADDPLAYER           "%1!s! has joined the game."
+    IDS_REMOVEPLAYER        "%1!s! has left the game."
+    IDS_KILLEDMYSELF        "You killed yourself! Dumbass!"
+    IDS_HEKILLEDME          "%1!s! killed you!"
+    IDS_IKILLEDHIM          "You fragged %1!s!!"
+    IDS_HEKILLEDHIMSELF     "%1!s! killed himself! Bonehead!"
+    IDS_HEKILLEDHIM         "%1!s! fragged %2!s!!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_GENERIC         "ERROR - Unable to continue the game."
+    IDS_ERR_INIT            "ERROR - Unable to initialize the game."
+    IDS_ERR_INITLEVEL       "ERROR - Unable to initialize the level."
+    IDS_ERR_INITMENU        "ERROR - Unable to initialize the menu."
+    IDS_ERR_SETVIDMODE      "ERROR - Unable to set the video mode."
+    IDS_ERR_INITENGINE      "ERROR - Unable to intialize the engine."
+    IDS_ERR_INITRENDERER    "ERROR - Unable to initialize the renderer."
+    IDS_ERR_NORESOURCES     "ERROR - Unable to load the game resources."
+    IDS_ERR_INITSTATUSBAR   "ERROR - Unable to initialize the status bar."
+    IDS_ERR_INITSFXMGR      "ERROR - Unable to initialize the special effects manager."
+    IDS_ERR_INITPLAYERCAMERA "ERROR - Unable to initialize the player camera."
+    IDS_ERR_INTERNAL        "ERROR - An internal malfunction occurred."
+    IDS_ERR_BADFILE         "ERROR - A required file appears to be corrupted."
+    IDS_ERR_OUTOFMEMORY     "ERROR - Out of memory."
+    IDS_ERR_MISSINGRESOURCE "ERROR - A required resource was not found."
+    IDS_ERR_MISSINGFILE     "ERROR - A required file was not found."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_INITVOICEMGR    "ERROR - Unable to initialize the voice manager."
+    IDS_BLOOD2_LANGUAGE     "English"
+    IDS_MENU_VKEY_YES       "89"
+    IDS_MENU_VKEY_NO        "78"
+    IDS_FONT_WRAP_USE_SPACES "1"
+    IDS_NETWIZ_ITEMS_NONE   "None"
+    IDS_NETWIZ_ITEMS_HALF   "Half"
+    IDS_NETWIZ_ITEMS_NORMAL "Normal"
+    IDS_NETWIZ_ITEMS_DOUBLE "Double"
+    IDS_NETWIZ_ITEMS_INSANE "Insane"
+    IDS_NETWIZ_HEAL_NOHEALING "No Healing"
+    IDS_NETWIZ_HEAL_REALLYSLOW "Really Slow"
+    IDS_NETWIZ_HEAL_SLOW    "Slow"
+    IDS_NETWIZ_HEAL_NORMAL  "Normal"
+    IDS_NETWIZ_HEAL_FAST    "Fast"
+    IDS_NETWIZ_HEAL_REALLYFAST "Really Fast"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_TITLE_MAINMENU "MAIN MENU"
+    IDS_MENU_TITLE_OPTIONS  "OPTIONS"
+    IDS_MENU_TITLE_SINGLEPLAYER "SINGLE PLAYER"
+    IDS_MENU_TITLE_BLOODBATH "BLOODBATH"
+    IDS_MENU_TITLE_LOADGAME "LOAD GAME"
+    IDS_MENU_TITLE_SAVEGAME "SAVE GAME"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_MAIN_SINGLEPLAYER "SINGLE PLAYER"
+    IDS_MENU_MAIN_BLOODBATH "BLOODBATH"
+    IDS_MENU_MAIN_OPTIONS   "OPTIONS"
+    IDS_MENU_MAIN_PRIMEGIBS "PRIME GIBS"
+    IDS_MENU_MAIN_CREDITS   "CREDITS"
+    IDS_MENU_MAIN_QUIT      "QUIT"
+    IDS_MENU_BLOODBATH_JOIN "JOIN GAME"
+    IDS_MENU_BLOODBATH_HOST "HOST GAME"
+    IDS_MENU_BLOODBATH_CHARSETUP "CHARACTER SETUP"
+    IDS_MENU_CHARSELECT_CALEB "CALEB"
+    IDS_MENU_CHARSELECT_GABRIELLA "GABRIELLA"
+    IDS_MENU_CHARSELECT_ISHMAEL "ISHMAEL"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_MESSAGE_QUIT   "Are you sure that you want to quit? (Y/N)"
+    IDS_MENU_MESSAGE_ASK_CHANGE_RESOLUTION 
+                            "A screen resolution of 640x480 or greater is required for this option.  Do you want to switch to 640x480 and continue? (Y/N)"
+    IDS_MENU_MESSAGE_RES_CHANGE_ERROR "Unable to change screen resolution."
+    IDS_MENU_MESSAGE_NO_CUSTOM_LEVELS "No custom levels are available."
+    IDS_MENU_MESSAGE_PLEASEWAIT "Please Wait..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_ACTION_FORWARD "Forward"
+    IDS_MENU_ACTION_BACKWARD "Backward"
+    IDS_MENU_ACTION_LEFT    "Left"
+    IDS_MENU_ACTION_RIGHT   "Right"
+    IDS_MENU_ACTION_STRAFE  "Strafe"
+    IDS_MENU_ACTION_STRAFELEFT "Strafe Left"
+    IDS_MENU_ACTION_STRAFERIGHT "Strafe Right"
+    IDS_MENU_ACTION_RUN     "Run"
+    IDS_MENU_ACTION_RUNLOCK "Run Lock"
+    IDS_MENU_ACTION_JUMP    "Jump"
+    IDS_MENU_ACTION_DUCK    "Duck"
+    IDS_MENU_ACTION_TURNAROUND "Turn Around"
+    IDS_MENU_ACTION_FIRE    "Fire"
+    IDS_MENU_ACTION_ALTFIRE "Alt Fire"
+    IDS_MENU_ACTION_NEXTWEAPON "Next Weapon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_CHARSELECT_OPHELIA "OPHELIA"
+    IDS_MENU_DIFFICULTY_GENOCIDE "GENOCIDE"
+    IDS_MENU_DIFFICULTY_HOMICIDE "HOMICIDE"
+    IDS_MENU_DIFFICULTY_SUICIDE "SUICIDE"
+    IDS_MENU_DISPLAY_DETAIL_LOW "DETAIL LEVEL [LOW]"
+    IDS_MENU_DISPLAY_DETAIL_MEDIUM "DETAIL LEVEL [MEDIUM]"
+    IDS_MENU_DISPLAY_DETAIL_HIGH "DETAIL LEVEL [HIGH]"
+    IDS_MENU_JOYSTICK_USE   "USE JOYSTICK"
+    IDS_MENU_KEYBOARD_TURNSPEED "TURN SPEED"
+    IDS_MENU_OPTIONS_DISPLAY "DISPLAY"
+    IDS_MENU_OPTIONS_AUDIO  "AUDIO"
+    IDS_MENU_OPTIONS_CONTROLS "CONTROLS"
+    IDS_MENU_OPTIONS_MOUSE  "MOUSE"
+    IDS_MENU_OPTIONS_JOYSTICK "JOYSTICK"
+    IDS_MENU_OPTIONS_KEYBOARD "KEYBOARD"
+    IDS_MENU_SINGLEPLAYER_CALEB "CALEB"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_SINGLEPLAYER_CHOSEN "CHOSEN"
+    IDS_MENU_SINGLEPLAYER_LOADGAME "LOAD GAME"
+    IDS_MENU_SINGLEPLAYER_SAVEGAME "SAVE GAME"
+    IDS_MENU_SINGLEPLAYER_CUSTOMLEVEL "CUSTOM LEVEL"
+    IDS_MENU_AUDIO_SOUND    "SOUND"
+    IDS_MENU_AUDIO_SOUND_VOLUME "SOUND VOLUME"
+    IDS_MENU_AUDIO_16BIT_SOUND "16 BIT SOUND"
+    IDS_MENU_AUDIO_MUSIC    "MUSIC"
+    IDS_MENU_AUDIO_MUSIC_VOLUME "MUSIC VOLUME"
+    IDS_MENU_MOUSE_SENSITIVITY "SENSITIVITY"
+    IDS_MENU_MOUSE_INPUTRATE "INPUT RATE"
+    IDS_MENU_MOUSE_INVERT_YAXIS "INVERT Y-AXIS"
+    IDS_MENU_MOUSE_MOUSELOOK "MOUSELOOK"
+    IDS_MENU_MOUSE_LOOKSPRING "LOOKSPRING"
+    IDS_MENU_MOUSE_INPUT_NORMAL "INPUT [NORMAL]"
+    IDS_MENU_MOUSE_INPUT_RESPONSIVE "INPUT [RESPONSIVE]"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_MOUSE_INPUT_SMOOTH "INPUT [SMOOTH]"
+    IDS_MENU_DISPLAY_RENDERER "Renderer: [%1!s! - %2!s!]"
+    IDS_MENU_DISPLAY_RESOLUTION "Resolution: [%1!d!x%2!d!x%3!d!]"
+    IDS_MENU_LOADGAME_RESTART "RESTART: %1!s!"
+    IDS_MENU_LOADGAME_QUICKLOAD "QUICKLOAD: %1!s!"
+    IDS_MENU_SINGLEPLAYER_NIGHTMARES "NIGHTMARES"
+    IDS_MENU_JOYSTICK_TURNLEFTRIGHTAXIS "TURN LEFT/RIGHT AXIS"
+    IDS_MENU_JOYSTICK_LOOKUPDOWNAXIS "LOOK UP/DOWN AXIS"
+    IDS_MENU_JOYSTICK_STRAFELEFTRIGHTAXIS "STRAFE LEFT/RIGHT AXIS"
+    IDS_MENU_JOYSTICK_MOVEFORWARDBACKWARDAXIS "MOVE FORWARD/BACKWARD AXIS"
+    IDS_MENU_JOYSTICK_AXIS  "AXIS"
+    IDS_MENU_JOYSTICK_SENSITIVITY "SENSITIVITY"
+    IDS_MENU_JOYSTICK_INVERTAXIS "INVERT AXIS"
+    IDS_MENU_JOYSTICK_DEADZONE "DEAD ZONE"
+    IDS_MENU_JOYSTICK_ANALOG "ANALOG"
+    IDS_MENU_JOYSTICK_CENTEROFFSETCORRECTION "CENTER CORRECTION"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_ACTION_PREVWEAPON "Prev Weapon"
+    IDS_MENU_ACTION_DROPWEAPON "Drop Weapon"
+    IDS_MENU_ACTION_OPEN    "Open"
+    IDS_MENU_ACTION_INVENTORYLEFT "Inventory Left"
+    IDS_MENU_ACTION_INVENTORYRIGHT "Inventory Right"
+    IDS_MENU_ACTION_USEINVENTORY "Use Inventory"
+    IDS_MENU_ACTION_GRAB    "Grab"
+    IDS_MENU_ACTION_MESSAGE "Message"
+    IDS_MENU_ACTION_TAUNT   "Taunt"
+    IDS_MENU_ACTION_LOOKUP  "Look Up"
+    IDS_MENU_ACTION_LOOKDOWN "Look Down"
+    IDS_MENU_ACTION_MOUSEAIMTOGGLE "Mouse Aim Toggle"
+    IDS_MENU_ACTION_CROSSHAIR "Crosshair"
+    IDS_MENU_ACTION_SCREENSHRINK "Screen Shrink"
+    IDS_MENU_ACTION_SCREENENLARGE "Screen Enlarge"
+    IDS_MENU_ACTION_PROXIMITIES "Proximities"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_ACTION_REMOTES "Remotes"
+    IDS_MENU_ACTION_TIME    "Time"
+    IDS_MENU_ACTION_DETONATE "Detonate"
+    IDS_MENU_ACTION_WEAPON0 "Weapon 0"
+    IDS_MENU_ACTION_WEAPON1 "Weapon 1"
+    IDS_MENU_ACTION_WEAPON2 "Weapon 2"
+    IDS_MENU_ACTION_WEAPON3 "Weapon 3"
+    IDS_MENU_ACTION_WEAPON4 "Weapon 4"
+    IDS_MENU_ACTION_WEAPON5 "Weapon 5"
+    IDS_MENU_ACTION_WEAPON6 "Weapon 6"
+    IDS_MENU_ACTION_WEAPON7 "Weapon 7"
+    IDS_MENU_ACTION_WEAPON8 "Weapon 8"
+    IDS_MENU_ACTION_WEAPON9 "Weapon 9"
+    IDS_MENU_KEY_UNASSIGNED "<unassigned>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_FONT_SMALL_NAME "Arial Bold"
+    IDS_MENU_FONT_SMALL_WIDTH "8"
+    IDS_MENU_FONT_SMALL_HEIGHT "13"
+    IDS_MENU_FONT_LARGE_NAME "Arial Bold"
+    IDS_MENU_FONT_LARGE_WIDTH "12"
+    IDS_MENU_FONT_LARGE_HEIGHT "20"
+    IDS_MENU_FONT_TITLE_NAME "Arial Bold"
+    IDS_MENU_FONT_TITLE_WIDTH "15"
+    IDS_MENU_FONT_TITLE_HEIGHT "24"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOADING_MESSAGE_1   "Loading..."
+    IDS_LOADING_MESSAGE_2   "Loading! Please wait..."
+    IDS_LOADING_MESSAGE_3   "Loading..."
+    IDS_LOADING_MESSAGE_4   "Loading! Please wait..."
+    IDS_LOADING_MESSAGE_5   "Loading..."
+    IDS_LOADING_MESSAGE_6   "Loading! Please wait..."
+    IDS_LOADING_MESSAGE_7   "Loading..."
+    IDS_LOADING_MESSAGE_8   "Loading! Please wait..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOADING_MESSAGE_9   "Prepare to die..."
+    IDS_LOADING_MESSAGE_10  "Prepare to be sacrificed..."
+    IDS_LOADING_MESSAGE_11  "Let the mutilations begin..."
+    IDS_LOADING_MESSAGE_12  "Are you ready?"
+    IDS_LOADING_MESSAGE_13  "Are you sweating yet?"
+    IDS_LOADING_MESSAGE_14  "Your shoe is untied!"
+    IDS_LOADING_MESSAGE_15  "Get ready for a bloodbath!"
+    IDS_LOADING_MESSAGE_16  "Take no prisoners!"
+    IDS_LOADING_MESSAGE_17  "Come here often?"
+    IDS_LOADING_MESSAGE_18  "Loading more gore for your pleasure..."
+    IDS_LOADING_MESSAGE_19  "Creating blood soaked bodies..."
+    IDS_LOADING_MESSAGE_20  "Get ready for mass carnage!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TITLE_1      "TUNNEL TROUBLE"
+    IDS_BUMPER_TITLE_2      "ARRIVED ALIVE"
+    IDS_BUMPER_TITLE_3      "BLOODIED, BUT UNDEAD"
+    IDS_BUMPER_TITLE_4      "IT'S SHOWTIME!"
+    IDS_BUMPER_TITLE_5      "HYSTERICAL SOCIETY"
+    IDS_BUMPER_TITLE_6      "FECAL MATTERS"
+    IDS_BUMPER_TITLE_7      "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_8      "ELEVATOR ACTION"
+    IDS_BUMPER_TITLE_9      "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_10     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_11     "HORRIFIC HABITS"
+    IDS_BUMPER_TITLE_12     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_13     "TENSION'S BUILDINGS"
+    IDS_BUMPER_TITLE_14     "PIPE CLEANER"
+    IDS_BUMPER_TITLE_15     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_16     "STATIONS OF THE CRASS"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TITLE_17     "SACRIFICIAL SWITCHBACK"
+    IDS_BUMPER_TITLE_18     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_19     "THE LAST TRAIN TO CARCASSVILLE"
+    IDS_BUMPER_TITLE_20     "BLOOD N' CRYPTS"
+    IDS_BUMPER_TITLE_21     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_22     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_23     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_24     "ANTISOCIAL SECURITY"
+    IDS_BUMPER_TITLE_25     "CABALCO INDUSTRIES"
+    IDS_BUMPER_TITLE_26     "BOUNCING-BABY-BEHEMOTH"
+    IDS_BUMPER_TITLE_27     "ENERGY CRISES"
+    IDS_BUMPER_TITLE_28     "EPILOGUE"
+    IDS_BUMPER_TITLE_29     "THE LURE OF RESEARCH AND DISMEMBERMENT"
+    IDS_BUMPER_TITLE_30     "THE ORIFICES OF CABALCO"
+    IDS_BUMPER_TITLE_31     "SHOOTING GALLERY"
+    IDS_BUMPER_TITLE_32     "CITY OF THE-SOON-TO-BE-DAMNED"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TITLE_33     "ARENA"
+    IDS_BUMPER_TITLE_34     "DA BOSS OF BOSSES"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TEXT_1       "~You just can't sit and enjoy your new issue of Guns N' Gibs while suffering the subway in peace these days. First that ticket guy dared to confiscate yer flask of Ol' Red '99, and then that spineless conductor had to stop the train for an hour just because some snot-nosed brat in a baby carriage rolled onto the tracks! You were about to go up there and give him a piece of his own mind but then you recognized his voice... and realized that your day was about to get... interesting."
+    IDS_BUMPER_TEXT_2       "~That hurt. That hurt a lot. The last time you blacked out, it was after throwing back nineteen consecutive shots of JoJo's Black Label #47, and even then, you think that your physical proximity to the ice-cream stand you blew up had more to do with it. Ah, well. That idiot vendor shouldn't have pissed you off by putting sprinkles on your Killer Kiddy Kone. Speaking of sprinkles, you suspect it would behoove you to find Gideon and liberally sprinkle him on the nearest wall!"
+    IDS_BUMPER_TEXT_3       "~Gideon got away, but he's still on the run. You'll put him to rights and turn out his lights soon enough. Meanwhile, he's left behind some of his rotten friends for you to deal with. These pestilent meat-chunks do remind one of the undead things the Cabal used to churn out in the old days...except for that weird stitching on their chests. Something's different about these particular walking-carcasses. But hey, gibs are gibs."
+    IDS_BUMPER_TEXT_4       "~Well, that was fun... mostly. Gideon wasn't on board, sadly... but you now have a solid idea as to his whereabouts: the cathedral! That's what the sign out front said anyhow, 'OCT. 30, GIDEON DOES HIS DISSERTATION ON THE RITUAL CRIME OF SIN AND HOW TO GET AWAY WITH IT. GET HERE EARLY, AND YOU'LL HEAR HIS MINOR SYMPOSIUM ON A VALVE'S INCREDIBLY ONEROUS HALF-LIFE!' He's not the type to disappoint his fans, so get over there let him know you're in the audience."
+    IDS_BUMPER_TEXT_5       "~CabalCo's Lafayette Museum of Antiquities announces a new featured exhibit: Cults and Rituals. Take a remarkable and informative guided tour through the histories of some of the world's most bizarre fanatical organizations, ranging from the cursed Sect of the Barking Tree Frog to those dreaded fez-wearing Shriners. Also, do be sure to stop and sacrifice a moment of your day to visit our new Animatronic Dark God Exhibit. Scary!"
+    IDS_BUMPER_TEXT_6       "~Man, do you hate sewers! The smell is rather appealing, but all-in-all slogging through the floaters does get old. When you finally get around to ruling the world, it'll be time to declare the place a no-sanitation zone. The perks of an open-sewer society include not having to budget for pipe repairs. The stuff can find its way to the oceans on its own. Either way, even with the local fragrance, you can smell Gideon's nasty stench. The coward's probably headed for a Cabal safehouse."
+    IDS_BUMPER_TEXT_7       "~With humanity breeding like roaches, and over-crowding plaguing the whole planet, disease has become our second biggest business! We're proud to announce that we have a near-monopoly at the Cabalco Center for Disease Management! This state-of-the-art facility has extensive research, dissection, and trauma centers. We assure you that the CDM is on the cutting-edge of disease, plague, and affliction of all types. Whether you're interested in the Ebola virus or just some-plain-old, tasty, syphilis. Our motto? Invest and Infest. Cabalco does the rest!"
+    IDS_BUMPER_TEXT_8       "~Gideon is headed for one of the executive airships docked at the top of the building. It is obviously time to stop pounding back so much charred flesh at the corner Beefy Queen, 'cuz you ain't in proper shape to take the stairs. Interestingly, Gideon has also been taking his fair share of meat at the BQ, and thus, he's had to install express elevators in each of his skyscrapers. Not having to walk up the thousand-plus floors is a kindness if only you could figure out how to turn off that infernal music!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TEXT_9       "~The Cabalco Industries Model 1701D Airship is one of the finest, and certainly, most-versatile, flying vessels ever to grace our soiled-skies. Versatility is the key word here, as our airship can be used simultaneously for both connoisseur-class business travel and military purposes. Why bother to make two trips? Carpet-bomb that nasty little Third-World country, while keeping your most important clients flying in style! Beneath its armored exterior the Cabalco Airship truly has a heart of gold. Spacious seating, relaxing cabins, well-armed stewardesses, and the best nuts in the sky! Fly Cabalco.  Fly in style."
+    IDS_BUMPER_TEXT_10      "~We are going down! Assume Crash Positions! Please bring your seats and tray tables to their upright and locked positions.  Place your head between your own legs. If you are smoking, please put yourself out. Have a nice day and thank you for choosing Cabalco Air."
+    IDS_BUMPER_TEXT_11      "~You won't find any nuns in this cathedral! The resident lurker-from-beyond has warped this place into something more to its liking. You might actually find it habitable yourself, if it was up for sale (at a reasonable price), and didn't come with those annoying Cabal doormen. Ah, well. It's time to clean this place out and find out where Gideon's gone. Maybe you'll find time to get a lovely stone rubbing for that empty wall in your walk-in gun-closet while you're at it."
+    IDS_BUMPER_TEXT_12      "~You are entering the Industrial Sector, be aware that we are currently at Stage Three Ozone Levels and a Stage Four Toxin Warning. Be advised that protective-breathing gear should be worn at all times. Thus you'll find that this is the perfect opportunity to try Cabalco's new-and-improved: Safe Sucks 2!  It's the cheap-and-easy protective gear for all occasions. Please avoid high-danger areas like the out-of-doors. Have a safe visit and a pleasant day."
+    IDS_BUMPER_TEXT_13      "~Trains used to be so much more-gracious. These days it's all one can do to avoid being killed on one. There are very few things that seem to relieve tension better than blowing the living, er...um, bits out of the opposition. These Cabal safehouses look like the epitome of luxury...the stench, the appointments, the rats, the ambience, and the winos.  And speaking of appointments, Gideon should be around here somewhere. That is a rendezvous that ought to be more fun than target practice on winos. Wheeeeee!"
+    IDS_BUMPER_TEXT_14      "~It's clear that the citizens of New Town have a couple of severe problems...they are overfed and they are anal-expulsives. The combination is going to be lethal...for them. From the smell, their pipes could use a good cleaning. That's you, immortal demigod and living high-colonic. It is clearly Gideon's fault that you have fallen to this level. Ankle-deep in feces, as it were. Hmmm. You can add it to his bill and take it out in chunks."
+    IDS_BUMPER_TEXT_15      "~Hungry for more meat? Sure you are. We all are! At Cabalco, we understand meat, so we've developed a new line of products to fulfill all your varied meat needs! Meat In A Can! It's both affordable and delicious! Comes in your favorite regular meat flavors...offal, cattle, foul, swine, goat, and bottom-feeding fish! Or, try out our newest selections! We've recently added a wonderfully yeasty sourdough meat, a fine new fermented-prune meat, and an ever-so-slightly hallucinogenic fungal meat! At a Cabalco Meat Packing Plant we continue to create the foods of the future! Even better we now average more than 82 percent E.Coli free!"
+    IDS_BUMPER_TEXT_16      "~If you're happy and you know it, pop some brains... If you're happy and you know it, slice some veins... If you're happy and you know it, bouncing heads will clearly show it... Nothing like loving one's work. Another unmentionable station? Well, at least this one is more attractive than the last. Time to put the ol' trigger finger to work. You are definitely from the wrong side of these tracks, and as usual, the light at the end of the tunnel just might be a train."
+    IDS_BUMPER_TEXT_17      "~Ha! That bastard Gideon thought he would lose you by pulling the ol' switcheroo. Fat chance, fancy pants! When you catch him he's definitely in store for your own brand of switch. Let's see, you could start by taking his head and changing his view to something a bit more inward looking. You can bet that since he's had his head up there so long, he'll find the perspective familiar. Into the breach, and all that. Well, enough warm thoughts...there's a job at hand and this time that Blue Line is gonna get painted red. Blood red."
+    IDS_BUMPER_TEXT_18      "~Sick of throwing your hard-earned money down the tubes in rent? Of course you are! That's why your friends at Cabalco Home Construction and Real Estate have just finished a darling new subdivision. We know land is expensive and scarce so we went ahead and dumped some fresh loam over that nasty old radioactive/toxic cesspit at Love Canal! A new house from Cabalco has never been so cheap! And, if you're planning a family, buy big! Please disregard any rumors you've heard about infertility, general malaise, constant vomiting, the ubiquitous 'three-headed love child' or any other such nonsense. Here at Cabalco we care and our housing prices are more than fair!"
+    IDS_BUMPER_TEXT_19      "~Less than impressed by the local transit system's safety record? There's only one thing to do! Destroy it! That's right, tear the mutha down. Ticket? Hell no! The only ticket you need is your boomstick. And this ticket is going to wreck havoc on the opposition. Joy in one's work is definitely a plus. Maybe it would be wise to take a moment to get out and get some stale air this time. The last couple of rides have been a little too 'close.'"
+    IDS_BUMPER_TEXT_20      "~Now this is more like it. Feels just like home. Makes one want to lie down and take the long sleep. Being immortal just ain't what it's cracked up to be. Far more effort than one could have expected. At least you get to help others attain what you never can. Even better, you can offer a faster assist than they could ever imagine. That's you, always kindness and charitable thoughts. Time to speed their passage. Come out, come out wherever you are...you are about to be, ahem, chosen."
+    IDS_BUMPER_TEXT_21      "~Now entering New Town, home of Cabalco Industries' immense corporate Headquarters! Riots and civil uprisings are rarely a problem anymore! Overlooking the lovely burning river of White Rock, New Town is the near-perfect picture of a city only gently-oppressed by a giant, amoral megacorp! Sure, we admit that there are still the occasional ritual sacrifices, or kidnappings-by-dark, and yes, sometimes people disappear never to be seen or heard from again, but the streets are mostly safe and clean, and our economy is on the rise with only a few minor hiccups. We're New Town! Cabalco is our friend!"
+    IDS_BUMPER_TEXT_22      "~ Worried about your future? Did the other students terrorize you at your high school? Are you in need of a truly challenging career? Then join the ranks of Cabalco's Security Division. You don't know what a challenging day is...unless you've spent it naked-and-sweltering, inside a small, dark, nearly-airless-metal-box with only your feeble grip on sanity, and a couple O' dozen hungry rats to keep you company! But enough about me! Our intense regimen of general-degradation and sack-beatings will make you feel like a new man, or woman! At the end of our 12 step program you'll be handed a big gun and given daily life-and-death control over others! That'll show those small-minded bastards you went to school with!"
+    IDS_BUMPER_TEXT_23      "~ You've reached Cabalco's top-secret High Temple. We're not here at the moment, but please feel free to give blood, preferably human or goat, at the door. If this is an emergency, please light 69 white candles, scratch a large pentagram into the concrete floor with your fingernails, and dance, skyclad within it, after painting yourself with the blood of your torn and stumpy fingers while chanting to our dark god. An insidious servant of the underworld will be with you shortly. Thank you for your patience!"
+    IDS_BUMPER_TEXT_24      "~Welcome to Checkpoint Gnarly. Ha. The security around here looks a little overly...fanatical. There's got to be an alternate entrance to the Cabalco HQ. In the meantime, it might be wise to do a bit of cleansing, and take down some unworthy opponents. Sometimes you have to make a bit of a mess to get a place clean. You're just glad that you don't have to get those gray-matter stains off of the walls. Those have to be a serious drag when they've had time to dry. Time to make your own 'unlimited-access' pass."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPER_TEXT_25      "~Looking for work? Cabalco could always use an extra body! We're constantly hiring, and boy do we offer perks. You'll get to work in a vast new skyscraper, we've got soda and coffee machines on every floor, our, ahem, medical-treatment-plan is out of this world. At Cabalco, even if you are at the bottom rung looking up, we promise that you'll get an underling in no time! Our, er, Human Resources Department doesn't put you through any of the onerous stuff that those other corporations require. Inexperienced? No problem! We don't even require a resume (much less an application). Just show up and you are ours, I mean, um, you get the job. Cabalco is an unequal opportunity employer."
+    IDS_BUMPER_TEXT_26      "You've got to hand it to Cabalco.  Their designer certainly went all out on this particular piece O' property. There are wide-sweeping staircases, some strange-but-lovely art, some exceptionally fun cubicles, and more stuff to blow up than one could shake a boomstick at. All-in-all a nice spot. It could use some torching up.  But, the various Cultists, Drudge-types, Shikari, and Fanatics are gonna have to go. Go to hell. Do not pass go. Do not collect $200.00. The rather cuddly-looking Behemoth might be a nice addition to your own personal pet population. But sadly, it isn't house-trained."
+    IDS_BUMPER_TEXT_27      "~Time to shut these bastards down. Pull their plug. Stop the juice. No more AC! Hell, no more DC! Welcome to the power station... you are grid-failure incarnate. The excitement just sizzles around here. Sizzles so much that you could be quick-fried to a crackly crunch, and after your recent train experiences you have very little interest in becoming a conductor. Time to do what you do best... break stuff. And what better way to start than with fanatical types. Get to work O' circuit breaker."
+    IDS_BUMPER_TEXT_28      "~Does Caleb really close the rifts? Does Ophelia get her two-minutes of gift? What the heck actually happened to Gabriel... er, Gabriella? What if Ishamel can't get home? And, where did he get those tatoos?|~Tune in next time on:  As 'It burns, it burns.' Enjoy these answers and more soon... we promise. In the meantime, get into some major BLOODBATH!!"
+    IDS_BUMPER_TEXT_29      "~Ah, science! You fondly remember the first time you got to dissect something. You were all aquiver with excitement as you began to flay the skin off the fetid corpse. The muscle tissues danced when you applied just the tiniest bit of voltage, and boy were you surprised when you opened the bowels by accident! What a gas! Well, enough daydreaming...time to get to it and find the entrance to Cabalco's R&D."
+    IDS_BUMPER_TEXT_30      "~There's nothing like a very hostile corporate takeover bid to invigorate one's senses! The game of hunter and hunted has always had major appeal. This is starting to get fun. Gideon is soon to run out of hiding places. Time to tree the rat, as it were. A bit of janitorial work is at hand. Cleaning out offices has never been so much fun! Now where was that elevator to the rooftop?"
+    IDS_BUMPER_TEXT_31      "~There's that clay pigeon Gideon! That fairly rolls off the tongue: Pigeon Gideon. WooooHooooo! Skeet shooting is one of your favorite games. This is going to be a blast! For him. Pull! Bang. Pull! Bang. Pull! No more running Gideon. Your flight is over, schmuck. You're outta luck."
+    IDS_BUMPER_TEXT_32      "~It's a battle to the death. Preferably someone else's. Gideon's puppet strings can no longer be pulled and the puppeteer's comeuppance has just come up. Ancient One? Are you listening? Then hear this..."
+    IDS_BUMPER_TEXT_33      "~There's Something Different: You can't quite put your trigger-finger on it. Your old pals are looking rather peaked, maybe even sickly. What the heck possessed them to climb into those coffins? Hmmm. Ah, well. Nothing a bit of supplementary lead won't cure...lead to the head, and put 'em to bed. Nighty-night, fellow Chosen.  Poisonous dreams."
+    IDS_BUMPER_TEXT_34      "~In the words of some long forgotten and not-so-long-winded poet: 'Kill it!'"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_TITLE_1_1 "Kill Gideon!"
+    IDS_OBJECTIVE_TITLE_2_1 "Pursuit"
+    IDS_OBJECTIVE_TITLE_2_2 "Feeling lost?"
+    IDS_OBJECTIVE_TITLE_2_3 "Jumping is your friend!"
+    IDS_OBJECTIVE_TITLE_2_4 "Good work, Sherlock."
+    IDS_OBJECTIVE_TITLE_2_5 "Eric's Crazy Firing Range"
+    IDS_OBJECTIVE_TITLE_2_6 "Phone's ringin'..."
+    IDS_OBJECTIVE_TITLE_2_7 "Hmm..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_1_1       "The daily commute is about to get a little bloody."
+    IDS_OBJECTIVE_2_1       "Gideon's ruined your commute, and now he's running like a coward. Are you gonna stand for that? Follow him to the museum and give him what he deserves. Look out for his cronies along the way."
+    IDS_OBJECTIVE_2_2       "There's an alley nearby that would make a great shortcut to the museum. Might take some exploration to find it, though."
+    IDS_OBJECTIVE_2_3       "The trashcans on the opposite ledge contain some goodies. Try to jump over there and get 'em! (Jumping while in run mode will lengthen your jump.)"
+    IDS_OBJECTIVE_2_4       "Your jumping skills paid off! You found a flashlight. Locate it in your inventory and try it out. It will come in handy when you come across a dark area."
+    IDS_OBJECTIVE_2_5       "Try out this Mac-10 on those targets. Notice how you get a more precise shot with the alternate fire mode. Most weapons in Blood 2 have an ""alt-fire."""
+    IDS_OBJECTIVE_2_6       "Answer the phone by pressing your use key on it. Many objects in Blood 2 can be activated with your use key."
+    IDS_OBJECTIVE_2_7       "That looks like the alley you need! Seems you'll have to do some skilled jumping to get up there."
+    IDS_OBJECTIVE_2_8       "The museum lies straight through this passage, but it looks like the City has been thoughtful enough to block your way with dumpsters. This will take some tricky moves."
+    IDS_OBJECTIVE_2_B_1     "Gideon's escaped through the Laundro-Hut. Grab your linen and head on down!"
+    IDS_OBJECTIVE_2_C_1     "Find your way to the Cathedral. Watch out for Gideon's minions, and worse..."
+    IDS_OBJECTIVE_3_1       "Gideon's around here somewhere. The Cabal has this place locked up tight, though. Watch out for dangerous security measures."
+    IDS_OBJECTIVE_3_2       "Gideon's Singularity Gun had an interesting side-effect. Instead of destroying you, it brought back Gabriel. Gideon's on the run again, though. No time to waste with old friends now."
+    IDS_OBJECTIVE_4_1       "Rumor has it there's an underground entrance to a Cabalco installation nearby. You'd bet your last shotgun shell Gideon's headed there."
+    IDS_OBJECTIVE_5_1       "Blast your way through and find some buttons to push!"
+    IDS_OBJECTIVE_5_2       "The conveyor belt is now safe to crawl through."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_TITLE_2_8 "What is this, the freakin' Olympics?"
+    IDS_OBJECTIVE_TITLE_2_B_1 "Laundry Day"
+    IDS_OBJECTIVE_TITLE_2_C_1 "An Unholy Crusade"
+    IDS_OBJECTIVE_TITLE_3_1 "But is it Art?"
+    IDS_OBJECTIVE_TITLE_3_2 "Time to Leave"
+    IDS_OBJECTIVE_TITLE_4_1 "Steam Cleanin'"
+    IDS_OBJECTIVE_TITLE_5_1 "Run 'N Gun"
+    IDS_OBJECTIVE_TITLE_5_2 "Duck 'N Crawl"
+    IDS_OBJECTIVE_TITLE_5_3 "Hunt 'N Kill"
+    IDS_OBJECTIVE_TITLE_5_4 "Useless Lifts"
+    IDS_OBJECTIVE_TITLE_5_5 "Use the CRU!"
+    IDS_OBJECTIVE_TITLE_5_6 "Almost there..."
+    IDS_OBJECTIVE_TITLE_5_B_1 "Prophets of Doom"
+    IDS_OBJECTIVE_TITLE_6_1 "Stowaway"
+    IDS_OBJECTIVE_TITLE_6_B_1 "Hindenburg it!"
+    IDS_OBJECTIVE_TITLE_6_B_2 "Get the hell outta here!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_5_3       "You need to find a way to the next floor."
+    IDS_OBJECTIVE_5_4       "Looks like it's time to find an alternate route!"
+    IDS_OBJECTIVE_5_5       "The CRU keycard will let you activate the CRU."
+    IDS_OBJECTIVE_5_6       "There should be an express elevator to the roof nearby."
+    IDS_OBJECTIVE_5_B_1     "One of Gideon's personal bodyguards is near. You'll have to get through him if you want a shot at the Big Cheese."
+    IDS_OBJECTIVE_6_1       "You never liked flying. Better get to the front compartment before you get airsick."
+    IDS_OBJECTIVE_6_B_1     "This bird needs to be grounded. The self-destruct button should be on the bridge."
+    IDS_OBJECTIVE_6_B_2     "You've done it, the ship is doomed. Now get out of here before it takes you with it! You should be able to escape through the bomb bay."
+    IDS_OBJECTIVE_7_1       "Yep, this place could use a good exorcism! Maybe you'll also find out more about what Gideon's up to."
+    IDS_OBJECTIVE_8_1       "The train is out of control, take it over."
+    IDS_OBJECTIVE_9_1       "Find Gideon in the condemned Cabal safehouse."
+    IDS_OBJECTIVE_9_2       "This entire section of the city is overrun, and the only way out was through the subway, which is now destroyed.  Use the basement entrance in the alleyway nearby to get away."
+    IDS_OBJECTIVE_9_3       "You've been setup!  There are surely several squads of Cabal fanatics descending on you at this very moment.  Get back to the street."
+    IDS_OBJECTIVE_10_1      "The Cabal has turned this place into an ambush. Try to get through alive."
+    IDS_OBJECTIVE_11_1      "Turn this meat packing plant into a slaughterhouse!"
+    IDS_OBJECTIVE_11_2      "Activating the grinder opened the conveyor door.  Get on to the conveyor and move through the grinder to go forward."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_11_3      "Get back to the killing!"
+    IDS_OBJECTIVE_12_1      "The subway access is blocked.  Find the Downtown Express tunnel."
+    IDS_OBJECTIVE_12_2      "Find the Blue Line subway terminal to escape from this part of the city."
+    IDS_OBJECTIVE_12_3      "Find a way inside the station."
+    IDS_OBJECTIVE_12_B_1    "Blue Line Subway access is now open.  Find it and get out!"
+    IDS_OBJECTIVE_13_1      "Look out for the train."
+    IDS_OBJECTIVE_13_2      "Find an alternate route to the subway station."
+    IDS_OBJECTIVE_14_1      "This is the wrong train.  Get to the one travelling in front of this one."
+    IDS_OBJECTIVE_15_1      "Make your way through the Saqqara underground."
+    IDS_OBJECTIVE_16_1      "The manual override has lowered the bridge.  Now to find your way back to it."
+    IDS_OBJECTIVE_16_2      "Find a way to lower the bridge and get across.  Be careful though, this place is crawling with Cabalco vermin."
+    IDS_OBJECTIVE_17_1      "Looks like this is the only way into the Cabal Headquarters.  Try and make your way past the security gates without too much carnage."
+    IDS_OBJECTIVE_18_1      "Ophelia has vanished into a rift along with Gideon.  Perhaps they are near by,but theres really no telling.  Just dont let yourself become the next sacrifice."
+    IDS_OBJECTIVE_19_1      "The door ahead leads to Research and Development. That just might be the place where you can find that Singularity Generator everyone is talking about. Find a way to disable the security system."
+    IDS_OBJECTIVE_19_2      "Gideon has to be around here somewhere.  Safest place for him is probably the furthest away from you.  This is gonna be bloody, hope you brought a bucket and a mop."
+    IDS_OBJECTIVE_19_B_1    "It should be possible to gain access to Research and Development now.  Head on over and see what develops."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_TITLE_7_1 "Abandon Hope, Ye Who Enter Here"
+    IDS_OBJECTIVE_TITLE_8_1 "Take the Train!"
+    IDS_OBJECTIVE_TITLE_9_1 "The chase continues!"
+    IDS_OBJECTIVE_TITLE_9_2 "Escape!"
+    IDS_OBJECTIVE_TITLE_9_3 "Ambush!"
+    IDS_OBJECTIVE_TITLE_10_1 "Trouble Ahead"
+    IDS_OBJECTIVE_TITLE_11_1 "Shut it down!"
+    IDS_OBJECTIVE_TITLE_11_2 "Time to get bloody!"
+    IDS_OBJECTIVE_TITLE_11_3 "Killin' time!"
+    IDS_OBJECTIVE_TITLE_12_1 "Take the Express!"
+    IDS_OBJECTIVE_TITLE_12_2 "Find the Subway!"
+    IDS_OBJECTIVE_TITLE_12_3 "Horlock's Station"
+    IDS_OBJECTIVE_TITLE_12_B_1 "Take the Blue Line"
+    IDS_OBJECTIVE_TITLE_13_1 "Uh-oh"
+    IDS_OBJECTIVE_TITLE_13_2 "Find the subway!"
+    IDS_OBJECTIVE_TITLE_14_1 "Wrong Train!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_19_C_1    "Not this place again!!!!  Welp maybe Gideon is around here somewhere.  His best escape route would have been the elevators.  Well what are you waiting for?  Go put the smack down."
+    IDS_OBJECTIVE_20_1      "The controls for the security system are in Sector 4 of the Powerstation.  You know what to do once you find them.  Dont be suprised if you run into some of the Cabal forces down here."
+    IDS_OBJECTIVE_21_1      "Time to do some research of your own.  Find the wacky scientist and he just might tell you where he keeps that Singularity Generator."
+    IDS_OBJECTIVE_22_1      "Getting close to the top of this building.  Gideon is running out of places to hide.  Who knows, he could be hiding under a desk.  Better blow everything up to find out!!!!"
+    IDS_OBJECTIVE_24_1      "Find Gideon and the portal to the Ancient One."
+    IDS_NM_OBJECTIVE_1_1    "Navigate the ice to reach the Cabal Grounds.  Be careful, the water is far too cold to enter."
+    IDS_NM_OBJECTIVE_1_2    "Find your way through this maze and move on to the Cabal Cemetery."
+    IDS_NM_OBJECTIVE_1_3    "Send the Cabal followers into the light."
+    IDS_NM_OBJECTIVE_1_4    "The way out of the maze is locked.  Perhaps the tower over-looking the garden maze holds the answer."
+    IDS_NM_OBJECTIVE_2_1    "Find a way into the house and make your way to the ATTIC.  Once you find the photo book, make sure it is destroyed."
+    IDS_NM_OBJECTIVE_3_1    "Time to give up the JoJo act and get on with world conquest. You'll have to get past your captors first, though."
+    IDS_NM_OBJECTIVE_5_1    "You must find your way out of this place.  All this religious stuff is giving you the creeps."
+    IDS_NM_OBJECTIVE_5_2    "This town ain't big enough for anyone!  Kill 'em all!"
+    IDS_NM_OBJECTIVE_6_1    "Looks like the Nightmare wants you to meet some of his pals first..."
+    IDS_NM_OBJECTIVE_6_2    "A new path has been opened. Find it, and follow it to the final battle..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CTF_GRABBED         "You have the other team's flag!"
+    IDS_CTF_RETURNED        "You returned your team's flag to it's base!"
+    IDS_CTF_DROPPED         "You dropped the flag!"
+    IDS_CTF_CAPTURED_1      "%%s captured the flag for %%s!"
+    IDS_CTF_CAPTURED_2      "%%s captured the flag!"
+    IDS_CTF_CAPTURED_3      "You captured the other team's flag!"
+    IDS_ADDPLAYERTEAM       "%1!s! has joined the game on %2!s!."
+    IDS_TEAM1NAME           "Team Blue"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TEAM2NAME           "Team Red"
+    IDS_CTF_RETURNYOURFLAG  "Your flag must also be at your base!"
+    IDS_EDGEOFDEATH         "You are on the edge of death."
+    IDS_MP_CHANGINGLEVELS   "End of level signaled.  Switching to next level..."
+    IDS_MESSAGE_INVALID3DSOUNDPROVIDER "The 3D sound provider is invalid."
+    IDS_MESSAGE_SOUNDERROR  "Unable to initialize sounds."
+    IDS_BOOTED              "You have been booted from the server by the host."
+    IDS_SERVERSHUTDOWN      "The server has been shutdown."
+    IDS_SERVERDISCONNECT    "You have been disconnected from the server."
+    IDS_SOCCER_GOAL_1       "%%s scored a goal for %%s!"
+    IDS_SOCCER_GOAL_2       "%%s scored a goal!"
+    IDS_SOCCER_GOAL_3       "You scored a goal!"
+    IDS_SOCCER_GOAL_4       "You scored in the wrong goal!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OBJECTIVE_TITLE_15_1 "Escape!"
+    IDS_OBJECTIVE_TITLE_16_1 "The way is clear"
+    IDS_OBJECTIVE_TITLE_16_2 "Nearing Cabalco HQ"
+    IDS_OBJECTIVE_TITLE_17_1 "Cabalco HQ Entrance"
+    IDS_OBJECTIVE_TITLE_18_1 "Where'd they go?"
+    IDS_OBJECTIVE_TITLE_19_1 "R 'n D Entrance"
+    IDS_OBJECTIVE_TITLE_19_2 "Clean up time"
+    IDS_OBJECTIVE_TITLE_19_B_1 "Play it again Sam"
+    IDS_OBJECTIVE_TITLE_19_C_1 "Oh no... not again"
+    IDS_OBJECTIVE_TITLE_20_1 "Shut it down!"
+    IDS_OBJECTIVE_TITLE_21_1 "Show me the power!"
+    IDS_OBJECTIVE_TITLE_22_1 "Where is that bastard?"
+    IDS_OBJECTIVE_TITLE_24_1 "Beyond The Rift"
+    IDS_NM_OBJECTIVE_TITLE_1_1 "Ice Cold"
+    IDS_NM_OBJECTIVE_TITLE_1_2 "Escape the Maze"
+    IDS_NM_OBJECTIVE_TITLE_1_3 "Restless Spirits"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_1          "Let The Bloodbath Begin!"
+    IDS_THEVOICE_2          "May The Bloodbath Continue!"
+    IDS_THEVOICE_3          "Determine The Master Of The Bloodbath"
+    IDS_THEVOICE_4          "The Carnage Continues!"
+    IDS_THEVOICE_5          "Let The Bloodbath Start!"
+    IDS_THEVOICE_6          "May The Killing Continue"
+    IDS_THEVOICE_7          "Begin The Bloodbath!"
+    IDS_THEVOICE_8          "Bloodbath, My Children!"
+    IDS_THEVOICE_10         "Let The BloodFeud Begin!"
+    IDS_THEVOICE_11         "May The BloodFeud Continue!"
+    IDS_THEVOICE_12         "Determine The Masters Of The BloodFeud"
+    IDS_THEVOICE_13         "The Carnage Continues!"
+    IDS_THEVOICE_14         "Let The BloodFeud Start!"
+    IDS_THEVOICE_15         "May The Killing Continue"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_16         "Begin The BloodFeud!"
+    IDS_THEVOICE_17         "BloodFeud, My Children!"
+    IDS_THEVOICE_20         "Maximum Bloodshed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_100        "Destroyed"
+    IDS_THEVOICE_101        "Hosed"
+    IDS_THEVOICE_102        "Humiliated"
+    IDS_THEVOICE_103        "Toasted"
+    IDS_THEVOICE_104        "Sent to hell"
+    IDS_THEVOICE_105        "Pass the chili"
+    IDS_THEVOICE_106        "Punishment delivered"
+    IDS_THEVOICE_107        "Bobbetttized!"
+    IDS_THEVOICE_108        "Stiffed"
+    IDS_THEVOICE_109        "He shoots! He scores!"
+    IDS_THEVOICE_110        "Spillage"
+    IDS_THEVOICE_111        "Sprayed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_112        "Dog meat"
+    IDS_THEVOICE_113        "Bye, bye, now"
+    IDS_THEVOICE_114        "Ripped 'em loose"
+    IDS_THEVOICE_115        "Beaten like a kirk"
+    IDS_THEVOICE_116        "Whipped and creamed"
+    IDS_THEVOICE_117        "Snuffed"
+    IDS_THEVOICE_118        "Spleened"
+    IDS_THEVOICE_119        "Vaporized!"
+    IDS_THEVOICE_120        "Excellent!"
+    IDS_THEVOICE_121        "Excellent!"
+    IDS_THEVOICE_122        "%%s Sodomized %%s"
+    IDS_THEVOICE_123        "%%s Gave %%s Anal Justice"
+    IDS_THEVOICE_124        "%%s Shat Upon %%s"
+    IDS_THEVOICE_125        "%%s Cavity Searched %%s"
+    IDS_THEVOICE_126        "%%s Gave %%s The Lickety Split"
+    IDS_THEVOICE_127        "%%s Whipped %%s’s Cream"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_128        "%%s Fed %%s Some Chunky Man Chowder!"
+    IDS_THEVOICE_129        "%%s Fed %%s Some Chunky Woman Chowder!"
+    IDS_THEVOICE_130        "%%s slagged %%s"
+    IDS_THEVOICE_131        "%%s annihilated %%s"
+    IDS_THEVOICE_132        "%%s sterilized %%s"
+    IDS_THEVOICE_133        "%%s brained %%s"
+    IDS_THEVOICE_134        "%%s stained the floor with %%s"
+    IDS_THEVOICE_135        "%%s squashed %%s like a bug"
+    IDS_THEVOICE_136        "%%s did a dance in %%s's sphincter"
+    IDS_THEVOICE_137        "%%s smacked %%s like a bad child"
+    IDS_THEVOICE_138        "%%s greased %%s like a dry phallus"
+    IDS_THEVOICE_139        "%%s Obliterated %%s"
+    IDS_THEVOICE_140        "%%s gutted %%s like a fish"
+    IDS_THEVOICE_141        "%%s terminated %%s"
+    IDS_THEVOICE_142        "%%s eviscerated %%s"
+    IDS_THEVOICE_143        "%%s snuffed %%s like a candle"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_144        "%%s whupped %%s like a rented mule"
+    IDS_THEVOICE_145        "%%s boned %%s like a chicken breast"
+    IDS_THEVOICE_146        "%%s spanked %%s like a monkey"
+    IDS_THEVOICE_147        "%%s slapped %%s down"
+    IDS_THEVOICE_148        "%%s extinguished %%s"
+    IDS_THEVOICE_149        "%%s roasted %%s like a loin"
+    IDS_THEVOICE_150        "%%s disemboweled %%s"
+    IDS_THEVOICE_151        "%%s crushed %%s like a grape"
+    IDS_THEVOICE_152        "%%s molested %%s’s corpse"
+    IDS_THEVOICE_153        "%%s impaled %%s with a middle digit"
+    IDS_THEVOICE_154        "%%s mutilated %%s"
+    IDS_THEVOICE_155        "%%s OJ’d %%s"
+    IDS_THEVOICE_156        "%%s interned %%s like a Slick Willy"
+    IDS_THEVOICE_157        "%%s penetrated %%s violently"
+    IDS_THEVOICE_158        "%%s shanked %%s like an inmate"
+    IDS_THEVOICE_159        "%%s smoked %%s like a carp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_160        "%%s skidmarked %%s on the floor"
+    IDS_THEVOICE_161        "%%s lobotomized %%s"
+    IDS_THEVOICE_162        "%%s dogged %%s"
+    IDS_THEVOICE_163        "%%s toasted %%s like a marshmallow"
+    IDS_THEVOICE_164        "%%s made %%s roadkill"
+    IDS_THEVOICE_165        "%%s pimped %%s"
+    IDS_THEVOICE_166        "%%s gargled %%s’s remains"
+    IDS_THEVOICE_167        "%%s gagged %%s with pleasure"
+    IDS_THEVOICE_168        "%%s shredded %%s like a White House document"
+    IDS_THEVOICE_169        "%%s busted down %%s and called him Debbie"
+    IDS_THEVOICE_170        "%%s busted down %%s and called her Debbie"
+    IDS_THEVOICE_171        "%%s executed %%s"
+    IDS_THEVOICE_172        "%%s fed it to %%s"
+    IDS_THEVOICE_173        "%%s mashed %%s like a moldy potato"
+    IDS_THEVOICE_174        "%%s nutted %%s"
+    IDS_THEVOICE_175        "%%s gave %%s the pink slip"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_176        "%%s barbecued %%s like a suckling pig"
+    IDS_THEVOICE_177        "%%s deballed %%s"
+    IDS_THEVOICE_178        "%%s neutered %%s"
+    IDS_THEVOICE_179        "%%s collected %%s like a bad debt"
+    IDS_THEVOICE_180        "%%s Said Bye-Bye Now to %%s"
+    IDS_THEVOICE_181        "%%s gave %%s anal leakage like a fat free chip"
+    IDS_THEVOICE_182        "%%s exploited %%s’s lack of prowess"
+    IDS_THEVOICE_183        "%%s sliced %%s"
+    IDS_THEVOICE_184        "%%s diced %%s"
+    IDS_THEVOICE_185        "%%s pummeled %%s like a side of beef"
+    IDS_THEVOICE_186        "%%s gave %%s a dishonorable discharge"
+    IDS_THEVOICE_187        "%%s dosed %%s like a venereal disease"
+    IDS_THEVOICE_188        "%%s bushwhacked %%s"
+    IDS_THEVOICE_189        "%%s worked %%s like a nickel prostitute"
+    IDS_THEVOICE_190        "%%s gave %%s a colon-cleansing"
+    IDS_THEVOICE_191        "%%s membered %%s like a freemason"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_192        "%%s made sure %%s sucked it down"
+    IDS_THEVOICE_193        "%%s gave %%s oral redemption"
+    IDS_THEVOICE_194        "%%s gave %%s an oral apocalypse"
+    IDS_THEVOICE_195        "%%s danced in %%s's mouth"
+    IDS_THEVOICE_196        "%%s showed %%s his mortality"
+    IDS_THEVOICE_197        "%%s showed %%s her mortality"
+    IDS_THEVOICE_198        "%%s gave %%s a rectal examination"
+    IDS_THEVOICE_199        "%%s herniated %%s without the cough"
+    IDS_THEVOICE_200        "%%s circumcised %%s with an unclean tool"
+    IDS_THEVOICE_201        "%%s decaffeinated %%s like a bad cup of coffee"
+    IDS_THEVOICE_202        "%%s jacked %%s’s beanstalk"
+    IDS_THEVOICE_203        "%%s pissed in %%s’s grave"
+    IDS_THEVOICE_204        "%%s FUBAR’d %%s"
+    IDS_THEVOICE_205        "%%s gave %%s proper payback"
+    IDS_THEVOICE_206        "%%s ventilated %%s"
+    IDS_THEVOICE_207        "%%s mangled %%s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_208        "%%s plastered %%s like a bad wall"
+    IDS_THEVOICE_209        "%%s decimated %%s"
+    IDS_THEVOICE_210        "%%s Read %%s's Obituary"
+    IDS_THEVOICE_211        "%%s Demonstrated The Ankle Grab for %%s"
+    IDS_THEVOICE_212        "%%s Cancelled %%s like a stamp"
+    IDS_THEVOICE_213        "%%s ripped %%s like a scrotum"
+    IDS_THEVOICE_214        "%%s decorated with %%s's Giblets"
+    IDS_THEVOICE_215        "%%s baked %%s’s cookies."
+    IDS_THEVOICE_216        "%%s showed %%s the anger"
+    IDS_THEVOICE_217        "%%s showed %%s the love"
+    IDS_THEVOICE_218        "%%s showed %%s the tears"
+    IDS_THEVOICE_219        "%%s showed %%s the humiliation"
+    IDS_THEVOICE_220        "%%s showed %%s the member"
+    IDS_THEVOICE_221        "%%s showed %%s the trauma"
+    IDS_THEVOICE_222        "%%s showed %%s the blood"
+    IDS_THEVOICE_223        "%%s showed %%s the brutality"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_224        "%%s showed %%s the butchery"
+    IDS_THEVOICE_225        "%%s showed %%s the maiming"
+    IDS_THEVOICE_226        "%%s showed %%s the fisting"
+    IDS_THEVOICE_227        "%%s showed %%s the slaughter"
+    IDS_THEVOICE_228        "%%s showed %%s the torture"
+    IDS_THEVOICE_229        "%%s showed %%s the needlessness"
+    IDS_THEVOICE_230        "%%s showed %%s the pointlessness"
+    IDS_THEVOICE_231        "%%s offed %%s like a switch"
+    IDS_THEVOICE_232        "%%s showed %%s the horror"
+    IDS_THEVOICE_233        "%%s reamed %%s with his weapon"
+    IDS_THEVOICE_234        "%%s reamed %%s with her weapon"
+    IDS_THEVOICE_235        "%%s stapled %%s’s innards to the floor"
+    IDS_THEVOICE_236        "%%s Humped %%s like a dog in heat"
+    IDS_THEVOICE_237        "%%s Nailed %%s With An Improper Tool"
+    IDS_THEVOICE_238        "%%s Gave %%s Scrotal Separation!"
+    IDS_THEVOICE_239        "%%s Had %%s Rolled And Stuffed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_240        "%%s Made %%s Room Temperature!"
+    IDS_THEVOICE_241        "%%s Smacked %%s Like A Rented Stepchild"
+    IDS_THEVOICE_242        "%%s Delivered %%s To The Dumpster"
+    IDS_THEVOICE_243        "%%s Played In %%s's Caboose"
+    IDS_THEVOICE_244        "%%s Pounded %%s's Prostate"
+    IDS_THEVOICE_245        "%%s Nailed %%s Like A Dog In Heat"
+    IDS_THEVOICE_246        "%%s Gave %%s Rectal Redemption!"
+    IDS_THEVOICE_247        "%%s Gave %%s A Cavity Search!"
+    IDS_THEVOICE_248        "Used"
+    IDS_THEVOICE_249        "The Hurtfulness"
+    IDS_THEVOICE_250        "%%s Made %%s Drink Father's Milk!"
+    IDS_THEVOICE_251        "%%s Disemboweled %%s"
+    IDS_THEVOICE_252        "%%s Nippled %%s"
+    IDS_THEVOICE_253        "%%s Ripped %%s A New Sphincter!"
+    IDS_THEVOICE_254        "%%s Gave %%s Some Crème De Banane!"
+    IDS_THEVOICE_255        "%%s Danced On %%s’s Broken Corpse"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_256        "%%s Served %%s His Own Kidney"
+    IDS_THEVOICE_257        "%%s Served %%s Her Own Kidney"
+    IDS_THEVOICE_258        "%%s Made Fresh Head Cheese Of %%s"
+    IDS_THEVOICE_259        "%%s Offered %%s"
+    IDS_THEVOICE_260        "%%s Offered %%s A Hot Polish Sausage"
+    IDS_THEVOICE_261        "%%s Played Postman And Delivered The Male To %%s"
+    IDS_THEVOICE_262        "%%s Popped %%s Like A Grape"
+    IDS_THEVOICE_263        "%%s Rained Gobbets Of %%s On The Floor"
+    IDS_THEVOICE_264        "%%s Had %%s Stuffed And Mounted!"
+    IDS_THEVOICE_265        "%%s Fed %%s A Fresh Loaf"
+    IDS_THEVOICE_266        "%%s Lobotomized %%s"
+    IDS_THEVOICE_267        "%%s Brained %%s And Fed It To Him"
+    IDS_THEVOICE_268        "%%s Brained %%s And Fed It To Her"
+    IDS_THEVOICE_269        "%%s Pulped %%s Like An Orange"
+    IDS_THEVOICE_270        "%%s Crushed %%s Like A Roach"
+    IDS_THEVOICE_271        "%%s Played Operation With %%s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_272        "%%s Made Certain That %%s Was Properly Penetrated!"
+    IDS_THEVOICE_273        "%%s Showed %%s The Agony Of Defeat"
+    IDS_THEVOICE_274        "%%s Roasted %%s’s Agates!"
+    IDS_THEVOICE_275        "%%s Slipped %%s Some Bile!"
+    IDS_THEVOICE_276        "%%s Defiled %%s"
+    IDS_THEVOICE_277        "%%s Fisted %%s"
+    IDS_THEVOICE_278        "%%s Made %%s Salute The Flagpole!"
+    IDS_THEVOICE_279        "%%s disassembled %%s like a chicken corpse"
+    IDS_THEVOICE_280        "%%s liquefied %%s"
+    IDS_THEVOICE_281        "%%s drop-kicked %%s into oblivion"
+    IDS_THEVOICE_282        "%%s flattened %%s like a steam roller"
+    IDS_THEVOICE_283        "%%s Eviscerated %%s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_300        "Kevorkian Approves of %%s!"
+    IDS_THEVOICE_301        "%%s Given Darwin Award!"
+    IDS_THEVOICE_302        "%%s Is An Idiot!"
+    IDS_THEVOICE_303        "%%s Enjoys Self-Flagellation!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_304        "%%s Ought To Play Mario!"
+    IDS_THEVOICE_305        "%%s Go Bye-Bye!"
+    IDS_THEVOICE_306        "%%s Exited Stage-Left"
+    IDS_THEVOICE_307        "%%s Chose Early Retirement!"
+    IDS_THEVOICE_308        "%%s Is Among The Dumbly Departed"
+    IDS_THEVOICE_309        "%%s Needs Supervision"
+    IDS_THEVOICE_310        "%%s Is A Pantywaist!"
+    IDS_THEVOICE_311        "%%s Believes In The Right To Die!"
+    IDS_THEVOICE_312        "%%s Joined The Hemlock Society"
+    IDS_THEVOICE_313        "%%s Tested His Afterlife Theories"
+    IDS_THEVOICE_314        "%%s Tested Her Afterlife Theories"
+    IDS_THEVOICE_315        "%%s Was Planted In The Carcass Field"
+    IDS_THEVOICE_316        "%%s Had An Episode of Stupidity"
+    IDS_THEVOICE_317        "%%s Suffered From Felonious Foolishness!"
+    IDS_THEVOICE_318        "%%s Attempted Freeform Expressionism - Poorly."
+    IDS_THEVOICE_319        "%%s tried self-love with a hammer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_320        "%%s Auto-Immolated!"
+    IDS_THEVOICE_321        "%%s Kamikazed!"
+    IDS_THEVOICE_322        "%%s Drowned In Own Vomit"
+    IDS_THEVOICE_323        "%%s Should Go Home To Mommy!"
+    IDS_THEVOICE_330        "Humiliate Him!"
+    IDS_THEVOICE_331        "Humiliate Her!"
+    IDS_THEVOICE_332        "End It! End It!"
+    IDS_THEVOICE_333        "Complete The Kill!"
+    IDS_THEVOICE_334        "He Is Yours!"
+    IDS_THEVOICE_335        "She Is Yours!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_THEVOICE_336        "Desecrate Him!"
+    IDS_THEVOICE_337        "Desecrate Her!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENERAL_GUNX        "Gun: m_GunOffset.x %1!f!"
+    IDS_GENERAL_GUNY        "Gun: m_GunOffset.y %1!f!"
+    IDS_GENERAL_GUNZ        "Gun: m_GunOffset.z %1!f!"
+    IDS_GENERAL_BLIND       "You are blind..."
+    IDS_GENERAL_PICKUP_1    "Picked Up %1!s!"
+    IDS_GENERAL_PICKUP_2    "%1!s! Not Available"
+    IDS_GENERAL_PICKUP_3    "No Available Slots for %1!s!"
+    IDS_GENERAL_ATTRIBHIGH  "Attribute totals too high, using defaults."
+    IDS_GENERAL_CANMOVE     "Able to move again."
+    IDS_GENERAL_IMMOBILE    "Immobilized!"
+    IDS_GENERAL_SPEED       "Speed = %1!d!"
+    IDS_GENERAL_STRENGTH    "Strength = %1!d!"
+    IDS_GENERAL_LOCKED      "Locked!"
+    IDS_GENERAL_UNLOCKED    "Unlocked!"
+    IDS_GENERAL_CALEB       "Caleb "
+    IDS_GENERAL_OPHELIA     "Ophelia "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ITEM                "Item "
+    IDS_ITEM_FLASHLIGHT     "Flashlight "
+    IDS_ITEM_MEDKIT         "MedKit "
+    IDS_ITEM_GOGGLES        "Night Goggles "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ITEM_BINOCULARS     "Binoculars "
+    IDS_ITEM_EYE            "The Eye "
+    IDS_ITEM_PROX           "Proximity Bomb "
+    IDS_ITEM_REMOTE         "Remote Bomb "
+    IDS_ITEM_TIME           "Time Bomb "
+    IDS_POWERUP_HEALTH      "Life Essence "
+    IDS_POWERUP_MEGAHEALTH  "Life Seed "
+    IDS_POWERUP_WARD        "Ward "
+    IDS_POWERUP_NECROWARD   "NecroWard "
+    IDS_POWERUP_WILLPOWER   "Willpower "
+    IDS_POWERUP_STEALTH     "Stealth "
+    IDS_POWERUP_ANGER       "The Anger "
+    IDS_POWERUP_REVENANT    "Revenant "
+    IDS_AMMO_BULLETS        "Bullets "
+    IDS_AMMO_SHELLS         "Shells "
+    IDS_AMMO_BMG            "BMG Rounds "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_KEY_SECTOR9         "Sector 9 "
+    IDS_KEY_LEVELB          "Level B "
+    IDS_WEAPON_BERETTA      "Beretta "
+    IDS_WEAPON_SHOTGUN      "Sawed-off Shotgun "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_SNIPER       "Sniper Rifle "
+    IDS_WEAPON_M16          "Assault Rifle "
+    IDS_WEAPON_MAC10        "Sub-machine Gun "
+    IDS_WEAPON_FLAREGUN     "Flare Pistol "
+    IDS_WEAPON_HOWITZER     "Howitzer "
+    IDS_WEAPON_BUGSPRAY     "Bug Spray Canister "
+    IDS_WEAPON_NAPALM       "Napalm Cannon "
+    IDS_WEAPON_MINIGUN      "Vulcan Cannon "
+    IDS_WEAPON_VOODOO       "Voodoo Doll "
+    IDS_WEAPON_ORB          "The Orb "
+    IDS_WEAPON_DEATHRAY     "Cabalco Death Ray "
+    IDS_WEAPON_LIFELEECH    "Life Leech "
+    IDS_WEAPON_TESLA        "Tesla Cannon "
+    IDS_WEAPON_SINGULARITY  "Singularity Generator "
+    IDS_WEAPON_KNIFE        "Chosen Knife "
+    IDS_WEAPON_TIME         "Time Bombs "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_PROX         "Proximity Bombs "
+    IDS_WEAPON_REMOTE       "Remotes Bombs "
+    IDS_WEAPON_COMBATSHOTGUN "Combat Shotgun"
+    IDS_WEAPON_FLAYER       "Flayer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_FLARES         "Flares "
+    IDS_AMMO_DIEBUGDIE      "Die-Bug-Die "
+    IDS_AMMO_HOWITZER       "Howitzer Shells "
+    IDS_AMMO_FUEL           "Fuel Tank "
+    IDS_AMMO_BATTERY        "Chemical Batteries "
+    IDS_KEY_CRUCARD         "CRU Card "
+    IDS_KEY_LABKEY          "Lab Key "
+    IDS_KEY_EXPRESSCARD     "Express Card "
+    IDS_KEY_PARACHUTE       "Parachute "
+    IDS_KEY_APSEKEY         "Apse Key "
+    IDS_KEY_TOWERKEY        "Tower Key "
+    IDS_KEY_LEVEL3CARD      "Level 3 Card "
+    IDS_KEY_EXECACCESS      "Exec Access "
+    IDS_KEY_STATUS9         "Status 9 "
+    IDS_KEY_SINGULARITY     "Singularity Access "
+    IDS_KEY_INTRAACCESS     "Intra Access "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENERAL_ISHMAEL     "Ishmael "
+    IDS_GENERAL_GABRIELLA   "Gabriella "
+    IDS_GENERAL_SPECTATORON "SPECTATOR MODE: ON"
+    IDS_GENERAL_SPECTATOROFF "SPECTATOR MODE: OFF"
+    IDS_GENERAL_INVISIBILITY_EXP "Invisibility has expired."
+    IDS_GENERAL_WILLPOWER_EXP "Willpower has expired."
+    IDS_GENERAL_TRIPLEDAMAGE_EXP "Triple Damage has expired."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_MISSILESPEED   "Multiplies the missile speed.\n\nDefault value is 1.0."
+    IDS_TITLE_MISSILESPEED  "Server Option: Missile Speed"
+    IDS_HELP_TIMESPEED      "Multiplies the world time speed.\n\nDefault value is 1.0."
+    IDS_TITLE_TIMESPEED     "Server Option: World Time Speed"
+    IDS_HELP_NIGHTCOLOR     "Specifies the color of the night sky in RGB format.\n\nDefault value is ""0.5 0.5 0.5""."
+    IDS_TITLE_NIGHTCOLOR    "Server Option: World Night Color"
+    IDS_HELP_RESPAWNSCALE   "Multiplies the respawn rate of items.\n\nDefault value is 1.0."
+    IDS_TITLE_RESPAWNSCALE  "Server Option: Respawn Scale"
+    IDS_HELP_HEALSCALE      "Scales how much health the health powerups give players.\n\nDefault value is 1.0."
+    IDS_TITLE_HEALSCALE     "Server Option: Heal Scale"
+    IDS_GAMETYPE_DEATHMATCH "Bloodbath"
+    IDS_GAMETYPE_UNKNOWN    "Unknown"
+    IDS_GAMETYPE_CAPTUREFLAG "Capture the flag"
+    IDS_GAMETYPE_COOPERATIVE "Cooperative"
+    IDS_GAMETYPE_TEAM       "Teams"
+    IDS_GAMETYPE_SOCCER     "Soccer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_CANTBINDTOPORT "ERROR - Unable to bind to the requested port."
+    IDS_NETERR_NOTSAMEGUID  "ERROR - Unable to join because the game server is a different version or a different game."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DONTDISPLAY_TITLE   "Blood2 Multiplayer Settings"
+    IDS_DONTDISPLAY_INFO    "This dialog will not be displayed again unless you hold down the shift key."
+    IDS_NETERR_CONNECTIONREJECTED "Connection rejected."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GAMETYPE_TOETAG     "Toe Tag"
+    IDS_NETWIZ_MODEM        "28.8k-56k Modem"
+    IDS_NETWIZ_ISDN         "ISDN-T1 Internet"
+    IDS_NETWIZ_LAN          "LAN Game"
+    IDS_NETWIZ_CUSTOM       "Custom"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_JOYSTICK_LOOKUPDOWNFIXEDBYPOSITION "FIXED BY POSITION"
+    IDS_MENU_MOUSE_USEWHEEL "WHEEL WEAPON CHANGE"
+    IDS_MENU_JOYSTICK_HATONOFF "POV HAT LOOK/WEAPON"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_JOYSTICK_AXISTYPE_NONE "NONE"
+    IDS_MENU_OPTIONS_NOJOYSTICKMENU 
+                            "JOYSTICK MENU DISABLED.  JOYSTICK SETTINGS ARE BEING READ FROM THE JOYSTICK.CFG FILE."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NM_OBJECTIVE_TITLE_1_4 "Locked Gate"
+    IDS_NM_OBJECTIVE_TITLE_2_1 "Playing 'Keep Away'"
+    IDS_NM_OBJECTIVE_TITLE_3_1 "Killer Clowns"
+    IDS_NM_OBJECTIVE_TITLE_5_1 "A church!?!"
+    IDS_NM_OBJECTIVE_TITLE_5_2 "Cleanse"
+    IDS_NM_OBJECTIVE_TITLE_6_1 "The Tag Team"
+    IDS_NM_OBJECTIVE_TITLE_6_2 "The End"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

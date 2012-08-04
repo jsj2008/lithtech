@@ -1,0 +1,35 @@
+HKCR
+{
+	ThumbDtxShellEx.Extractor.1 = s 'DtxShellEx Thumbnail Extractor Class'
+	{
+		CLSID = s '{6F5AAFDC-CB3D-456C-B863-3FF1201987D5}'
+	}
+	ThumbDtxShellEx.Extractor = s 'DtxShellEx Thumbnail Extractor Class'
+	{
+		CLSID = s '{6F5AAFDC-CB3D-456C-B863-3FF1201987D5}'
+		CurVer = s 'ThumbDtxShellEx.Extractor.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {6F5AAFDC-CB3D-456C-B863-3FF1201987D5} = s 'Extractor Class'
+		{
+			ProgID = s 'ThumbDtxShellEx.Extractor.1'
+			VersionIndependentProgID = s 'ThumbDtxShellEx.Extractor'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{746AFB76-239C-425D-AFCB-BBBB08B4B54F}'
+		}
+	}
+
+	NoRemove .dtx
+	{
+		shellex
+		{
+			{BB2E617C-0920-11d1-9A0B-00C04FC2D6C1} = s '{6F5AAFDC-CB3D-456C-B863-3FF1201987D5}'
+		}
+	}
+
+}

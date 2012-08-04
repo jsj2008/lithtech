@@ -1,0 +1,104 @@
+A Fox Interactive and Sierra Entertainment Production
+
+A Monolith Productions Game
+>TIME:3.0
+>BIG
+##
+No One Lives Forever 2:
+A Spy in H.A.R.M.'s Way 
+is powered by the 
+LithTech Jupiter System
+>TIME:2.0
+>BIG
+##
+Fox Interactive:
+>BIG
+>TIME:2.0
+>POS:UL
+##
+Chris Miller, Producer
+Aaron Blean, Associate Producer
+  
+  
+Fox Quality Assurance Department:
+Igor Krinitskiy, Assistant Quality Assurance Manager 
+Francis Choi, Lead Tester
+>TIME:7.0
+>POS:UL
+##
+Test Team:
+Geoff Bent
+Scott Carroll
+Michael Graham
+Jen Johnson
+Cris Lee
+Jonathan Masterson
+Billy Pamier 
+Denise Pater
+Luke Thai
+Hal Zabie
+  
+Localization Manager:
+Kristian Davila
+>TIME:8.0
+>POS:UL
+##
+Special Thanks:
+Eric Asevo
+Steve Bersch
+Pete Cesario
+Lindsey Fischer
+Ivo Gerscovich
+Greg Goodrich
+Tim Hall
+Tim Harrison
+Michael Heilemann
+Becky Kneubuhl
+Luke Letizia
+Dan Mackechnie
+Gabriel Mann
+John Melchior
+>TIME:8.0
+>POS:UL
+##
+Megan O'Brien
+Paul Pawlicki
+Michael Pole
+Rich Ragsdale
+Tim Ramage
+Jamie Samson
+Kirk Scott
+Dave Shaw
+David Stalker
+Kristin Sutter (www.nolfgirl.com)
+Tim Tran
+Jack Van Leer
+Ellen Williams
+Chris Wilson
+Asylum Studio (www.asylumstudio.com)
+>TIME:8.0
+>POS:UL
+##
+Lisa Fredsti (Fox Library)
+Brian Thomas (Fox Library)
+Brian Harvey (NVIDIA)
+Jessie Lawrence (Creative Labs)
+Mike Drummelsmith (Matrox)
+Marisa Porter, MCA
+Van Riker, 1600 Records
+John Dongelmans (Microsoft)
+Tim Godwin, Line 6
+>TIME:7.0
+>POS:UL
+##
+Working with the NOLF team continues 
+to be a great experience.  
+Thank you for all the late nights, 
+the lost weekends and most of all, 
+for your incredible commitment to 
+the quality of this game. 
+You're awesome!  -CM 
+>TIME:6.0
+>POS:UL
+##
+END

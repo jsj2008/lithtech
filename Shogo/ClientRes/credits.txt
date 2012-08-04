@@ -1,0 +1,474 @@
+Shogo: Mobile Armor Division
+Developed and Published by
+Monolith Productions Inc.
+>TIME:2.4
+##
+Shogo is powered by
+LithTech
+##
+Game Designer and
+Lead Level Designer
+ 
+Craig Hubbard
+##
+Lead Game Engineer
+ 
+Kevin Stephens
+##
+Lead LithTech Engineer
+ 
+Mike Dussault
+##
+LithTech Sound System and
+Tools Engineer
+ 
+Brad Pendleton
+##
+Lead Texture Artist and
+Designer
+ 
+Wes Saulsberry
+##
+Level and Game Designer
+ 
+Nathan Hendrickson
+##
+Lead 3D Animator
+ 
+Matt Allen
+##
+Game Engineer
+ 
+Bill Brooks
+##
+Producer
+ 
+John L. Jack
+##
+Level Designer
+ 
+Todd Clineschmidt
+##
+Mecha Designer and
+Texture Artist
+ 
+Steve Lee
+##
+LithTech Engineer
+ 
+Scott H. Pultz
+##
+Texture Artist
+ 
+Ben Olsen
+##
+Lead Audio Designer
+ 
+James Ackley
+##
+Weapon and Character
+Designs by
+ 
+Eric "Weapon Master" Kohler
+##
+Audio Composer
+ 
+Guy Whitmore
+##
+Audio Composer
+ 
+Dan Bernstein
+##
+Audio Technician
+ 
+Cass Thruston
+##
+Additional LithTech and Shogo
+Engineering by
+ 
+Greg Kettell
+Brian L. Goble
+Bryan Bouwman
+Scott Schlegel
+>TIME:5.0
+##
+Additional LithTech and Shogo
+Engineering by
+ 
+Jeremy Blackman
+Toby Gladwell
+JT Traub
+Kevin Lambert
+>TIME:5.0
+##
+Additional 3D Animation
+ 
+Aaron "Dr" Rose
+Rick Winter
+Peter Arisman
+Brian Waite
+>TIME:3.0
+##
+Additional Level Design
+ 
+Mark Brown
+Darren Korman
+##
+Additional Texture Artwork
+ 
+Jordan Minkove
+##
+QA Manager
+ 
+Jonathan Stein
+##
+The Test Crew
+ 
+Jordan Minkove
+Benny Kee
+Isaac Marshall
+Kelly Kristek
+Ryan Mattson
+Collin Moore
+Monolith
+>TIME:3.0
+##
+Mocap Technicians
+ 
+Simon Wong
+Bill Cass
+##
+Mocap Actors
+ 
+Israel Evans
+Greg Spyrides
+Chris Liu
+>TIME:2.4
+##
+The Hype Machine
+ 
+Jenni Gant
+Joel Reiff
+Paul Butterfield
+Spencer Maiers
+Camille Ball
+Adam Ketola
+>TIME:4.0
+##
+More Hype Machine
+ 
+Jason Hall
+Shane Thompson
+Samantha Ryan
+>TIME:2.5
+##
+The IS Team...they
+keep us working
+ 
+Jim Totaro
+Eric Minamoto
+Dan Erickson
+>TIME:3.0
+##
+The Admin Crew...they
+keep the lights on
+ 
+Gary Kussman
+Patti Kail
+Lynn Rott
+Andrea Barringer
+Wayne Burns
+Sandi Watanabe
+>TIME:3.5
+##
+Voice Talent
+ 
+Sean Griffin
+Ted D'Arms
+Kari McGee
+Kathy Levin
+Mike Madeoy
+Akika Tanaka
+Lynn Rott
+>TIME:3.5
+##
+Shogo Opening Theme Song
+NEGAI (Wish)
+ 
+Music: Yohei Takashima
+Lyrics: Miho Nemoto
+Arrangement by Yohei
+Takashima & Nobuyuki Nakatani
+>TIME:3.5
+##
+Shogo Opening Theme Song
+ 
+Produced by Yohei Takashima
+Mixed by Satoru Arai
+Recorded at
+Gateway Studio & Booska Studio
+>TIME:3.5
+##
+Shogo Opening Theme Song
+ 
+Musicians:
+Vocal:
+Miho Nemoto
+Guitar & Instruments:
+Yohei Takashima
+Programming:
+Nobuyuki Nakatani
+>TIME:3.5
+##
+Shogo Opening Theme Song
+  
+Coordination:
+Harumi Hasumi (Takarajimasha)
+
+Executive Producer:
+Makoto Sekigawa (Takarajimasha)
+>TIME:3.0
+##
+That was a lot of people...
+>TIME:1.0
+##
+Yes, it cost a lot...
+>TIME:1.0
+##
+http://www.lith.com
+ 
+http://www.shogo-mad.com
+##
+Monolith Rulez...
+>TIME:1.0
+##
+Be on the lookout
+for the Shogo saga
+to continue...
+>TIME:2.5
+##
+END OF CREDITS
+>TIME:20
+##
+That's all, no more credits.
+>TIME:10
+##
+Press escape to return to
+the main menu.
+>TIME:10
+##
+END OF CREDITS
+>TIME:20
+##
+Still here? Please press escape
+now to return to the main menu.
+>TIME:20
+##
+END OF CREDITS
+ 
+(for real this time)
+>TIME:20
+##
+Ok...
+>TIME:2.0
+##
+Here's the original, unedited,
+version of the intro text...
+>TIME:4.0
+##
+A long time ago in a
+galaxy much bigger than
+my calves...
+>TIME:4.0
+##
+There was this game
+called "Heavy Metal"
+and life was good.
+>TIME:3.0
+##
+But then life turned
+bad so we changed the
+name to "Metal Tek".
+>TIME:3.0
+##
+...and once again, life
+was good.
+##
+Real good.
+>TIME:0.4
+##
+Okay, life was still bad
+so we changed the name
+to "Riot".
+>TIME:3.0
+##
+Now life was good, for
+real this time.
+>TIME:3.0
+##
+But, as always happens,
+something just had to
+screw things up and we
+needed to change the 
+name again. Okay, we just
+couldn't control ourselves
+and we changed it for no
+real reason. The name
+would be...
+>TIME:10.0
+##
+[     SHOGO     ]
+>TIME:0.1
+##
+[    SHOGO    ]
+>TIME:0.1
+##
+[   SHOGO   ]
+>TIME:0.1
+##
+[  SHOGO  ]
+>TIME:0.1
+##
+[SHOGO]
+>TIME:0.1
+##
+SHOGO
+>TIME:1.0
+##
+Did I mention the huge
+email threads about all
+of these names?
+>TIME:3.0
+##
+Never mind...
+>TIME:0.2
+##
+So, you are this dude who
+lost his brother and girl-
+friend during some battle.
+>TIME:3.0
+##
+You're kinda a wuss so you
+haven't really gotten over
+the whole thing.
+>TIME:3.0
+##
+But you're a good soldier
+so the admiral wants you to
+do some dirty work for him.
+>TIME:3.0
+##
+That's cool because you get
+to pilot a cool mecha of
+your choice.
+>TIME:3.0
+##
+This should make everything
+perfectly clear.
+>TIME:3.0
+##
+Monolith Rulez...
+##
+(END)
+>TIME:1.0
+##
+That got some good laughs.
+>TIME:2.0
+##
+Well, we'd like to thank
+all of the great people
+who "kept the faith".
+>TIME:4.0
+##
+You know, people like
+Doug Dyer, Gary Kussman,
+the online gaming community,
+and of course, all of
+Monolith.
+>TIME:5.0
+##
+Doug Dyer says:
+>TIME:1.5
+##
+"I told you so..."
+>TIME:2.0
+##
+We'd also like to thank
+The Anger and
+The Hurtfulness...
+>TIME:4.0
+##
+...and to those that just
+didn't quite "get it"...
+>TIME:3.0
+##
+Gameplay Rules
+>TIME:0.2
+##
+Gibs Rule
+>TIME:0.2
+##
+Hype Rules
+>TIME:0.2
+##
+Web Sites Rule
+>TIME:0.2
+##
+Lights Rule
+>TIME:0.2
+##
+Creativity Rules
+>TIME:0.2
+##
+Blood Splats Rule
+>TIME:0.2
+##
+Content Rules
+>TIME:0.2
+##
+Breaking Rules Rules
+>TIME:0.2
+##
+Darks Rule
+>TIME:0.2
+##
+Gore Rules
+>TIME:0.2
+##
+Shogo Rules
+>TIME:0.5
+##
+Monolith Rulez...
+>TIME:1.0
+##
+...well, they probably 
+still don't get it so it
+doesn't really matter. :)
+>TIME:6.0
+##
+Hey, did you know you
+can use the arrow keys,
+the pause key, and the
+space-bar during the
+credits?
+>TIME:7.0
+##
+Guess we should have told
+you that earlier.
+>TIME:2.0
+##
+Oops.
+>TIME:0.5
+##
+Seriously, though, we had
+a great time making Shogo.
+>TIME:3.0
+##
+We hope you have a
+great time playing it.
+>TIME:3.0
+##
+ 
+>TIME:60.0
+##
+>END

@@ -1,0 +1,24 @@
+Spell Editor build notes
+========================
+
+Changes and bug fixes are listed, lowest is latest
+
+-------------
+29th dec 1998
+-------------
+
+- Shrunk the size of keys so you can see more of them.
+
+- Added scroll bar functionality to the track view so you can scroll tracks.
+
+- Added Phase information and Key information for times etc.
+
+- Added multiple select in track view. Hold down CTRL to multiple select and then either
+  move or resize the fx keys.
+
+- Increased size of key properties dialog. Resized the combo boxes so they don't look so
+  awful.
+
+- Made the resource dialog go to the previously selected item so you don't have to go 
+  hunting through the entire resource file looking for that sprite you just had.
+

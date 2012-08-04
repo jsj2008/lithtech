@@ -1,0 +1,300 @@
+Fox Interactive Presents:
+No One Lives Forever
+Developed by
+Monolith Productions Inc.
+>TIME:3.0
+>BIG
+##
+No One Lives Forever
+is powered by LithTech
+>TIME:2.0
+>BIG
+##
+Fox Interactive:
+>BIG
+>TIME:2.0
+##
+Chris Miller, Producer
+Aaron Blean, Associate Producer
+>TIME:3.0
+##
+Fox Quality Assurance Department:
+Don Sexton, Q.A. Supervisor
+Kaycee Vardaman, Q.A. Lead
+Tim Harrison, Q.A. Lead
+Chris Wilson, Q.A. Lead
+Fox Test Team:
+Arabian Nazel
+Ken Anderson
+Sweet Billy
+Tony Black
+Francis Choi
+Kristian Davila
+>TIME:6.0
+##
+Matt Dell
+Glenn Dphrepaulezz
+David Farkas
+Kevin Huynh
+Igor Krinitskiy
+Javier Lagos
+Frantz Latten
+Duc Lai
+Cris Lee
+Jeremy Luyties
+Aaron Minjares
+Red Magpantay
+Kerry Marshall
+Young Park
+>TIME:6.0
+##
+Gabriel Slater
+Jeff Spierer
+David Taylor
+Luke Thai
+Tim Tran
+Ellen Williams
+Chris Wilson
+Anant Jiemjitpolchai
+Nathan Sutter
+William Pamies
+Jeff Tatman
+Daan Wisehart
+>TIME:6.0
+##
+Special Thanks:
+>BIG
+##
+Marisa Porter, MCA
+Tim Godwin, Line 6  
+Cakewalk 
+Van Riker, 1600 Records
+Triumph Motorcycles 
+Doc Martins 
+Brian Thomas, Fox Library
+Lisa Fredsti, Fox Library
+Kathleen Camplin, Fox Library
+Dave Monroe, Fox Library
+Mitzi Martin
+Avalon
+Panasonic
+Karly Young
+John Dongelmans
+>TIME:6.0
+##
+Kyle "Pezman" Peschel
+Jack Van Leer
+Karen Mangon
+Angela Edwards
+Dave Rech
+Dave Shaw
+Danny Ruiz
+Ivo Gersovich
+Luke Letizia
+Sung Yoo
+Eric Asevo
+Robert Hayes, ATI
+Brian Harvey, Nvidia
+3DFX
+GameSpy
+Joe Finetti
+>TIME:6.0
+##
+Monolith Productions:
+(In Alphabetical Order)
+>BIG
+##
+James Ackley, Lead Sound Designer
+Scott Albaugh, 2D/3D Artist
+Dan Berke, Engineer
+>TIME:3.0
+##
+Kevin Francis, Engine Engineer
+Jim Geldmacher, Engineer
+Jon Gramlich, QA Lead
+Chris Hewett, Director of Development
+>TIME:4.0
+##
+Craig Hubbard, Lead Game Designer
+Eric Kohler, Character Art Direction
+Steve Lee, 2D Artist
+Brian Long, AI and Animation Engineer
+>TIME:4.0
+##
+David Longo, Lead 3D Artist
+John Mulkey, Level Designer
+Bob Munsil, Level Designer
+>TIME:3.0
+##
+Brian Pamintuan, Sound Designer
+Frank Rooke, Level Designer
+Sasha Runnels, 2D Artist
+>TIME:3.0
+##
+Samantha Ryan, Producer
+Wes Saulsberry, Art Lead
+Kevin Stephens, Lead Engineer
+>TIME:3.0
+##
+Akika Tanaka, 2D/3D Artist
+Cassano Thruston, Sound Designer
+Bill Vandervoort, Lead Level Designer
+>TIME:3.0
+##
+Special thanks to the 
+following Monolith personnel:
+>BIG
+##
+Matt Allen
+Kevin Bailey
+Rhett Baldwin
+Andrea Barringer
+Mark Brown
+Wayne Burns
+Nadia Eng
+Ben Chamberlain
+Ben Coleman
+Courtney Evans
+Israel Evans
+>TIME:5.0
+##
+Jay Fuller
+Bob Givnin
+Andy Grant
+Jason Hall
+Nathan Hendrickson
+Peter Higley
+Patti Kail
+Darren Korman
+Gary Kussman
+Kevin Lambert
+>TIME:5.0
+##
+Spencer Maiers
+Andy Mattingly
+Eric Minamoto
+Dan Miller
+Jonathan Stein
+Dan Thibadeau
+Jim Totaro
+Brian Waite
+Sandra Watanabe
+Kiyotaka Yaguchi
+>TIME:5.0
+##
+Special Thanks:
+>BIG
+##
+Mike Dussault
+Whose contributions we cannot honor greatly enough
+>TIME:2.0
+##
+Brad Pendleton
+Whose steadfastness has served as an inspiration to us all
+>TIME:2.0
+##
+Tim Pollard
+For his research on authentic coins
+>TIME:2.0
+##
+LithTech:
+>BIG
+##
+Rachel Blackman
+Bryan Bouwman
+Jonathan Branam
+Jeff Everett
+Terry Franguiadakis
+Brian Goble
+Toby Gladwell
+Adam Hayek
+Chris Hedberg
+Matthew Scott
+>TIME:6.0
+##
+Music:
+>BIG
+##
+Guy Whitmore, Composer, Interactive music design
+>TIME:2.0
+##
+Rich Ragsdale, Title track
+>TIME:2.0
+##
+Erik Aho, DirectMusic Arranger, additional music composition
+Nathan Grigg, DirectMusic Arranger, additional music composition
+Tobin Buttram, DirectMusic Arranger, additional music composition
+Lori Goldston, Cello (Badguy theme)
+Gino, Vocals (Morrocan theme)
+>TIME:4.0
+##
+Additional Music Tracks by Becky Kneubuhl
+Doug Norwine, Flute
+Joe Finetti, Trombone
+Lee Thornberg, Trumpet
+Lisa Kable, Vocals
+Chris Lee, Guitars
+Mixed and recorded by Gabriel Rutman at Asylum studios
+Remixed by Gabriel Rutman and Scotty Clausen
+>TIME:4.0
+##
+"Void"
+Written and Performed by Red Delicious 
+(Steve Baca, Sara Wallace, Rob King)
+Published by Stompin' Music (BMI)
+(c) 2000 Red Delicious
+>TIME:3.0
+##
+"El Dorado"
+Written and Performed by Archie Thompson
+Published by ArchType Music (BMI)
+(c) 2000 Archie Thompson
+>TIME:3.0
+##
+Voice and Motion Capture Artists:
+>BIG
+##
+Jock Blaney, Dmitrij Volkov
+Ken Boynton, Santa plus voices too numerous to count!
+Barbara Dirickson, Baroness Dumas
+Scott Burns, Various
+Mike Madeoy, Tom Goodman
+>TIME:4.0
+##
+Jamil Mullen, Motion Capture Performer
+Kit Harris, Cate Archer and Inge Wagner
+Mark Dias, Various
+John Patrick Lowrie, Bruno Lawrie
+Nigel Neale, Mr. Jones
+>TIME:4.0
+##
+Andrew Heffernan, Motion Capture Performer
+Jenna Hawkins, Motion Capture Performer
+Roger Curtis, Mr. Smith
+Jeff Steitzer, Baron Dumas
+>TIME:4.0
+##
+Uses Miles Sound System
+Copyright (c) 1991-2000 by RAD Game Tools, Inc.
+Uses Binks Video Technology
+Copyright (c) 1994-2000 by RAD Game Tools, Inc.
+MPEG Layer-3 playback supplied with the Miles Sound System
+from RAD Game Tools, Inc. MPEG-3 audio compression
+technology licensed by Fraunhofer IIS and THOMPSON Multimedia.
+Sampled Instruments by Sonic Implants: www.sonicimplants.com
+>TIME:4.0
+##
+© 2000 Monolith Productions, Inc. 
+LithTech (TM) Game Engine © 1998-1999 Monolith Productions, Inc. 
+All rights reserved. 
+Fox, Fox Interactive, No One Lives Forever, The Operative 
+and their associated logos are registered trademarks or 
+trademarks of Twentieth Century Fox Film Corporation. 
+LithTech is a trademark of Monolith Productions, Inc. 
+Windows is a registered trademark or trademark of Microsoft 
+Corporation in the United States and/or other countries. 
+The ratings icon is a trademark of the Interactive 
+Digital Software Association.
+>TIME:4.0
+##
+>END

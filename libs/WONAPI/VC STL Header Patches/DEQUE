@@ -1,0 +1,633 @@
+// deque standard header
+
+/* This file is for use only in conjunction with a valid license for
+Microsoft Visual C++ V5.0 or V6.0. Microsoft Corporation is in no way
+involved with the production or release of this file. The file is
+offered on an ``as is'' basis.
+
+DINKUMWARE, LTD. AND P.J. PLAUGER MAKE NO REPRESENTATIONS OR WARRANTIES
+ABOUT THE SUITABILITY OF THIS FILES, EITHER EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. DINKUMWARE, LTD.
+AND P.J. PLAUGER SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED BY
+LICENSEE AS A RESULT OF USING THIS FILE.
+
+For additional information, contact Dinkumware, Ltd. (+1-888-4DINKUM or
+support@dinkumware.com).
+
+Version date: 18 October 1999
+	replace 02 July 1999/11 August 1998 version with latest
+	to fix several allocation and iterator comparison errors
+ */
+
+#if 1000 < _MSC_VER /*IFSTRIP=IGN*/
+#pragma once
+#endif
+
+#ifndef _DEQUE_
+#define _DEQUE_
+#include <iterator>
+#include <memory>
+#include <stdexcept>
+
+#ifdef  _MSC_VER
+#pragma pack(push,8)
+#endif  /* _MSC_VER */
+#if 1200 <= _MSC_VER
+#pragma warning(push,3)
+#endif
+ #pragma warning(disable:4284)
+_STD_BEGIN
+#define _DEQUEMAPSIZ	8	/* at least 1 */
+#define _DEQUESIZ (4096 < sizeof (_Ty) ? \
+	1 : 4096 / sizeof (_Ty))
+
+		// TEMPLATE CLASS _Deque_val
+template<class _Ty, class _A>
+	class _Deque_val {
+protected:
+	_Deque_val(_A _Al = _A())
+		: _Alval(_Al) {}
+	typedef _A _Alty;
+	_Alty _Alval;
+	};
+
+		// TEMPLATE CLASS deque
+template<class _Ty, class _Ax = allocator<_Ty> >
+	class deque
+		: public _Deque_val<_Ty, _Ax> {
+public:
+	typedef deque<_Ty, _Ax> _Myt;
+	typedef _Deque_val<_Ty, _Ax> _Mybase;
+	typedef typename _Mybase::_Alty _A;
+	typedef _A allocator_type;
+	typedef typename _A::size_type size_type;
+	typedef typename _A::difference_type _Dift;
+	typedef _Dift difference_type;
+	typedef typename _A::pointer _Tptr;
+	typedef typename _A::const_pointer _Ctptr;
+	typedef _Tptr pointer;
+	typedef _Ctptr const_pointer;
+	typedef _POINTER_X(_Tptr, _A) _Mapptr;
+	typedef typename _A::reference _Reft;
+	typedef _Tptr pointer;
+	typedef _Ctptr const_pointer;
+	typedef _Reft reference;
+	typedef typename _A::const_reference const_reference;
+	typedef typename _A::value_type value_type;
+
+		// CLASS iterator
+	class iterator;
+	friend class iterator;
+	class iterator : public _Ranit<_Ty, _Dift> {
+	public:
+		typedef random_access_iterator_tag iterator_category;
+		typedef _Ty value_type;
+		typedef _Dift difference_type;
+		typedef _Tptr pointer;
+		typedef _Reft reference;
+		iterator()
+			: _Idx(0), _Deque(0)
+			{}
+		iterator(difference_type _I, const deque<_Ty, _A> *_P)
+			: _Idx(_I), _Deque(_P)
+			{}
+		reference operator*() const
+			{size_type _Block = _Idx / _DEQUESIZ;
+			size_type _Off = _Idx - _Block * _DEQUESIZ;
+			if (_Deque->_Mapsize <= _Block)
+				_Block -= _Deque->_Mapsize;
+			return ((_Deque->_Map)[_Block][_Off]); }
+		_Tptr operator->() const
+			{return (&**this); }
+		iterator& operator++()
+			{++_Idx;
+			return (*this); }
+		iterator operator++(int)
+			{iterator _Tmp = *this;
+			++*this;
+			return (_Tmp); }
+		iterator& operator--()
+			{--_Idx;
+			return (*this); }
+		iterator operator--(int)
+			{iterator _Tmp = *this;
+			--*this;
+			return (_Tmp); }
+		iterator& operator+=(difference_type _N)
+			{_Idx += _N;
+			return (*this); }
+		iterator& operator-=(difference_type _N)
+			{return (*this += -_N); }
+		iterator operator+(difference_type _N) const
+			{iterator _Tmp = *this;
+			return (_Tmp += _N); }
+		iterator operator-(difference_type _N) const
+			{iterator _Tmp = *this;
+			return (_Tmp -= _N); }
+		difference_type operator-(const iterator& _X) const
+			{return (_Idx - _X._Idx); }
+		reference operator[](difference_type _N) const
+			{return (*(*this + _N)); }
+		bool operator==(const iterator& _X) const
+			{return (_Deque == _X._Deque && _Idx == _X._Idx); }
+		bool operator!=(const iterator& _X) const
+			{return (!(*this == _X)); }
+		bool operator<(const iterator& _X) const
+			{return (_Idx < _X._Idx); }
+		bool operator<=(const iterator& _X) const
+			{return (!(_X < *this)); }
+		bool operator>(const iterator& _X) const
+			{return (_X < *this); }
+		bool operator>=(const iterator& _X) const
+			{return (!(*this < _X)); }
+//	protected:
+		difference_type _Idx;
+		const deque<_Ty, _A> *_Deque;
+		};
+
+		// CLASS const_iterator
+	class const_iterator;
+	friend class const_iterator;
+	class const_iterator
+		: public _Ranit<_Ty, _Dift> {
+	public:
+		typedef random_access_iterator_tag iterator_category;
+		typedef _Ty value_type;
+		typedef _Dift difference_type;
+		typedef _Ctptr pointer;
+		typedef const_reference reference;
+		const_iterator()
+			: _Idx(0), _Deque(0)
+			{}
+		const_iterator(difference_type _I,
+			const deque<_Ty, _A> *_P)
+			: _Idx(_I), _Deque(_P)
+			{}
+		const_iterator(const iterator& _X)
+			: _Idx(_X._Idx), _Deque(_X._Deque)
+			{}
+		const_reference operator*() const
+			{size_type _Block = _Idx / _DEQUESIZ;
+			size_type _Off = _Idx - _Block * _DEQUESIZ;
+			if (_Deque->_Mapsize <= _Block)
+				_Block -= _Deque->_Mapsize;
+			return ((_Deque->_Map)[_Block][_Off]); }
+		_Ctptr operator->() const
+			{return (&**this); }
+		const_iterator& operator++()
+			{++_Idx;
+			return (*this); }
+		const_iterator operator++(int)
+			{const_iterator _Tmp = *this;
+			++*this;
+			return (_Tmp); }
+		const_iterator& operator--()
+			{--_Idx;
+			return (*this); }
+		const_iterator operator--(int)
+			{const_iterator _Tmp = *this;
+			--*this;
+			return (_Tmp); }
+		const_iterator& operator+=(difference_type _N)
+			{_Idx += _N;
+			return (*this); }
+		const_iterator& operator-=(difference_type _N)
+			{return (*this += -_N); }
+		const_iterator operator+(difference_type _N) const
+			{const_iterator _Tmp = *this;
+			return (_Tmp += _N); }
+		const_iterator operator-(difference_type _N) const
+			{const_iterator _Tmp = *this;
+			return (_Tmp -= _N); }
+		difference_type operator-(
+			const const_iterator& _X) const
+			{return (_Idx - _X._Idx); }
+		const_reference operator[](difference_type _N) const
+			{return (*(*this + _N)); }
+		bool operator==(const const_iterator& _X) const
+			{return (_Deque == _X._Deque && _Idx == _X._Idx); }
+		bool operator!=(const const_iterator& _X) const
+			{return (!(*this == _X)); }
+		bool operator<(const const_iterator& _X) const
+			{return (_Idx < _X._Idx); }
+		bool operator<=(const const_iterator& _X) const
+			{return (!(_X < *this)); }
+		bool operator>(const const_iterator& _X) const
+			{return (_X < *this); }
+		bool operator>=(const const_iterator& _X) const
+			{return (!(*this < _X)); }
+	protected:
+		difference_type _Idx;
+		const deque<_Ty, _A> *_Deque;
+		};
+	typedef std::reverse_iterator<const_iterator, value_type,
+		const_reference, _Ctptr, difference_type>
+			const_reverse_iterator;
+	typedef std::reverse_iterator<iterator, value_type,
+		reference, _Tptr, difference_type>
+			reverse_iterator;
+	deque()
+		: _Mybase(), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{}
+	explicit deque(const _A& _Al)
+		: _Mybase(_Al), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{}
+	explicit deque(size_type _N)
+		: _Mybase(), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{insert(begin(), _N, _Ty()); }
+	deque(size_type _N, const _Ty& _V)
+		: _Mybase(), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{insert(begin(), _N, _V); }
+	deque(size_type _N, const _Ty& _V, const _A& _Al)
+		: _Mybase(_Al), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{insert(begin(), _N, _V); }
+	deque(const _Myt& _X)
+		: _Mybase(_X._Alval), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{insert(begin(), _X.begin(), _X.end()); }
+	template<class _It>
+		deque(_It _F, _It _L)
+		: _Mybase(), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{_Construct(_F, _L, _Iter_cat(_F)); }
+	template<class _It>
+		deque(_It _F, _It _L, const _A& _Al)
+		: _Mybase(_Al), _Map(0),
+			_Mapsize(0), _Offset(0), _Size(0)
+		{_Construct(_F, _L, _Iter_cat(_F)); }
+	template<class _It>
+		void _Construct(_It _F, _It _L, input_iterator_tag)
+		{insert(begin(), _F, _L); }
+
+	~deque()
+		{clear(); }
+	_Myt& operator=(const _Myt& _X)
+		{if (this == &_X)
+			;
+		else if (_X.size() == 0)
+			clear();
+		else if (_X.size() <= size())
+			{iterator _S = copy(_X.begin(), _X.end(), begin());
+			erase(_S, end()); }
+		else
+			{const_iterator _Sx = _X.begin() + size();
+			copy(_X.begin(), _Sx, begin());
+			insert(end(), _Sx, _X.end()); }
+		return (*this); }
+	iterator begin()
+		{return (iterator(_Offset, this)); }
+	const_iterator begin() const
+		{return (const_iterator(_Offset, this)); }
+	iterator end()
+		{return (iterator(_Offset + _Size, this)); }
+	const_iterator end() const
+		{return (const_iterator(_Offset + _Size, this)); }
+	reverse_iterator rbegin()
+		{return (reverse_iterator(end())); }
+	const_reverse_iterator rbegin() const
+		{return (const_reverse_iterator(end())); }
+	reverse_iterator rend()
+		{return (reverse_iterator(begin())); }
+	const_reverse_iterator rend() const
+		{return (const_reverse_iterator(begin())); }
+	void resize(size_type _N)
+		{resize(_N, _Ty()); }
+	void resize(size_type _N, _Ty _X)
+		{if (size() < _N)
+			insert(end(), _N - size(), _X);
+		else if (_N < size())
+			erase(begin() + _N, end()); }
+	size_type size() const
+		{return (_Size); }
+	size_type max_size() const
+		{return (_Alval.max_size()); }
+	bool empty() const
+		{return (size() == 0); }
+	allocator_type get_allocator() const
+		{return (_Alval); }
+	const_reference at(size_type _P) const
+		{if (size() <= _P)
+			_Xran();
+		return (*(begin() + _P)); }
+	reference at(size_type _P)
+		{if (size() <= _P)
+			_Xran();
+		return (*(begin() + _P)); }
+	const_reference operator[](size_type _P) const
+		{return (*(begin() + _P)); }
+	reference operator[](size_type _P)
+		{return (*(begin() + _P)); }
+	reference front()
+		{return (*begin()); }
+	const_reference front() const
+		{return (*begin()); }
+	reference back()
+		{return (*(end() - 1)); }
+	const_reference back() const
+		{return (*(end() - 1)); }
+	void push_front(const _Ty& _X)
+		{if (_Offset % _DEQUESIZ == 0
+			&& _Mapsize <= (_Size + _DEQUESIZ) / _DEQUESIZ)
+			_Growmap(1);
+		size_type _Newoff = _Offset != 0 ? _Offset
+			: _Mapsize * _DEQUESIZ;
+		size_type _Block = --_Newoff / _DEQUESIZ;
+		if (_Map[_Block] == 0)
+			_Map[_Block] = _Alval.allocate(_DEQUESIZ, (void *)0);
+		_TRY_BEGIN
+		_Offset = _Newoff;
+		++_Size;
+		_Alval.construct(_Map[_Block] + _Newoff % _DEQUESIZ, _X);
+		_CATCH_ALL
+		pop_front();
+		_RERAISE;
+		_CATCH_END }
+	void pop_front()
+		{if (!empty())
+			{size_type _Block = _Offset / _DEQUESIZ;
+			_Alval.destroy(_Map[_Block] + _Offset % _DEQUESIZ);
+			if (_Mapsize * _DEQUESIZ <= ++_Offset)
+				_Offset = 0;
+			if (--_Size == 0)
+				_Offset = 0; }}
+	void push_back(const _Ty& _X)
+		{if ((_Offset + _Size) % _DEQUESIZ == 0
+			&& _Mapsize <= (_Size + _DEQUESIZ) / _DEQUESIZ)
+			_Growmap(1);
+		size_type _Newoff = _Offset + _Size;
+		size_type _Block = _Newoff / _DEQUESIZ;
+		if (_Mapsize <= _Block)
+			_Block -= _Mapsize;
+		if (_Map[_Block] == 0)
+			_Map[_Block] = _Alval.allocate(_DEQUESIZ, (void *)0);
+		_TRY_BEGIN
+		++_Size;
+		_Alval.construct(_Map[_Block] + _Newoff % _DEQUESIZ, _X);
+		_CATCH_ALL
+		pop_back();
+		_RERAISE;
+		_CATCH_END }
+	void pop_back()
+		{if (!empty())
+			{size_type _Newoff = _Size + _Offset - 1;
+			size_type _Block = _Newoff / _DEQUESIZ;
+			if (_Mapsize <= _Block)
+				_Block -= _Mapsize;
+			_Alval.destroy(_Map[_Block] + _Newoff % _DEQUESIZ);
+			if (--_Size == 0)
+				_Offset = 0; }}
+	template<class _It>
+		void assign(_It _F, _It _L)
+		{_Assign(_F, _L, _Iter_cat(_F)); }
+	template<class _It>
+		void _Assign(_It _F, _It _L, input_iterator_tag)
+		{erase(begin(), end());
+		insert(begin(), _F, _L); }
+	void assign(size_type _N)
+		{_Ty _Tx;
+		erase(begin(), end());
+		insert(begin(), _N, _Tx); }
+	void assign(size_type _N, const _Ty& _X)
+		{_Ty _Tx = _X;
+		erase(begin(), end());
+		insert(begin(), _N, _Tx); }
+	iterator insert(iterator _P, const _Ty& _X)
+		{if (_P == begin())
+			{push_front(_X);
+			return (begin()); }
+		else if (_P == end())
+			{push_back(_X);
+			return (end() - 1); }
+		else
+			{iterator _S;
+			size_type _Off = _P - begin();
+			_Ty _Tx = _X;
+			if (_Off < size() / 2)
+				{push_front(front());
+				_S = begin() + _Off;
+				copy(begin() + 2, _S + 1, begin() + 1); }
+			else
+				{push_back(back());
+				_S = begin() + _Off;
+				copy_backward(_S, end() - 2, end() - 1); }
+			*_S = _Tx;
+			return (_S); }}
+	void insert(iterator _P, size_type _M, const _Ty& _X)
+		{iterator _S;
+		size_type _I;
+		size_type _Off = _P - begin();
+		size_type _Rem = _Size - _Off;
+		if (_Off < _Rem)
+			if (_Off < _M)
+				{for (_I = _M - _Off; 0 < _I; --_I)
+					push_front(_X);
+				for (_I = _Off; 0 < _I; --_I)
+					push_front(begin()[_M - 1]);
+				_S = begin() + _M;
+				fill(_S, _S + _Off, _X); }
+			else
+				{for (_I = _M; 0 < _I; --_I)
+					push_front(begin()[_M - 1]);
+				_S = begin() + _M;
+				_Ty _Tx = _X;
+				copy(_S + _M, _S + _Off, _S);
+				fill(begin() + _Off, _S + _Off, _Tx); }
+		else
+			if (_Rem < _M)
+				{for (_I = _M - _Rem; 0 < _I; --_I)
+					push_back(_X);
+				for (_I = 0; _I < _Rem; ++_I)
+					push_back(begin()[_Off + _I]);
+				_S = begin() + _Off;
+				fill(_S, _S + _Rem, _X); }
+			else
+				{for (_I = 0; _I < _M; ++_I)
+					push_back(begin()[_Off + _Rem - _M + _I]);
+				_S = begin() + _Off;
+				_Ty _Tx = _X;
+				copy_backward(_S, _S + _Rem - _M, _S + _Rem);
+				fill(_S, _S + _M, _Tx); }}
+	template<class _It>
+		void insert(iterator _P, _It _F, _It _L)
+		{_Insert(_P, _F, _L, _Iter_cat(_F)); }
+	template<class _It>
+		void _Insert(iterator _P, _It _F, _It _L,
+			input_iterator_tag)
+		{size_type _Off = _P - begin();
+		for (; _F != _L; ++_F, ++_Off)
+			insert(begin() + _Off, *_F); }
+	template<class _It>
+		void _Insert(iterator _P, _It _F, _It _L,
+			bidirectional_iterator_tag)
+		{size_type _M = 0;
+		_Distance(_F, _L, _M);
+		size_type _I;
+		size_type _Off = _P - begin();
+		size_type _Rem = _Size - _Off;
+		if (_Off < _Rem)
+			if (_Off < _M)
+				{_It _Qx = _F;
+				advance(_Qx, _M - _Off);
+				for (_It _Q = _Qx; _F != _Q; )
+					push_front(*--_Q);
+				for (_I = _Off; 0 < _I; --_I)
+					push_front(begin()[_M - 1]);
+				copy(_Qx, _L, begin() + _M); }
+			else
+				{for (_I = _M; 0 < _I; --_I)
+					push_front(begin()[_M - 1]);
+				iterator _S = begin() + _M;
+				copy(_S + _M, _S + _Off, _S);
+				copy(_F, _L, begin() + _Off); }
+		else
+			if (_Rem < _M)
+				{_It _Qx = _F;
+				advance(_Qx, _Rem);
+				for (_It _Q = _Qx; _Q != _L; ++_Q)
+					push_back(*_Q);
+				for (_I = 0; _I < _Rem; ++_I)
+					push_back(begin()[_Off + _I]);
+				copy(_F, _Qx, begin() + _Off); }
+			else
+				{for (_I = 0; _I < _M; ++_I)
+					push_back(begin()[_Off + _Rem - _M + _I]);
+				iterator _S = begin() + _Off;
+				copy_backward(_S, _S + _Rem - _M, _S + _Rem);
+				copy(_F, _L, _S); }}
+	iterator erase(iterator _P)
+		{return (erase(_P, _P + 1)); }
+	iterator erase(iterator _F, iterator _L)
+		{size_type _N = _L - _F;
+		size_type _M = _F - begin();
+		if (_M < (size_type)(end() - _L))
+			{copy_backward(begin(), _F, _L);
+			for (; 0 < _N; --_N)
+				pop_front(); }
+		else
+			{copy(_L, end(), _F);
+			for (; 0 < _N; --_N)
+				pop_back(); }
+		return (_M == 0 ? begin() : begin() + _M); }
+	void clear()
+		{while (!empty())
+			pop_back();
+		_Freemap(); }
+	void swap(_Myt& _X)
+		{if (_Alval == _X._Alval)
+			{std::swap(_Map, _X._Map);
+			std::swap(_Mapsize, _X._Mapsize);
+			std::swap(_Offset, _X._Offset);
+			std::swap(_Size, _X._Size); }
+		else
+			{_Myt _Ts = *this; *this = _X, _X = _Ts; }}
+	friend void swap(_Myt& _X, _Myt& _Y)
+		{_X.swap(_Y); }
+
+protected:
+	void _Xlen() const
+		{_THROW(length_error, "deque<T> too long"); }
+	void _Xran() const
+		{_THROW(out_of_range, "invalid deque<T> subscript"); }
+
+	void _Freemap()
+		{for (size_type _M = _Mapsize; 0 < _M; )
+			_Alval.deallocate(*(_Map + --_M), _DEQUESIZ);
+		_Alval.deallocate(_Map, _Mapsize);
+		_Mapsize = 0;
+		_Map = 0; }
+	void _Growmap(size_type _N)
+		{if (max_size() / _DEQUESIZ - _Mapsize < _N)
+			_Xlen();
+		size_type _I = _Mapsize / 2;	// try to grow by 50%
+		if (_I < _DEQUEMAPSIZ)
+			_I = _DEQUEMAPSIZ;
+		if (_N < _I && _Mapsize <= max_size() / _DEQUESIZ - _I)
+			_N = _I;
+		size_type _Ib = _Offset / _DEQUESIZ;
+		_Mapptr _M = (_Mapptr)_Alval._Charalloc(
+			(_Mapsize + _N) * sizeof (_Tptr));
+		_Mapptr _Mn = copy(_Map + _Ib, _Map + _Mapsize,
+			_M + _Ib);
+		if (_Ib <= _N)
+			{_Mn = copy(_Map, _Map + _Ib, _Mn);
+			fill_n(_Mn, _N - _Ib, (_Tptr)0);
+			fill_n(_M, _Ib, (_Tptr)0); }
+		else
+			{copy(_Map, _Map + _N, _Mn);
+			_Mn = copy(_Map + _N, _Map + _Ib, _M);
+			fill_n(_Mn, _N, (_Tptr)0); }
+		_Alval.deallocate(_Map, _Mapsize);	// free storage for old
+		_Map = _M;
+		_Mapsize += _N; }
+
+	_Mapptr _Map;
+	size_type _Mapsize, _Offset, _Size;
+	};
+	
+	// deque TEMPLATE OPERATORS
+template<class _Ty, class _A> inline
+	bool operator==(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (_X.size() == _Y.size()
+		&& equal(_X.begin(), _X.end(), _Y.begin())); }
+template<class _Ty, class _A> inline
+	bool operator!=(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (!(_X == _Y)); }
+template<class _Ty, class _A> inline
+	bool operator<(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (lexicographical_compare(_X.begin(), _X.end(),
+		_Y.begin(), _Y.end())); }
+template<class _Ty, class _A> inline
+	bool operator<=(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (!(_Y < _X)); }
+template<class _Ty, class _A> inline
+	bool operator>(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (_Y < _X); }
+template<class _Ty, class _A> inline
+	bool operator>=(const deque<_Ty, _A>& _X,
+		const deque<_Ty, _A>& _Y)
+	{return (!(_X < _Y)); }
+_STD_END
+ #if 1200 <= _MSC_VER
+ #pragma warning(default:4284)
+ #endif
+#if 1200 <= _MSC_VER
+#pragma warning(pop)
+#endif
+#ifdef  _MSC_VER
+#pragma pack(pop)
+#endif  /* _MSC_VER */
+
+#endif /* _DEQUE_ */
+
+/*
+ * Copyright (c) 1995-1999 by P.J. Plauger.  ALL RIGHTS RESERVED. 
+ * Consult your license regarding permissions and restrictions.
+ */
+
+/*
+ * This file is derived from software bearing the following
+ * restrictions:
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this
+ * software and its documentation for any purpose is hereby
+ * granted without fee, provided that the above copyright notice
+ * appear in all copies and that both that copyright notice and
+ * this permission notice appear in supporting documentation.
+ * Hewlett-Packard Company makes no representations about the
+ * suitability of this software for any purpose. It is provided
+ * "as is" without express or implied warranty.
+ V2.33:0009 */

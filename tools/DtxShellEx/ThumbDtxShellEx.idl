@@ -1,0 +1,38 @@
+
+	// ThumbDtxShellEx.idl : IDL source for DtxShellEx.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (DtxShellEx.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+  
+	[
+		object,
+		uuid(A7460053-5421-49C5-9183-7F4AEE7C0F2F),
+		dual,
+		helpstring("IDtxShellExExtractor Interface"),
+		pointer_default(unique)
+	]
+	interface IDtxShellExExtractor : IDispatch
+	{
+	};
+
+[
+	uuid(746AFB76-239C-425D-AFCB-BBBB08B4B54F),
+	version(1.0),
+	helpstring("ThumbDtxShellEx 1.0 Type Library")
+]
+library THUMBDTXSHELLEXLib 
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(6F5AAFDC-CB3D-456C-B863-3FF1201987D5),
+		helpstring("DtxShellExExtractor Class")
+	]
+	coclass DtxShellExExtractor
+	{
+		[default] interface IDtxShellExExtractor;
+	};
+};

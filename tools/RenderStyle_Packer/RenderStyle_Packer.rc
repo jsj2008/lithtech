@@ -1,0 +1,185 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP_ICON            ICON                    "RenderStyle_Packer.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PACKERDLG DIALOGEX 0, 0, 389, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "RenderStyle Packer (LTA to LTB)..."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDC_CANCELREQ,327,175,50,14
+    LTEXT           "Input File 1: ",IDC_STATIC,16,36,40,8
+    LTEXT           "Output File: ",IDC_STATIC,16,162,39,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME1,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,36,265,8
+    CONTROL         "<Filename>",IDC_OUTPUTFILENAME,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,162,265,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    16,175,228,14
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE1,327,34,50,14,WS_DISABLED
+    PUSHBUTTON      "...",IDC_OUTPUTFILE_BROWSE,327,159,50,14,WS_DISABLED
+    PUSHBUTTON      "Start",IDC_START,270,175,50,14,WS_DISABLED
+    LTEXT           "Command Line: -input1 <File> [-input2 <File> ...] -output <File>  [-verbose] [-win]",
+                    IDC_STATIC,16,194,254,8
+    CONTROL         "Don't close when done",IDC_DONTCLOSEWHENDONE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,270,193,99,10
+    LTEXT           "Input File 2: ",IDC_STATIC,16,52,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME2,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,52,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE2,327,49,50,14,WS_DISABLED
+    LTEXT           "Input File 3: ",IDC_STATIC,16,66,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME3,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,66,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE3,327,63,50,14,WS_DISABLED
+    LTEXT           "Input File 4: ",IDC_STATIC,16,82,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME4,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,82,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE4,327,79,50,14,WS_DISABLED
+    LTEXT           "Input File 5: ",IDC_STATIC,16,95,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME5,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,95,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE5,327,94,50,14,WS_DISABLED
+    LTEXT           "Input File 6: ",IDC_STATIC,16,111,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME6,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,111,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE6,327,108,50,14,WS_DISABLED
+    LTEXT           "Input File 7: ",IDC_STATIC,16,127,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME7,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,127,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE7,327,124,50,14,WS_DISABLED
+    LTEXT           "Input File 8: ",IDC_STATIC,16,140,40,8
+    CONTROL         "<Filename>",IDC_INPUTFILENAME8,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,56,140,265,8
+    PUSHBUTTON      "...",IDC_INPUTFILE_BROWSE8,327,138,50,14,WS_DISABLED
+    COMBOBOX        IDC_PLATFORMPICKER,289,6,93,73,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "TARGET PLATFORM",IDC_STATIC,16,6,71,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PACKERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 382
+        VERTGUIDE, 16
+        VERTGUIDE, 56
+        VERTGUIDE, 270
+        VERTGUIDE, 321
+        VERTGUIDE, 327
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 19
+        HORZGUIDE, 34
+        HORZGUIDE, 49
+        HORZGUIDE, 64
+        HORZGUIDE, 79
+        HORZGUIDE, 94
+        HORZGUIDE, 109
+        HORZGUIDE, 124
+        HORZGUIDE, 144
+        HORZGUIDE, 161
+        HORZGUIDE, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PACKERDLG DLGINIT
+BEGIN
+    IDC_PLATFORMPICKER, 0x403, 7, 0
+0x3344, 0x2044, 0x4350, "\000" 
+    IDC_PLATFORMPICKER, 0x403, 4, 0
+0x5350, 0x0032, 
+    IDC_PLATFORMPICKER, 0x403, 5, 0
+0x4258, 0x584f, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

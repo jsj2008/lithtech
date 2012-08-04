@@ -1,0 +1,104 @@
+Une production Fox Interactive et Sierra Entertainment
+
+Un jeu Monolith Productions
+>TIME:3.0
+>BIG
+##
+No One Lives Forever 2:
+Le C.R.I.M.E. est éternel
+utilise
+LithTech Jupiter System
+>TIME:2.0
+>BIG
+##
+Fox Interactive :
+>BIG
+>TIME:2.0
+>POS:UL
+##
+Chris Miller, Producteur
+Aaron Blean, Producteur associé
+  
+  
+Fox service Assurance Qualité :
+Igor Krinitskiy, Responsable Assurance Qualité
+Francis Choi, Responsable des tests
+>TIME:7.0
+>POS:UL
+##
+Testeurs :
+Geoff Bent
+Scott Carroll
+Michael Graham
+Jen Johnson
+Cris Lee
+Jonathan Masterson
+Billy Pamier 
+Denise Pater
+Luke Thai
+Hal Zabie
+  
+Responsable localisation :
+Kristian Davila
+>TIME:8.0
+>POS:UL
+##
+Remerciements :
+Eric Asevo
+Steve Bersch
+Pete Cesario
+Lindsey Fischer
+Ivo Gerscovich
+Greg Goodrich
+Tim Hall
+Tim Harrison
+Michael Heilemann
+Becky Kneubuhl
+Luke Letizia
+Dan Mackechnie
+Gabriel Mann
+John Melchior
+>TIME:8.0
+>POS:UL
+##
+Megan O'Brien
+Paul Pawlicki
+Michael Pole
+Rich Ragsdale
+Tim Ramage
+Jamie Samson
+Kirk Scott
+Dave Shaw
+David Stalker
+Kristin Sutter (www.nolfgirl.com)
+Tim Tran
+Jack Van Leer
+Ellen Williams
+Chris Wilson
+Asylum Studio (www.asylumstudio.com)
+>TIME:8.0
+>POS:UL
+##
+Lisa Fredsti (Fox Library)
+Brian Thomas (Fox Library)
+Brian Harvey (NVIDIA)
+Jessie Lawrence (Creative Labs)
+Mike Drummelsmith (Matrox)
+Marisa Porter, MCA
+Van Riker, 1600 Records
+John Dongelmans (Microsoft)
+Tim Godwin, Line 6
+>TIME:7.0
+>POS:UL
+##
+Travailler avec l'équipe NOLF
+est toujours une expérience fantastique.
+Merci pour toutes ces longues soirées,
+ces week-ends perdus et plus encore, 
+merci pour tous les efforts faits
+pour améliorer la qualité du jeu.
+Vous êtes géniaux !  -CM 
+>TIME:6.0
+>POS:UL
+##
+END

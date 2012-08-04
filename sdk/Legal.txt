@@ -1,0 +1,11 @@
+Legal Notices
+
+The LithTech Development System is copyright 1998-2001 by LithTech, Inc., Kirkland, Washington, U.S.A. All rights reserved.
+
+No One Lives Forever is copyright 2000 Twentieth Century Fox Film Corporation. All Rights Reserved. Fox, Fox Interactive, No One Lives Forever and their associated logos are registered trademarks or trademarks of Twentieth Century Fox Film Corporation. LithTech is a trademark of LithTech, Inc. Windows is a registered trademark of Microsoft Corporation in the United States and/or other countries. The ratings icon is a trademark of the Interactive Digital Software Association. 
+
+ImageMagick is copyright 2000 by ImageMagick Studio, a non-profit organization dedicated to making software imaging solutions freely available.
+
+The FreeType Project is copyright 1996-2000  by David Turner, Robert Wilhelm, and Werner Lemberg. All rights reserved except as specified in the Credits chapter of the Game Content Creation Guide.
+
+All other trademarks are copyright by their respective owners.

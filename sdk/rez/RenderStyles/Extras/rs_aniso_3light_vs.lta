@@ -1,0 +1,190 @@
+
+(renderstyle Nameless 
+	(renderstates 
+		(clipmode RENDERSTYLE_FULLCLIP ))
+	(lightmaterial 
+		(ambient 1.000000 1.000000 1.000000 1.000000 
+		 )
+		(diffuse 0.800000 0.800000 0.800000 1.000000 
+		 )
+		(specular 0.000000 0.000000 0.000000 1.000000 
+		 )
+		(emissive 0.000000 0.000000 0.000000 1.000000 
+		 )
+	 
+		(specularpower 20.000000 ))
+	(renderpass 
+		(testmode RENDERSTYLE_NOALPHATEST )
+		(fillmode RENDERSTYLE_FILL )
+		(blendop RENDERSTYLE_NOBLEND )
+		(zbuffermode RENDERSTYLE_ZRW )
+	 
+		(cullmode RENDERSTYLE_CULL_CCW )
+		(texturefactor -2139062144 )
+		(alpharef 128 )
+		(dynamiclight 1 )
+		(usebumpenvmap 0 )
+	 
+		(bumpenvmapstage 1 )
+		(bumpenvmapscale 1.000000 )
+		(bumpenvmapoffset 0.000000 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_USE_TEXTURE2 )
+			(colorop RENDERSTYLE_COLOROP_MODULATE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_DIFFUSE )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_SELECTARG1 )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_DIFFUSE )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET2 )
+			(uaddress RENDERSTYLE_UVADDR_CLAMP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_CLAMP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_USE_TEXTURE1 )
+			(colorop RENDERSTYLE_COLOROP_MODULATEALPHA )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_SELECTARG1 )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET1 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+	 
+		(texturestageops 
+			(textureparam RENDERSTYLE_NOTEXTURE )
+			(colorop RENDERSTYLE_COLOROP_DISABLE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_DISABLE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET3 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_NOTEXTURE )
+			(colorop RENDERSTYLE_COLOROP_DISABLE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_DISABLE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET4 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+		(d3doptions 
+			(usevertexshader 1 )
+			(vertexshaderfilename "vs_aniso_basetex_3light.vsh" )
+			(expandskinning 1 )
+			(constvector_constreg1 0 )
+		 
+			(constvector_param1 0.000000 0.500000 1.000000 2.000000 
+			 )
+			(constvector_constreg2 -1 )
+			(constvector_param2 0.000000 0.000000 0.000000 0.000000 
+			 )
+			(constvector_constreg3 -1 )
+			(constvector_param3 0.000000 0.000000 0.000000 0.000000 
+			 )
+		 
+			(worldviewtransform_constreg -1 )
+			(worldviewtransform_count 1 )
+			(projtransform_constreg 1 )
+			(worldviewprojtransform_constreg 5 )
+			(viewprojtransform_constreg -1 )
+		 
+			(campos_mspc_constreg 9 )
+			(light_count 3 )
+			(lightposition_mspc_constreg 10 )
+			(lightposition_cspc_constreg 13 )
+			(lightcolor_constreg 16 )
+		 
+			(lightatt_constreg 19 )
+			(material_ambdifem_constreg 22 )
+			(material_specular_constreg -1 )
+			(ambientlight_constreg 25 )
+			(prevworldviewtrans_constreg -1 )
+		 
+			(prevworldviewtrans_count 1 )
+			(declaration_stream_position0 1 )
+			(declaration_stream_normal0 1 )
+			(declaration_stream_uvsets0 1 )
+			(declaration_stream_uvcount0 1 )
+		 
+			(declaration_stream_basis0 0 )
+			(declaration_stream_position1 0 )
+			(declaration_stream_normal1 0 )
+			(declaration_stream_uvsets1 0 )
+			(declaration_stream_uvcount1 0 )
+		 
+			(declaration_stream_basis1 0 )
+			(declaration_stream_position2 0 )
+			(declaration_stream_normal2 0 )
+			(declaration_stream_uvsets2 0 )
+			(declaration_stream_uvcount2 0 )
+		 
+			(declaration_stream_basis2 0 )
+			(declaration_stream_position3 0 )
+			(declaration_stream_normal3 0 )
+			(declaration_stream_uvsets3 0 )
+			(declaration_stream_uvcount3 0 )
+		 
+			(declaration_stream_basis3 0 )))
+ 
+	(debugparams 
+		(userefrast 0 )
+		(renderonidle 1 )
+		(rotatemodel 1 )
+		(lightconfig 0 )
+	 
+		(lightcount 2 )
+		(lightcolor 0.500000 0.500000 0.500000 1.000000 
+		 )
+		(camerarotationspeed 0.000000 )
+		(backgndimg_color 0.000000 0.050000 0.300000 1.000000 
+		 )
+		(modelname Severed_Ant_Head )
+	 
+		(texture1 "..\textures\bumpmap.bmp" )
+		(texture2 "..\textures\Aniso2.tga" )))

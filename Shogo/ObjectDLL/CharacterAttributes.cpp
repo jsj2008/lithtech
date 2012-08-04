@@ -1,0 +1,371 @@
+// ----------------------------------------------------------------------- //
+//
+// MODULE  : CharacterAttributes.cpp
+//
+// PURPOSE : Implementation of character attributes
+//
+// CREATED : 12/9/97
+//
+// ----------------------------------------------------------------------- //
+
+#include "CharacterAttributes.h"
+
+
+DFLOAT s_fCharacterMasses[MI_LAST] =
+{
+	CA_PLAYER_ONFOOT_MASS,	// Sanjuro
+	CA_PLAYER_ONFOOT_MASS,	// Kid
+	CA_PLAYER_MECHA_MASS,	// Player Akuma
+	CA_PLAYER_MECHA_MASS,	// Player Predator
+	CA_PLAYER_MECHA_MASS,	// Player Ordog
+	CA_PLAYER_MECHA_MASS,	// Player Enforcer
+	CA_AI_LITTLEKID_MASS,
+	CA_AI_LITTLEKID_MASS,
+	CA_AI_CIVILIAN1_MASS,
+	CA_AI_CIVILIAN1_MASS,
+	CA_AI_CIVILIAN2_MASS,
+	CA_AI_OFFICER_MASS,
+	CA_AI_TROOPER_MASS,
+	CA_AI_ETROOPER_MASS,
+	CA_AI_STROOPER_MASS,
+	CA_AI_ESTROOPER_MASS,
+	CA_AI_AVC_MASS,
+	CA_AI_ORDOG_MASS,
+	CA_AI_AKUMA_MASS,
+	CA_AI_ENFORCER_MASS,
+	CA_AI_PREDATOR_MASS,
+	CA_AI_ASSASSIN_MASS,
+	CA_AI_ANDRA5_MASS,
+	CA_AI_ANDRA10_MASS,
+	CA_AI_RAKSHA_MASS,
+	CA_AI_TENMA_MASS,
+	CA_AI_COTHINEAL_MASS,
+	CA_AI_RASCAL_MASS,
+	CA_AI_VIGILANCE_MASS,
+	CA_AI_HAMMERHEAD_MASS,
+	CA_AI_VANDAL_MASS,
+	CA_AI_SPARROWHAWK_MASS,
+	CA_AI_RUIN150_MASS,
+	CA_AI_UHLANA3_MASS,
+	CA_AI_KURA_MASS,
+	CA_AI_HANK_MASS,
+	CA_AI_ADMIRAL_MASS,
+	CA_AI_KATHRYN_MASS,
+	CA_AI_RYO_MASS,
+	CA_AI_TOSHIRO_MASS,
+	CA_AI_GABRIEL_MASS,
+	CA_AI_BAKU_MASS,
+	CA_AI_SAMANTHA_MASS
+};
+
+DFLOAT s_fCharacterHitPts[MI_LAST] =
+{
+	CA_PLAYER_ONFOOT_HITPTS,	// Sanjuro
+	CA_PLAYER_KID_HITPTS,		// Kid
+	CA_PLAYER_AKUMA_HITPTS,		// Player Akuma
+	CA_PLAYER_PREDATOR_HITPTS,	// Player Predator
+	CA_PLAYER_ORDOG_HITPTS,		// Player Ordog
+	CA_PLAYER_ENFORCER_HITPTS,	// Player Enforcer
+	CA_AI_LITTLEKID_HITPTS,
+	CA_AI_LITTLEKID_HITPTS,
+	CA_AI_CIVILIAN1_HITPTS,
+	CA_AI_CIVILIAN1_HITPTS,
+	CA_AI_CIVILIAN2_HITPTS,
+	CA_AI_OFFICER_HITPTS,
+	CA_AI_TROOPER_HITPTS,
+	CA_AI_ETROOPER_HITPTS,
+	CA_AI_STROOPER_HITPTS,
+	CA_AI_ESTROOPER_HITPTS,
+	CA_AI_AVC_HITPTS,
+	CA_AI_ORDOG_HITPTS,
+	CA_AI_AKUMA_HITPTS,
+	CA_AI_ENFORCER_HITPTS,
+	CA_AI_PREDATOR_HITPTS,
+	CA_AI_ASSASSIN_HITPTS,
+	CA_AI_ANDRA5_HITPTS,
+	CA_AI_ANDRA10_HITPTS,
+	CA_AI_RAKSHA_HITPTS,
+	CA_AI_TENMA_HITPTS,
+	CA_AI_COTHINEAL_HITPTS,
+	CA_AI_RASCAL_HITPTS,
+	CA_AI_VIGILANCE_HITPTS,
+	CA_AI_HAMMERHEAD_HITPTS,
+	CA_AI_VANDAL_HITPTS,
+	CA_AI_SPARROWHAWK_HITPTS,
+	CA_AI_RUIN150_HITPTS,
+	CA_AI_UHLANA3_HITPTS,
+	CA_AI_KURA_HITPTS,
+	CA_AI_HANK_HITPTS,
+	CA_AI_ADMIRAL_HITPTS,
+	CA_AI_KATHRYN_HITPTS,
+	CA_AI_RYO_HITPTS,
+	CA_AI_TOSHIRO_HITPTS,
+	CA_AI_GABRIEL_HITPTS,
+	CA_AI_BAKU_HITPTS,
+	CA_AI_SAMANTHA_HITPTS
+};
+
+DFLOAT s_fCharacterMaxHitPts[MI_LAST] =
+{
+	CA_PLAYER_ONFOOT_MAX_HITPTS,	// Sanjuro
+	CA_PLAYER_KID_MAX_HITPTS,		// Kid
+	CA_PLAYER_AKUMA_MAX_HITPTS,		// Player Akuma
+	CA_PLAYER_PREDATOR_MAX_HITPTS,	// Player Predator
+	CA_PLAYER_ORDOG_MAX_HITPTS,		// Player Ordog
+	CA_PLAYER_ENFORCER_MAX_HITPTS,	// Player Enforcer
+	CA_AI_LITTLEKID_MAX_HITPTS,
+	CA_AI_LITTLEKID_MAX_HITPTS,
+	CA_AI_CIVILIAN1_MAX_HITPTS,
+	CA_AI_CIVILIAN1_MAX_HITPTS,
+	CA_AI_CIVILIAN2_MAX_HITPTS,
+	CA_AI_OFFICER_MAX_HITPTS,
+	CA_AI_TROOPER_MAX_HITPTS,
+	CA_AI_ETROOPER_MAX_HITPTS,
+	CA_AI_STROOPER_MAX_HITPTS,
+	CA_AI_ESTROOPER_MAX_HITPTS,
+	CA_AI_AVC_MAX_HITPTS,
+	CA_AI_ORDOG_MAX_HITPTS,
+	CA_AI_AKUMA_MAX_HITPTS,
+	CA_AI_ENFORCER_MAX_HITPTS,
+	CA_AI_PREDATOR_MAX_HITPTS,
+	CA_AI_ASSASSIN_MAX_HITPTS,
+	CA_AI_ANDRA5_MAX_HITPTS,
+	CA_AI_ANDRA10_MAX_HITPTS,
+	CA_AI_RAKSHA_MAX_HITPTS,
+	CA_AI_TENMA_MAX_HITPTS,
+	CA_AI_COTHINEAL_MAX_HITPTS,
+	CA_AI_RASCAL_MAX_HITPTS,
+	CA_AI_VIGILANCE_MAX_HITPTS,
+	CA_AI_HAMMERHEAD_MAX_HITPTS,
+	CA_AI_VANDAL_MAX_HITPTS,
+	CA_AI_SPARROWHAWK_MAX_HITPTS,
+	CA_AI_RUIN150_MAX_HITPTS,
+	CA_AI_UHLANA3_MAX_HITPTS,
+	CA_AI_KURA_MAX_HITPTS,
+	CA_AI_HANK_MAX_HITPTS,
+	CA_AI_ADMIRAL_MAX_HITPTS,
+	CA_AI_KATHRYN_MAX_HITPTS,
+	CA_AI_RYO_MAX_HITPTS,
+	CA_AI_TOSHIRO_MAX_HITPTS,
+	CA_AI_GABRIEL_MAX_HITPTS,
+	CA_AI_BAKU_MAX_HITPTS,
+	CA_AI_SAMANTHA_MAX_HITPTS
+};
+
+DFLOAT s_fCharacterArmor[MI_LAST] =
+{
+	CA_PLAYER_ONFOOT_ARMOR,		// Sanjuro
+	CA_PLAYER_KID_ARMOR,		// Kid
+	CA_PLAYER_AKUMA_ARMOR,		// Player Akuma
+	CA_PLAYER_PREDATOR_ARMOR,	// Player Predator
+	CA_PLAYER_ORDOG_ARMOR,		// Player Ordog
+	CA_PLAYER_ENFORCER_ARMOR,	// Player Enforcer
+	CA_AI_LITTLEKID_ARMOR,
+	CA_AI_LITTLEKID_ARMOR,
+	CA_AI_CIVILIAN1_ARMOR,
+	CA_AI_CIVILIAN1_ARMOR,
+	CA_AI_CIVILIAN2_ARMOR,
+	CA_AI_OFFICER_ARMOR,
+	CA_AI_TROOPER_ARMOR,
+	CA_AI_ETROOPER_ARMOR,
+	CA_AI_STROOPER_ARMOR,
+	CA_AI_ESTROOPER_ARMOR,
+	CA_AI_AVC_ARMOR,
+	CA_AI_ORDOG_ARMOR,
+	CA_AI_AKUMA_ARMOR,
+	CA_AI_ENFORCER_ARMOR,
+	CA_AI_PREDATOR_ARMOR,
+	CA_AI_ASSASSIN_ARMOR,
+	CA_AI_ANDRA5_ARMOR,
+	CA_AI_ANDRA10_ARMOR,
+	CA_AI_RAKSHA_ARMOR,
+	CA_AI_TENMA_ARMOR,
+	CA_AI_COTHINEAL_ARMOR,
+	CA_AI_RASCAL_ARMOR,
+	CA_AI_VIGILANCE_ARMOR,
+	CA_AI_HAMMERHEAD_ARMOR,
+	CA_AI_VANDAL_ARMOR,
+	CA_AI_SPARROWHAWK_ARMOR,
+	CA_AI_RUIN150_ARMOR,
+	CA_AI_UHLANA3_ARMOR,
+	CA_AI_KURA_ARMOR,
+	CA_AI_HANK_ARMOR,
+	CA_AI_ADMIRAL_ARMOR,
+	CA_AI_KATHRYN_ARMOR,
+	CA_AI_RYO_ARMOR,
+	CA_AI_TOSHIRO_ARMOR,
+	CA_AI_GABRIEL_ARMOR,
+	CA_AI_BAKU_ARMOR,
+	CA_AI_SAMANTHA_ARMOR
+};
+
+DFLOAT s_fCharacterMaxArmor[MI_LAST] =
+{
+	CA_PLAYER_ONFOOT_MAX_ARMOR,		// Sanjuro
+	CA_PLAYER_KID_MAX_ARMOR,		// Kid
+	CA_PLAYER_AKUMA_MAX_ARMOR,		// Player Akuma
+	CA_PLAYER_PREDATOR_MAX_ARMOR,	// Player Predator
+	CA_PLAYER_ORDOG_MAX_ARMOR,		// Player Ordog
+	CA_PLAYER_ENFORCER_MAX_ARMOR,	// Player Enforcer
+	CA_AI_LITTLEKID_MAX_ARMOR,
+	CA_AI_LITTLEKID_MAX_ARMOR,
+	CA_AI_CIVILIAN1_MAX_ARMOR,
+	CA_AI_CIVILIAN1_MAX_ARMOR,
+	CA_AI_CIVILIAN2_MAX_ARMOR,
+	CA_AI_OFFICER_MAX_ARMOR,
+	CA_AI_TROOPER_MAX_ARMOR,
+	CA_AI_ETROOPER_MAX_ARMOR,
+	CA_AI_STROOPER_MAX_ARMOR,
+	CA_AI_ESTROOPER_MAX_ARMOR,
+	CA_AI_AVC_MAX_ARMOR,
+	CA_AI_ORDOG_MAX_ARMOR,
+	CA_AI_AKUMA_MAX_ARMOR,
+	CA_AI_ENFORCER_MAX_ARMOR,
+	CA_AI_PREDATOR_MAX_ARMOR,
+	CA_AI_ASSASSIN_MAX_ARMOR,
+	CA_AI_ANDRA5_MAX_ARMOR,
+	CA_AI_ANDRA10_MAX_ARMOR,
+	CA_AI_RAKSHA_MAX_ARMOR,
+	CA_AI_TENMA_MAX_ARMOR,
+	CA_AI_COTHINEAL_MAX_ARMOR,
+	CA_AI_RASCAL_MAX_ARMOR,
+	CA_AI_VIGILANCE_MAX_ARMOR,
+	CA_AI_HAMMERHEAD_MAX_ARMOR,
+	CA_AI_VANDAL_MAX_ARMOR,
+	CA_AI_SPARROWHAWK_MAX_ARMOR,
+	CA_AI_RUIN150_MAX_ARMOR,
+	CA_AI_UHLANA3_MAX_ARMOR,
+	CA_AI_KURA_MAX_ARMOR,
+	CA_AI_HANK_MAX_ARMOR,
+	CA_AI_ADMIRAL_MAX_ARMOR,
+	CA_AI_KATHRYN_MAX_ARMOR,
+	CA_AI_RYO_MAX_ARMOR,
+	CA_AI_TOSHIRO_MAX_ARMOR,
+	CA_AI_GABRIEL_MAX_ARMOR,
+	CA_AI_BAKU_MAX_ARMOR,
+	CA_AI_SAMANTHA_MAX_ARMOR
+};
+
+// ----------------------------------------------------------------------- //
+//
+//	ROUTINE:	GetDefaultMass
+//
+//	PURPOSE:	Return the mass associated with a particular id
+//
+// ----------------------------------------------------------------------- //
+
+DFLOAT GetDefaultMass(DBYTE nId, ModelSize size)
+{
+	DFLOAT fRet = CA_PLAYER_ONFOOT_MASS;
+
+	if (nId < MI_FIRST || nId >= MI_LAST) return fRet;
+
+	fRet = s_fCharacterMasses[nId];
+
+	if (nId == MI_AI_BAKU_ID && size == MS_LARGE)
+	{
+		fRet = CA_AI_BAKU_MECHA_MASS;
+	}
+
+	return fRet;
+}
+
+
+// ----------------------------------------------------------------------- //
+//
+//	ROUTINE:	GetDefaultHitPts
+//
+//	PURPOSE:	Return the hit pts associated with a particular id
+//
+// ----------------------------------------------------------------------- //
+
+DFLOAT GetDefaultHitPts(DBYTE nId, ModelSize size)
+{
+	DFLOAT fRet = CA_PLAYER_ONFOOT_HITPTS;
+
+	if (nId < MI_FIRST || nId >= MI_LAST) return fRet;
+
+	fRet = s_fCharacterHitPts[nId];
+
+	if (nId == MI_AI_BAKU_ID && size == MS_LARGE)
+	{
+		fRet = CA_AI_BAKU_MECHA_HITPTS;
+	}
+
+	return fRet;
+}
+
+
+// ----------------------------------------------------------------------- //
+//
+//	ROUTINE:	GetDefaultMaxHitPts
+//
+//	PURPOSE:	Return the max hit pts associated with a particular id
+//
+// ----------------------------------------------------------------------- //
+
+DFLOAT GetDefaultMaxHitPts(DBYTE nId, ModelSize size)
+{
+	DFLOAT fRet = CA_PLAYER_ONFOOT_MAX_HITPTS;
+
+	if (nId < MI_FIRST || nId >= MI_LAST) return fRet;
+
+	fRet = s_fCharacterMaxHitPts[nId];
+
+	if (nId == MI_AI_BAKU_ID && size == MS_LARGE)
+	{
+		fRet = CA_AI_BAKU_MECHA_MAX_HITPTS;
+	}
+
+	return fRet;
+}
+
+
+// ----------------------------------------------------------------------- //
+//
+//	ROUTINE:	GetDefaultArmor
+//
+//	PURPOSE:	Return the armor associated with a particular id
+//
+// ----------------------------------------------------------------------- //
+
+DFLOAT GetDefaultArmor(DBYTE nId, ModelSize size)
+{
+	DFLOAT fRet = CA_PLAYER_ONFOOT_ARMOR;
+
+	if (nId < MI_FIRST || nId >= MI_LAST) return fRet;
+
+	fRet = s_fCharacterArmor[nId];
+
+	if (nId == MI_AI_BAKU_ID && size == MS_LARGE)
+	{
+		fRet = CA_AI_BAKU_MECHA_ARMOR;
+	}
+
+	return fRet;
+}
+
+
+// ----------------------------------------------------------------------- //
+//
+//	ROUTINE:	GetDefaultMaxArmor
+//
+//	PURPOSE:	Return the max armor associated with a particular id
+//
+// ----------------------------------------------------------------------- //
+
+DFLOAT GetDefaultMaxArmor(DBYTE nId, ModelSize size)
+{
+	DFLOAT fRet = CA_PLAYER_ONFOOT_MAX_ARMOR;
+
+	if (nId < MI_FIRST || nId >= MI_LAST) return fRet;
+
+	fRet = s_fCharacterMaxArmor[nId];
+
+	if (nId == MI_AI_BAKU_ID && size == MS_LARGE)
+	{
+		fRet = CA_AI_BAKU_MECHA_MAX_ARMOR;
+	}
+
+	return fRet;
+}

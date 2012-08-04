@@ -1,0 +1,9 @@
+#define __WON_MASTER_CPP__
+#include "CreateAccountOp.cpp"
+#include "DBProxyOp.cpp"
+#include "GetAccountOp.cpp"
+#include "GetUserIdFromNameOp.cpp"
+#include "ProfileData.cpp"
+#include "RequestAccountInfoEmailOp.cpp"
+#include "RequestPasswordEmailOp.cpp"
+#include "UpdateAccountOp.cpp"

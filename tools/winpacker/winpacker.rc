@@ -1,0 +1,381 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\winpacker.ico"
+IDI_LOADICON            ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_SAVEICON            ICON    DISCARDABLE     "res\\saveicon.ico"
+IDI_OPTIONSICON         ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 54
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Winpacker"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "Winpacker for LithTech 3.2",IDC_STATIC,48,7,92,8,
+                    SS_NOPREFIX
+    LTEXT           "© 1998-2001 LithTech, Inc.\rKirkland, Washington, U.S.A.\nAll rights reserved.",
+                    IDC_STATIC,48,20,97,26
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WINPACKER_DIALOG DIALOGEX 0, 0, 273, 303
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WinPacker"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Process",IDOK,176,280,90,16
+    LTEXT           "Property Window Place Holder. This control is removed on window creation, and serves only to define a rectangle in which to place the property list",
+                    IDC_STATIC_PROP_LIST_HOLDER,10,22,253,248,WS_BORDER | 
+                    WS_TABSTOP
+    CONTROL         "Tab1",IDC_TAB_GROUPS,"SysTabControl32",WS_TABSTOP,7,7,
+                    259,267
+    COMBOBOX        IDC_COMBO_PRESETS,7,281,76,111,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_PRESET,84,282,13,11
+    PUSHBUTTON      "-",IDC_BUTTON_REMOVE_PRESET,97,282,13,11
+    PUSHBUTTON      "Save",IDC_BUTTON_SAVE,123,280,19,16,BS_ICON
+    PUSHBUTTON      "Load",IDC_BUTTON_LOAD,142,280,19,16,BS_ICON
+END
+
+IDD_BACKEND_DIALOG DIALOG DISCARDABLE  0, 0, 391, 223
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Packing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Tasks",IDC_STATIC,7,7,91,132
+    LISTBOX         IDC_LIST_TASKS,13,18,79,115,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Messages",IDC_STATIC,103,7,281,155
+    LTEXT           "Filter",IDC_STATIC,13,145,17,8
+    COMBOBOX        IDC_COMBO_MESSAGE_FILTER,32,142,60,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Task: None",IDC_STATIC_TASK_NAME,7,163,377,31
+    CONTROL         "Progress1",IDC_PROGRESS_TASK,"msctls_progress32",
+                    WS_BORDER,13,176,366,13
+    LTEXT           "Priority",IDC_STATIC_PRIORITY,7,204,23,10
+    COMBOBOX        IDC_COMBO_THREAD_PRIORITY,33,202,70,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save Log",IDC_BUTTON_SAVE_LOG,127,200,18,16,BS_ICON
+    DEFPUSHBUTTON   "Close",IDOK,302,200,82,16
+    CONTROL         "",IDC_RICHEDIT_MESSAGES,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,109,18,270,138
+    PUSHBUTTON      "",IDC_BUTTON_MESSAGE_OPTIONS,109,200,18,16,BS_ICON
+END
+
+IDD_STRING_PROMPT DIALOG DISCARDABLE  0, 0, 284, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter String"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_PROMPT,7,7,270,8
+    EDITTEXT        IDC_EDIT_STRING_VAL,7,18,270,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,172,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,227,39,50,14
+END
+
+IDD_MESSAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 285, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Message Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Message Severity",IDC_STATIC,7,7,104,97
+    LISTBOX         IDC_LIST_MESSAGE_SEVERITY,13,17,92,80,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Properties",IDC_STATIC,116,7,162,56
+    LTEXT           "Prefix:",IDC_STATIC,123,19,23,8
+    EDITTEXT        IDC_EDIT_PREFIX,151,17,121,12,ES_AUTOHSCROLL
+    LTEXT           "Color:",IDC_STATIC,123,39,24,8
+    CONTROL         "",IDC_BUTTON_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    151,36,41,12
+    DEFPUSHBUTTON   "OK",IDOK,168,90,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,90,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "winpacker MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "winpacker\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "winpacker.EXE\0"
+            VALUE "ProductName", "winpacker Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 48
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_WINPACKER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+        HORZGUIDE, 279
+    END
+
+    IDD_BACKEND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 384
+        VERTGUIDE, 13
+        VERTGUIDE, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+        HORZGUIDE, 18
+        HORZGUIDE, 200
+    END
+
+    IDD_STRING_PROMPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_MESSAGE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        VERTGUIDE, 123
+        VERTGUIDE, 151
+        VERTGUIDE, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+        HORZGUIDE, 17
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_BACKEND_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 9, 0
+0x7243, 0x7469, 0x6369, 0x6c61, "\000" 
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 8, 0
+0x6157, 0x6e72, 0x6e69, 0x0067, 
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 8, 0
+0x6556, 0x6272, 0x736f, 0x0065, 
+    IDC_COMBO_MESSAGE_FILTER, 0x403, 6, 0
+0x6544, 0x7562, 0x0067, 
+    IDC_COMBO_THREAD_PRIORITY, 0x403, 5, 0
+0x6948, 0x6867, "\000" 
+    IDC_COMBO_THREAD_PRIORITY, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_THREAD_PRIORITY, 0x403, 4, 0
+0x6f4c, 0x0077, 
+    IDC_COMBO_THREAD_PRIORITY, 0x403, 9, 0
+0x6556, 0x7972, 0x4c20, 0x776f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About winpacker..."
+    IDS_BROWSE_PACK_FILTER  "World Files (*.lta, *.ltc)|*.lta;*.ltc|All Files (*.*)|*.*||"
+    IDS_PACK_FILE_NOT_FOUND "The file %s was not found. Please select the file to process."
+    IDS_PACKER_NOT_FOUND    "A packer was not found to process %s"
+    IDS_TOOLTIP_SAVE_LOG    "Saves the task messages to a log file on disk"
+    IDS_TOOLTIP_THREAD_PRIORITY "Changes the priority of the packing thread"
+    IDS_TOOLTIP_SAVE_SETTINGS "Saves the current settings to disk"
+    IDS_TOOLTIP_LOAD_SETTINGS "Loads a saved configuration from disk"
+    IDS_TOOLTIP_GROUP_LIST  "Allows the selection of different property groups"
+    IDS_TOOLTIP_PROCESS     "Begins the packing of the file"
+    IDS_TOOLTIP_BROWSE_FOR_FILE "Browses for a file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_MESSAGE_FILTER 
+                            "Determines the minimum severity a message must be in order to be displayed."
+    IDS_TOOLTIP_TASK_PROGRESS 
+                            "Displays the progress of the currently active task"
+    IDS_TOOLTIP_TASK_LIST   "Shows the list of tasks that the packer will perform"
+    IDS_TOOLTIP_MESSAGE_LIST 
+                            "Displays all messages associated with the selected task"
+    IDS_ENTER_PRESET_NAME_TITLE "Enter Preset Name"
+    IDS_ENTER_PRESET_NAME_PROMPT "Please enter a name for the new preset"
+    IDS_TOOLTIP_PRESET_LIST "Displays a list of user presets for quick configuration of packer settings"
+    IDS_TOOLTIP_ADD_PRESET  "Uses the current settings to create a new user defined preset"
+    IDS_TOOLTIP_REMOVE_PRESET "Removes the currently selected preset"
+    IDS_CONFIRM_REMOVE_PRESET_TITLE "Remove Preset"
+    IDS_CONFIRM_REMOVE_PRESET_PROMPT 
+                            "Are you sure you want to remove the preset '%s'?"
+    IDS_ERROR_PRESET_NOT_UNIQUE_TITLE "Name Must be Unique"
+    IDS_ERROR_PRESET_NOT_UNIQUE_TEXT 
+                            "The name '%s' is already taken by a preset"
+    IDS_TOOLTIP_MESSAGE_OPTIONS 
+                            "Edit colors and formatting for different message types."
+    IDS_TOOLTIP_MSGOPT_SEVLIST 
+                            "Displays a list of the different message types that can be formatted"
+    IDS_TOOLTIP_MSGOPT_COLOR "The color of the current message type"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TOOLTIP_MSGOPT_PREFIX 
+                            "A prefix that will be placed in front of all messages of this type"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

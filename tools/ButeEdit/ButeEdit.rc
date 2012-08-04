@@ -1,0 +1,714 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ButeEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ButeEdit.ico"
+IDR_BUTETYPE            ICON    DISCARDABLE     "res\\ButeEditDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Modify",                     ID_EDIT_MODIFY
+        MENUITEM SEPARATOR
+        POPUP "&New"
+        BEGIN
+            MENUITEM "Tag",                         ID_EDIT_NEW_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "String",                      ID_EDIT_NEW_STRING
+            MENUITEM "Byte",                        ID_EDIT_NEW_BYTE
+            MENUITEM "DWORD",                       ID_EDIT_NEW_DWORD
+            MENUITEM "Integer",                     ID_EDIT_NEW_INTEGER
+            MENUITEM "Float",                       ID_EDIT_NEW_FLOAT
+            MENUITEM "Double",                      ID_EDIT_NEW_DOUBLE
+            MENUITEM "Bool",                        ID_EDIT_NEW_BOOL
+            MENUITEM "Point",                       ID_EDIT_NEW_POINT
+            MENUITEM "Rectangle",                   ID_EDIT_NEW_RECT
+            MENUITEM "Vector",                      ID_EDIT_NEW_VECTOR
+            MENUITEM "Range",                       ID_EDIT_NEW_RANGE
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ButeEdit...",          ID_APP_ABOUT
+    END
+END
+
+CG_IDR_POPUP_BUTE_EDIT_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "Tag",                         ID_EDIT_NEW_TAG
+            MENUITEM SEPARATOR
+            MENUITEM "String",                      ID_EDIT_NEW_STRING
+            MENUITEM "Byte",                        ID_EDIT_NEW_BYTE
+            MENUITEM "DWORD",                       ID_EDIT_NEW_DWORD
+            MENUITEM "Integer",                     ID_EDIT_NEW_INTEGER
+            MENUITEM "Float",                       ID_EDIT_NEW_FLOAT
+            MENUITEM "Double",                      ID_EDIT_NEW_DOUBLE
+            MENUITEM "Bool",                        ID_EDIT_NEW_BOOL
+            MENUITEM "Point",                       ID_EDIT_NEW_POINT
+            MENUITEM "Rectangle",                   ID_EDIT_NEW_RECT
+            MENUITEM "Vector",                      ID_EDIT_NEW_VECTOR
+            MENUITEM "Range",                       ID_EDIT_NEW_RANGE
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ButeEdit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ButeEdit Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG_BOOL DIALOG DISCARDABLE  0, 0, 158, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Bool Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Value",IDC_STATIC,7,35,45,36
+    CONTROL         "&True",IDC_RADIO_VALUE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,45,30,10
+    CONTROL         "&False",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,14,56,33,
+                    10
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,61,50,90,10
+    DEFPUSHBUTTON   "OK",IDOK,19,77,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,90,77,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,16,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_STRING DIALOG DISCARDABLE  0, 0, 241, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit String Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value data:",IDC_STATIC,7,35,35,8
+    EDITTEXT        IDC_EDIT_STRING,7,44,227,102,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,153,90,10
+    DEFPUSHBUTTON   "OK",IDOK,115,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,184,151,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,227,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_RECTANGLE DIALOG DISCARDABLE  0, 0, 131, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Rectangle Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,41,28,8
+    EDITTEXT        IDC_EDIT_RECTANGLE,39,39,85,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,74,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,117,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_POINT DIALOG DISCARDABLE  0, 0, 131, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Point Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,41,28,8
+    EDITTEXT        IDC_EDIT_POINT,39,39,85,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,74,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,117,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_RANGE DIALOG DISCARDABLE  0, 0, 131, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Range Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,41,28,8
+    EDITTEXT        IDC_EDIT_RANGE,39,39,85,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,74,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,117,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_DWORD DIALOG DISCARDABLE  0, 0, 158, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit DWORD Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,40,27,8
+    EDITTEXT        IDC_EDIT_DWORD,36,38,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,101,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,58,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_VECTOR DIALOG DISCARDABLE  0, 0, 131, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Vector Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,41,28,8
+    EDITTEXT        IDC_EDIT_VECTOR,39,39,85,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,74,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,117,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_DOUBLE DIALOG DISCARDABLE  0, 0, 158, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Double Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,40,26,8
+    EDITTEXT        IDC_EDIT_DOUBLE,36,38,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,101,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,58,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_BYTE DIALOG DISCARDABLE  0, 0, 158, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Byte Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,40,26,8
+    EDITTEXT        IDC_EDIT_BYTE,36,38,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,101,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,58,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_FLOAT DIALOG DISCARDABLE  0, 0, 158, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Float Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,40,27,8
+    EDITTEXT        IDC_EDIT_FLOAT,36,38,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,101,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,58,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_INTEGER DIALOG DISCARDABLE  0, 0, 158, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Integer Value"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Value:",IDC_STATIC,7,40,27,8
+    EDITTEXT        IDC_EDIT_INTEGER,36,38,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace value in all tags",IDC_CHECK_REPLACE_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,90,10
+    DEFPUSHBUTTON   "OK",IDOK,101,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,58,50,14
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,144,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG_NEW_TAG DIALOG DISCARDABLE  0, 0, 132, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Tag"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Value &name:",IDC_STATIC,7,7,39,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,118,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,7,40,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,40,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ButeEdit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ButeEdit\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ButeEdit.EXE\0"
+            VALUE "ProductName", "ButeEdit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG_BOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 234
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_DIALOG_RECTANGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_POINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_RANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_DWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_VECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_DOUBLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_BYTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_FLOAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_INTEGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_DIALOG_NEW_TAG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ButeEdit\n\nBute\nBute Files (*.but)\n.but\nButeEdit.Document\nBute Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ButeEdit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ButeEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

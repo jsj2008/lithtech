@@ -1,0 +1,332 @@
+Monolith Productions:
+>BIG
+>TIME:2.0
+>POS:UL
+##
+James Ackley, Lead Sound Designer
+Scott Albaugh, Senior 2D/3D Artist/Animator 
+Curt Collins, 2D/3D Artist
+Brian Davis, 2D/3D Artist
+Michael Drummond, Level Designer
+Kevin Francis, Senior Engineer
+Terry Franguiadakis, Engineer
+Jim Geldmacher, Engineer
+Jon Gramlich, QA Lead
+Nathan Grigg, Composer
+Chris Hewett, Director of Development
+J.J. Hoesing, Engineer
+>TIME:8.0
+>POS:UL
+##
+Rodney Houle, Level Designer
+Craig Hubbard, Creative Director/Lead Game Designer
+Steve Lee, Senior 2D/3D Artist
+David Longo, Art Director/Lead 3D Artist
+Dan Miller, Level Designer
+John Mulkey, Lead Level Designer
+Jeff Orkin, Senior Engineer
+John O'Rorke, Engineer
+Brian Pamintuan, Sound Designer
+Russ Pecoraro, Engineer
+Brad Pendleton, Lead Engineer
+Sasha Runnels, Senior 2D/3D Artist
+>TIME:8.0
+>POS:UL
+##
+Samantha Ryan, Producer
+Wes Saulsberry, Art Lead
+Kevin Stephens, Director of Engineering
+Akika Tanaka, 2D/3D Artist
+Cassano Thruston, Sound Designer
+Simon Wong, Motion Capture Engineer
+  
+Additional Level Design:
+Nathan Cheever
+Dan Thibadeau
+  
+Character Concept Art:
+Eric Kohler
+>TIME:8.0
+>POS:UL
+##
+Special thanks to the 
+following Monolith personnel:
+Matt Allen
+Andrea Barringer
+Bryan Bouwman
+Wayne Burns
+Dan Fagan
+Andy Grant
+Jason Hall
+Patti Kail
+Gary Kussman
+Kevin Lambert
+>TIME:8.0
+>POS:UL
+##
+Rick Lambright
+Brian Legge
+Brian Long
+Spencer Maiers
+Kristin McLellan
+Andrew Megowan
+Ryan O'Rourke
+Matt Scott
+Mark Spadoni
+Jim Totaro
+Jim Wallingford
+Sandra Watanabe
+Kiyotaka Yaguchi
+>TIME:8.0
+>POS:UL
+##
+Special thanks to the 
+following LithTech personnel:
+Jonathan Branam
+Bob Givnin
+Brian Goble
+Matt Grimshaw
+Chris Hedberg
+Jeff Hutt
+David Koenig
+Dan White
+Paige Young
+>TIME:8.0
+>POS:UL
+##
+Special thanks to:
+Steve Burke, NVIDIA
+Justin Cooney, ATI
+Todd Clauson, Intel 
+Keith Galocy, NVIDIA
+Greg James, NVIDIA
+Matt McClellan, Intel
+Derek Reynolds, Intel 
+Randy 'ydnar' Reddig
+
+Metrolabs, developers of
+tasty XTZ Caffeine and 
+herbal energy drinks
+>TIME:6.0
+>POS:UL
+##
+NOLF 2 Theme and Game Score:
+Nathan Grigg  
+  
+Cut Scene Scores:
+Nathan Grigg
+Guy Whitmore
+  
+Musicians:
+Andrea Wittgens: vocals (NOLF 2 Theme)
+Nathan Grigg: vocals (NOLF 2 Theme, India, Island)
+Jack Klitzman: saxophone (NOLF 2 Theme, India)
+Vincent Gates: guitar (NOLF 2 Theme)
+Lori Goldston: cello 
+(H.A.R.M. Motif, arranged by Guy Whitmore)
+>TIME:7.0
+>POS:UL
+##
+Recording Engineers:
+Jay Kenney
+Vincent Gates
+Nathan Grigg
+  
+Special Thanks:
+Rich Ragsdale 
+(for the use of the NOLF theme)
+>TIME:5.0
+>POS:UL
+##
+Voice Cast:
+>TIME:2.0
+>BIG
+>POS:UL
+##
+JEN TAYLOR: 
+Cate Archer 
+Isako 
+UNITY Receptionist
+Ninjas
+Bystanders
+>TIME:4.0
+>POS:UL
+##
+JOCK BLANEY:
+Dmitrij Volkov
+>TIME:2.0
+>POS:UL
+##
+KEN BOYNTON:
+Santa
+General Morgan Hawkins
+Mischa the pilot
+Kamal
+Anoop Banerjee
+Crazy Harij
+Balaji Malpani
+Soviet personnel
+India H.A.R.M. personnel
+H.A.R.M. personnel
+Mimes
+>TIME:5.0
+>POS:UL
+##
+DAVID SCULLY:
+Isaac Barnes
+>TIME:2.0
+>POS:UL
+##
+DEENA BURKE:
+Mother
+Ninjas
+>TIME:3.0
+>POS:UL
+##
+JOHN ARMSTRONG:
+The Director 
+Pierre
+H.A.R.M. personnel
+Man-Crates
+Mimes
+>TIME:4.0
+>POS:UL
+##
+GARY SCHWARTZ:
+Super Soldiers
+Soviet personnel
+India H.A.R.M. personnel
+>TIME:3.0
+>POS:UL
+##
+JOHN PATRICK LOWRIE:
+Bruno Lawrie
+>TIME:2.0
+>POS:UL
+##
+TODD LICEA:
+Evil Alliance personnel
+H.A.R.M. personnel
+>TIME:3.0
+>POS:UL
+##
+JEFF STEITZER:
+Dr. Schenker 
+Super Computer 
+Robots
+>TIME:3.0
+>POS:UL
+##
+ANDRE SOGLIUZZO:
+Magnus Armstrong
+>TIME:2.0
+>POS:UL
+##
+TERRENCE SLOGGINS:
+As Himself
+>TIME:2.0
+>POS:UL
+##
+Motion Capture Cast:
+Jenna Hawkins
+John Kaufmann
+Lisa P. Leon-Guerrero
+Justin Emeka
+Kerry Wong
+Hans Altwies
+>TIME:6.0
+>POS:UL
+##
+Sierra Entertainment/Vivendi Universal Publishing:
+>TIME:2.0
+>BIG
+>POS:UL
+##
+Bill Dugan, Executive Producer
+Bernadette Pryor, Producer
+Lee Rosini, Director of Marketing
+Mike Rodgers, Brand Manager
+Rozita Tolouey, Brand Manager
+Rich Robinson, Vice President Studios
+Barbara Schwabe, VP of Marketing
+Mike Nicolino, Network Development
+Julie Pitt, Production Services Manager
+Sarita Churchill, PR Manager
+Gary Stevens, QA Director
+Ken Eaton, QA Supervisor
+>TIME:8.0
+>POS:UL
+##
+Tharlie Richardson, QA Test Lead
+Sweeney Designs, Manual Design
+Guy Welch, Online Marketing Manager
+Mike Taskey, Online Evangelist
+Randy Linch, Product Certification Director
+Rod Shean, Product Certification Director
+Chris Rooker, Product Certification Lead
+Cyra Talton, Product Certification Lead
+Brandon Valdez, Product Certification Lead
+Richard Benavides, Product Certification Engineer
+Ben Chan, Product Certification Tester
+Mary Barker, Trade Marketing Manager
+>TIME:8.0
+>POS:UL
+##
+Special thanks:
+Erin Alvarez
+Molly O'Brien
+Pat Callahan
+Julie Daino
+Tracy Gibbs
+Adam Lumsden
+Peter Della Pena
+Eric Roeder
+Mike Ryder
+James Shaw
+>TIME:7.0
+>POS:UL
+##
+(c)2002 Monolith Productions, Inc. All rights reserved. 
+Cate Archer and A Spy in H.A.R.M's Way 
+are trademarks of Monolith Productions, Inc. 
+  
+Copyright (C)2002 Sierra Entertainment, Inc. 
+(C)1998-2002 Sierra Entertainment, Inc.  
+Sierra and the Sierra logo are trademarks of Sierra Entertainment.
+  
+Fox Interactive, No One Lives Forever and their 
+associated logos are registered trademarks or
+trademarks of Twentieth Century Fox Film Corporation. 
+(c)2002 Twentieth Century Fox Film Corporation.  
+>TIME:6.0
+##
+Uses Bink Video Technology Copyright 
+(c) 1994-2002 by RAD Game Tools, Inc.
+  
+MPEG Layer-3 audio coding technology 
+licensed from Fraunhofer IIS and Thomson multimedia.
+  
+This product contains the LithTech(tm) Jupiter
+System licensed from LithTech, Inc.  
+LithTech Jupiter System (c) 1997-2002
+LithTech, Inc.  All Rights Reserved.  
+LithTech and the LithTech logo are
+trademarks of LithTech, Inc.
+>TIME:6.0
+##
+NVIDIA, the NVIDIA Logo, NVIDIA The Way It's
+Meant to be Played Logo and other NVIDIA
+Marks are trademarks of NVIDIA Corporation
+in the United States and other countries.
+  
+Windows is a registered trademark or 
+trademark of Microsoft Corporation in the 
+United States and/or other countries. 
+  
+The ratings icon is a trademark of the 
+Interactive Digital Software Association.
+>TIME:6.0
+##
+>END
+
+

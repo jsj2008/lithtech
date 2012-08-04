@@ -1,0 +1,119 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENERIC_ERROR       "Erreur interne LithTech: %1!d!."
+    IDS_MISSINGWORLDMODEL   "Modèle monde manquant: %1!s!."
+    IDS_CANTLOADGAMERESOURCES "Impossible de charger les ressources du jeu dans %1!s!."
+    IDS_CANTINITIALIZEINPUT "Impossible d'initialiser DirectInput."
+    IDS_UNABLETORESTOREVIDEO "Impossible d'initialiser le mode vidéo."
+    IDS_USERCANCELED        "Utilisateur annulé."
+    IDS_INVALIDWORLDFILE    "%1!s! est un fichier monde incorrect."
+    IDS_MISSINGMODELFILE    "Fichier modèle manquant %1!s!."
+    IDS_INVALIDMODELFILE    "%1!s! n'est pas un nom de fichier modèle correct."
+    IDS_MISSINGSPRITEFILE   "Fichier sprite manquant %1!s!."
+    IDS_INVALIDSPRITEFILE   "%1!s! est un fichier sprite incorrect."
+    IDS_NOGAMERESOURCES     "Aucune ressource de jeu indiquée."
+    IDS_MISSINGWORLDFILE    "Fichier monde manquant %1!s!."
+    IDS_CANTRESTOREOBJECT   "Impossible de retrouver l'objet (classe %1!s!)."
+    IDS_SERVERERROR         "Erreur serveur: %1!s!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALIDOBJECTDLLVERSION 
+                            "La DLL objet %1!s! est une version incorrecte (%2!d!).  La version actuelle est la %3!d!."
+    IDS_INVALIDSHELLDLL     "DLL cadre %1!s! incorrecte."
+    IDS_INVALIDSHELLDLLVERSION 
+                            "DLL cadre incorrecte, version pour %1!s!. Version DLL %2!d!, la version actuelle est la %3!d!."
+    IDS_MISSINGSHELLDLL     "DLL cadre manquante %1!s!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANTCREATECLIENTSHELL "Impossible de créer le cadre client."
+    IDS_UNABLETOINITSOUND   "Impossible d'initialiser le système son."
+    IDS_INVALIDSERVERPACKET "Réception d'un paquet serveur incorrect."
+    IDS_MISSINGCLASS        "Classe manquante: %1!s!."
+    IDS_ERRORINITTINGNETDRIVER "Impossible d'initialiser le pilote réseau %1!s!."
+    IDS_INVALIDNETVERSION   "Différence des versions des protocoles réseau - votre version: %1!d!, version du serveur: %2!d!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANTCREATESERVERSHELL "Impossible de créer le cadre serveur."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRORLOADINGRENDERDLL "Erreur de chargement de la DLL de rendu %1!s!."
+    IDS_ERRORCOPYINGFILE    "Erreur lors de la copie du fichier %1!s!."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

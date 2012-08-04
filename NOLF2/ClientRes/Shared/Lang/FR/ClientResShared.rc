@@ -1,0 +1,1348 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\ClientResShared.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\..\..\..\shared\resshared.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\ClientResShared.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\..\\..\\..\\shared\\resshared.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""ResShared.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR  DISCARDABLE     "..\\..\\arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_GAME          "UN JOUEUR"
+    IDS_TITLE_DIFFICULTY    "DIFFICULTE"
+    IDS_TITLE_OPTIONS       "OPTIONS"
+    IDS_TITLE_NEWGAME       "NOUVELLE PARTIE"
+    IDS_TITLE_LOADGAME      "CHARGER"
+    IDS_TITLE_SAVEGAME      "ENREGISTRER"
+    IDS_TITLE_CUSTOMLEVELS  "NIVEAUX PERSONNALISES"
+    IDS_TITLE_DISPLAYOPTIONS "OPTIONS D'AFFICHAGE"
+    IDS_TITLE_TEXTURE       "RESOLUTION TEXTURES"
+    IDS_TITLE_PERFORMANCE   "PERFORMANCES"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_SOUND         "SON"
+    IDS_TITLE_KEYBOARD      "CLAVIER"
+    IDS_TITLE_MOUSE         "SOURIS"
+    IDS_TITLE_JOYSTICK      "JOYSTICK"
+    IDS_TITLE_BRIEFING      "MISSION"
+    IDS_NO_DM_MAPS          "Aucune carte n'est disponible pour ce mode de jeu."
+    IDS_TITLE_ENDMISSION    "RESUME DE MISSION"
+    IDS_TITLE_PROFILE       "PROFIL JOUEUR"
+    IDS_TITLE_PLAYER        "JOUEUR"
+    IDS_TITLE_CROSSHAIR     "VISEUR"
+    IDS_TITLE_CONTROLS      "CONTROLES"
+    IDS_TITLE_CONFIGURE     "CONFIGURER LES CONTROLES"
+    IDS_TITLE_MULTI         "MULTIJOUEUR"
+    IDS_TITLE_HOST_OPTIONS  "OPTIONS DE JEU"
+    IDS_TITLE_SKILLS        "COMPETENCES"
+    IDS_TITLE_OBJECTIVES    "OBJECTIFS DE MISSION"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_GAME_OPTIONS  "OPTIONS DE JEU"
+    IDS_TITLE_INVENTORY     "EQUIPEMENT"
+    IDS_TITLE_ADVDISPLAY    "OPTIONS D'AFFICHAGE AVANCEES"
+    IDS_TITLE_EFFECTS       "EFFETS SPECIAUX"
+    IDS_TITLE_JOIN          "REJOINDRE"
+    IDS_TITLE_HOST          "HEBERGER PARTIE"
+    IDS_TITLE_HOST_MISSIONS "MISSIONS"
+    IDS_TITLE_PLAYER_SETUP  "CONFIGURATION JOUEUR"
+    IDS_TITLE_SUMMARY       "JOUEUR"
+    IDS_CHAPTERS            "Liste des chapitres"
+    IDS_TITLE_INTEL         "RENSEIGNEMENTS"
+    IDS_TITLE_HOST_CAMPAIGN "CAMPAGNE"
+    IDS_TITLE_SYSTEM        "SYSTEME"
+    IDS_TITLE_KEYS          "INVENTAIRE"
+    IDS_HOST_NAME_TDM_DEFAULT "Deathmatch par équipe"
+    IDS_MULTIPLAYER_LAN     "Multijoueur (LAN)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HOST_NAME_DD_DEFAULT "Jugement dernier NOLF2"
+    IDS_HELP_MULTIPLAYER_LAN 
+                            "Lancer une partie multijoueur en réseau local ou modifier les options multijoueur."
+    IDS_TITLE_TEAM          "EQUIPE"
+    IDS_HELP_CHAPTERS       "Rejouer un chapitre."
+    IDS_HELP_TEAM_NAME      "Indiquez le nom de l'équipe."
+    IDS_HELP_CHAPTER_LIST   "Rejouer au chapitre sélectionné."
+    IDS_HELP_FAILURE        "Appuyez sur F9 pour charger la partie en sauvegarde rapide.\nAppuyez sur une autre touche pour accéder à l'écran de chargement."
+    IDS_PRESS_ANY_KEY       "Appuyez sur une touche pour continuer."
+    IDS_NORMAL              "Normal"
+    IDS_PERFORMANCE_TEST    "Test des réglages"
+    IDS_CUSTOM              "Personnaliser"
+    IDS_ON                  "On"
+    IDS_OFF                 "Off"
+    IDS_YES                 "Oui"
+    IDS_NO                  "Non"
+    IDS_NONE                "Aucun"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_YES_VK_CODE         "89"
+    IDS_NO_VK_CODE          "78"
+    IDS_ALLOW_GORE          "TRUE"
+    IDS_END_TIME            "Limite de temps écoulée."
+    IDS_END_FRAG            "Limite atteinte."
+    IDS_END_UNKNOWN         "Niveau annulé."
+    IDS_USE_PASSWORD        "Verrouiller serveur"
+    IDS_HELP_PASSWORD       "Demander aux joueurs de taper un mot de passe pour rejoindre la session."
+    IDS_PASSWORD            "Mot de passe"
+    IDS_HELP_ENTER_PASSWORD "Détermine un mot de passe que les joueurs doivent taper pour rejoindre la partie."
+    IDS_NOCUSTOMWORLDS      "Aucun monde personnalisé trouvé"
+    IDS_DEMONOCUSTOMWORLDS  "Les mondes personnalisés ne sont pas disponibles dans la démo."
+    IDS_DEMODISCONNECT      "Déconnexion du serveur. (remarque: les parties démo doivent être hébergées par des serveurs démo)"
+    IDS_DEMOINFO            "info"
+    IDS_WAITINGFOROTHERPLAYERS "En attente des autres joueurs…"
+    IDS_NOJOYSTICKDETECTED  "Aucun joystick ou gamepad trouvé. Vérifiez la configuration du contrôleur et son branchement."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FEW                 "Peu"
+    IDS_SOME                "Quelques"
+    IDS_LOTS                "Beaucoup"
+    IDS_ALL                 "Tous"
+    IDS_CLOSE               "Fermer"
+    IDS_SPACER              "   -   "
+    IDS_BACK                "Retour"
+    IDS_CREATE              "Créer"
+    IDS_LOAD                "Charger"
+    IDS_DELETE              "Effacer"
+    IDS_OK                  "Ok"
+    IDS_CANCEL              "Annuler"
+    IDS_ENTER_NAME          "Tapez un nom pour la partie:"
+    IDS_CONTINUE            "Suivant"
+    IDS_EMPTY_SLOT          "[Emplacement libre]"
+    IDS_WHEEL_UP            "Molette haut"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WHEEL_DOWN          "Molette bas"
+    IDS_RANK                "Classement:"
+    IDS_SKILL_PTS           "Points de compétence:"
+    IDS_SINGLEPLAYER        "Un joueur"
+    IDS_MULTIPLAYER         "Multijoueur (Internet)"
+    IDS_OPTIONS             "Options"
+    IDS_CREDITS             "Crédits"
+    IDS_EXIT                "Quitter"
+    IDS_NEWGAME             "Nouvelle partie"
+    IDS_LOADGAME            "Charger partie"
+    IDS_SAVEGAME            "Enregistrer"
+    IDS_CUSTOM_LEVEL        "Niveau personnalisé"
+    IDS_DISPLAY             "Affichage"
+    IDS_SOUND               "Son"
+    IDS_KEYBOARD            "Clavier"
+    IDS_MOUSE               "Souris"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACTIONSTRING_KEYS   "ViewKeys"
+    IDS_ACTIONSTRING_INTEL  "ViewIntel"
+    IDS_ACTIONSTRING_RUNLOCKTOGGLE "RunLock"
+    IDS_ACTIONSTRING_CROUCHTOGGLE "DuckLock"
+    IDS_ACTIONSTRING_UNASSIGNED "unassigned"
+    IDS_ACTIONSTRING_NEXTAMMO "NextAmmo"
+    IDS_ACTIONSTRING_ZOOMIN "ZoomIn"
+    IDS_ACTIONSTRING_ZOOMOUT "ZoomOut"
+    IDS_ACTIONSTRING_NEXTVISMODE "NextVisMode"
+    IDS_ACTIONSTRING_COMPASS "CompassToggle"
+    IDS_ACTIONSTRING_LEANLEFT "LeanLeft"
+    IDS_ACTIONSTRING_LEANRIGHT "LeanRight"
+    IDS_ACTIONSTRING_MOVE_BODY "MoveBody"
+    IDS_ACTIONSTRING_FLASHLIGHT "Flashlight"
+    IDS_ACTIONSTRING_RADIO  "Radio"
+    IDS_ACTIONSTRING_LASTWEAPON "LastWeapon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABORT               "Quitter la partie"
+    IDS_DECODEMSG_CHARSET   "AaBbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz"
+    IDS_SCMDPASSWORD        "Mot de passe SCMD"
+    IDS_HELP_ALLOWSCMD      "Permet de se connecter en tant qu'administrateur SCMD."
+    IDS_HOST_NAME_DM_DEFAULT "Deathmatch NOLF 2"
+    IDS_TAGGEDMYSELF        "Vous vous êtes taggé !"
+    IDS_HETAGGEDME          "Vous avez été taggé par %1!s!"
+    IDS_ITAGGEDHIM          "Vous avez taggé %1!s!"
+    IDS_HETAGGEDHIMSELF     "%1!s! s'est taggé tout seul !"
+    IDS_HETAGGEDHIM         "%1!s! a taggé %2!s!"
+    IDS_IWASTAGGED          "Vous avez été taggé !"
+    IDS_HEWASTAGGED         "%1!s! a été taggé !"
+    IDS_KICKBAN             "Vous avez été banni ou renvoyé du serveur."
+    IDS_SCORE_SCORE         "Score:"
+    IDS_SCORE_PLAYERS       "Joueurs:"
+    IDS_SCORE_KILLS         "Tués:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOYSTICK            "Configurer joystick/gamepad"
+    IDS_RESTOREDEFAULTS     "Par défaut"
+    IDS_CONFIGURE           "Configurer les contrôles"
+    IDS_BRIEFING            "Briefing:"
+    IDS_OBJECTIVES          "Objectifs:"
+    IDS_NORMALTURN          "Vitesse de rotation normale"
+    IDS_FASTTURN            "Rotation rapide"
+    IDS_LOOKUP              "Vitesse vue haut/bas"
+    IDS_START_MISSION       "Lancer la mission"
+    IDS_CH_ALPHA            "Opacité"
+    IDS_CH_R                "Rouge"
+    IDS_CH_G                "Vert"
+    IDS_CH_B                "Bleu"
+    IDS_CH_STYLE            "Style"
+    IDS_CH_BASIC            "Standard"
+    IDS_CH_CROSSBAR         "Croix"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CH_DOTCROSS         "Point-croix"
+    IDS_CH_POST             "Barre"
+    IDS_CH_DOT              "Point"
+    IDS_CH_CORNER           "Coin"
+    IDS_CH_DYNAMIC          "Mise à l'échelle dynamique"
+    IDS_CONTROLS_CROSSHAIR  "Viseur"
+    IDS_PROFILE             "Profil"
+    IDS_HELP_PROFILE        "Choisir, créer et effacer des profils de joueur."
+    IDS_56K                 "56k"
+    IDS_CABLE               "Câble"
+    IDS_TEAM_NAME           "Nom de l'équipe"
+    IDS_DSL_HIGH            "DSL (élevé)"
+    IDS_T1                  "T1"
+    IDS_T3                  "T3"
+    IDS_BANDWIDTH_CYCLE     "Bande passante"
+    IDS_HELP_BANDWIDTH_CYCLE "Passe en revue les réglages de bande passante."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCORE               "Score:"
+    IDS_HELP_BANDWIDTH_EDIT "Choisir une bande passante personnalisée."
+    IDS_BANDWIDTH_EDIT      "Bande passante (perso)"
+    IDS_PROFILE_LIST        "Profils:"
+    IDS_RESUME              "Reprendre la partie"
+    IDS_CONTINUE_GAME       "Continuer la partie"
+    IDS_TEAM_MODEL          "Modèle de l'équipe"
+    IDS_GAMMA               "Gamma"
+    IDS_HEADBOB             "Mouvement de la tête"
+    IDS_WEAPONSWAY          "Mouvement des armes"
+    IDS_HELP_HEADBOB        "Définir l'intensité du mouvement de la tête lorsque vous marchez."
+    IDS_HELP_WEAPONSWAY     "Définir l'intensité du mouvement simulé des armes quand vous marchez."
+    IDS_HELP_PICKUP_MSG_DUR "Définir le temps d'affichage des messages d'objets trouvés."
+    IDS_PICKUP_MSG_DUR      "Durée des messages"
+    IDS_IGNORE_TAUNTS       "Ignorer les sarcasmes"
+    IDS_HELP_IGNORE_TAUNTS  "Activer/désactiver l'utilisation des sarcasmes audio."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ALLOW_TAUNTS        "Sarcasmes audio"
+    IDS_HELP_ALLOW_TAUNTS   "Activer/désactiver les sarcasmes audio."
+    IDS_RENAME              "Renommer"
+    IDS_VERSION_FILTER      "Version:"
+    IDS_MAIN                "Menu principal"
+    IDS_HELP_GAMMA          "Régler le niveau gamma de l'affichage."
+    IDS_HELP_SINGLEPLAYER   "Lancer, charger ou enregistrer une partie à un joueur."
+    IDS_HELP_MULTIPLAYER    "Lancer une partie multijoueur sur Internet ou définir les options multijoueur."
+    IDS_HELP_OPTIONS        "Définir les options d'affichage, de son, de jeu et de performances."
+    IDS_HELP_EXIT           "Quitter le jeu."
+    IDS_HELP_NEW            "Commencer une nouvelle partie."
+    IDS_HELP_LOAD           "Charger une partie enregistrée."
+    IDS_HELP_SAVE           "Enregistrer la partie."
+    IDS_HELP_CUSTOM         "Charger un niveau personnalisé."
+    IDS_HELP_PROFILE_CREATE "Créer un nouveau profil."
+    IDS_HELP_BACK           "Retour à l'écran précédent."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_DIFFICULTY     "Choisir le niveau de difficulté."
+    IDS_HELP_DISPLAY        "Définir les options d'affichage."
+    IDS_HELP_SOUND          "Définir les options audio."
+    IDS_HELP_CONTROLS       "Définir la configuration du contrôleur."
+    IDS_HELP_RENDERER       "Choisir le périphérique de rendu."
+    IDS_HELP_RESOLUTION     "Définir la résolution et la profondeur des couleurs."
+    IDS_HELP_ANTIALIAS      "Active/désactive l'anti-aliasing plein écran."
+    IDS_HELP_DETAILLEVEL    "Définir le niveau des détails des textures."
+    IDS_HELP_ADVDISPLAY     "Modifier les options d'affichage qui influent sur les performances."
+    IDS_HELP_LOOKSPRING     "Recentre automatiquement la vue quand vous vous déplacez."
+    IDS_HELP_RUNLOCK        "Activer/désactiver le mode course par défaut."
+    IDS_HELP_CROSSHAIR      "Activer/désactiver l'utilisation du viseur."
+    IDS_HELP_GORE           "Activer/désactiver les effets de sang."
+    IDS_HELP_SHADOWS        "Détermine le niveau de détails des ombres des personnages."
+    IDS_HELP_TEAM_MODEL     "Indiquez le modèle utilisé pour l'équipe."
+    IDS_HOST_CAMPAIGN       "Campagne"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WON_VAL_FAIL        "Erreur de validation client"
+    IDS_WON_SERV_VAL        "Validation serveur initialisée"
+    IDS_DISCONNECTED_FROM_SERVER "Déconnecté du serveur"
+    IDS_CANT_CONNECT_TO_SERVER "Connexion au serveur impossible"
+    IDS_CONTROL_FORWARD     "Avancer"
+    IDS_CONTROL_BACKWARD    "Reculer"
+    IDS_CONTROL_TURNLEFT    "Tourner à gauche"
+    IDS_CONTROL_TURNRIGHT   "Tourner à droite"
+    IDS_CONTROL_STRAFE      "Esquive"
+    IDS_CONTROL_STRAFELEFT  "Esquive à gauche"
+    IDS_CONTROL_STRAFERIGHT "Esquive à droite"
+    IDS_CONTROL_TURNAROUND  "Demi-tour"
+    IDS_CONTROL_RUN         "Furtif"
+    IDS_CONTROL_FIRE        "Tir"
+    IDS_CONTROL_ACTIVATE    "Action"
+    IDS_CONTROL_JUMP        "Sauter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_RELOAD      "Recharger"
+    IDS_CONTROL_DUCK        "Accroupi"
+    IDS_CONTROL_NEXTWEAPON  "Arme suivante"
+    IDS_CONTROL_PREVIOUSWEAPON "Arme précédente"
+    IDS_CONTROL_LOOKUP      "Vue vers le haut"
+    IDS_CONTROL_LOOKDOWN    "Vue vers le bas"
+    IDS_CONTROL_CENTERVIEW  "Centrer Vue"
+    IDS_CONTROL_INVENTORY   "Equipement"
+    IDS_CONTROL_MISSION     "Etat de la mission"
+    IDS_CONTROL_HOLSTERWEAPON "Ranger arme"
+    IDS_CONTROL_STATUS      "Etat du joueur"
+    IDS_CONTROL_SAY         "Parler"
+    IDS_CONTROL_ALT_FIRING  "Tir-alt"
+    IDS_CONTROL_NEXT_AMMO   "Changer de munitions"
+    IDS_CONTROL_KEYS        "Inventaire"
+    IDS_CONTROL_INTEL       "Renseignements"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_RUNLOCKTOGGLE "Bascule furtif"
+    IDS_CONTROL_WEAPON1     "Arme 1"
+    IDS_CONTROL_WEAPON2     "Arme 2"
+    IDS_CONTROL_WEAPON3     "Arme 3"
+    IDS_CONTROL_WEAPON4     "Arme 4"
+    IDS_CONTROL_WEAPON5     "Arme 5"
+    IDS_CONTROL_WEAPON6     "Arme 6"
+    IDS_CONTROL_WEAPON7     "Arme 7"
+    IDS_CONTROL_WEAPON8     "Arme 8"
+    IDS_CONTROL_WEAPON9     "Arme 9"
+    IDS_CONTROL_WEAPON10    "Arme 10"
+    IDS_CONTROL_ZOOM_IN     "Zoomer"
+    IDS_CONTROL_ZOOM_OUT    "Dézoomer"
+    IDS_CONTROL_UNASSIGNED  "[inutilisé]"
+    IDS_CONTROL_NEXTVISMODE "Lunettes"
+    IDS_CONTROL_COMPASS     "Boussole"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_LEANLEFT    "Se pencher à gauche"
+    IDS_CONTROL_LEANRIGHT   "Se pencher à droite"
+    IDS_CONTROL_CROUCHTOGGLE "Bascule Accroupi"
+    IDS_CONTROL_MOVE_BODY   "Déplacer corps/pièce"
+    IDS_CONTROL_FLASHLIGHT  "Lampe"
+    IDS_CONTROL_RADIO       "Radio"
+    IDS_CONTROL_LASTWEAPON  "Dernière Arme"
+    IDS_ACTIONSTRING_FORWARD "Forward"
+    IDS_ACTIONSTRING_BACKWARD "Backward"
+    IDS_ACTIONSTRING_TURNLEFT "Left"
+    IDS_ACTIONSTRING_TURNRIGHT "Right"
+    IDS_ACTIONSTRING_STRAFE "Strafe"
+    IDS_ACTIONSTRING_STRAFELEFT "StrafeLeft"
+    IDS_ACTIONSTRING_STRAFERIGHT "StrafeRight"
+    IDS_ACTIONSTRING_TURNAROUND "TurnAround"
+    IDS_ACTIONSTRING_RUN    "Speed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACTIONSTRING_FIRE   "Fire"
+    IDS_ACTIONSTRING_ACTIVATE "Activate"
+    IDS_ACTIONSTRING_JUMP   "Jump"
+    IDS_ACTIONSTRING_RELOAD "Reload"
+    IDS_ACTIONSTRING_DUCK   "Duck"
+    IDS_ACTIONSTRING_NEXTWEAPON "NextWeapon"
+    IDS_ACTIONSTRING_PREVIOUSWEAPON "PrevWeapon"
+    IDS_ACTIONSTRING_LOOKUP "LookUp"
+    IDS_ACTIONSTRING_LOOKDOWN "LookDown"
+    IDS_ACTIONSTRING_CENTERVIEW "CenterView"
+    IDS_ACTIONSTRING_INVENTORY "Inventory"
+    IDS_ACTIONSTRING_MISSION "Mission"
+    IDS_ACTIONSTRING_HOLSTERWEAPON "HolsterWeapon"
+    IDS_ACTIONSTRING_STATUS "Score"
+    IDS_ACTIONSTRING_SAY    "SendMessage"
+    IDS_ACTIONSTRING_ALT_FIRING "Alt-Fire"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMPILE             "Compiler()"
+    IDS_GAME_OPTIONS        "Partie"
+    IDS_HELP_GAME_OPTIONS   "Définir les options de jeu et de contenu."
+    IDS_DISPLAY_SUBTITLES   "Sous-titres"
+    IDS_TEAM_2              "Equipe Rouge"
+    IDS_HELP_LOOP_MISSIONS  "Recommencer à la première mission après avoir terminé la dernière mission."
+    IDS_CAMPAIGN_LIST       "Campagnes:"
+    IDS_STAT_COMBAT         ".combat"
+    IDS_STAT_DEFENSE        ".défense"
+    IDS_STAT_ACCURACY       ".précision"
+    IDS_HELP_CAMPAIGN_CREATE "Créer une nouvelle campagne."
+    IDS_HELP_CAMPAIGN_LOAD  "Charger la campagne sélectionnée."
+    IDS_HELP_SUBTITLES      "Activer/désactiver l'affichage des sous-titres."
+    IDS_GAME_TYPE           "Type de partie"
+    IDS_HELP_TEAM_1         "Définir les options de l'équipe Bleue"
+    IDS_HELP_TEAM_2         "Définir les options de l'équipe Rouge"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEDICATED           "Serveur dédié"
+    IDS_HELP_DEDICATED      "Détermine si le serveur est lancé en mode dédié ou pas."
+    IDS_GAME_LANGUAGE       "Français"
+    IDS_MENU_VKEY_YES       "89"
+    IDS_MENU_VKEY_NO        "78"
+    IDS_DEMOVERSION         "DEMO TECHNOLOGIQUE v1.0"
+    IDS_HELP_CAMPAIGN_DELETE "Effacer la campagne sélectionnée."
+    IDS_HELP_CAMPAIGN_RENAME "Renommer la campagne sélectionnée."
+    IDS_HELP_VERSION_FILTER "Activer/désactiver le filtrage des serveurs en fonction de la version."
+    IDS_ALL_VERSIONS        "Toutes versions"
+    IDS_CURRENT_VERSION     "Version actuelle"
+    IDS_PERFORMANCE         "Performances"
+    IDS_HELP_PERFORMANCE    "Définir les options liées aux performances."
+    IDS_SFX                 "Effets spéciaux"
+    IDS_HELP_SFX            "Définir les options des effets spéciaux."
+    IDS_POLYGRIDBUMP        "Bump mapping polygrille"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_POLYGRIDBUMP   "Activer/désactiver l'utilisation du bump mapping sur les polygrilles."
+    IDS_POLYGRIDFRES        "Fresnel polygrille"
+    IDS_HELP_POLYGRIDFRES   "Activer/désactiver l'utilisation du filtre de fresnel sur les polygrilles pour des effets de miroir plus réalistes."
+    IDS_TEXTURE_RES         "Résolution des textures"
+    IDS_HELP_TEXTURE_RES    "Définir la résolution des textures utilisées dans le jeu."
+    IDS_BUMPMAP             "Bump mapping environnemental"
+    IDS_HELP_BUMPMAP        "Activer/désactiver l'utilisation du bump mapping sur les effets d'environnement."
+    IDS_BILINEAR            "Filtrage bilinéaire"
+    IDS_HELP_BILINEAR       "Activer/désactiver l'utilisation du filtrage bilinéaire sur les textures."
+    IDS_SHADOWS             "Ombres"
+    IDS_SOUND_HIGH          "Elevé"
+    IDS_SOUND_LOW           "Faible"
+    IDS_QUICKLOAD           "Chargement rapide (F9)"
+    IDS_QUICKSAVE           "Sauvegarde rapide (F6)"
+    IDS_LOADCURRENT         "Sauvegarde auto"
+    IDS_OBJECTIVES_OPTIONAL " (optionnel)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_PLAYER_SKILLS  "Distribuer les points de compétence."
+    IDS_OBJECTIVES_CHANGED  "Mise à jour des objectifs de mission"
+    IDS_RESET_SKILLS        "Compétences par défaut"
+    IDS_HELP_RESET_SKILLS   "Redéfinir distribution des compétences par défaut."
+    IDS_X_OF_Y              "%1!d! sur %2!d!"
+    IDS_SERVER_LAN          "LAN uniquement"
+    IDS_USE_SKILLS          "Utiliser compétences"
+    IDS_USE_CROSSHAIR       "Utiliser viseur"
+    IDS_HELP_USE_SKILLS     "Permet aux joueurs d'utiliser des compétences."
+    IDS_HUD_LAYOUT0         "Barre de santé, texte munitions"
+    IDS_HUD_LAYOUT1         "Texte santé, texte munitions"
+    IDS_HUD_LAYOUT2         "Barre de santé, barre de munitions"
+    IDS_HUDLAYOUT           "Type d'affichage tête haute"
+    IDS_HELP_HUDLAYOUT      "Définir le style d'interface."
+    IDS_NO_INVENTORY        "[Pas d'inventaire]"
+    IDS_VEHICLETURN         "Vitesse de rotation véhicule"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_VEHICLETURN    "Définir la vitesse de rotation des véhicules."
+    IDS_HELP_RETURN         "Retour à la partie."
+    IDS_TRILINEAR           "Filtrage trilinéaire"
+    IDS_HELP_TRILINEAR      "Activer/désactiver le filtrage trilinéaire."
+    IDS_ANISOTROPIC         "Filtrage anisotropique"
+    IDS_HELP_ANISOTROPIC    "Activer/désactiver l'utilisation du filtre anisotropique."
+    IDS_DETAILLEVEL         "Général"
+    IDS_TRACERS             "Traceuses"
+    IDS_HELP_TRACERS        "Activer/désactiver les effets traceuses pour les armes."
+    IDS_DISPLAY_CURRENTMODE "Mode d'affichage"
+    IDS_SERVER_NORESPONSE   "Serveur ne répond pas."
+    IDS_SERVER_DETAIL_VERSION 
+                            "Détails indisponibles car la version du serveur est différente"
+    IDS_DISPLAY_CHANGE      "Changer de mode"
+    IDS_DISPLAY_GORE        "Sang"
+    IDS_ENV_DETAIL          "Environnement"
+    IDS_HELP_ENV_DETAIL     "Détermine le niveau de détails dans l'environnement, notamment les effets de neige et d'herbe."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RESPAWN             "Réapparition"
+    IDS_SOUND_MUSICENABLED  "Musique"
+    IDS_SOUND_MUSICVOL      "Volume musique"
+    IDS_SOUND_FX            "Effets sonores"
+    IDS_SOUND_FXVOL         "Volume sons"
+    IDS_SOUND_QUALITY       "Qualité des sons"
+    IDS_SOUND_NONE          "Aucun"
+    IDS_SOUND_IMA           "Musique directe"
+    IDS_LOW                 "Faible"
+    IDS_MEDIUM              "Moyen"
+    IDS_HIGH                "Elevé"
+    IDS_CUSTOMIZED          "Personnalisé"
+    IDS_MOUSE_MOUSELOOK     "Toujours vue souris"
+    IDS_MOUSE_LOOKSPRING    "Centrage auto."
+    IDS_MOUSE_INVERTYAXIS   "Inversion axe Y"
+    IDS_MOUSE_SENSITIVITY   "Sensibilité souris"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TARGET_SEARCHING    "fouille"
+    IDS_SKILL_SEARCH        "Fouille"
+    IDS_SKILL_SEARCH_DESC   "Détermine à quelle vitesse vous fouillez à la recherche d'objets."
+    IDS_SPEECH_FXVOL        "Volume des voix"
+    IDS_HELP_SPEECHVOL      "Régler le volume des voix."
+    IDS_TARGET_REVIVE       "rendre vie à %1!s!"
+    IDS_CURRENT_CAMPAIGN    "Campagne actuelle:%1!s!"
+    IDS_M_STAT_UNDAMAGED    "Vous n'avez pas été touché."
+    IDS_M_STAT_TIMES_HIT    "Vous avez été touché %1!d! fois."
+    IDS_M_STAT_MARKSMANSHIP "Tireur d'élite: %1!d! tirs dans la tête."
+    IDS_M_STAT_ACCURACY     "Précision : %1!d! touchés, %2!d! tirs (%3!d!%%)"
+    IDS_IWASKILLED          "Vous avez été tué!"
+    IDS_ENTER_CAMPAIGN_NAME "Tapez un nom pour la campagne:"
+    IDS_HEWASKILLED         "%1!s! a été tué!"
+    IDS_HELP_ADD_WEAPON     "Ajouter l'objet sélectionné à la liste des objets interdits."
+    IDS_TARGET_HACKINGKEYPAD "décodage"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCORE_TAGS          "Tags:"
+    IDS_CONTROL_TEAM_SAY    "Parler à l'équipe"
+    IDS_ACTIONSTRING_TEAM_SAY "TeamMessage"
+    IDS_DOOMSDAY_CORE       "Cœur"
+    IDS_DOOMSDAY_TRANSMITTER "Transmetteur"
+    IDS_DOOMSDAY_BATTERIES  "Batteries"
+    IDS_DOOMSDAY_PICKEDUP   "%1!s! a ramassé %2!s!"
+    IDS_DOOMSDAY_DROPPED    "%1!s! a perdu %2!s!"
+    IDS_DOOMSDAY_PLACED     "%1!s! a placé %2!s!"
+    IDS_DOOMSDAY_STOLE      "%1!s! a volé %2!s!"
+    IDS_DOOMSDAY_DEVICE_COMPLETED "%1!s! a terminé l'Outil du Jugement dernier."
+    IDS_DOOMSDAY_RESPAWNED  "Réapparition de %1!s!."
+    IDS_HELP_SERVER_MOD     "Trier les serveurs par Mod"
+    IDS_FILTER_MOD          "Mod :"
+    IDS_HELP_FILTER_MOD     "Activer le filtre des serveurs selon le Mod."
+    IDS_FILTER_ALLMODS      "Tous les Mods."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TARGET_WELDING      "utilise la torche"
+    IDS_TARGET_DECODING     "décodage"
+    IDS_TARGET_PICKING      "crochète"
+    IDS_TARGET_PHOTOGRAPHING "photographie"
+    IDS_TARGET_BOMBING      "désamorce la bombe"
+    IDS_TARGET_INKING       "dévoile"
+    IDS_TARGET_BUGGING      "place le micro"
+    IDS_COOP_STAT_ACCURACY  "Précision"
+    IDS_COOP_STAT_KILLS     "Tués"
+    IDS_COOP_STAT_DEATHS    "Morts"
+    IDS_STAT_MISSION        "Mission:"
+    IDS_FILTER_ALLPING      "Tous"
+    IDS_FILTER_LOWPING      "< 100"
+    IDS_FILTER_MEDPING      "< 300"
+    IDS_FILTER_HIGHPING     "< 500"
+    IDS_HELP_FILTER_PING    "Filtrer les serveurs d'après leur ping."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MOUSE_INPUTRATE     "Lissage souris"
+    IDS_MOUSE_LEFTBUTTON    "Bouton gauche de la souris"
+    IDS_MOUSE_MIDDLEBUTTON  "Bouton central de la souris"
+    IDS_MOUSE_RIGHTBUTTON   "Bouton droit de la souris"
+    IDS_JOYSTICK_USE        "Utiliser joystick/gamepad"
+    IDS_JOYSTICK_TURN       "Gauche/droite"
+    IDS_JOYSTICK_LOOK       "Vue haut/bas"
+    IDS_JOYSTICK_MOVE       "Avancer/reculer"
+    IDS_JOYSTICK_STRAFE     "Esquive gauche/droite"
+    IDS_JOYSTICK_BUTTONNUM  "Bouton %1!d!"
+    IDS_JOYSTICK_AXIS       "Axe"
+    IDS_JOYSTICK_ACTION     "Action"
+    IDS_HELP_SERVER_LAN     "Toggle whether the server should be published to the internet."
+    IDS_POV_MOVE            "Déplacement"
+    IDS_JOYSTICK_INVERT     "Vue haut/bas (inversée)"
+    IDS_POV_LOOK            "Vue"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOYSTICK_AXISNONE   "Aucun"
+    IDS_HELP_AXIS           "Définit l'action associée à cet axe de la manette."
+    IDS_DISPLAY_BITDEPTH    "Profondeur des couleurs"
+    IDS_ANTIALIAS           "Anti-aliasing"
+    IDS_ADVCONTROLS_RUNLOCK "Toujours courir"
+    IDS_NEW_EASY            "Facile"
+    IDS_NEW_MEDIUM          "Normal"
+    IDS_NEW_HARD            "Difficile"
+    IDS_NEW_INSANE          "Super-espion"
+    IDS_ADVCONTROLS_CROSSHAIR "Viseur"
+    IDS_DISPLAY_RENDERER    "Périphérique de rendu"
+    IDS_DISPLAY_RESOLUTION  "Résolution"
+    IDS_TEAM1_NAME          "Bleu"
+    IDS_CONTROLS            "Contrôles"
+    IDS_HELP_PROFILE_LOAD   "Charger le profil sélectionné."
+    IDS_SERVER_NAME         "Nom du serveur"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SERVER_PLAYERS      "Joueurs"
+    IDS_SERVER_PING         "Ping"
+    IDS_SERVER_GAME         "Partie"
+    IDS_SERVER_MAP          "Carte"
+    IDS_JOIN_PLAYER_NAME    "Nom du joueur"
+    IDS_JOIN_PLAYER_SCORE   "Score"
+    IDS_OPTION_NAME         "Options de jeu"
+    IDS_OPTION_VALUE        "Valeur"
+    IDS_SERVER_REFRESH      "Rafraîchir serveurs"
+    IDS_SERVER_REPING       "Ping serveurs"
+    IDS_FILTER_ALLGAMES     "Toutes les parties"
+    IDS_FILTER_DM           "Deathmatch uniquement"
+    IDS_FILTER_COOP         """C.R.I.M.E. vs UNION"" seulement"
+    IDS_FILTER_ALLPOP       "N'importe quel nombre de joueurs"
+    IDS_FILTER_NOTFULL      "Pas complet"
+    IDS_FILTER_NOTEMPTY     "Pas vide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_NOT_BOTH     "Ni vide ni complet"
+    IDS_SERVER_LOCKED       "Verrouillé"
+    IDS_SERVER_MISSION      "Mission"
+    IDS_HELP_SERVER_MISSION "Trier les serveurs d'après le nom de la mission."
+    IDS_HOST_NAME           "Nom de la session"
+    IDS_HOST_OPTIONS        "Options de l'hôte"
+    IDS_HOST_MISSIONS       "Missions"
+    IDS_HOST_LAUNCH         "Lancer"
+    IDS_SERVER_FILTERS      "Filtres"
+    IDS_POP_FILTER          "Joueurs:"
+    IDS_NIGHT_SCOPE         "Offre une meilleure vue pour plus de précision et un système d'amplification de la lumière pour les opérations de nuit."
+    IDS_SILENCER            "Réduction du bruit des tirs."
+    IDS_TEAM2_NAME          "Rouge"
+    IDS_FILTER_PING         "Ping:"
+    IDS_SCOPE               "Zoome pour plus de précision"
+    IDS_CAMERA_SCOPE        "Loupe ajustable."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_KILLEDMYSELF        "Vous vous êtes tué!"
+    IDS_HEKILLEDME          "Vous avez été tué par %1!s!"
+    IDS_IKILLEDHIM          "Vous avez tué %1!s!"
+    IDS_HEKILLEDHIMSELF     "%1!s! s'est suicidé!"
+    IDS_HEKILLEDHIM         "%1!s! a tué %2!s!"
+    IDS_SKILL_STEALTH       "Furtivité"
+    IDS_SKILL_STEALTH_DESC  "Influe sur le bruit de vos pas, sur le temps nécessaire à vous fondre dans l'ombre et sur votre capacité à semer vos poursuivants."
+    IDS_SKILL_STAMINA       "Endurance"
+    IDS_SKILL_STAMINA_DESC  "Détermine votre endurance et votre résistance aux effets adverses des différents types de dégâts."
+    IDS_SKILL_MARKSMANSHIP  "Tir"
+    IDS_SKILL_MARKSMANSHIP_DESC 
+                            "Améliore votre précision et votre stabilité lorsque vous utilisez une lunette."
+    IDS_SKILL_CARRY         "Charge"
+    IDS_SKILL_CARRY_DESC    "Détermine combien de munitions vous pouvez emporter et comment les armes lourdes réduisent votre vitesse."
+    IDS_SKILL_ARMOR         "Armure"
+    IDS_SKILL_ARMOR_DESC    "Détermine l'efficacité des gilets et ce dont vous bénéficiez avec un gilet."
+    IDS_SKILL_WEAPON        "Armes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_WEAPON_DESC   "Détermine votre efficacité avec vos armes et la vitesse à laquelle vous dégainez et rechargez."
+    IDS_SKILL_GADGET        "Gadgets"
+    IDS_SKILL_GADGET_DESC   "Détermine vos compétences à utiliser des gadgets et la vitesse à laquelle vous les préparez pour utilisation."
+    IDS_SKILL_NOVICE        "Novice"
+    IDS_SKILL_AMATEUR       "Amateur"
+    IDS_SKILL_SKILLED       "Compétent"
+    IDS_SKILL_EXPERT        "Expert"
+    IDS_SKILL_MASTER        "Maître"
+    IDS_SKILL_UPGRADE_COST  "(Coût: %1!d!)"
+    IDS_SKILL_UPGRADE       "Améliorer en %1!s! (%2!d!)"
+    IDS_SKILL_AVAIL         "(%1!d! points disponibles)"
+    IDS_SKILL_MAX           "Vous être maître dans cette compétence."
+    IDS_SKILL_ENERGY        "Energie"
+    IDS_SKILL_ENERGY_DESC   "Détermine votre énergie."
+    IDS_HOST_NAME_COOP_DEFAULT "NOLF 2 Coopératif"
+    IDS_PASSWORD_DEFAULT    "Mot de passe"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TARGET_SEARCH       "fouiller"
+    IDS_TARGET_MOVE         "tirer corps"
+    IDS_TARGET_DROP         "lâcher corps"
+    IDS_TARGET_TALK         "parler"
+    IDS_TARGET_USE          "utiliser"
+    IDS_TARGET_TAKE         "prendre"
+    IDS_TITLE_HOST_WEAPONS  "ARMES INTERDITES"
+    IDS_TARGET_HACKKEYPAD   "décoder"
+    IDS_TARGET_WELD         "torche"
+    IDS_TARGET_DECODE       "décoder"
+    IDS_TARGET_PICK         "crocheter"
+    IDS_TARGET_PHOTO        "photographier"
+    IDS_TARGET_BOMB         "poser la bombe"
+    IDS_TARGET_INK          "dévoiler"
+    IDS_TARGET_BUG          "placer le micro"
+    IDS_TARGET_INNOCENT     "ami"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CDKEY_ENTER         "Tapez la Clé-CD"
+    IDS_CDKEY_INVALID       "Clé-CD incorrecte"
+    IDS_CDKEY               "Clé-CD"
+    IDS_BANDWIDTH_INVALID   "Bande passante incorrecte. Indiquez une valeur comprise entre %1!d! et %2!d!."
+    IDS_AMMO_NOPICKUP       "Impossible de porter plus de munitions de %1!s!!"
+    IDS_DMODE_RENDERER      "%1!s! - %2!s!"
+    IDS_DMODE_RESOLUTION    "%1!d!x%2!d!x%3!d!"
+    IDS_TARGET_WAKEUP       "réveil"
+    IDS_JOIN_GAME           "Rejoindre partie"
+    IDS_PLAYER_NAME         "Nom du joueur"
+    IDS_DMODE_PLEASEWAIT1   "Merci de patienter le temps que NOLF"
+    IDS_DMODE_PLEASEWAIT2   "détermine la liste des périphériques de rendu…"
+    IDS_HELP_PLAYER_MODEL   "Choisir le modèle du personnage."
+    IDS_HELP_PLAYER_NAME    "Choisir le nom du joueur."
+    IDS_SCORE_PING          "Ping:"
+    IDS_HELP_SERVER_NAME    "Trier les serveurs dans l'ordre alphabétique."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ALLOW_SCMD_COMMANDS "Autoriser le SCMD"
+    IDS_TARGET_OPEN_2177    "ouvrir"
+    IDS_TARGET_CLOSE_2178   "fermer"
+    IDS_TARGET_TIPOVER_2179 "bulle d'aide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_SERVER_PLAYERS "Trier les serveurs selon le nombre de joueurs."
+    IDS_HELP_SERVER_PING    "Trier les serveurs selon leur temps de réponse."
+    IDS_HELP_SORT_PLYR_NAME "Trier les joueurs dans l'ordre alphabétique."
+    IDS_HELP_SORT_PLYR_SCORE "Trier les joueurs selon leur score."
+    IDS_HELP_SORT_PLYR_PING "Trier les joueurs selon leur temps de réponse."
+    IDS_HELP_REFRESH        "Rafraîchir la liste des serveurs."
+    IDS_HELP_REPING         "Ping de tous les serveurs."
+    IDS_HELP_GAME_FILTER    "Filtrer les parties selon le type."
+    IDS_HELP_POP_FILTER     "Filtrer les parties selon le nombre de joueurs."
+    IDS_HELP_REM_ALL_WPNS   "Retirer tous les objets de la liste d'interdiction."
+    IDS_MOD_NOPICKUP        "Vous avez déjà: %1!s!!"
+    IDS_GEAR_NOPICKUP       "Impossible d'utiliser: %1!s!!"
+    IDS_HELP_REM_WEAPON     "Retirer l'objet sélectionné de la liste d'interdiction."
+    IDS_CHANGING_AMMO       "Change en munitions de %1!s!"
+    IDS_HELP_JOIN_GAME      "Rejoindre la partie sélectionnée."
+    IDS_HELP_SESSION_NAME   "Choisir le nom de la session à héberger."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TARGET_DEFUSE       "désarmorcer"
+    IDS_DISARMED            "Désamorcé!"
+    IDS_HELP_CDKEY          "Entrez une clé CD pour accéder aux parties sur Internet"
+    IDS_MUSIC_QUALITY       "Qualité de la musique"
+    IDS_HELP_MUSIC_QUALITY  "Détermine la qualité de la musique. Cela influe sur les performances."
+    IDS_CONFIRM_MUSIC       "Activer la musique haute qualité peut influer négativement sur les performances du jeu. Souhaitez-vous activer la musique haute qualité?"
+    IDS_CONFIRM_SOUND       "Les sons haute qualité nécessitent beaucoup de mémoire et cela peut influer sur les performances du jeu. Voulez-vous activer les sons haute qualité?"
+    IDS_PLAYER_MODEL        "Modèle du joueur"
+    IDS_HELP_PERFORMANCE_TEST 
+                            "Lance un niveau de test pour analyser les options de performances."
+    IDS_HOST_AVAIL_MISSIONS "Missions disponibles"
+    IDS_TITLE_PERFORMANCE_TEST "Test des réglages de performances"
+    IDS_RES_DIFFERS         "(L'affichage sera réinitialisé.)"
+    IDS_PRECACHE            "Configuration pré-cache"
+    IDS_LOAD_USERGAME       "Parties enregistrées"
+    IDS_SHELLCASINGS        "Douilles"
+    IDS_DISCONNECT          "Déconnexion du serveur"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_SHELLCASINGS   "Activer/désactiver l'affichage des douilles."
+    IDS_SHUTDOWN            "Fin de partie"
+    IDS_HELP_PRECACHE       "Activer le pré-cache rend le jeu plus fluide, mais augmente les temps de chargement et réclame plus de mémoire."
+    IDS_WPN_RESTRICT        "Armes interdites"
+    IDS_PERFORMANCE_FPS_AVE "Images/seconde Ave: %1!d!"
+    IDS_PERFORMANCE_RESULTS "Fin du test"
+    IDS_OVERALL_PERFORM     "Optimisation des performances"
+    IDS_HELP_OVERALL_PERFORM 
+                            "Sélectionner des préréglages d'options pour les ordinateurs rapides, normaux et lents."
+    IDS_PERFORM_HIGH        "Détails faibles"
+    IDS_PERFORM_MEDIUM      "Détails intermédiaires"
+    IDS_PERFORM_LOW         "Détails élevés"
+    IDS_AUTOSWITCH_WEAPONS  "Chang. auto armes"
+    IDS_HELP_AUTOSWITCH_WEAPONS 
+                            "Activer/désactiver l'utilisation automatique de la dernière arme trouvée."
+    IDS_STARTNEXTLEVEL      "Lancement du niveau suivant…"
+    IDS_PERFORMANCE_FPS_MIN "Images/seconde min.: %1!d!"
+    IDS_PERFORMANCE_FPS_MAX "Images/seconde max.: %1!d!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_GAME_TYPE      "Choisir le type de partie à héberger."
+    IDS_HELP_HOST_OPTIONS   "Définir les options de jeu multijoueur."
+    IDS_HELP_HOST_MISSIONS  "Sélectionner la liste des missions de la campagne."
+    IDS_HELP_LAUNCH         "Lancer la partie."
+    IDS_HELP_AVAIL_MISSIONS "Liste des missions disponibles."
+    IDS_HELP_POV            "Définit l'action associée à ce contrôle de PdV."
+    IDS_HELP_SEL_MISSIONS   "Liste des missions utilisées pour cette session."
+    IDS_HELP_ADD_MISSION    "Ajouter la mission sélectionnée à la liste des missions."
+    IDS_HELP_ADD_ALL        "Ajouter toutes les missions à la liste des missions."
+    IDS_HELP_REM_MISSION    "Retirer la mission sélectionnée de la liste."
+    IDS_HELP_REM_ALL        "Retirer toutes les missions de la liste."
+    IDS_VSYNC               "Sync V"
+    IDS_HELP_VSYNC          "Synchronise le rafraîchissement de l'écran au périphérique pour éviter les problèmes de cisaillement."
+    IDS_CURRENT             "Actuel"
+    IDS_UPGRADE             "Améliorer"
+    IDS_LOW_VIOLENCE        "Peu de violence"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOYSTICK_UNBOUND    "Le joystick ou gamepad n'est pas configuré. Voulez-vous le configurer maintenant?"
+    IDS_FX_DETAIL           "Effets"
+    IDS_HELP_FX_DETAIL      "Détermine le niveau de détails dans les effets comme les explosions, les débris et les impacts de balle."
+    IDS_PERFORMANCE_FPS_BELOW_MIN "%1!d!%% sous %2!d!% IPS"
+    IDS_PERFORMANCE_FPS_MINTOMAX "%1!d!%% entre %2!d!% et %3!d!% IPS"
+    IDS_CONFIRM_RESTORE     "Utiliser les paramètres par défaut va annuler toutes les modifications que vous avez apportées aux contrôles. Continuer?"
+    IDS_PERFORMANCE_FPS_ABOVE_MAX "%1!d!%% au-dessus de %2!d!% IPS"
+    IDS_PERFORMANCE_TEST_ABORTED "Test de performances annulé."
+    IDS_NEW_MOTD            "Le message du jour a été mis à jour."
+    IDS_VALIDATION_FAILED   "ERREUR - échec du test de version du serveur."
+    IDS_HARDWARE_CURSOR     "Curseur matériel"
+    IDS_HELP_HARDWARE_CURSOR "Activer/désactiver l'utilisation du curseur matériel."
+    IDS_CONFIRM_CURSOR      "Activer le curseur matériel rend le déplacement du curseur plus fluide, mais certaines cartes graphiques ne gèrent pas correctement les curseurs en mode matériel. Souhaitez-vous activer le curseur matériel?"
+    IDS_LAUNCH_UPDATE       "Mettre à jour dans la dernière version"
+    IDS_HELP_LAUNCH_UPDATE  "Arrête le jeu et tente de télécharger la dernière version du jeu."
+    IDS_NEW_VERSION         "Une version du jeu mise à jour est disponible."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INTERNET            "Configuration de la connexion Internet…"
+    IDS_NO_CDKEY            "Vous devez taper une Clé-CD correcte pour rejoindre ou héberger une partie sur Internet."
+    IDS_TARGET_HACKCARDREADER "décoder / insérer la carte"
+    IDS_LARGE               "Grand"
+    IDS_SMALL               "Petit"
+    IDS_JOIN_LAN            "Rejoindre partie LAN"
+    IDS_GUNPICKUP           "%1!s!!"
+    IDS_OUTOFAMMO           "%1!s! n'a plus de munitions"
+    IDS_GEARPICKUP          "%1!s!"
+    IDS_AMMOPICKUP          "%2!s! ( %1!d! )"
+    IDS_MODPICKUP           "%1!s!"
+    IDS_INTELLIGENCE        "Objet de renseignement!"
+    IDS_HELP_JOIN_LAN       "Rejoindre une partie multijoueur LAN."
+    IDS_SERVER_ADDRESS      "Adresse"
+    IDS_NO_SERVERS          "- aucun serveur trouvé -"
+    IDS_LOOKING_FOR_SERVERS "Recherche des serveurs…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECTING_TO_SERVER "Connexion au serveur"
+    IDS_UNKNOWN_PLAYER      "un joueur"
+    IDS_HELP_EASY           "Facile: vous subissez peu de dégâts quand vous êtes touché et l'IA est peu précise."
+    IDS_HELP_MEDIUM         "Normal: vous subissez un peu plus de dégâts et l'IA est plus précise."
+    IDS_HELP_HARD           "Difficile: l'IA vise correctement et vous subissez facilement des dégâts."
+    IDS_HELP_INSANE         "Super-espion: l'IA est très précise et vous subissez beaucoup de dégâts."
+    IDS_DIFF_REMINDER       "Le niveau de difficulté peut être modifié à tout moment de la mission via l'écran OPTIONS DE JEU."
+    IDS_SERVERS_SHOWN       "(serveurs %1!d!-%2!d!)"
+    IDS_HELP_WPN_RESTRICT   "Limite les armes, munitions et équipements disponibles."
+    IDS_KEY_PICKUP          "Trouvé: %1!s!!"
+    IDS_STATUS_STRING       "Etat: %1!s!!"
+    IDS_WAITING             "En attente"
+    IDS_QUERYING            "Requête envoyée aux serveurs"
+    IDS_VALIDATING          "Validation de la Clé-CD"
+    IDS_TARGET_HACKINGCARDREADER "décodage"
+    IDS_LOAD_TIPS           "Charger les conseils"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_LOAD_TIPS      "Active/désactive l'affichage de conseils sur l'écran de chargement."
+    IDS_HELP_UPGRADE        "Cliquez ici pour améliorer votre niveau de compétence."
+    IDS_DSL_LOW             "DSL (faible)"
+    IDS_CONTOUR             "Contour moto-neige"
+    IDS_HELP_CONTOUR        "La moto-neige suit le relief. Désactiver pour faciliter le pilotage."
+    IDS_PERFORMANCE_RECOMMEND_LOWER 
+                            "Nous vous recommandons de réduire le niveau de détails avant de jouer."
+    IDS_PAUSED              "Partie en pause"
+    IDS_UNUSED              "Inutilisé"
+    IDS_PERFORMANCE_RECOMMEND_HIGHER 
+                            "Nous vous recommandons d'augmenter le niveau de détails avant de jouer."
+    IDS_PERFORMANCE_RECOMMEND_CURRENT 
+                            "Le jeu devrait fonctionner correctement avec le niveau de détails actuel."
+    IDS_PRESSANYKEY         "Appuyez sur une touche…"
+    IDS_EMPTY               "    [ vide ]"
+    IDS_PRESSKEYTOCONTINUE  "Appuyez sur Entrée pour continuer."
+    IDS_SUREWANTQUIT        "Voulez-vous vraiment quitter?"
+    IDS_SUREWANTABORT       "Voulez-vous vraiment annuler la partie en cours?"
+    IDS_BUMPER_LOADING      "Chargement…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INTEL_ITEMS         "Objets de renseignement:"
+    IDS_UP                  "haut"
+    IDS_DOWN                "fermé"
+    IDS_DISCON_MISSINGFILE  "Fichier manquant %1!s!"
+    IDS_DISCON_CONNECTTERM  "Vous vous êtes déconnecté du serveur."
+    IDS_DISCON_SERVERBOOT   "Vous avez été banni du serveur."
+    IDS_DISCON_TIMEOUT      "Délai d'attente de connexion dépassé."
+    IDS_WEAPON              "Arme"
+    IDS_KEY                 "Touche"
+    IDS_DEVICE_MOUSE        "Souris"
+    IDS_DEVICE_JOYSTICK     "Joystick"
+    IDS_AUTOSWITCH_AMMO     "Chang. auto munitions"
+    IDS_HELP_AUTOSWITCH_AMMO 
+                            "Activer/désactiver l'utilisation automatique du dernier type de munitions trouvé."
+    IDS_PORT                "Port réseau"
+    IDS_HELP_ENTER_PORT     "Indiquez le numéro du port réseau à utiliser."
+    IDS_SERVER_PORT         "Port"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOQUICKSAVEGAME     "Aucune sauvegarde rapide trouvée."
+    IDS_LOADGAMEFAILED      "Erreur de chargement de la partie."
+    IDS_SAVEGAMEFAILED      "Erreur lors de l'enregistrement."
+    IDS_NOLOADLEVEL         "Impossible de charger le niveau."
+    IDS_SOUNDNOTINITED      "Impossible d'initialiser les sons. Vérifiez que la carte son est bien configurée."
+    IDS_UNSPECIFIEDERROR    "Une erreur inconnue s'est produite."
+    IDS_NOREMAPKEY          "Cette touche ne peut pas être changée."
+    IDS_NOSOUNDCHANGE       "Les effets sonores doivent être activés pour modifier ce réglage."
+    IDS_NOMUSICCHANGE       "La musique doit être activée pour modifier ce réglage."
+    IDS_ENDCURRENTGAME      "Cela va mettre fin à la partie actuelle. Continuer?"
+    IDS_REINITIALIZING_RENDERER "Réinitialisation du périphérique de rendu"
+    IDS_INVALID3DSOUNDPROVIDER "Périphérique de son 3D incorrect."
+    IDS_CONFIRMSAVE         "Voulez-vous écraser cette sauvegarde?"
+    IDS_GAMESAVED           "Partie enregistrée."
+    IDS_REBINDING_TEXTURES  "Réinitialisation des textures."
+    IDS_REBINDING_LIGHTMAPS "Réinitialisation des lightmaps."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHUTDOWNSERVER      "Vous allez arrêter le serveur et déconnecter tous les clients. Continuer?"
+    IDS_NETERR_GENERIC      "ERREUR - impossible de lancer une partie en réseau."
+    IDS_NETERR_SELECTSERVICE 
+                            "ERREUR - impossible d'utiliser le protocole réseau choisi."
+    IDS_NETERR_FILLSERVICE  "ERREUR - impossible d'accéder aux protocoles réseau disponibles."
+    IDS_NETERR_JOINSESSION  "ERREUR - impossible de rejoindre la session choisie."
+    IDS_NETERR_HOSTSESSION  "ERREUR - impossible d'héberger la session."
+    IDS_NETERR_INIT         "ERREUR - impossible d'initialiser le système réseau."
+    IDS_NETERR_CANTBINDTOPORT "Impossible de se connecter au port demandé."
+    IDS_NETERR_NOTSAMEGUID  "ERREUR - impossible de rejoindre car le serveur de jeu utilise une version différente du jeu ou un autre jeu."
+    IDS_PLAYER              "Joueur"
+    IDS_SAY                 "DIT:"
+    IDS_NETERR_WRONGPASS    "Mot de passe incorrect."
+    IDS_YOUWEREKILLED       "Vous avez été tué!"
+    IDS_QUICKSAVING         "Sauvegarde rapide..."
+    IDS_SERVERFULL          "Impossible de rejoindre. Serveur complet."
+    IDS_SERVER_WRONGVERSION "Impossible de rejoindre car le serveur utilise une autre version du jeu. Allez sur www.the-operative.com pour télécharger la dernière mise à jour."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOINEDGAME          "%1!s! a rejoint la partie"
+    IDS_LEFTGAME            "%1!s! a quitté la partie"
+    IDS_SAVINGGAME          "Sauvegarde de la partie…"
+    IDS_CANTQUICKSAVE       "Vous ne pas enregistrer maintenant."
+    IDS_ACCESSGRANTED       "Accès autorisé"
+    IDS_ACCESSDENIED        "Accès refusé"
+    IDS_LOCKED              "Verrouillé"
+    IDS_HELP_ENTER_SCMDPASSWORD 
+                            "Détermine le mot de passe nécessaire pour se connecter en tant qu'administrateur SCMD."
+    IDS_WON_MOTD_STATUS     "Téléchargement du Message du Jour"
+    IDS_WON_MOTD_SUCCESS    "Message du Jour téléchargé"
+    IDS_WON_MOTD_FAIL       "Erreur lors du téléchargement du Message du Jour"
+    IDS_WON_VERSION_STATUS  "Téléchargement des informations de version la plus récente"
+    IDS_WON_VERSION_SUCCESS "Informations de version la plus récente téléchargées"
+    IDS_WON_VERSION_FAIL    "Erreur de téléchargement des informations de version la plus récente"
+    IDS_WON_CDKEY_STATUS    "Vérification de la Clé CD"
+    IDS_WON_CDKEY_SUCCESS   "Clé CD vérifiée"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FIND_SERVERS        "Trouver serveurs"
+    IDS_HELP_FIND_SERVERS   "Chercher des serveurs."
+    IDS_HELP_PROFILE_DELETE "Effacer le profil sélectionné."
+    IDS_HELP_PROFILE_RENAME "Renommer le profil sélectionné."
+    IDS_CONFIRM_DELETE      "Voulez-vous vraiment effacer ce fichier?"
+    IDS_CURRENT_PROFILE     "Profil actuel: %1!s!"
+    IDS_ENTER_PROFILE_NAME  "Tapez un nom pour le profil:"
+    IDS_CONFIRM_NEWPROFILE  "Cela va mettre fin à la partie actuelle. Continuer?"
+    IDS_PERFORMANCE_TEST_BRIEF 
+                            "Une courte séquence cinématique du jeu va être chargée pour tester les performances du jeu avec votre niveau de réglage actuel. A la fin de la séquence, des recommandations seront affichées.\n\nVous pouvez appuyer sur la touche Echap à tout moment pour annuler le test des performances."
+    IDS_PARAMETERS          "Paramètres:"
+    IDS_SELECT_AMMO_TEXT    "Sélectionner"
+    IDS_EXIT_WAITING        "%1!d! joueurs vous attendent."
+    IDS_EXIT_WAITING_1      "1 joueur vous attend."
+    IDS_EXIT_WAITING_NAME   "%1!s! vous attend."
+    IDS_EXIT_PLAYER_WAITING "Vous attendez %1!d! joueurs."
+    IDS_EXIT_PLAYER_WAITING_1 "Vous attendez 1 joueur."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EXIT_PLAYER_WAITING_NAME "Vous attendez %1!s!."
+    IDS_NET_GAME_END        "Condition de fin de niveau"
+    IDS_NET_GAME_END_HELP   "Détermine les conditions dans lesquelles se termine la carte."
+    IDS_CONFIRM_SKILLS      "Vous avez %1!d! points de compétence à dépenser. Vous ne pourrez pas améliorer vos compétences après avoir rejoint une partie. Voulez-vous vraiment ne pas dépenser ces points ?"
+    IDS_CHOOSE_TEAM         "Choix d'équipe"
+    IDS_FRAG_LIMIT_HELP     "Indique le score nécessaire pour gagner la manche."
+    IDS_HELP_CHOOSE_TEAM_1  "Choisir l'équipe Bleue"
+    IDS_TIME_LIMIT_HELP     "Indique combien de minutes dure une manche."
+    IDS_MAX_PLAYERS         "Joueurs max."
+    IDS_MAX_PLAYERS_HELP    "Définir le nombre maximum de joueurs autorisés dans la session."
+    IDS_ROUNDS_HELP         "Indique combien de manches sont jouées avant changement de carte."
+    IDS_RUN_SPEED_HELP      "Indiquez le pourcentage de la vitesse de course normale utilisée dans la session."
+    IDS_HELP_CHOOSE_TEAM_2  "Choisir l'équipe Rouge"
+    IDS_FRIENDLY_FIRE_HELP  "Détermine si les membres d'une même équipe peuvent se blesser."
+    IDS_AUTO_SELECT         "Sélection automatique"
+    IDS_HELP_HOST_PLAYERDIFF 
+                            "Détermine l’augmentation du niveau de difficulté lorsqu’un nouveau joueur rejoint la partie."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WON_CDKEY_FAIL      "Erreur de vérification de la Clé CD"
+    IDS_WON_PUB_STATUS      "Publication du serveur"
+    IDS_WON_PUB_SUCCESS     "Serveur publié"
+    IDS_WON_PUB_FAIL        "Erreur de publication du serveur"
+    IDS_WON_REM_STATUS      "Suppression du serveur"
+    IDS_WON_REM_SUCCESS     "Serveur supprimé"
+    IDS_WON_REM_FAIL        "Erreur de suppression du serveur"
+    IDS_WON_LIST_STATUS     "Téléchargement de la liste des serveurs"
+    IDS_WON_LIST_SUCCESS    "Liste des serveurs téléchargée"
+    IDS_WON_LIST_FAIL       "Erreur de téléchargement de la liste des serveurs"
+    IDS_WON_CLEAR_REQ_LIST  "Nettoyage de la liste des requêtes"
+    IDS_WON_PROCESS_REQ     "Traitement de requête non disponible"
+    IDS_WON_PING_SUCCESS    "Ping de la liste des serveurs Peer terminé"
+    IDS_WON_DETAIL_SUCCESS  "Demande de détails des serveurs réussie"
+    IDS_WON_DETAIL_FAIL     "Le serveur ne répond pas"
+    IDS_WON_VAL_SUCCESS     "Client validé"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TEAM_1              "Equipe Bleue"
+    IDS_HELP_CAMPAIGN_NAME  "Choisir la campagne multijoueur à héberger."
+    IDS_DETAILTEXTURES      "Textures des détails"
+    IDS_HELP_DETAILTEXTURES "Activer/désactiver l'utilisation des textures des détails."
+    IDS_ENVIRONMENT_MAP     "Carte d'environnement"
+    IDS_HELP_ENVIRONMENT_MAP "Activer/désactiver l'utilisation des cartes d'environnement."
+    IDS_DYNAMICLIGHTS       "Lumières dynamiques"
+    IDS_HELP_DYNAMICLIGHTS  "Active/désactive l'utilisation des lumières dynamiques."
+    IDS_TRIPLE_BUFF         "Triple tampon"
+    IDS_HELP_TRIPLE_BUFF    "Activer/désactiver le triple tampon."
+    IDS_HELP_SETCONTROL     "Appuyez sur Entrée ou cliquez pour définir un contrôle pour cette action."
+    IDS_HELP_CUSTOMCONTROLS "Affecter les actions aux touches du clavier et aux boutons de la souris et de la manette."
+    IDS_HELP_MOUSE          "Choisir les options de configuration de la souris."
+    IDS_HELP_JOYSTICK       "Choisir les options de configuration du joystick ou du gamepad."
+    IDS_HELP_ADVCONTROLS    "Définir les options de contrôles avancés."
+    IDS_HELP_RESTORE        "Redéfinir les contrôles par défaut."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_SOUNDFX        "Activer/désactiver les effets sonores."
+    IDS_HELP_SOUNDVOL       "Régler le volume des effets sonores."
+    IDS_HELP_SOUNDQUAL      "Définir la qualité des effets sonores. Cela peut influer sur les performances."
+    IDS_HELP_MUSIC          "Activer/désactiver la musique."
+    IDS_HELP_MUSICVOL       "Régler le volume de la musique."
+    IDS_HELP_CUSTOMLEVEL    "Charger le niveau personnalisé choisi."
+    IDS_HELP_USEJOYSTICK    "Activer/désactiver l'utilisation d'un joystick ou d'un gamepad."
+    IDS_HELP_INVERTAXIS     "Activer/désactiver l'inversion sur cet axe."
+    IDS_HELP_DEADZONE       "Définir la zone neutre pour cet axe."
+    IDS_HELP_ANALOG         "Passer du mode analogique au mode numérique."
+    IDS_HELP_JOY_SENSE      "Définir la sensibilité du joystick sur cet axe."
+    IDS_HELP_JOY_CENTER     "Activer/désactiver l'utilisation de la correction de centrage."
+    IDS_HELP_INVERTY        "Activer/désactiver l'inversion de la souris."
+    IDS_HELP_MOUSELOOK      "Activer/désactiver l'utilisation de la souris pour piloter la vue."
+    IDS_HELP_MOUSE_SENSE    "Définir la sensibilité de la souris."
+    IDS_HELP_MOUSE_INPUT    "Détermine la sensibilité et la fluidité de la souris."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_MOUSE_BUTTON   "Définir l'action associée à ce bouton."
+    IDS_HELP_NORMALTURN     "Choisir la vitesse normale de rotation au clavier."
+    IDS_HELP_FASTTURN       "Activer le mode de rotation rapide pour les contrôles clavier."
+    IDS_HELP_LOOKUP         "Définir la vitesse de la vue au clavier."
+    IDS_HOST_CAMPAIGN_DEFAULT "Campagne par défaut"
+    IDS_HELP_CROSSHAIRMENU  "Définir les options du viseur."
+    IDS_HELP_LEFT           "Afficher la page précédente."
+    IDS_HELP_RIGHT          "Afficher la page suivante."
+    IDS_HELP_QUICKSAVE      "Enregistrer la partie dans l'emplacement de sauvegarde rapide."
+    IDS_HELP_SAVEGAME       "Enregistrer la partie dans cet emplacement."
+    IDS_HELP_QUICKLOAD      "Charger la partie dans l'emplacement de sauvegarde rapide."
+    IDS_HELP_LOADGAME       "Charger la partie enregistrée dans cet emplacement."
+    IDS_HELP_RELOAD         "Charger la partie enregistrée automatiquement. La partie est enregistrée automatiquement au début du niveau."
+    IDS_HELP_CAMPAIGN       "Choisir une campagne."
+    IDS_HELP_RESUME         "Revenir à la partie en cours."
+    IDS_HELP_CONTINUE_GAME  "Continuer la partie la plus récemment enregistrée."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_JOIN           "Rejoindre une partie multijoueur"
+    IDS_HELP_HOST           "Héberger une nouvelle partie multijoueur."
+    IDS_HOST_ADD_MISSION    "> Ajouter"
+    IDS_HOST_REMOVE_MISSION "< Retirer"
+    IDS_HOST_ADD_ALL        "> Tout ajouter"
+    IDS_HOST_REMOVE_ALL     "< Tout retirer"
+    IDS_NOLEVELS            "Sélectionnez les niveaux auxquels jouer dans cette partie."
+    IDS_HELP_OK             "Accepter ces réglages."
+    IDS_SCENENUMBER         "Scène %1!d!"
+    IDS_PLAYER_SKILLS       "Compétences"
+    IDS_LOOP_MISSIONS       "Boucle"
+    IDS_MOVE_CONTROLS       "Mouvement"
+    IDS_INV_CONTROLS        "Interaction"
+    IDS_VIEW_CONTROLS       "Vue"
+    IDS_MISC_CONTROLS       "Etat"
+    IDS_HELP_KEYBOARD       "Choisir les options de configuration du clavier."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_CH_ALPHA       "Opacité du viseur."
+    IDS_HELP_CH_R           "Eléments du viseur couleur rouge."
+    IDS_HELP_CH_G           "Eléments du viseur couleur verte."
+    IDS_HELP_CH_B           "Eléments du viseur couleur bleue."
+    IDS_HELP_CH_STYLE       "Choisir le type de viseur à utiliser."
+    IDS_HELP_CH_DYNAMIC     "Activer/désactiver la mise à l'échelle dynamique du viseur."
+    IDS_HELP_MAIN           "Retour au menu principal."
+    IDS_HELP_NEXTMISSION    "Lancer la mission suivante."
+    IDS_HELP_CONTINUE       "Aller à l'écran suivant."
+    IDS_CAMPAIGN_EXISTS     "Une campagne portant ce nom existe déjà."
+    IDS_GUN_NOPICKUP        "Vous ne pouvez pas emporter plus de munitions pour l'arme %1!s!!"
+    IDS_GUN_NOPICKUP_INF    "Vous avez déjà: %1!s!!"
+    IDS_PLAYER_SETUP        "Configuration du joueur"
+    IDS_JOIN                "Rejoindre"
+    IDS_HOST                "Hôte"
+    IDS_HELP_PLAYER         "Définir vos options de joueur."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPONS_STAY        "Armes permanentes"
+    IDS_WEAPONS_STAY_HELP   "Activer/désactiver la réapparition immédiate des armes."
+    IDS_HELP_AUTO_SELECT    "Le serveur choisit une équipe pour vous."
+    IDS_HELP_TEAM_SELECT    "Rejoindre cette équipe."
+    IDS_CANCELREVIVE        "Annuler Revivre"
+    IDS_SERVER_MOD          "Mod"
+    IDS_HIT_LOCATION        "Dégâts en fonction de la localisation"
+    IDS_HIT_LOCATION_HELP   "Plus ou moins de dégâts selon la partie du corps touchée."
+    IDS_SCORE_LIMIT         "Score de victoire"
+    IDS_HELP_SCORE_LIMIT    "Définir le score nécessaire pour terminer la carte."
+    IDS_ALLOWED_WEAPONS     "Armes autorisées"
+    IDS_DISABLED_WEAPONS    "Armes interdites"
+    IDS_END_SCORE           "Score atteint."
+    IDS_TEAM1_BOMB          "L'équipe Bleue a posé une bombe."
+    IDS_TEAM2_BOMB          "L'équipe Rouge a posé une bombe."
+    IDS_HOST_ADD_WEAPON     "> Ajouter restriction"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_2110          "Discrétion"
+    IDS_SKILL_2111          "Camouflage"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_2112          "Fuite"
+    IDS_SKILL_2113          "Santé"
+    IDS_SKILL_2114          "Endurance"
+    IDS_SKILL_2115          "Résistance"
+    IDS_SKILL_2116          "Premiers soins"
+    IDS_SKILL_2117          "Solidité"
+    IDS_SKILL_2118          "Précision"
+    IDS_SKILL_2119          "Régularité"
+    IDS_SKILL_2120          "Correction"
+    IDS_SKILL_2121          "Capacité munitions"
+    IDS_SKILL_2122          "Charge"
+    IDS_SKILL_2123          "Armure"
+    IDS_SKILL_2124          "Réparation"
+    IDS_SKILL_2125          "Compétence"
+    IDS_SKILL_2126          "Efficacité"
+    IDS_SKILL_2127          "Compétence"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_2128          "Efficacité"
+    IDS_SKILL_2129          "Vitesse"
+    IDS_SKILL_2130          "Minutie"
+    IDS_SKILL_2131          "<inutilisé>"
+    IDS_SKILL_2132          "<inutilisé>"
+    IDS_SKILL_2133          "<inutilisé>"
+    IDS_SKILL_2134          "<inutilisé>"
+    IDS_SKILL_2135          "<inutilisé>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_HELP_2150     "Réduit le bruit que vous faites en courant."
+    IDS_SKILL_HELP_2151     "Réduit le temps qu'il faut pour vous camoufler."
+    IDS_SKILL_HELP_2152     "Augmente votre capacité à échapper à vos poursuivants."
+    IDS_SKILL_HELP_2153     "Augmente vos points de vie maximaux."
+    IDS_SKILL_HELP_2154     "Réduit les effets des blessures sur vos déplacements."
+    IDS_SKILL_HELP_2155     "Les blessures sur la durée (poison et feu) ont un effet moins long."
+    IDS_SKILL_HELP_2156     "Les trousses de soins sont utilisées plus efficacement."
+    IDS_SKILL_HELP_2157     "Vous subissez moins de dégâts."
+    IDS_SKILL_HELP_2158     "Améliore la précision de vos tirs."
+    IDS_SKILL_HELP_2159     "Vous bougez moins quand vous utilisez une lunette de visée."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SKILL_HELP_2160     "Vous prenez moins de temps pour corriger votre visée quand vous avez bougé ou que vous avez tiré."
+    IDS_SKILL_HELP_2161     "Vous permet de transporter plus de munitions."
+    IDS_SKILL_HELP_2162     "Les corps gênent moins vos déplacements."
+    IDS_SKILL_HELP_2163     "Vous permet de porter plus d'armures."
+    IDS_SKILL_HELP_2164     "Améliore l'efficacité des armures que vous trouvez."
+    IDS_SKILL_HELP_2165     "Augmente les dégâts que vous infligez."
+    IDS_SKILL_HELP_2166     "Vous rechargez et changez d'arme plus rapidement."
+    IDS_SKILL_HELP_2167     "Vous êtes plus efficace quand vous utilisez les gadgets."
+    IDS_SKILL_HELP_2168     "Vous utilisez plus rapidement les gadgets."
+    IDS_SKILL_HELP_2169     "Vous prenez moins de temps pour fouiller."
+    IDS_SKILL_HELP_2170     "Vous trouvez plus d'objets utiles."
+    IDS_SKILL_HELP_2171     "<inutilisé>"
+    IDS_SKILL_HELP_2172     "<inutilisé>"
+    IDS_SKILL_HELP_2173     "<inutilisé>"
+    IDS_SKILL_HELP_2174     "<inutilisé>"
+    IDS_SKILL_HELP_2175     "<inutilisé>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_SHUTDOWN_1      "Erreur d'initialisation du périphérique de rendu. Pour jouer à %1!s!, vous devez avoir installé DirectX 8.1."
+    IDS_PROFILE_ALREADY_EXISTS 
+                            "Un profil portant ce nom existe déjà. Choisissez un autre nom."
+    IDS_CONFIRM_DELETE_PROFILE 
+                            "Voulez-vous vraiment effacer ce profil et tous les réglages et les fichiers associés ?"
+    IDS_APP_UNABLE_TO_CREATE_HW_TNL_DEVICE 
+                            "Impossible de créer un lien vers un périphérique TnL. Il est possible que vous n'ayez pas installé DirectX 8.1, ou que votre carte graphique ne gère pas le TnL en matériel. Ces deux conditions doivent être remplies pour jouer à %1!s! et bien que vous puissiez continuer à jouer en cliquant sur OK, remarquez que nous le déconseillons officiellement et que vous risquez de rencontrer des problèmes de plantage et que les performances du jeu seront sans doute décevantes."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RETAIL              "Retail"
+    IDS_FILTER_CURRENTMOD   "Mod actuel"
+    IDS_SERVER_WRONGMOD     "Impossible de rejoindre la partie car le serveur utilise un Mod différent du vôtre."
+    IDS_HECHANGED           "%1!s! a changé d'équipe et rejoint %2!s!"
+    IDS_ICHANGED            "Vous changez d'équipe pour %1!s!"
+    IDS_IWILLCHANGE         "Vous changerez d'équipe en réapparaissant."
+    IDS_FRAG_SCORE          "Score Frag"
+    IDS_FRAG_SCORE_HELP     "Points marqués pour des tués."
+    IDS_TAG_SCORE           "Score Tag"
+    IDS_TAG_SCORE_HELP      "Points marqués pour des KO non mortels."
+    IDS_REVIVE_SCORE        "Score Revivre"
+    IDS_REVIVE_SCORE_HELP   "Points marqués pour avoir rendu vie à des équipiers."
+    IDS_DD_COMP_SCORE       "Score Outil"
+    IDS_DD_COMP_SCORE_HELP  "Points marqués pour avoir terminé l'Outil du Jugement dernier."
+    IDS_DD_HVY_SCORE        "Score Pièce lourde"
+    IDS_DD_HVY_SCORE_HELP   "Points marqués pour avoir placé une pièce lourde de l'Outil."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DD_LGT_SCORE        "Score Pièce légère"
+    IDS_DD_LGT_SCORE_HELP   "Points marqués pour avoir placé une pièce légère de l'Outil."
+    IDS_DD_REMOVED_SCORE    "Score Pièce volée"
+    IDS_DD_REMOVED_SCORE_HELP 
+                            "Points marqués pour avoir volé une pièce à l'Outil de l'adversaire."
+    IDS_HOST_REMOVE_WEAPON  "< Retirer restriction"
+    IDS_HELP_ADD_WEAPONS    "Ajouter des objets à la liste d'interdiction."
+    IDS_HELP_REM_WEAPONS    "Retirer des objets de la liste d'interdiction."
+    IDS_MISSING_WORLD       "Impossible de charger les ressources du monde."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "ResShared.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

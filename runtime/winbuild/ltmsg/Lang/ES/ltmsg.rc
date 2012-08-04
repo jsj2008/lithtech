@@ -1,0 +1,119 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GENERIC_ERROR       "Error de LithTech interno: %1!d!."
+    IDS_MISSINGWORLDMODEL   "Falta ModeloMundos: %1!s!."
+    IDS_CANTLOADGAMERESOURCES "No se pueden cargar los recursos del juego en %1!s!."
+    IDS_CANTINITIALIZEINPUT "No se puede iniciar DirectInput."
+    IDS_UNABLETORESTOREVIDEO "No se puede restaurar el modo gráfico."
+    IDS_USERCANCELED        "Cancelado por el usuario."
+    IDS_INVALIDWORLDFILE    "%1!s! es un archivo de mundo no válido."
+    IDS_MISSINGMODELFILE    "Falta el archivo de modelo %1!s!."
+    IDS_INVALIDMODELFILE    "%1!s! es un archivo de modelo no válido."
+    IDS_MISSINGSPRITEFILE   "Falta el archivo de objeto gráfico %1!s!."
+    IDS_INVALIDSPRITEFILE   "%1!s! es un archivo de objeto gráfico independiente (sprite)."
+    IDS_NOGAMERESOURCES     "No se ha especificado ningún recurso del juego."
+    IDS_MISSINGWORLDFILE    "Falta el archivo de mundo %1!s!."
+    IDS_CANTRESTOREOBJECT   "No se puede restaurar el objeto (clase %1!s!)."
+    IDS_SERVERERROR         "Error de servidor: %1!s!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INVALIDOBJECTDLLVERSION 
+                            "La versión del archivo DLL de objeto %1!s! no es válida (%2!d!). La versión actual es %3!d!."
+    IDS_INVALIDSHELLDLL     "Archivo DLL del intérprete de comandos (shell) %1!s! no válido."
+    IDS_INVALIDSHELLDLLVERSION 
+                            "La versión del archivo DLL del intérprete de comandos (shell) no es válida para %1!s!. La versión del archivo DLL es %2!d! y la versión actual es %3!d!."
+    IDS_MISSINGSHELLDLL     "Falta el archivo DDL del intérprete de comandos (shell) %1!s!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANTCREATECLIENTSHELL "No se puede crear el intérprete de comandos (shell) del cliente."
+    IDS_UNABLETOINITSOUND   "No se puede iniciar el sistema de sonido."
+    IDS_INVALIDSERVERPACKET "Se ha obtenido un paquete de servidor no válido."
+    IDS_MISSINGCLASS        "Falta la clase: %1!s!."
+    IDS_ERRORINITTINGNETDRIVER "No se puede iniciar el controlador de red %1!s!."
+    IDS_INVALIDNETVERSION   "La versión del protocolo de red no coincide; tu versión: %1!d!, versión del servidor: %2!d!."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CANTCREATESERVERSHELL "No se puede crear el intérprete de comandos (shell) del servidor."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRORLOADINGRENDERDLL "Error al cargar el archivo DLL de renderización %1!s!."
+    IDS_ERRORCOPYINGFILE    "Error al copiar el archivo %1!s!."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

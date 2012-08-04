@@ -1,0 +1,309 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\..\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "..\..\..\..\shared\resshared.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\..\\resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""..\\..\\..\\..\\shared\\resshared.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""..\\..\\ServerApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "#include ""..\\..\\..\\..\\shared\\Lang\\it\\ResShared.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "..\\..\\ServerApp.ico"
+IDI_SELECTED            ICON    DISCARDABLE     "..\\..\\selected.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAMESERVER DIALOG DISCARDABLE  0, 0, 448, 263
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "No One Lives Forever 2 - Server dedicato"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Informazioni sul server",IDC_STATIC,7,7,267,51
+    LTEXT           "Nome del server:",IDC_STATIC,17,17,53,12
+    CONTROL         "<server name>",IDC_SERVER_NAME,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,75,17,75,12
+    LTEXT           "Tempo di funzionamento:",IDC_STATIC,17,41,79,12
+    CONTROL         "<server time>",IDC_SERVER_TIME,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,101,41,68,12
+    LTEXT           "Attuali giocatori:",IDC_STATIC,18,159,50,12
+    EDITTEXT        IDC_TOTALPLAYERS,218,28,48,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    RTEXT           "Giocatori Totali/Unici:",IDC_STATIC,141,28,69,12
+    EDITTEXT        IDC_PEAKPLAYERS,218,17,47,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Tempo nel livello:",IDC_STATIC,293,17,55,12
+    LTEXT           "Static",IDC_TIMEINLEVEL,358,17,36,12
+    LTEXT           "Ping medio:",IDC_STATIC,128,159,37,12
+    EDITTEXT        IDC_AVERAGEPING,171,159,20,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        "Giocatori",IDC_STATIC,7,59,267,115
+    CONTROL         "List1",IDC_PLAYERS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,17,69,250,85
+    PUSHBUTTON      "&Disconnetti",IDC_PLAYER_BOOT,199,157,68,12,WS_DISABLED
+    GROUPBOX        "Missioni",IDC_STATIC,283,7,159,167
+    CONTROL         "List1",IDC_LEVELS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,293,30,139,124
+    PUSHBUTTON      "Missione &successiva",IDC_COMMANDS_NEXTLEVEL,293,157,70,12
+    PUSHBUTTON      "Seleziona &missione",IDC_COMMANDS_SELLEVEL,368,158,65,12
+    PUSHBUTTON      "F&erma server",IDC_STOPSERVER,199,41,68,12
+    GROUPBOX        "Console",IDC_STATIC,7,176,435,80
+    EDITTEXT        IDC_CONSOLE_COMMAND,17,240,356,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Elimina",IDC_CONSOLE_CLEAR,377,241,55,12
+    EDITTEXT        IDC_CONSOLE_WINDOW,17,186,415,52,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "*Send*",IDC_CONSOLE_SEND,390,0,40,8,NOT WS_VISIBLE
+    PUSHBUTTON      "*Button1*",IDC_STARTUP,348,0,40,8,NOT WS_VISIBLE
+    LTEXT           "Tipo di gioco:",IDC_STATIC,17,29,43,12
+    CONTROL         "<game type>",IDC_GAME_TYPE,"Static",SS_LEFTNOWORDWRAP | 
+                    WS_GROUP,66,29,68,12
+    RTEXT           "Giocatori di picco:",IDC_STATIC,155,17,57,12
+    LTEXT           "<players>",IDC_NUM_PLAYERS,75,159,31,12
+END
+
+IDD_SELECTCONFIG DIALOG DISCARDABLE  0, 0, 162, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Seleziona configurazione"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,55,50,14
+    PUSHBUTTON      "Annulla",IDCANCEL,100,55,50,14
+    COMBOBOX        IDC_CONFIG,10,30,140,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File di configurazione del server:",IDC_STATIC,10,15,140,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "monolith@lith.com\0"
+            VALUE "CompanyName", "Monolith Productions Inc.\0"
+            VALUE "FileDescription", "NOLF2 Server indipendente\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "NOLF2Serv\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002, Monolith Productions, Inc.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NOLF2Serv.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NOLF2\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GAMESERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_SELECTCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_NOMAPS       "ERRORE - Nessuna mappa selezionata in questo file di configurazione."
+    IDS_NETERR_GAMETYPE     "ERRORE - Il file di configurazione contiene un tipo di gioco sconosciuto."
+    IDS_ERROR_LOADREZ       "ERRORE - Impossibile caricare le risorse."
+    IDS_ERROR_MEMORY        "ERRORE - Memoria esaurita. Il server verrà chiuso."
+    IDS_ERROR_BINARIES      "ERRORE - Impossibile caricare i dati binari del gioco."
+    IDS_ERROR_CANTSTARTSERVER "ERRORE - Impossibile avviare il server."
+    IDS_ERROR_LOADWORLD     "ERRORE - Impossibile caricare la mappa selezionata."
+    IDS_CHECKEXIT           "Sei sicuro di voler fermare il server?"
+    IDS_CONSOLE_INITSERVER  "Inizializzazione del server in corso..."
+    IDS_CONSOLE_SERVERINITED "Server inizializzato."
+    IDS_CONSOLE_UNABLETOHOST "ERRORE - Impossibile fornire un accesso host al gioco."
+    IDS_CONSOLE_SERVERRUNNING "Il server è in funzionamento."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONSOLE_SERVERSTOPPED "Il server si è fermato."
+    IDS_ERROR_WORLDS        "ERRORE - Impossibile ottenere l'elenco mondiale dal server."
+    IDS_COLUMNHEADER_NAME   "Nome"
+    IDS_COLUMNHEADER_PING   "Ping"
+    IDS_COLUMNHEADER_KILLS  "Uccisioni"
+    IDS_COLUMNHEADER_SCORE  "Punteggio"
+    IDS_COLUMNHEADER_WORLD  "Mondo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_GENERIC      "ERRORE - Impossibile impostare il server per il gioco in rete."
+    IDS_RETAIL              "Retail"
+    IDS_NETERR_SELECTSERVICE 
+                            "ERRORE - Impossibile usare il servizio di rete selezionato."
+    IDS_NETERR_FILLSERVICE  "ERRORE - Impossibile accedere ai servizi di rete disponibili."
+    IDS_NETERR_JOINSESSION  "ERRORE - Impossibile partecipare alla sessione di gioco selezionata."
+    IDS_NETERR_HOSTSESSION  "ERRORE - Impossibile fornire un accesso host alla sessione di gioco."
+    IDS_NETERR_INIT         "ERRORE - Impossibile inizializzare il sistema di rete."
+    IDS_NETERR_SETNETSERVICE "ERRORE - Impossibile impostare il servizio di rete."
+    IDS_APPREGNAME          "No One Lives Forever 2"
+    IDS_APPNAME             "NOLF2Svr"
+    IDS_NETERR_NOCONFIGS    "ERRORE - Nessun file di configurazione del server. Un file di configurazione dev'essere impostato nei menu di gioco e selezionato per il server."
+    IDS_NETERR_CORRUPTCONFIG 
+                            "ERRORE - Non è stato possibile leggere correttamente il file di configurazione. Il file potrebbe essere corrotto."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLUMNHEADER_TAGS   "Tag"
+    IDS_SERVER              "Server"
+    IDS_NONE                "Nessuno"
+    IDS_COLUMNHEADER_TIMEONSERVER "Tempo"
+    IDS_ERROR_CANTSAVEOPTIONS 
+                            "ERRORE - Impossibile salvare le opzioni in autoexec.cfg."
+    IDS_NEWPLAYER           "<Incoming Player>"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "..\..\ServerApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+#include "..\..\..\..\shared\Lang\it\ResShared.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,104 @@
+Eine Fox-Interactive- und Sierra-Entertainment-Produktion
+
+Ein Spiel von Monolith Productions
+>TIME:3.0
+>BIG
+##
+NO ONE LIVES FOREVER 2: 
+Agentin in geheimer Mission 
+powered by 
+LithTech Jupiter System
+>TIME:2.0
+>BIG
+##
+Fox Interactive:
+>BIG
+>TIME:2.0
+>POS:UL
+##
+Chris Miller, Produktion
+Aaron Blean, Co-Produktion
+  
+  
+Qualitätssicherung bei Fox:
+Igor Krinitskiy, Qualitätssicherung-Management (stellv. Leitung)
+Francis Choi, Test (Leitung)
+>TIME:7.0
+>POS:UL
+##
+Test:
+Geoff Bent
+Scott Carroll
+Michael Graham
+Jen Johnson
+Cris Lee
+Jonathan Masterson
+Billy Pamier 
+Denise Pater
+Luke Thai
+Hal Zabie
+  
+Lokalisierung-Management:
+Kristian Davila
+>TIME:8.0
+>POS:UL
+##
+Besonderer Dank geht an:
+Eric Asevo
+Steve Bersch
+Pete Cesario
+Lindsey Fischer
+Ivo Gerscovich
+Greg Goodrich
+Tim Hall
+Tim Harrison
+Michael Heilemann
+Becky Kneubuhl
+Luke Letizia
+Dan Mackechnie
+Gabriel Mann
+John Melchior
+>TIME:8.0
+>POS:UL
+##
+Megan O'Brien
+Paul Pawlicki
+Michael Pole
+Rich Ragsdale
+Tim Ramage
+Jamie Samson
+Kirk Scott
+Dave Shaw
+David Stalker
+Kristin Sutter (www.nolfgirl.com)
+Tim Tran
+Jack Van Leer
+Ellen Williams
+Chris Wilson
+Asylum Studio (www.asylumstudio.com)
+>TIME:8.0
+>POS:UL
+##
+Lisa Fredsti (Fox Library)
+Brian Thomas (Fox Library)
+Brian Harvey (NVIDIA)
+Jessie Lawrence (Creative Labs)
+Mike Drummelsmith (Matrox)
+Marisa Porter, MCA
+Van Riker, 1600 Records
+John Dongelmans (Microsoft)
+Tim Godwin, Line 6
+>TIME:7.0
+>POS:UL
+##
+Die Arbeit im NOLF-Team bleibt
+eine großartige Erfahrung. 
+Vielen Dank für all die langen Abende,
+die verlorenen Wochenenden und vor allem
+für euren unglaublichen Einsatz für 
+die Qualität dieses Spiels. 
+Ihr seid klasse! – CM 
+>TIME:6.0
+>POS:UL
+##
+END

@@ -1,0 +1,1266 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SpellEd.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SpellEd.ico"
+IDR_SPELLETYPE          ICON    DISCARDABLE     "res\\SpellEdDoc.ico"
+IDI_CLOSED              ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\closed1.ico"
+IDI_SPELL               ICON    DISCARDABLE     "res\\open1.ico"
+IDI_RESOURCE            ICON    DISCARDABLE     "res\\spell1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SPELLWRAP           BITMAP  DISCARDABLE     "res\\wrap.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVESPELLS
+    SEPARATOR
+    BUTTON      ID_FILE_LAUNCH
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVESPELLS
+        MENUITEM "Save &As",                    ID_FILE_SAVESPELLS_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Launch\tCtrl+F5",             ID_FILE_LAUNCH
+        MENUITEM "&Reload Resource File",       ID_FILE_RELOADRESOURCEFILE
+        MENUITEM "Edit Game Info",              ID_FILE_EDITGAMEINFO
+        MENUITEM SEPARATOR
+        MENUITEM "&Find FX containing resource", 
+                                                ID_FILE_FINDFXCONTAININGRESOURCE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Import &Colour Favourites",   ID_FILE_IMPORTCOLOURFAVOURITES
+
+        MENUITEM "Import Scale &Favourites",    ID_FILE_IMPORTSCALEFAVOURITES
+
+        MENUITEM "Import &Key Favourites",      ID_FILE_IMPORTKEYFAVOURITES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Format"
+    BEGIN
+        MENUITEM "Save as Text",                ID_FORMAT_TEXT, CHECKED
+        MENUITEM "Save as Binary",              ID_FORMAT_BINARY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About FxED...",              ID_APP_ABOUT
+    END
+END
+
+IDR_SPELLETYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About FxED...",              ID_APP_ABOUT
+    END
+END
+
+IDR_TRACKWINDOW MENU DISCARDABLE 
+BEGIN
+    POPUP "TRACK"
+    BEGIN
+        MENUITEM "INSERTTRACK",                 ID_TRACK_INSERTTRACK
+        MENUITEM "ADDTRACK",                    ID_TRACK_ADDTRACK
+        MENUITEM "ADDKEY",                      ID_TRACK_ADDKEY
+        MENUITEM "NAMEKEY",                     ID_TRACK_NAMEKEY
+        MENUITEM "EDITKEY",                     ID_TRACK_EDITKEY
+        MENUITEM "CHANGEKEY",                   ID_TRACK_CHANGEKEY
+        MENUITEM "DELETEKEY",                   ID_TRACK_DELETEKEY
+        MENUITEM "EXPANDKEY",                   ID_TRACK_EXPANDKEY
+        MENUITEM "EDITKEY",                     ID_TRACK_EDITKEY
+        MENUITEM "EDITCOLOURKEYS",              ID_TRACK_EDITCOLOURKEYS
+        MENUITEM "EDITMOTIONKEYS",              ID_TRACK_EDITMOTIONKEYS
+        MENUITEM "EDITSCALEKEYS",               ID_TRACK_EDITSCALEKEYS
+        MENUITEM "ADDKEYTOFAVOURITES",          ID_TRACK_ADDKEYTOFAVOURITES
+        MENUITEM "ADDFAVOURITEKEY",             ID_TRACK_ADDFAVOURITEKEY
+        MENUITEM "DELETETRACK",                 ID_TRACK_DELETETRACK
+        MENUITEM "COPYMULTIPLEKEYS",            ID_TRACK_COPYMULTIKEYS
+        MENUITEM "MAKESAMELENGTH",              ID_TRACK_MAKESAMELENGTH
+        MENUITEM "LINKKEY",                     ID_TRACK_LINKKEY
+        MENUITEM "UNLINKKEY",                   ID_TRACK_UNLINKKEY
+        MENUITEM "SETKEYLENGTH",                ID_TRACK_SETKEYLENGTH
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVESPELLS,     VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_FILE_LAUNCH,         VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FxED"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FxED Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2000-2002 LithTech Inc.",IDC_STATIC,40,25,
+                    158,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_DLGBAR DIALOG DISCARDABLE  0, 0, 138, 95
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SPELLLIST DIALOG DISCARDABLE  0, 0, 140, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Spells....."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,13,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,76,209,50,14
+    LISTBOX         IDC_SPELLSLIST,7,7,126,196,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_STRINGDLG DIALOG DISCARDABLE  0, 0, 186, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,27,50,14
+END
+
+IDD_SPELLRESOLUTION DIALOGEX 0, 0, 385, 262
+STYLE DS_MODALFRAME | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_ALLEFFECTS,7,18,91,167,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LISTBOX         IDC_EFFECTS,108,18,91,167,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Add  >>",IDC_ADD,28,188,50,14
+    PUSHBUTTON      "<<  Remove",IDC_REMOVE,129,188,50,14
+    LTEXT           "All Effects",IDC_STATIC,8,8,32,8
+    LTEXT           "Spell Effects",IDC_STATIC,110,9,40,8
+    GROUPBOX        "Effect Properties",IDC_STATIC8,204,14,171,237
+    GROUPBOX        "Effect Description",IDC_STATIC,7,208,193,43
+    LTEXT           "Activation Phase :",IDC_STATIC1,212,24,58,8
+    COMBOBOX        IDC_ACTIVATIONPHASE,211,34,77,50,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Specifics",IDC_STATIC7,210,81,158,163
+    LTEXT           "Apply :",IDC_STATIC2,212,52,22,8
+    EDITTEXT        IDC_RATE,249,62,23,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_APPLY,211,62,36,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Rate :",IDC_STATIC3,250,52,20,8
+    LTEXT           "Initial Delay :",IDC_STATIC4,326,52,41,8
+    EDITTEXT        IDC_INITIALDELAY,326,62,22,13,ES_AUTOHSCROLL
+    LTEXT           "secs",IDC_STATIC6,349,64,16,8
+    LTEXT           "Effect Description",IDC_DECRIPTION,15,219,177,25
+    LTEXT           "",IDC_PROPRECT,219,96,141,142
+    LTEXT           "Type :",IDC_STATIC5,275,52,21,8
+    COMBOBOX        IDC_TYPE,275,62,45,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SPELLBASEPARAMETERS DIALOGEX 0, 0, 273, 257
+STYLE DS_MODALFRAME | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Name :",IDC_STATIC,18,16,24,8
+    LTEXT           "Description :",IDC_STATIC,18,42,40,8
+    LTEXT           "Requires Totem(s) :",IDC_STATIC,160,137,62,8
+    COMBOBOX        IDC_TOTEMS,15,149,62,78,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "At Level :",IDC_STATIC,16,172,31,8
+    COMBOBOX        IDC_LEVELS,15,181,61,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAME,17,25,241,14,ES_AUTOHSCROLL
+    GROUPBOX        "Name, Description And Type",IDC_STATIC,7,7,258,112
+    EDITTEXT        IDC_DESCRIPTION,17,51,241,27,ES_MULTILINE | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Casting Requirements",IDC_STATIC,7,128,258,74
+    LISTBOX         IDC_REQUIRESTOTEM,159,147,97,48,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add  >>",IDC_ADDTOTEM,90,152,48,14
+    PUSHBUTTON      "<<  Remove",IDC_REMOVETOTEM,91,175,47,14
+    LTEXT           "Totem :",IDC_STATIC,16,139,27,8
+    GROUPBOX        "Casting Cost",IDC_STATIC,7,207,258,43
+    LTEXT           "Cost :",IDC_STATIC,17,217,19,8
+    EDITTEXT        IDC_COST,16,226,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "How Often :",IDC_STATIC,128,217,39,8
+    COMBOBOX        IDC_CASTHOWOFTEN,127,227,127,49,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pts Of",IDC_STATIC,47,230,20,8
+    COMBOBOX        IDC_CASTPTTYPE,72,227,48,48,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Of :",IDC_STATIC,74,218,12,8
+    LTEXT           "Spell Type :",IDC_STATIC,19,83,38,8
+    LTEXT           "Target Type :",IDC_STATIC,127,83,44,8
+    COMBOBOX        IDC_TYPE,17,93,52,46,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Radius :",IDC_STATIC,76,83,27,8
+    EDITTEXT        IDC_RADIUS,75,93,40,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TARGET,127,93,65,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Animation Length :",IDC_STATIC,202,83,60,8
+    COMBOBOX        IDC_ANIMSPEED,200,93,48,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_EF_ALTERATTRIBUTE DIALOG DISCARDABLE  0, 0, 120, 120
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Affected Attribute :",IDC_STATIC,8,33,60,8
+    COMBOBOX        IDC_ATTR,7,43,92,63,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Amount :",IDC_STATIC,8,60,29,8
+    EDITTEXT        IDC_AMOUNT,7,70,40,14,ES_AUTOHSCROLL
+    LTEXT           "Affects :",IDC_STATIC,7,6,27,8
+    COMBOBOX        IDC_AFFECTS,7,16,63,47,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PHASEINFODLG DIALOGEX 0, 0, 431, 54
+STYLE DS_MODALFRAME | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_NOPARENTNOTIFY
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Phase Information",IDC_STATIC,6,3,145,46
+    GROUPBOX        "Key Info",IDC_KEYINFO,155,3,215,46
+    LTEXT           "Phase Length :",IDC_STATIC,19,14,49,8
+    PUSHBUTTON      "Button1",IDC_PHASELENGTH,72,12,69,14
+    LTEXT           "Total Keys :",IDC_STATIC,30,28,38,8
+    LTEXT           "Total Tracks :",IDC_STATIC,24,36,45,8
+    LTEXT           "TOTAL KEYS",IDC_TOTALKEYS,72,28,45,8
+    LTEXT           "TOTAL TRACKS",IDC_TOTALTRACKS,72,37,55,8
+    LTEXT           "Start Time :",IDC_KEYINFO1,171,13,37,8
+    LTEXT           "End Time :",IDC_KEYINFO2,173,24,35,8
+    LTEXT           "Total Length :",IDC_KEYINFO3,163,35,45,8
+    LTEXT           "START TIME",IDC_STARTTIME,215,13,44,8
+    LTEXT           "END TIME",IDC_ENDTIME,215,24,36,8
+    LTEXT           "TOTAL TIME",IDC_TOTALTIME,215,35,44,8
+    LTEXT           "Reps :",IDC_KEYINFO4,271,14,22,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Button2",IDC_KEYREPEATS,294,12,50,14,NOT WS_VISIBLE
+END
+
+IDD_TIMEBAR DIALOGEX 0, 0, 412, 71
+STYLE WS_CHILD | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_NOPARENTNOTIFY
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_TIMEBAR,0,0,412,16,NOT WS_VISIBLE
+    LTEXT           "Scale",IDC_STATIC,2,27,19,8
+    CONTROL         "Slider1",IDC_TIMESCALE,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,20,21,211,21
+    CONTROL         "Slider2",IDC_TIMESCROLL,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,0,44,412,26,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Nothin",IDC_TIMEPROP,0,10,411,40,NOT WS_VISIBLE
+END
+
+IDD_FXPROP DIALOGEX 0, 0, 433, 393
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Fx Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,155,372,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,221,372,50,14
+    GROUPBOX        "Properties",IDC_PROPERTIESRECT,14,13,396,355,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Properties",IDC_STATIC,7,1,409,366,WS_GROUP
+    SCROLLBAR       IDC_PROPSCROLL,419,5,14,362,SBS_TOPALIGN | SBS_VERT | 
+                    WS_DISABLED
+END
+
+IDD_FX DIALOG DISCARDABLE  0, 0, 158, 246
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,225,50,14
+    LISTBOX         IDC_FXLIST,16,19,127,193,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Choose FX",IDC_STATIC,7,7,144,212
+END
+
+IDD_REZ DIALOG DISCARDABLE  0, 0, 238, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resources...."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,245,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,245,50,14
+    CONTROL         "Tree1",IDC_REZ,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,15,19,207,211
+    GROUPBOX        "Choose Resource",IDC_STATIC,7,7,224,232
+    PUSHBUTTON      "None",IDC_NONE,7,245,36,14
+END
+
+IDD_COLOURKEYS DIALOGEX 0, 0, 466, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Colour Keyframes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,168,50,14
+    GROUPBOX        "Colour Keyframes",IDC_STATIC,7,7,452,89
+    GROUPBOX        "Animation Controls",IDC_STATIC,7,97,452,64
+    LTEXT           "TIME",IDC_STATIC,223,85,18,8
+    LTEXT           "A",IDC_STATIC,16,24,8,8
+    LTEXT           "L",IDC_STATIC,16,35,8,8
+    LTEXT           "P",IDC_STATIC,16,46,8,8
+    LTEXT           "H",IDC_STATIC,16,57,8,8
+    LTEXT           "A",IDC_STATIC,16,68,8,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME | SS_SUNKEN,33,17,
+                    417,64,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_KEYCONTROL,"Static",SS_BLACKFRAME | SS_NOTIFY | 
+                    NOT WS_VISIBLE | WS_TABSTOP,40,23,403,53
+    PUSHBUTTON      "Full Opacity",IDC_FULLOPAC,14,142,59,14
+    PUSHBUTTON      "Full Translucency",IDC_FULLTRANS,14,108,59,14
+    PUSHBUTTON      "Half and Half",IDC_HALF,14,125,59,14
+    PUSHBUTTON      "Add To Favourites",IDC_ADDTOFAVOURITES,371,111,80,14
+    PUSHBUTTON      "Choose",IDC_CHOOSEFAVOURITE,371,131,80,14
+    PUSHBUTTON      "Reset All",IDC_RESET,82,108,59,14
+    PUSHBUTTON      "Delete Key",IDC_DELETEKEY,82,125,59,14
+END
+
+IDD_CHOOSECLRANIM DIALOG DISCARDABLE  0, 0, 246, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Colour Animation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,201,50,14
+    GROUPBOX        "Choose Favourite Colour Animation",IDC_STATIC,7,7,232,
+                    189
+    LISTBOX         IDC_FAVOURITES,15,19,216,168,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELCLRFAV,15,201,32,14
+END
+
+IDD_KEYCONTROL DIALOG DISCARDABLE  0, 0, 186, 94
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_SCALEKEYS DIALOGEX 0, 0, 456, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Scale Keys"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,170,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,236,165,50,14
+    GROUPBOX        "Scale Keys",IDC_STATIC,7,7,442,90
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,39,18,401,60,
+                    WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_SCALEKEYS,43,21,394,54,SS_NOTIFY
+    LTEXT           "TIME",IDC_STATIC,219,83,18,8
+    LTEXT           "S",IDC_STATIC,26,24,8,8
+    LTEXT           "C",IDC_STATIC,26,34,8,8
+    LTEXT           "A",IDC_STATIC,26,44,8,8
+    LTEXT           "L",IDC_STATIC,26,54,8,8
+    LTEXT           "E",IDC_STATIC,26,64,8,8
+    GROUPBOX        "Scale Key Paramaters",IDC_STATIC,7,101,442,58
+    LTEXT           "Min Scale :",IDC_STATIC,23,117,36,8
+    LTEXT           "Max Scale :",IDC_STATIC,21,136,38,8
+    PUSHBUTTON      "Add To Favourites",IDC_ADDTOFAVOURITES,363,112,80,14
+    PUSHBUTTON      "Choose",IDC_CHOOSEFAVOURITE,363,132,80,14
+    PUSHBUTTON      "Reset",IDC_RESET,135,109,50,14
+    PUSHBUTTON      "Button1",IDC_MINSCALE,65,115,50,14
+    PUSHBUTTON      "Button2",IDC_MAXSCALE,65,134,50,14
+    PUSHBUTTON      "Set All Scale",IDC_SETALLSCALE,135,125,50,14
+END
+
+IDD_CHOOSESCLANIM DIALOG DISCARDABLE  0, 0, 246, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Scale Animation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,201,50,14
+    GROUPBOX        "Choose Favourite Scale Animation",IDC_STATIC,7,7,232,
+                    189
+    LISTBOX         IDC_FAVOURITES,15,19,216,168,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELCLRFAV,15,201,32,14
+END
+
+IDD_INTEGERDLG DIALOG DISCARDABLE  0, 0, 186, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_INTEGER,7,7,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,27,50,14
+END
+
+IDD_FLOATDLG DIALOG DISCARDABLE  0, 0, 186, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,7,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,27,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,27,50,14
+END
+
+IDD_CHOOSESFAVKEY DIALOG DISCARDABLE  0, 0, 246, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Favourite Key"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,201,50,14
+    GROUPBOX        "Choose Favourite Key",IDC_STATIC,7,7,232,189
+    LISTBOX         IDC_FAVOURITES,15,19,216,168,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELCLRFAV,15,201,32,14
+END
+
+IDD_COPYDATA DIALOG DISCARDABLE  0, 0, 120, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copy Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,79,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,63,79,50,14
+    GROUPBOX        "Copy What ?",IDC_STATIC,7,7,106,64
+    CONTROL         "Colour key frames",IDC_COLORKEYS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,21,72,10
+    CONTROL         "Scale key frames",IDC_SCALEKEYS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,36,70,10
+    CONTROL         "Motion key frames",IDC_MOTIONKEYS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,51,73,10
+END
+
+IDD_CHOOSEMVANIM DIALOG DISCARDABLE  0, 0, 246, 222
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Favourite Motion Animation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,97,201,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,201,50,14
+    GROUPBOX        "Choose Favourite Keys",IDC_STATIC,7,7,232,189
+    LISTBOX         IDC_FAVOURITES,15,19,216,168,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELCLRFAV,15,201,32,14
+END
+
+IDD_IMPORTSPELLS DIALOG DISCARDABLE  0, 0, 170, 226
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import FX"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,27,205,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,205,50,14
+    LISTBOX         IDC_SPELLS,15,19,138,172,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Select FX To Import",IDC_STATIC,7,7,156,192
+END
+
+IDD_EDITVECTOR DIALOG DISCARDABLE  0, 0, 304, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Vector"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,112,50,14
+    GROUPBOX        "Side [Z / Y]",IDC_STATIC,8,4,100,100
+    CONTROL         "",IDC_PITCH,"Static",SS_BLACKFRAME,13,14,88,84
+    GROUPBOX        "Top [X / Z]",IDC_STATIC,117,4,100,100
+    CONTROL         "",IDC_YAW,"Static",SS_BLACKFRAME,123,14,88,84
+    EDITTEXT        IDC_MAGNITUDE,225,15,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PRESETS,225,44,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Magnitude :",IDC_STATIC,225,5,38,8
+    LTEXT           "Presets :",IDC_STATIC,225,35,28,8
+END
+
+IDD_MOTIONKEYS DIALOG DISCARDABLE  0, 0, 460, 309
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Motion Keys"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,172,288,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,238,288,50,14
+    GROUPBOX        "Static",IDC_MOTION,7,7,333,273,NOT WS_VISIBLE
+    GROUPBOX        "View Toggles",IDC_STATIC,345,7,108,47
+    CONTROL         "Show Markers",IDC_SHOWMARKERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,355,18,61,10
+    CONTROL         "Show Numbers",IDC_SHOWNUMBERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,355,29,64,10
+    CONTROL         "Show Paths",IDC_SHOWPATHS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,355,40,54,9
+    GROUPBOX        "Current Mode",IDC_STATIC,345,56,108,139
+    GROUPBOX        "Tools",IDC_STATIC,345,197,108,83
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,352,211,45,14
+    PUSHBUTTON      "Rotate X",IDC_MIRRORX,352,227,45,14
+    PUSHBUTTON      "Rotate Y",IDC_MIRRORY,352,243,45,14
+    PUSHBUTTON      "Rotate Z",IDC_MIRRORZ,352,260,45,14
+    PUSHBUTTON      "Create",IDC_CREATEKEY,354,66,91,15
+    PUSHBUTTON      "Select",IDC_SELECTKEY,354,82,91,15
+    PUSHBUTTON      "Move",IDC_MOVEKEY,354,98,91,15
+    PUSHBUTTON      "Delete",IDC_DELETESINGLEKEY,354,114,91,15
+    PUSHBUTTON      "Select All",IDC_SELECTALL,402,211,45,14
+    PUSHBUTTON      "UnSelect All",IDC_UNSELECTALL,402,227,45,14
+    PUSHBUTTON      "Add To Favs",IDC_ADDTOMOVEFAVOURITES,402,243,45,14
+    PUSHBUTTON      "Choose Fav",IDC_CHOOSEMOVEFAVOURITE,402,260,45,14
+    PUSHBUTTON      "Split",IDC_SPLIT,354,130,91,15
+    PUSHBUTTON      "Rotate",IDC_ROTATE,354,146,91,15
+    PUSHBUTTON      "Scale",IDC_SCALE,354,162,91,15
+END
+
+IDC_GAMEINFO DIALOG DISCARDABLE  0, 0, 216, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game Information"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Resource and Game info",IDC_STATIC,7,6,202,138
+    LTEXT           "App to execute....",IDC_STATIC,13,19,57,8
+    EDITTEXT        IDC_APP,13,29,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSEAPP,186,29,17,15
+    LTEXT           "Command Line.....",IDC_STATIC,13,51,58,8
+    EDITTEXT        IDC_COMMANDLINE,13,60,189,14,ES_AUTOHSCROLL
+    LTEXT           "Location of resource file.....",IDC_STATIC,13,83,86,8
+    EDITTEXT        IDC_REZ,13,92,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSEREZ,186,92,17,15
+    LTEXT           "Location and name of clientfx.fxd....",IDC_STATIC,13,
+                    114,113,8
+    EDITTEXT        IDC_DLL,13,124,170,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSEDLL,186,124,17,15
+    DEFPUSHBUTTON   "OK",IDOK,50,149,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,116,149,50,14
+END
+
+IDD_SHOWRESOURCES DIALOG DISCARDABLE  0, 0, 235, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resource locator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,92,197,50,14
+    LISTBOX         IDC_RESOURCELIST,17,30,201,162,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "RESOURCE",IDC_FOUNDRESOURCE,18,15,198,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SpellEd MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SpellEd\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SpellEd.EXE\0"
+            VALUE "ProductName", "SpellEd Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SPELLLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 133
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_STRINGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_SPELLRESOLUTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 381
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_SPELLBASEPARAMETERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_PHASEINFODLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 49
+    END
+
+    IDD_TIMEBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 411
+    END
+
+    IDD_FXPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 426
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+
+    IDD_FX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_REZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_COLOURKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_CHOOSECLRANIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_KEYCONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_SCALEKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_CHOOSESCLANIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_INTEGERDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_FLOATDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CHOOSESFAVKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_COPYDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 113
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_CHOOSEMVANIM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_IMPORTSPELLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_EDITVECTOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_MOTIONKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 453
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 302
+    END
+
+    IDC_GAMEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        VERTGUIDE, 183
+        VERTGUIDE, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_SHOWRESOURCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SPELLBASEPARAMETERS DLGINIT
+BEGIN
+    IDC_TOTEMS, 0x403, 5, 0
+0x6946, 0x6572, "\000" 
+    IDC_TOTEMS, 0x403, 10, 0
+0x694c, 0x6867, 0x6e74, 0x6e69, 0x0067, 
+    IDC_TOTEMS, 0x403, 5, 0
+0x6144, 0x6174, "\000" 
+    IDC_TOTEMS, 0x403, 4, 0
+0x7553, 0x006e, 
+    IDC_TOTEMS, 0x403, 9, 0
+0x6c49, 0x756c, 0x6973, 0x6e6f, "\000" 
+    IDC_TOTEMS, 0x403, 7, 0
+0x634f, 0x7563, 0x746c, "\000" 
+    IDC_TOTEMS, 0x403, 6, 0
+0x6544, 0x7461, 0x0068, 
+    IDC_TOTEMS, 0x403, 6, 0
+0x6c42, 0x6f6f, 0x0064, 
+    IDC_TOTEMS, 0x403, 11, 0
+0x6550, 0x7473, 0x6c69, 0x6e65, 0x6563, "\000" 
+    IDC_TOTEMS, 0x403, 9, 0
+0x7243, 0x6165, 0x6974, 0x6e6f, "\000" 
+    IDC_TOTEMS, 0x403, 12, 0
+0x6544, 0x7473, 0x7572, 0x7463, 0x6f69, 0x006e, 
+    IDC_TOTEMS, 0x403, 7, 0
+0x7053, 0x7269, 0x7469, "\000" 
+    IDC_LEVELS, 0x403, 2, 0
+0x0031, 
+    IDC_LEVELS, 0x403, 2, 0
+0x0032, 
+    IDC_LEVELS, 0x403, 2, 0
+0x0033, 
+    IDC_CASTHOWOFTEN, 0x403, 5, 0
+0x6e4f, 0x6563, "\000" 
+    IDC_CASTHOWOFTEN, 0x403, 32, 0
+0x7645, 0x7265, 0x2079, 0x2031, 0x6573, 0x6f63, 0x646e, 0x7520, 0x746e, 
+0x6c69, 0x7320, 0x6570, 0x6c6c, 0x6420, 0x6569, 0x0073, 
+    IDC_CASTHOWOFTEN, 0x403, 32, 0
+0x7645, 0x7265, 0x2079, 0x2035, 0x6573, 0x6f63, 0x646e, 0x7520, 0x746e, 
+0x6c69, 0x7320, 0x6570, 0x6c6c, 0x6420, 0x6569, 0x0073, 
+    IDC_CASTHOWOFTEN, 0x403, 33, 0
+0x7645, 0x7265, 0x2079, 0x3031, 0x7320, 0x6365, 0x6e6f, 0x2064, 0x6e75, 
+0x6974, 0x206c, 0x7073, 0x6c65, 0x206c, 0x6964, 0x7365, "\000" 
+    IDC_CASTHOWOFTEN, 0x403, 33, 0
+0x7645, 0x7265, 0x2079, 0x3531, 0x7320, 0x6365, 0x6e6f, 0x2064, 0x6e75, 
+0x6974, 0x206c, 0x7073, 0x6c65, 0x206c, 0x6964, 0x7365, "\000" 
+    IDC_CASTPTTYPE, 0x403, 5, 0
+0x6c46, 0x7875, "\000" 
+    IDC_CASTPTTYPE, 0x403, 7, 0
+0x6153, 0x696e, 0x7974, "\000" 
+    IDC_CASTPTTYPE, 0x403, 11, 0
+0x6948, 0x2074, 0x6f50, 0x6e69, 0x7374, "\000" 
+    IDC_TYPE, 0x403, 6, 0
+0x6f50, 0x6e69, 0x0074, 
+    IDC_TYPE, 0x403, 11, 0
+0x7250, 0x6a6f, 0x6365, 0x6974, 0x656c, "\000" 
+    IDC_TARGET, 0x403, 7, 0
+0x6953, 0x676e, 0x656c, "\000" 
+    IDC_TARGET, 0x403, 5, 0
+0x7241, 0x6165, "\000" 
+    IDC_TARGET, 0x403, 15, 0
+0x6953, 0x676e, 0x656c, 0x2b20, 0x5020, 0x696f, 0x746e, "\000" 
+    IDC_ANIMSPEED, 0x403, 5, 0
+0x6146, 0x7473, "\000" 
+    IDC_ANIMSPEED, 0x403, 7, 0
+0x654d, 0x6964, 0x6d75, "\000" 
+    IDC_ANIMSPEED, 0x403, 5, 0
+0x6c53, 0x776f, "\000" 
+    0
+END
+
+IDD_SPELLRESOLUTION DLGINIT
+BEGIN
+    IDC_ACTIVATIONPHASE, 0x403, 5, 0
+0x6143, 0x7473, "\000" 
+    IDC_ACTIVATIONPHASE, 0x403, 7, 0
+0x6341, 0x6974, 0x6576, "\000" 
+    IDC_ACTIVATIONPHASE, 0x403, 11, 0
+0x6552, 0x6f73, 0x756c, 0x6974, 0x6e6f, "\000" 
+    IDC_APPLY, 0x403, 5, 0
+0x6e4f, 0x6563, "\000" 
+    IDC_APPLY, 0x403, 6, 0
+0x7645, 0x7265, 0x0079, 
+    IDC_TYPE, 0x403, 8, 0
+0x6573, 0x6f63, 0x646e, 0x0073, 
+    IDC_TYPE, 0x403, 6, 0
+0x7473, 0x7065, 0x0073, 
+    0
+END
+
+IDD_EF_ALTERATTRIBUTE DLGINIT
+BEGIN
+    IDC_ATTR, 0x403, 11, 0
+0x6948, 0x2074, 0x6f50, 0x6e69, 0x7374, "\000" 
+    IDC_ATTR, 0x403, 5, 0
+0x6c46, 0x7875, "\000" 
+    IDC_ATTR, 0x403, 7, 0
+0x6153, 0x696e, 0x7974, "\000" 
+    IDC_ATTR, 0x403, 7, 0
+0x7441, 0x6174, 0x6b63, "\000" 
+    IDC_ATTR, 0x403, 9, 0
+0x6f4d, 0x6576, 0x656d, 0x746e, "\000" 
+    IDC_AFFECTS, 0x403, 7, 0
+0x6154, 0x6772, 0x7465, "\000" 
+    IDC_AFFECTS, 0x403, 7, 0
+0x6143, 0x7473, 0x7265, "\000" 
+    0
+END
+
+IDD_EDITVECTOR DLGINIT
+BEGIN
+    IDC_PRESETS, 0x403, 3, 0
+0x7055, "\000" 
+    IDC_PRESETS, 0x403, 5, 0
+0x6f44, 0x6e77, "\000" 
+    IDC_PRESETS, 0x403, 5, 0
+0x654c, 0x7466, "\000" 
+    IDC_PRESETS, 0x403, 6, 0
+0x6952, 0x6867, 0x0074, 
+    IDC_PRESETS, 0x403, 8, 0
+0x6f46, 0x7772, 0x7261, 0x0064, 
+    IDC_PRESETS, 0x403, 5, 0
+0x6142, 0x6b63, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_RIGHT               CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_LEFT                CURSOR  DISCARDABLE     "res\\left.cur"
+IDC_LEFTRIGHT           CURSOR  DISCARDABLE     "res\\right1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "FxED"
+    IDR_SPELLETYPE          "\nSpellE\nSpellE\n\n\nSpellEd.Document\nSpellE Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FxED"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_LAUNCH          "Launch App"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FORMAT_TEXT          "Save all files in text format."
+    ID_FORMAT_BINARY        "Save all files in binary format."
+    ID_FORMAT_TEXTTOBINARY  "Open files as Text and save files as Binary"
+    ID_FORMAT_BINARYTOTEXT  "Open files as Binary and save files an Text"
+    ID_TRACK_CHANGEKEY      "Changes the current key to a different type."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SpellEd.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

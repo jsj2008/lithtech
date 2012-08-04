@@ -1,0 +1,519 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\CoolServ.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CoolServ.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+NET_GAME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,35,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,75,30,10
+    EDITTEXT        IDC_FRAGS,101,74,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,89,30,10
+    EDITTEXT        IDC_MINUTES,101,88,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAXPLAYERS,194,107,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "frags",IDC_STATIC,132,75,50,8
+    LTEXT           "minutes",IDC_STATIC,132,89,50,8
+    LTEXT           "What settings would you like for this game server?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Server Name",IDC_STATIC,50,23,213,30
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "How would you like each level to end?",IDC_STATIC,50,60,
+                    213,8
+    LTEXT           "How many players would you like to allow?",IDC_STATIC,
+                    51,109,140,8
+    EDITTEXT        IDC_PORT,194,121,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Which tcp/ip port would you like to use?",IDC_PORT_TEXT,
+                    51,123,140,8
+END
+
+NET_GAMELEVELS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_RETAILLIST,50,35,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CUSTOMLIST,50,92,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADDRETAIL,142,49,35,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,142,77,35,14
+    PUSHBUTTON      "Add >",IDC_ADDCUSTOM,142,105,35,14
+    LISTBOX         IDC_GAMELIST,183,35,80,85,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save levels",IDC_SAVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,124,80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finish",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which levels would you like to play?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "Retail Levels:",IDC_STATIC,50,25,80,8
+    LTEXT           "Custom Levels:",IDC_STATIC,50,82,80,8
+    LTEXT           "Game Levels:",IDC_STATIC,183,25,80,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_SERVICES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SERVICELIST,50,25,213,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Communicate with GameSpy (tcp/ip only)",IDC_USEGAMESPY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,92,150,10
+    CONTROL         "Update game info for new joiners",IDC_UPDATEINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,104,150,10
+    CONTROL         "Register server with Shogo web site (tcp/ip only)",
+                    IDC_SERVERREG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    116,203,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which networking service you would like to use?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What information would you like to broadcast?",
+                    IDC_STATIC,50,80,213,8
+END
+
+IDD_GAMESERVER DIALOG DISCARDABLE  0, 0, 399, 271
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server v2.2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Shutdown",IDCANCEL,213,27,50,16
+    PUSHBUTTON      "&Next Level",IDC_COMMANDS_NEXTLEVEL,273,27,50,16
+    PUSHBUTTON      "&Options...",IDC_COMMANDS_OPTIONS,333,27,50,16
+    PUSHBUTTON      "&Boot",IDC_PLAYERS_BOOT,70,245,60,14,WS_DISABLED
+    EDITTEXT        IDC_CONSOLE_COMMAND,210,245,147,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_CONSOLE_CLEAR,361,245,25,14
+    GROUPBOX        "Server Info",IDC_STATIC,7,7,190,50
+    RTEXT           "Name:",IDC_STATIC,12,23,50,8
+    RTEXT           "Running Time:",IDC_STATIC,12,33,50,8
+    RTEXT           "Net Service:",IDC_STATIC,12,43,50,8
+    GROUPBOX        "Game Info",IDC_STATIC,7,63,190,70
+    RTEXT           "Players:",IDC_STATIC,12,79,50,8
+    RTEXT           "Current Level:",IDC_STATIC,12,89,50,8
+    RTEXT           "Next Level:",IDC_STATIC,12,99,50,8
+    RTEXT           "Time in Level:",IDC_STATIC,12,109,50,8
+    RTEXT           "Level Goal:",IDC_STATIC,12,119,50,8
+    LISTBOX         IDC_LEVELS_LIST,211,79,175,48,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Players",IDC_STATIC,7,139,190,125
+    LISTBOX         IDC_PLAYERS_LIST,16,151,173,90,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Console",IDC_STATIC,202,139,190,125
+    GROUPBOX        "Levels",IDC_STATIC,202,63,190,70
+    GROUPBOX        "Commands",IDC_STATIC,202,7,190,50
+    EDITTEXT        IDC_CONSOLE_WINDOW,210,151,176,90,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Static",IDC_SERVER_NAME,64,23,126,8
+    LTEXT           "Static",IDC_SERVER_TIME,64,33,126,8
+    LTEXT           "Static",IDC_SERVER_SERVICE,64,43,126,8
+    LTEXT           "Static",IDC_GAME_PLAYERS,64,79,126,8
+    LTEXT           "Static",IDC_GAME_CURLEVEL,64,89,126,8
+    LTEXT           "Static",IDC_GAME_NEXTLEVEL,64,99,126,8
+    LTEXT           "Static",IDC_GAME_TIME,64,109,126,8
+    LTEXT           "Static",IDC_GAME_GOAL,64,119,126,8
+    DEFPUSHBUTTON   "Send",IDC_CONSOLE_SEND,175,249,17,7,NOT WS_VISIBLE
+END
+
+NET_REZFILES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SOURCELIST,50,35,80,97,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,139,60,35,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,139,80,35,14
+    LISTBOX         IDC_DESTLIST,183,35,80,95,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which additional rez files would you like to load?",-1,
+                    50,10,213,8
+    LTEXT           "Available Rez Files:",-1,50,25,80,8
+    LTEXT           "Rez Files to Load:",-1,183,25,80,8
+    CONTROL         "GAME",-1,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,256,1
+END
+
+NET_OPTIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tractor Beam",IDC_TRACTORBEAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,38,80,10
+    CONTROL         "Double Jump",IDC_DOUBLEJUMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,48,80,10
+    CONTROL         "Ramming Damage",IDC_RAMMINGDAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,57,58,80,10
+    EDITTEXT        IDC_TIMESPEED,197,40,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_TIMESPEED,245,40,14,12
+    PUSHBUTTON      "Night Color:",IDC_COLORPICKER,153,54,42,12,BS_RIGHT
+    EDITTEXT        IDC_NIGHTCOLOR,197,54,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_NIGHTCOLOR,245,54,14,12
+    EDITTEXT        IDC_RUNSPEED,87,97,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RUNSPEED,123,97,14,12
+    EDITTEXT        IDC_MISSILESPEED,87,111,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_MISSILESPEED,123,111,14,12
+    EDITTEXT        IDC_RESPAWNSCALE,209,98,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RESPAWNSCALE,245,98,14,12
+    EDITTEXT        IDC_HEALSCALE,209,112,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_HEALSCALE,245,112,14,12
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What options would you like for this game server?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    RTEXT           "Run:",IDC_STATIC,53,98,32,8
+    RTEXT           "Missile:",IDC_STATIC,53,112,32,8
+    RTEXT           "Time Speed:",IDC_STATIC,151,41,43,8
+    GROUPBOX        "Toggles",IDC_STATIC,50,25,90,50
+    GROUPBOX        "Speeds",IDC_STATIC,51,82,90,50
+    GROUPBOX        "World",IDC_STATIC,148,25,115,50
+    GROUPBOX        "Scales",IDC_STATIC,148,82,115,50
+    RTEXT           "Respawn:",IDC_STATIC,171,99,35,8
+    RTEXT           "Heal:",IDC_STATIC,171,113,35,8
+END
+
+SERVER_OPTIONS DIALOG DISCARDABLE  0, 0, 226, 150
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Server Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tractor Beam",IDC_TRACTORBEAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,20,80,10
+    CONTROL         "Double Jump",IDC_DOUBLEJUMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,30,80,10
+    CONTROL         "Ramming Damage",IDC_RAMMINGDAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,40,80,10
+    EDITTEXT        IDC_TIMESPEED,153,22,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_TIMESPEED,201,22,14,12
+    PUSHBUTTON      "Night Color:",IDC_COLORPICKER,109,36,42,12,BS_RIGHT
+    EDITTEXT        IDC_NIGHTCOLOR,153,36,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_NIGHTCOLOR,201,36,14,12
+    EDITTEXT        IDC_RUNSPEED,43,79,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RUNSPEED,79,79,14,12
+    EDITTEXT        IDC_MISSILESPEED,43,93,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_MISSILESPEED,79,93,14,12
+    EDITTEXT        IDC_RESPAWNSCALE,165,80,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RESPAWNSCALE,201,80,14,12
+    EDITTEXT        IDC_HEALSCALE,165,94,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_HEALSCALE,201,94,14,12
+    DEFPUSHBUTTON   "&OK",IDC_NEXT,55,129,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,121,129,50,14
+    RTEXT           "Run:",-1,9,80,32,8
+    RTEXT           "Missile:",-1,9,94,32,8
+    RTEXT           "Time Speed:",-1,105,23,45,8
+    GROUPBOX        "Toggles",-1,7,7,90,50
+    GROUPBOX        "Speeds",-1,7,64,90,50
+    GROUPBOX        "World",-1,104,7,115,50
+    GROUPBOX        "Scales",-1,104,64,115,50
+    RTEXT           "Respawn:",-1,127,81,35,8
+    RTEXT           "Heal:",-1,127,95,35,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "monolith@lith.com\0"
+            VALUE "CompanyName", "Monolith Productions Inc.\0"
+            VALUE "FileDescription", "Shogo Stand-Alone Server\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ShogoServ\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998, Monolith Productions, Inc.\0"
+            VALUE "OriginalFilename", "ShogoSrv.exe\0"
+            VALUE "ProductName", "ShogoServ\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "NET_GAME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMELEVELS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SERVICES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_GAMESERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    "NET_REZFILES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "SERVER_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME                    BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_REZFILE       "ERROR - Unable to access the Shogo game resources.  Please make sure Shogo is installed properly and try again."
+    IDS_ERROR_LOADREZ       "ERROR - Unable to load Shogo resources."
+    IDS_ERROR_LOADSERVER    "ERROR - Unable to load SERVER.DLL."
+    IDS_ERROR_ACCESSSERVER  "ERROR - Unable to access SERVER.DLL."
+    IDS_ERROR_MEMORY        "ERROR - Out of memory.  The Shogo server will be shutdown."
+    IDS_HELP_RUNSPEED       "Multiplies the player's run speed.\n\nDefault value is 1.0."
+    IDS_TITLE_RUNSPEED      "Server Option: Run Speed"
+    IDS_HELP_MISSILESPEED   "Multiplies the TOW missile speed.\n\nDefault value is 1.0."
+    IDS_TITLE_MISSILESPEED  "Server Option: Missile Speed"
+    IDS_HELP_TIMESPEED      "Multiplies the time speed of the world.\n\nDefault value is 1.0.  A value of -1 makes time stand still."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULTSERVERNAME   "Shogo Server"
+    IDS_SPYGAMENAME         "shogo"
+    IDS_SPYGAMEVER          "shogo 2.2"
+    IDS_SPYGAMEKEY          "MQMhRK"
+    IDS_WEBGAMENAME         "Shogo"
+    IDS_WEBGAMEVER          "2.2"
+    IDS_WEBREGURL           "http://www.shogo-mad.com/servers/server.asp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_GENERIC      "ERROR - Unable to setup the network game server."
+    IDS_NETERR_SELECTSERVICE 
+                            "ERROR - Unable to use the selected network service."
+    IDS_NETERR_FILLSERVICE  "ERROR - Unable to access the available network services."
+    IDS_NETERR_JOINSESSION  "ERROR - Unable to join the selected game session."
+    IDS_NETERR_HOSTSESSION  "ERROR - Unable to host the game session."
+    IDS_NETERR_INIT         "ERROR - Unable to initialize the networking system."
+    IDS_REZBASE             "shogo"
+    IDS_APPNAME             "ShogoServ"
+    IDS_CONFIGFILE          "shogosrv.cfg"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_TIMESPEED     "Server Option: World Time Speed"
+    IDS_HELP_NIGHTCOLOR     "Specifies the color of the night sky in red, green, and blue float value components (from 0.0 to 1.0).  You can click the ""Night Color"" button to bring up a color picker dialog.\n\nDefault value is ""0.5 0.5 0.5""."
+    IDS_TITLE_NIGHTCOLOR    "Server Option: World Night Color"
+    IDS_HELP_RESPAWNSCALE   "Multiplies the respawn rate of items.\n\nDefault value is 1.0."
+    IDS_TITLE_RESPAWNSCALE  "Server Option: Respawn Scale"
+    IDS_HELP_HEALSCALE      "Scales how much health the health powerups give players.\n\nDefault value is 1.0."
+    IDS_TITLE_HEALSCALE     "Server Option: Heal Scale"
+    IDS_TITLE_DASHGO        "Shogo Server"
+    IDS_HELP_DASHGO         "Power users can specify the ""-go"" command-line parameter when running ShogoSrv to skip all the dialogs (the previous settings will be used).\n\nFor more information about ShogoSrv, please view the ShogoSrv.txt file."
+    IDS_CHECKEXIT           "Are you sure you want to exit?"
+    IDS_CONSOLE_INITSERVER  "Initializing the server..."
+    IDS_CONSOLE_SERVERINITED "Server initialized."
+    IDS_CONSOLE_UNABLETOHOST "ERROR - Unable to host the game."
+    IDS_CONSOLE_SERVERRUNNING "Server is running."
+    IDS_CONSOLE_LASTPLAYERLEFT "Last player has left, shutting down..."
+    IDS_CONSOLE_UNABLETOSTARTWORLD "ERROR - Unable to start world:"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\CoolServ.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

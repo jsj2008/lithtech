@@ -1,0 +1,124 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\ResShared.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\ResShared.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_LOGINOK        "Registro del SCMD realizado correctamente."
+    IDS_SCMD_ADMINLOGGEDIN  "El adminstrador ya está registrado en el SCMD."
+    IDS_SCMD_INCORRECTPASSWORD "Contraseña de SCMD incorrecta."
+    IDS_SCMD_LOGGEDOUTOK    "Has salido de SCMD."
+    IDS_SCMD_NOTLOGGEDIN    "No te has registrado en SCMD."
+    IDS_SCMD_WRITEALLCOMMANDSHEADER "Comandos de SCMD:"
+    IDS_SCMD_HELP_HELP      "HELP: lista de todos los comandos de SCMD."
+    IDS_SCMD_HELP_LOGOUT    "LOGOUT: el administrador sale de SCMD."
+    IDS_SCMD_HELP_LOGIN     "LOGIN <contraseña>: registrarse como adminstrador de SCMD."
+    IDS_SCMD_LISTCLIENTSHEADER "Formato de la lista de clientes: id del cliente) [nombre][ping][IP]"
+    IDS_SCMD_NOCLIENTS      "No hay clientes."
+    IDS_SCMD_HELP_LISTCLIENTS "LISTCLIENTS: muestra la lista de clientes."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_HELP_NEXTMISSION "NEXTMISSION: va a la siguiente misión de la lista."
+    IDS_SCMD_HELP_NEXTROUND "NEXTROUND: pasa a la siguiente ronda de este nivel."
+    IDS_SCMD_COMMANDFAILED  "Error en el comando de SCMD."
+    IDS_SCMD_HELP_BOOTNAME  "BOOTNAME <nombre del jugador>: inicia al cliente por el nombre de jugador."
+    IDS_SCMD_HELP_BOOTID    "BOOTID <id del cliente>: inicia al cliente por la id de cliente."
+    IDS_SCMD_LISTMISSIONSHEADER "Formato de la lista de misiones: mission_index) [misión][*]"
+    IDS_SCMD_COMMANDOK      "Comando SCMD correcto."
+    IDS_SCMD_HELP_LISTMISSIONS "LISTMISSIONS: lista todas las misiones de la campaña actual."
+    IDS_SCMD_HELP_SETMISSION "SETMISSION <índice de misiones>: Avanza la campaña hasta el índice de misiones."
+    IDS_SCMD_HELP_ADDBAN    "ADDBAN <IP>: añade IP a la lista IP prohibidas (p.ej., 123.456.789.012 o 123.456.*)"
+    IDS_SCMD_HELP_REMOVEBAN "REMOVEBAN <id de prohibición>: Quita IP de la lista de IP prohibidas."
+    IDS_SCMD_HELP_LISTBANS  "LISTBANS: lista todas las IP prohibidas."
+    IDS_SCMD_LISTBANSHEADER "Formato de la lista de IP prohibidas: id prohibición) [IP]"
+    IDS_SCMD_NOBANS         "No hay prohibición de ningún IP."
+    IDS_SCMD_HELP_BANCLIENT "BANCLIENT <id del cliente>: prohibir cliente por id de cliente."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COOPERATIVE         "Partida cooperativa"
+    IDS_DEATHMATCH          "Combate a muerte"
+    IDS_FRAG_LIMIT          "Límite de puntos"
+    IDS_TIME_LIMIT          "Límite de tiempo"
+    IDS_RUN_SPEED           "Velocidad de ejecución"
+    IDS_FRIENDLY_FIRE       "Fuego amistoso"
+    IDS_DIFFICULTY          "Dificultad"
+    IDS_HOST_PLAYERDIFF     "Dificultad por jugador"
+    IDS_SCMD_NOGAMEOPTIONS  "No hay ninguna opción de juego disponible."
+    IDS_SCMD_HELP_LISTGAMEOPTIONS "LISTGAMEOPTIONS: lista de las opciones del juego."
+    IDS_SCMD_LISTGAMEOPTIONSHEADER "Formato de la lista de opciones del juego: id de la opción) [opción][valor]"
+    IDS_SCMD_HELP_SETGAMEOPTION "SETGAMEOPTION <id de la opción> <valor>: establece la opción del juego por la id de la opción."
+    IDS_TEAMDEATHMATCH      "Combate a muerte en equipo"
+    IDS_DOOMSDAY            "Día del juicio final"
+    IDS_ROUNDS              "Rondas"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

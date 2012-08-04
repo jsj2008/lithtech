@@ -1,0 +1,107 @@
+;
+; LithTech DirectMusic Level Control File
+;
+; Copyright (C) 1999 Monolith Productions, Inc. 
+; All Rights Reserved
+;
+;
+; This is sample file that you can use to make your own control file from.  
+;
+
+; number of intensities that are defined
+NUMINTENSITIES 6
+
+; initial intensity to start playing (use 0 for none)
+INITIALINTENSITY 0
+
+; optional volume to set music playback to (default is 0) volume is in 100ths of a decibal and can be negative or positive
+; negative numbers reduce the volume and positive numbers increase the volume
+INITIALVOLUME 0
+
+; number of pchannels to use
+PCHANNELS 32
+
+; number of voices to use
+VOICES 32
+
+; sample rate for synthesizer to run at
+SYNTHSAMPLERATE 44100
+
+; reverb can be either on or off. Default is OFF.
+REVERB off
+
+; specify the reverb Input Gain in decibels. The default value is 0. This value is a floating point value.
+REVERBINGAIN 0.0
+
+; specify the reverb Mix in decibels. The default value is -10.0. A value of 0 means 100 percent wet reverb 
+; (no direct signal). This value is a floating point value.
+REVERBMIX -10.0
+
+; Specify reverb decay time, in milliseconds. The default value is 1000. This value is a floating point value.
+REVERBTIME 1000.0
+
+; Specify reverb RBTime value. Ratio of the high frequencies to the global reverb time. Unless very bright 
+; reverbs are wanted, this should be set to a value less than 1. The default value is 0.001. This value is a 
+; loating point value.
+REVERBHIGHFREQRTRATIO 0.001
+
+; Specify the directory to read all dls banks that don't have a path explictly defined
+DLSBANKDIRECTORY \music\dls
+
+; downloadable sound banks (.DLS) to load (you can specify any number of these)
+; there is no need to list the dls banks because they are specified inside the other
+; objectes it actually screws things up if you declare them so don't do it!
+; DLSBANK sanity3dls.dls
+
+; downloadable sound banks (.STY) to load (you can specify any number of these)
+; STYLE sanity3sty.sty
+
+; name of bands to use (you can specify any number of these) (these are contained in the styles)
+; format : BAND <style name> <band name>
+BAND sanity3sty.sty Sanity3Band
+
+; chordmaps to load (you can specify any number of these)
+CHORDMAP samplechrd.crd
+CHORDMAP samplechrd2.crd
+
+;
+; intensity definitions 
+; 
+; format is INTENSITY <intensity number> <times to loop (-1 for infinite loop)> <intensity to switch to when finished or 0 for stop> [any number of segments]
+;
+INTENSITY	1		-1		1		cello3.sgt, rage1.sgt, cello3.sgt
+INTENSITY	2		-1		0		rage1.sgt, rage2.sgt, rage3.sgt, rage4.sgt
+INTENSITY	3		-1		0		prime1.sgt, violinstac1.sgt, bassstac1.sgt, bassstac2.sgt
+INTENSITY	4		1		0		cello3.sgt
+INTENSITY	5		-1		0		fly.sgt, end1.sgt, prime1.sgt 
+INTENSITY	6		1		0		cello3.sgt, prime1.sgt
+
+;
+; Transitions (only transitions that are not going to use MEASURE MANUAL with no transition segment
+;			   need to be defined)
+;
+; format is TRANSITION <from intensity> <to intensity> <when to enact transition> <automatic or manual> [optional segment to play if manual] [optional chordmap if automatic]
+;
+;	when to enact transition = SEGMENT, MEASURE, BEAT, IMMEDIATE, GRID, DEFAULT (defined in segment)
+;
+;	automatic or manual = AUTOMATIC for directmusic automatic transition, MANUAL for manual playing of transition segments (if no 
+;						  transitions are specified for manual then no transition happens new intensity just starts playing)
+;
+TRANSITION	1	2	SEGMENT		MANUAL		trans1.sgt
+TRANSITION	4	1	SEGMENT		MANUAL 
+TRANSITION	2	3	BEAT		MANUAL		trans2.sgt
+TRANSITION	3	4	IMMEDIATE	AUTOMATIC
+
+;
+; secondary segments to preload (you can specify any number of these)
+; format : SECONDARYSEGMENT <segment name> [optional default enact time]
+;
+SECONDARYSEGMENT fly.sgt
+SECONDARYSEGMENT prime1.sgt BEAT
+
+;
+; motifs that we need to preload (you can specify any number of these)
+; format : MOTIF <style name> <motif name> [optional default enact time]
+MOTIF sanity3sty.sty testmotif MEASURE
+
+

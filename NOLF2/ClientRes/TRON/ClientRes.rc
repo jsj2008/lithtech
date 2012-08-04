@@ -1,0 +1,508 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "ClientRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "ClientRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""ClientResShared.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+CREDITS                 TEXT    DISCARDABLE     "credits.txt"
+INTRO                   TEXT    DISCARDABLE     "intro.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_MAINMENU      "TRON2.0 - GONNA ROCK YOUR WORLD"
+END
+
+// 04/05/02
+// These are temporary strings for TRON's upcoming
+// demo.  They will be moved into this TRON specific
+// ClientRes.rc after ProfileMgr.cpp gets split.
+//STRINGTABLE DISCARDABLE 
+//BEGIN
+//    IDS_CONTROL_DEFEND              "Defense"
+//    IDS_CONTROL_DEFEND_MODIFIER     "Defense Modifier"
+//    IDS_CONTROL_TOGGLE_PROGRESS     "Toggle Progress Display"
+//    IDS_ACTIONSTRING_DEFEND           "Defend"
+//    IDS_ACTIONSTRING_DEFEND_MODIFIER  "DefendModifier"
+//    IDS_ACTIONSTRING_TOGGLE_PROGRESS  "ToggleProgress"
+//END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_PROGRESS			"Progress"
+	IDS_OPTIONAL_OBJECTIVES	"Optional"
+	IDS_TRON_E3_DEMO		"Play the TRON Demo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_1            "Hands"
+    IDS_WEAPON_2            "Disc (Primitive)"
+    IDS_WEAPON_3            "Sequencer"
+    IDS_WEAPON_4            "Cluster"
+    IDS_WEAPON_5            "Prod (Primitive)"
+    IDS_WEAPON_6            "Suffusion"
+    IDS_WEAPON_7            "LOL"
+    IDS_WEAPON_8            "Ball (Primitive)"
+    IDS_WEAPON_9            "C2FTW"
+    IDS_WEAPON_10           "Drunken Rockets"
+    IDS_WEAPON_11           "Mesh (Primitive)"
+    IDS_WEAPON_12           "Threading Claw"
+    IDS_WEAPON_13           "Prankster"
+    IDS_WEAPON_14           "Cluster/Burster Shard"
+    IDS_WEAPON_15           "Enemy Disc"
+    IDS_WEAPON_16           "Corruptic Dims"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_17           "<weapon name 17>"
+    IDS_WEAPON_18           "<weapon name 18>"
+    IDS_WEAPON_19           "<weapon name 19>"
+    IDS_WEAPON_20           "<weapon name 20>"
+    IDS_WEAPON_21           "<weapon name 21>"
+    IDS_WEAPON_22           "<weapon name 22>"
+    IDS_WEAPON_23           "<weapon name 23>"
+    IDS_WEAPON_24           "<weapon name 24>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_DESC_1       "Beat you enemies senseless when you have no weapons."
+    IDS_WEAPON_DESC_2       "Encoded disc, can be used to attack or defend."
+    IDS_WEAPON_DESC_3       "Disc with ability to attack a target multiple times."
+    IDS_WEAPON_DESC_4       "Disc that can break into multiple segments on impact, damaging everything in the immediate vicinity."
+    IDS_WEAPON_DESC_5       "Close range weapon to eliminate unaware enemies in 1 strike."
+    IDS_WEAPON_DESC_6       "Rod with projectile capabilities, projectiles explode on impact."
+    IDS_WEAPON_DESC_7       "Modified rod to emit a barrage of rockets."
+    IDS_WEAPON_DESC_8       "Acts like a grenade."
+    IDS_WEAPON_DESC_9       "Acts like a rocket launcher."
+    IDS_WEAPON_DESC_10      "Several rockets to inflict damage on your enemies."
+    IDS_WEAPON_DESC_11      "Equivilant to a tommy gun."
+    IDS_WEAPON_DESC_12      "Stop enemies in their tracks, cold!"
+    IDS_WEAPON_DESC_13      "Guided missile."
+    IDS_WEAPON_DESC_14      ""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_DESC_15      "Enemy disc to smite the good guys."
+    IDS_WEAPON_DESC_16      "Balls of corruption.  Don't get hit, very bad."
+    IDS_WEAPON_DESC_17      "<weapon decription 17>"
+    IDS_WEAPON_DESC_18      "<weapon decription 18>"
+    IDS_WEAPON_DESC_19      "<weapon decription 19>"
+    IDS_WEAPON_DESC_20      "<weapon decription 20>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_1              "Knuckle Sandwich"
+    IDS_AMMO_2              "Disc Energy"
+    IDS_AMMO_3              "Sequencer Enegry"
+    IDS_AMMO_4              "Cluster Energy"
+    IDS_AMMO_5              "Prod Energy"
+    IDS_AMMO_6              "Suffusion Energy"
+    IDS_AMMO_7              "LOL Energy"
+    IDS_AMMO_8              "Ball Energy"
+    IDS_AMMO_9              "C2FTW Energy"
+    IDS_AMMO_10             "Drunken Rockets Energy"
+    IDS_AMMO_11             "Mesh Energy"
+    IDS_AMMO_12             "Threading Claw Energy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_13             "Prankster Energy"
+    IDS_AMMO_14             "Cluster/Burster Ammo"
+    IDS_AMMO_15             "Enemy Disc Ammo"
+    IDS_AMMO_16             "Corruptic Dims Energy Ball"
+    IDS_AMMO_17             "<ammo type 17>"
+    IDS_AMMO_18             "<ammo type 18>"
+    IDS_AMMO_19             "<ammo type 19>"
+    IDS_AMMO_20             "<ammo type 20>"
+    IDS_AMMO_21             "<ammo type 21>"
+    IDS_AMMO_22             "<ammo type 22>"
+    IDS_AMMO_23             "<ammo type 23>"
+    IDS_AMMO_24             "<ammo type 24>"
+    IDS_AMMO_25             "<ammo type 25>"
+    IDS_AMMO_26             "<ammo type 26>"
+    IDS_AMMO_27             "<ammo type 27>"
+    IDS_AMMO_28             "<ammo type 28>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_00_NAME     "Cate Archer Must Die!"
+    IDS_MISSION_01_NAME     "Project: Omega"
+    IDS_MISSION_02_NAME     "Skeletons in the Closet of a Traitor"
+    IDS_MISSION_03_NAME     "Double Cross"
+    IDS_MISSION_04_NAME     "Ice Station Evil"
+    IDS_MISSION_05_NAME     "The Curse of Kali"
+    IDS_MISSION_06_NAME     "The Interlopers"
+    IDS_MISSION_07_NAME     "Terror in the Deep"
+    IDS_MISSION_08_NAME     "Preemptive Strike"
+    IDS_MISSION_09_NAME     "Invasion"
+    IDS_MISSION_10_NAME     "Jail Break"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_00_DESC     "An unknown assassin is killing off UNITY's elite operatives. In spite of the danger, Cate Archer and Bruno Lawrie still have a job to do. Could this be Cate's first shot at a mission fraught with peril and intrigue, or is it just another routine assignment?"
+    IDS_MISSION_01_DESC     "An American diplomat has been marked for death in Morocco. Can Cate and Bruno stop the assassins before it's too late?"
+    IDS_MISSION_02_DESC     "The Morocco assignment was clearly a trap. There's little doubt that UNITY's Clandestine Operations section has been compromised, but by whom? Despite the risks, there's still work to be done. For better or worse, Cate is the only available operative."
+    IDS_MISSION_03_DESC     "An East German scientist promises classified information in exchange for political asylum. The trick will be to get inside the heavily fortified facility in which he's being kept, locate him, and get him out alive."
+    IDS_MISSION_04_DESC     "During the flight to Paris, Cate spies an opportunity to ply the good doctor for information on his research. What secrets can she charm from him?"
+    IDS_MISSION_05_DESC     "Cate stops by Santa's Workshop to see what new tricks the Toymakers have up their sleeves."
+    IDS_MISSION_06_DESC     "Thomas Goodman, a UNITY operative from the American branch, may have information pertaining to the doctor's abduction. Cate must rendezvous with Goodman in Hamburg and see what he has to offer."
+    IDS_MISSION_07_DESC     "Before heading to the docks, Cate stops by the UNITY safe house in Hamburg to equip herself."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_08_DESC     "The trail leads to a Finnish cargo freighter. Getting aboard won't be easy, but it may be the only way to uncover H.A.R.M.'s scheme and get the doctor back."
+    IDS_MISSION_09_DESC     "Cate stops by the safe house for some dry clothes and a few moments on the firing range to work out her frustrations."
+    IDS_MISSION_10_DESC     "Cate heads back to her hotel in hopes that Agent Goodman has left a message for her there. Once she contacts him, they can plan their next step."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_00_BRIEF    "A crisis has arisen. UNITY's undercover operatives are being killed off by an unknown assailant. It seems likely that there's a traitor within the agency.\n\nReport to the War Room for a full briefing on the situation and a tactical overview of your upcoming mission.\n\nDo not be late.\n\nFollowing the briefing, stop by the training facility to hone your skills."
+    IDS_MISSION_01_BRIEF    "Intelligence has discovered that the American Ambassador to West Germany, Morris Munroe, is marked for execution by an organization calling itself H...A...R...M or H.A.R.M. The assassination attempt is expected to come on the last day of Munroe's upcoming holiday in Morocco as he is leaving his hotel. There will likely be multiple assailants.\n\nIt is imperative that Munroe survive the attack. Be warned, though, that the ambassador is extremely nearsighted and almost deaf, so you won't be able to rely on him to realize that he's in danger.\n\nYou will be positioned in a residential building across the street from the hotel. Your job is to pick off the assassins before they liquidate Munroe."
+    IDS_MISSION_02_BRIEF    "Needless to say, the Morocco assignment was an unmitigated disaster. Report to the War Room for debriefing.\n\nAnd try to control your temper."
+    IDS_MISSION_03_BRIEF    "We've been contacted by Doctor Otto Schenker, an East German biophysicist who we believe is working on a top secret biological weapons program for the Soviet Union. Dr. Schenker has expressed a desire to defect. He has asked us to assist him in exchange for information on his research.\n\nThis opportunity couldn't have arisen at a worse time. After that embarrassment in Morocco, you're hardly our first choice to handle this affair, but all our other surviving operatives are tied up on equally critical assignments. If we want a chance at Schenker, it has to be now and it has to be you, on your own."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_04_BRIEF    "During the flight to London, attempt to learn as much as possible from Doctor Schenker about his research. Schenker is a notoriously cautious man, so direct questions are not advised. He is also reported to have little tolerance for skeptics. Try to keep an open mind."
+    IDS_MISSION_05_BRIEF    "Congratulations. You have failed again.\n\nAlthough the circumstances were certainly extraordinary in this case, don't expect much sympathy from Command. UNITY cannot afford failures, however justifiable."
+    IDS_MISSION_06_BRIEF    "Proceed to Hamburg, West Germany, and rendezvous with Thomas Goodman, an operative from UNITY's American branch. Goodman may have information concerning Doctor Schenker's whereabouts.\n\nThe rendezvous will take place at Das Einsame Valkyrie, a popular Beatnik night club in Hamburg. You will recognize Agent Goodman by his rugged good looks and the unlit cigarette he is holding in his left hand. Offer him a light. He will answer with, ""Sorry, but I don't smoke.""\n\nOnce you have made contact, you will be under Agent Goodman's command. Follow his orders implicitly."
+    IDS_MISSION_07_BRIEF    "There is a UNITY safe house in Bremen, near the docks where you are to rendezvous with Agent Goodman. Stop there on your way and submit a status report to Command. You should also equip yourself for the mission ahead."
+    IDS_MISSION_08_BRIEF    "Meet Agent Goodman at the Bremen docks. Your first goal will be to get aboard the cargo freighter.\n\nOnce aboard, you must locate the captain's log and the shipping manifest. Also, photograph any suspicious chemical containers you find."
+    IDS_MISSION_09_BRIEF    "You are proving to be an inadequate operative, Agent Archer. You have yet to carry off a successful mission.\n\nWell, perhaps all is not lost. At least you placed a beacon in the radio room, which will allow you to locate the sunken freighter. It would probably be worthwhile for you to practice diving in a controlled environment before attempting this mission."
+    IDS_MISSION_10_BRIEF    "Return to your hotel to see if Agent Goodman has left a message for you. In either case, contact him and make plans. You'll need his help if you're to succeed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_00_NAME  "Sequencer"
+    IDS_SUBROUTINE_01_NAME  "Cluster"
+    IDS_SUBROUTINE_02_NAME  "Suffusion"
+    IDS_SUBROUTINE_03_NAME  "LOL"
+    IDS_SUBROUTINE_04_NAME  "AbUser"
+    IDS_SUBROUTINE_05_NAME  "Drunken Rockets"
+    IDS_SUBROUTINE_06_NAME  "Blaster"
+    IDS_SUBROUTINE_07_NAME  "Prankster"
+    IDS_SUBROUTINE_08_NAME  "Submask"
+    IDS_SUBROUTINE_09_NAME  "Truncate Plate"
+    IDS_SUBROUTINE_10_NAME  "Peripheral Seal"
+    IDS_SUBROUTINE_11_NAME  "Support Safeguard"
+    IDS_SUBROUTINE_12_NAME  "Base Damping"
+    IDS_SUBROUTINE_13_NAME  "Viral Shield"
+    IDS_SUBROUTINE_14_NAME  "Confuse"
+    IDS_SUBROUTINE_15_NAME  "Disguise"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_16_NAME  "Fuzzy Signature"
+    IDS_SUBROUTINE_17_NAME  "Flash Buffer"
+    IDS_SUBROUTINE_18_NAME  "Shield Prism"
+    IDS_SUBROUTINE_19_NAME  "Corrode"
+    IDS_SUBROUTINE_20_NAME  "Megahurtz"
+    IDS_SUBROUTINE_21_NAME  "Triangulate"
+    IDS_SUBROUTINE_22_NAME  "Y-Amp"
+    IDS_SUBROUTINE_23_NAME  "Primitive Charge"
+    IDS_SUBROUTINE_24_NAME  "Profiler"
+    IDS_SUBROUTINE_25_NAME  "*Undefined*"
+    IDS_SUBROUTINE_26_NAME  "*Undefined*"
+    IDS_SUBROUTINE_27_NAME  "*Undefined*"
+    IDS_SUBROUTINE_28_NAME  "*Undefined*"
+    IDS_SUBROUTINE_29_NAME  "*Undefined*"
+    IDS_SUBROUTINE_30_NAME  "*Undefined*"
+    IDS_SUBROUTINE_31_NAME  "*Undefined*"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_32_NAME  "*Undefined*"
+    IDS_SUBROUTINE_33_NAME  "*Undefined*"
+    IDS_SUBROUTINE_34_NAME  "*Undefined*"
+    IDS_SUBROUTINE_35_NAME  "*Undefined*"
+    IDS_SUBROUTINE_36_NAME  "*Undefined*"
+    IDS_SUBROUTINE_37_NAME  "*Undefined*"
+    IDS_SUBROUTINE_38_NAME  "*Undefined*"
+    IDS_SUBROUTINE_39_NAME  "*Undefined*"
+	IDS_SUBROUTINE_BASECODE_NAME "Base Code"
+	IDS_SUBROUTINE_BADBLOCK_NAME "BAD BLOCK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_00_DESC  "The Sequencer modifies a disc primitive to be more, um, painful."
+    IDS_SUBROUTINE_01_DESC  "Disc Modifier"
+    IDS_SUBROUTINE_02_DESC  "*Default Description*"
+    IDS_SUBROUTINE_03_DESC  "*Default Description*"
+    IDS_SUBROUTINE_04_DESC  "*Default Description*"
+    IDS_SUBROUTINE_05_DESC  "*Default Description*"
+    IDS_SUBROUTINE_06_DESC  "*Default Description*"
+    IDS_SUBROUTINE_07_DESC  "*Default Description*"
+    IDS_SUBROUTINE_08_DESC  "Transfers damage to Jet's head node (20% of total) to be absorbed through energy."
+    IDS_SUBROUTINE_09_DESC  "*Default Description*"
+    IDS_SUBROUTINE_10_DESC  "*Default Description*"
+    IDS_SUBROUTINE_11_DESC  "*Default Description*"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_12_DESC  "*Default Description*"
+    IDS_SUBROUTINE_13_DESC  "*Default Description*"
+    IDS_SUBROUTINE_14_DESC  "*Default Description*"
+    IDS_SUBROUTINE_15_DESC  "*Default Description*"
+    IDS_SUBROUTINE_16_DESC  "*Default Description*"
+    IDS_SUBROUTINE_17_DESC  "*Default Description*"
+    IDS_SUBROUTINE_18_DESC  "*Default Description*"
+    IDS_SUBROUTINE_19_DESC  "*Default Description*"
+    IDS_SUBROUTINE_20_DESC  "*Default Description*"
+    IDS_SUBROUTINE_21_DESC  "*Default Description*"
+    IDS_SUBROUTINE_22_DESC  "*Default Description*"
+    IDS_SUBROUTINE_23_DESC  "*Default Description*"
+    IDS_SUBROUTINE_24_DESC  "*Default Description*"
+    IDS_SUBROUTINE_25_DESC  "*Default Description*"
+    IDS_SUBROUTINE_26_DESC  "*Default Description*"
+    IDS_SUBROUTINE_27_DESC  "*Default Description*"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBROUTINE_28_DESC  "*Default Description*"
+    IDS_SUBROUTINE_29_DESC  "*Default Description*"
+    IDS_SUBROUTINE_30_DESC  "*Default Description*"
+    IDS_SUBROUTINE_31_DESC  "*Default Description*"
+    IDS_SUBROUTINE_32_DESC  "*Default Description*"
+    IDS_SUBROUTINE_33_DESC  "*Default Description*"
+    IDS_SUBROUTINE_34_DESC  "*Default Description*"
+    IDS_SUBROUTINE_35_DESC  "*Default Description*"
+    IDS_SUBROUTINE_36_DESC  "*Default Description*"
+    IDS_SUBROUTINE_37_DESC  "*Default Description*"
+    IDS_SUBROUTINE_38_DESC  "*Default Description*"
+    IDS_SUBROUTINE_39_DESC  "*Default Description*"
+	IDS_SUBROUTINE_BASECODE_DESC "This memory block is unavailable for subroutine installation"
+	IDS_SUBROUTINE_BADBLOCK_DESC "This memory block must be defragmented before it will be available for subroutine installation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_PROCEDURAL_0_NAME "Port"
+	IDS_PROCEDURAL_1_NAME "Disinfect"
+	IDS_PROCEDURAL_2_NAME "Defrag"
+	IDS_PROCEDURAL_3_NAME "Shredder"
+	IDS_PROCEDURAL_4_NAME "Restore"
+	IDS_PROCEDURAL_0_DESC "Converts an incompatible subroutine into one that your system can link to."
+	IDS_PROCEDURAL_1_DESC "Analyzes the construction of a subroutine and filters out corrupt code."
+	IDS_PROCEDURAL_2_DESC "Repairs a BAD BLOCK of system memory, freeing it up for subroutine use."
+	IDS_PROCEDURAL_3_DESC "Moves a subroutine out of your libraries and into the System Archive."
+	IDS_PROCEDURAL_4_DESC "Restores a deleted subroutine."
+	IDS_PROCEDURAL_0_COMPLETE "Port completed for '%s'."
+	IDS_PROCEDURAL_1_COMPLETE "Subroutine '%s' successfully disinfected."
+	IDS_PROCEDURAL_2_COMPLETE "Bad block successfully repaired."
+	IDS_PROCEDURAL_3_COMPLETE "Subroutine '%s' has been removed."
+	IDS_PROCEDURAL_4_COMPLETE "Subroutine '%s' restored."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_DESC_1         "Beat 'em silly and they'll never know what hit 'em."
+    IDS_AMMO_DESC_2         "Strike opponents dead.  Can be used to defend against other weapons."
+    IDS_AMMO_DESC_3         "<ammo description 3>"
+    IDS_AMMO_DESC_4         "<ammo description 4>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_DESC_5         "<ammo description 5>"
+    IDS_AMMO_DESC_6         "<ammo description 6>"
+    IDS_AMMO_DESC_7         "<ammo description 7>"
+    IDS_AMMO_DESC_8         "<ammo description 8>"
+    IDS_AMMO_DESC_9         "<ammo description 9>"
+    IDS_AMMO_DESC_10        "<ammo description 10>"
+    IDS_AMMO_DESC_11        "<ammo description 11>"
+    IDS_AMMO_DESC_12        "<ammo description 12>"
+    IDS_AMMO_DESC_13        "<ammo description 13>"
+    IDS_AMMO_DESC_14        "Cluster/Burster Ammo"
+    IDS_AMMO_DESC_15        "Enemy disc ammo."
+    IDS_AMMO_DESC_16        "Corrupts good things into bad things."
+    IDS_AMMO_DESC_17        "<ammo description 17>"
+    IDS_AMMO_DESC_18        "<ammo description 18>"
+    IDS_AMMO_DESC_19        "<ammo description 19>"
+    IDS_AMMO_DESC_20        "<ammo description 20>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_DESC_21        "<ammo description 21>"
+    IDS_AMMO_DESC_22        "<ammo description 22>"
+    IDS_AMMO_DESC_23        "<ammo description 23>"
+    IDS_AMMO_DESC_24        "<ammo description 24>"
+    IDS_AMMO_DESC_25        "<ammo description 25>"
+    IDS_AMMO_DESC_26        "<ammo description 26>"
+    IDS_AMMO_DESC_27        "<ammo description 27>"
+    IDS_AMMO_DESC_28        "<ammo description 28>"
+    IDS_AMMO_DESC_29        "<ammo description 29>"
+    IDS_AMMO_DESC_30        "<ammo description 30>"
+    IDS_AMMO_DESC_31        "<ammo description 31>"
+    IDS_AMMO_DESC_32        "<ammo description 32>"
+    IDS_AMMO_DESC_33        "<ammo description 33>"
+    IDS_AMMO_DESC_34        "<ammo description 34>"
+    IDS_AMMO_DESC_35        "<ammo description 35>"
+    IDS_AMMO_DESC_36        "<ammo description 36>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_REQUIRES_ENERGY				"Requires %1!d! energy"
+	IDS_TRANSFER_ENERGY				"Transfer energy"
+	IDS_TRANSFERRING_ENERGY			"Transferring energy"
+	IDS_INSUFFICIENT_ENERGY			"You do not have enough energy to complete this transfer."
+	IDS_TRANSFER_ENERGY_SUCCESS		"Energy transfer successful."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSION_OBJ_5000    "<CHAPTER 1 OBJECTIVES>"
+    IDS_MISSION_OBJ_5001    "Rendezvous with Hatori-san, who will provide additional information about your mission."
+    IDS_MISSION_OBJ_5002    "Discover the new meeting location."
+    IDS_MISSION_OBJ_5003    "Report back to Hatori-san."
+    IDS_MISSION_OBJ_5004    "Infiltrate the estate."
+    IDS_MISSION_OBJ_5005    "Photograph the meeting."
+    IDS_MISSION_OBJ_5006    "Escape with the evidence and meet Yamata-san at the bridge."
+    IDS_MISSION_OBJ_5007    "Recover information on the ninja clan's leader."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_45             "<ammo type 45>"
+    IDS_AMMO_46             "<ammo type 46>"
+    IDS_AMMO_47             "<ammo type 47>"
+    IDS_AMMO_48             "<ammo type 48>"
+    IDS_AMMO_49             "<ammo type 49>"
+    IDS_AMMO_50             "<ammo type 50>"
+    IDS_AMMO_51             "<ammo type 51>"
+    IDS_AMMO_52             "<ammo type 52>"
+    IDS_AMMO_53             "<ammo type 53>"
+    IDS_AMMO_54             "<ammo type 54>"
+    IDS_AMMO_55             "<ammo type 55>"
+    IDS_AMMO_56             "<ammo type 56>"
+    IDS_AMMO_57             "<ammo type 57>"
+    IDS_AMMO_58             "<ammo type 58>"
+    IDS_AMMO_59             "<ammo type 59>"
+    IDS_AMMO_60             "<ammo type 60>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_29             "<ammo type 29>"
+    IDS_AMMO_30             "<ammo type 30>"
+    IDS_AMMO_31             "<ammo type 31>"
+    IDS_AMMO_32             "<ammo type 32>"
+    IDS_AMMO_33             "<ammo type 33>"
+    IDS_AMMO_34             "<ammo type 34>"
+    IDS_AMMO_35             "<ammo type 35>"
+    IDS_AMMO_36             "<ammo type 36>"
+    IDS_AMMO_37             "<ammo type 37>"
+    IDS_AMMO_38             "<ammo type 38>"
+    IDS_AMMO_39             "<ammo type 39>"
+    IDS_AMMO_40             "<ammo type 40>"
+    IDS_AMMO_41             "<ammo type 41>"
+    IDS_AMMO_42             "<ammo type 42>"
+    IDS_AMMO_43             "<ammo type 43>"
+    IDS_AMMO_44             "<ammo type 44>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_DESC_37        "<ammo description 37>"
+    IDS_AMMO_DESC_38        "<ammo description 38>"
+    IDS_AMMO_DESC_39        "<ammo description 39>"
+    IDS_AMMO_DESC_40        "<ammo description 40>"
+    IDS_AMMO_DESC_41        "<ammo description 41>"
+    IDS_AMMO_DESC_42        "<ammo description 42>"
+    IDS_AMMO_DESC_43        "<ammo description 43>"
+    IDS_AMMO_DESC_44        "<ammo description 44>"
+    IDS_AMMO_DESC_45        "<ammo description 45>"
+    IDS_AMMO_DESC_46        "<ammo description 46>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_61             "<ammo type 61>"
+    IDS_AMMO_62             "<ammo type 62>"
+    IDS_AMMO_63             "<ammo type 63>"
+    IDS_AMMO_64             "<ammo type 64>"
+    IDS_AMMO_65             "<ammo type 65>"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "ClientResShared.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

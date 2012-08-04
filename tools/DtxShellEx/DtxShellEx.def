@@ -1,0 +1,11 @@
+; DtxShellEx.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DtxShellEx"
+DESCRIPTION  'ThumbScb Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	DllCanUnloadNow     @1 PRIVATE
+	DllGetClassObject   @2 PRIVATE
+	DllRegisterServer   @3 PRIVATE
+	DllUnregisterServer	@4 PRIVATE

@@ -1,0 +1,1 @@
+ -windowtitle "No One Lives Forever 2"  -rez Game +multiplayer 0  +DisableMusic 0 +DisableSound 0 +DisableTripBuf 0 +DisableHardwareCursor 0 +DisableHardwareSound 0 +DisableSoundFilters 0 +SetPerformanceLevel .DefaultLow +ScreenWidth 1024 +ScreenHeight 768 +BitDepth 32 +Windowed 1

@@ -1,0 +1,131 @@
+
+(renderstyle Nameless 
+	(renderstates 
+		(clipmode RENDERSTYLE_FULLCLIP ))
+	(lightmaterial 
+		(ambient 1.000000 1.000000 1.000000 1.000000 
+		 )
+		(diffuse 0.800000 0.800000 0.800000 0.784314 
+		 )
+		(specular 0.000000 0.000000 0.000000 1.000000 
+		 )
+		(emissive 0.000000 0.000000 0.000000 1.000000 
+		 )
+	 
+		(specularpower 20.000000 ))
+	(renderpass 
+		(testmode RENDERSTYLE_NOALPHATEST )
+		(fillmode RENDERSTYLE_FILL )
+		(blendop RENDERSTYLE_BLEND_MUL_SRCALPHA_ONE )
+		(zbuffermode RENDERSTYLE_ZRO )
+	 
+		(cullmode RENDERSTYLE_CULL_NONE )
+		(texturefactor -2139062144 )
+		(alpharef 0 )
+		(dynamiclight 1 )
+		(usebumpenvmap 0 )
+	 
+		(bumpenvmapstage 1 )
+		(bumpenvmapscale 1.000000 )
+		(bumpenvmapoffset 0.000000 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_USE_TEXTURE1 )
+			(colorop RENDERSTYLE_COLOROP_MODULATE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_DIFFUSE )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_MODULATE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_DIFFUSE )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET1 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_NOTEXTURE )
+			(colorop RENDERSTYLE_COLOROP_DISABLE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_DISABLE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET2 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+	 
+		(texturestageops 
+			(textureparam RENDERSTYLE_NOTEXTURE )
+			(colorop RENDERSTYLE_COLOROP_DISABLE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_DISABLE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET3 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 )
+		(texturestageops 
+			(textureparam RENDERSTYLE_NOTEXTURE )
+			(colorop RENDERSTYLE_COLOROP_DISABLE )
+			(colorarg1 RENDERSTYLE_COLORARG_TEXTURE )
+			(colorarg2 RENDERSTYLE_COLORARG_CURRENT )
+		 
+			(alphaop RENDERSTYLE_ALPHAOP_DISABLE )
+			(alphaarg1 RENDERSTYLE_ALPHAARG_TEXTURE )
+			(alphaarg2 RENDERSTYLE_ALPHAARG_CURRENT )
+			(uvsource RENDERSTYLE_UVFROM_MODELDATA_UVSET4 )
+			(uaddress RENDERSTYLE_UVADDR_WRAP )
+		 
+			(vaddress RENDERSTYLE_UVADDR_WRAP )
+			(texfilter RENDERSTYLE_TEXFILTER_TRILINEAR )
+			(uvtransform_enable 0 )
+			(uvproject_enable 0 )
+			(uvtransform_matrix 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 0.000000 0.000000 0.000000 
+			 0.000000 1.000000 )
+		 ))
+ 
+	(debugparams 
+		(userefrast 0 )
+		(renderonidle 1 )
+		(rotatemodel 1 )
+		(lightconfig 0 )
+	 
+		(lightcount 2 )
+		(lightcolor 0.500000 0.500000 0.500000 1.000000 
+		 )
+		(camerarotationspeed 0.001500 )
+		(backgndimg_color 0.321569 0.372549 0.960784 1.000000 
+		 )
+		(modelname HighPoly_Sphere )
+	 
+		(texture1 "textures\ScuffySteel.tga" )))

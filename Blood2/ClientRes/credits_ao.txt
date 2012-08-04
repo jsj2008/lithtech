@@ -1,0 +1,168 @@
+ 
+>TIME:0.1
+##
+Blood II: Nightmares
+is powered by LithTech
+>TIME:3.0
+##
+Game Concept and Design
+Monolith Productions
+>TIME:4.0
+##
+Lead Game Design
+The Blood II Team
+>TIME:4.0
+##
+Monolith Product Manager
+Karen Burger
+>TIME:3.0
+##
+Engineering
+Brian Goble
+Andrew Mattingly
+Brad Pendleton
+Jeremy Blackman
+>TIME:5.0
+##
+Level Design
+Bill Vandervoort
+Jay Wilson
+Ben Coleman
+Brennon Reid
+Mark Brown
+Mike Ruete
+>TIME:7.0
+##
+2D/3D Art
+Eric Kohler
+Kevin Kilstrom
+Brian Waite
+Garrett Price
+Edmon Carreon
+>TIME:7.0
+##
+Music Composition
+Guy Whitmore
+Dan Bernstein
+Matt Allen
+>TIME:7.0
+##
+Sound Design
+James Ackley
+Cassano Thruston
+Boyd Post
+>TIME:5.0
+##
+Additional LithTech Engineering
+Bryan Bouwman
+Scott Pultz
+>TIME:5.0
+##
+Voice Talent
+Stephan Weyte
+. . . Caleb
+>TIME:4.0
+##
+Voice Talent
+Lani Minella
+. . . Ophelia and Gabriella
+>TIME:4.0
+##
+Voice Talent
+Ted D'Arms
+. . . Gideon 
+>TIME:4.0
+##
+Voice Talent
+Mike Shapiro
+. . . Ishmael
+>TIME:4.0
+##
+Voice Talent
+Jason Hall
+. . . .Tchernobog
+>TIME:4.0
+##
+Writing
+Bill Vandervoort
+>TIME:4.0
+##
+Motion Capture Specialists
+Simon Wong
+Bill Cass
+>TIME:5.0
+##
+Motion Capture Actor
+Israel Evans
+>TIME:3.0
+##
+Quality Assurance Manager
+Jonathan Stein
+>TIME:3.0
+##
+Quality Assurance 
+Ryan Mattson
+Jordan "Civik" Minkove
+Ben Chamberlain
+Kelly Kristek
+Benny Kee
+Bob Givnin
+>TIME:10.0
+##
+Technical Support
+Benny Kee
+Bob Givnin
+>TIME:5.0
+##
+Marketing
+Samantha Ryan
+Paul Butterfield
+Joel Reiff
+>TIME:5.0
+##
+Blood II: The Chosen
+Internet Site:
+http://www.the-chosen.com
+Spencer Maiers
+>TIME:7.0
+##
+Information Systems
+Jim Totaro
+Eric Minimoto
+Dan Erickson
+>TIME:7.0
+##
+Special Thanks
+Steven Mitchell Studios
+>TIME:4.0
+##
+Monolith Rulez...
+>TIME:4.0
+##
+GT Interactive
+gtgames.com
+>TIME:4.0
+##
+GT Producer
+Joel Breton
+>TIME:4.0
+##
+GT Product Manager
+Robert J. Ricci
+>TIME:4.0
+##
+GT Marketing Manager
+Evan Stein
+>TIME:4.0
+##
+GT Public Relations
+Lance Seymour
+>TIME:4.0
+##
+Very Special Thanks goes to 
+Rick Raymo. 
+His genuine love and support 
+is greatly missed.
+>TIME:7.0
+##
+>END

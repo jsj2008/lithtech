@@ -1,0 +1,2237 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "ClientRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+NET_SERVICES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SERVICELIST,50,22,213,35,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Join an existing session",IDC_JOIN,"Button",
+                    BS_AUTORADIOBUTTON,70,83,120,10
+    CONTROL         "Host a new session",IDC_HOST,"Button",
+                    BS_AUTORADIOBUTTON,70,94,120,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which networking service you would like to use?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "Would you like to host a new session, or join an existing one?",
+                    IDC_STATIC,50,70,213,8
+    LTEXT           "What is the speed of your net connection?",IDC_STATIC,
+                    50,122,98,8,NOT WS_VISIBLE
+    COMBOBOX        IDC_NETCONNECTION,149,120,114,80,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+END
+
+NET_JOINHOST DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Join an existing session",IDC_JOIN,"Button",
+                    BS_AUTORADIOBUTTON,90,30,120,10
+    CONTROL         "Host a new session",IDC_HOST,"Button",
+                    BS_AUTORADIOBUTTON,90,45,120,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Would you like to host a new session, or join an existing one?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_SESSIONS_TCPIP DIALOG DISCARDABLE  0, 0, 270, 250
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SESSIONLIST,50,22,213,42,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_PLAYERLIST,159,84,100,40,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_IPLIST,58,150,100,55,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add...",IDC_ADD,165,150,91,15
+    PUSHBUTTON      "&Remove",IDC_REMOVE,165,170,91,15
+    PUSHBUTTON      "R&emove All",IDC_REMOVEALL,165,190,91,15
+    PUSHBUTTON      "< &Back",IDC_BACK,85,229,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,229,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,229,50,14
+    LTEXT           "",IDC_HOSTNAME,86,85,60,8
+    LTEXT           "",IDC_GAMETYPE,86,95,60,8
+    LTEXT           "",IDC_NUMPLAYERS,86,105,60,8
+    LTEXT           "",IDC_LEVEL,86,115,60,8
+    LTEXT           "Which game session would you like to join?",IDC_STATIC,
+                    50,10,213,8
+    GROUPBOX        "Session Info",IDC_STATIC,50,70,100,60
+    RTEXT           "Host:",IDC_STATIC,54,85,30,8
+    RTEXT           "Type:",IDC_STATIC,54,95,30,8
+    RTEXT           "Players:",IDC_STATIC,54,105,30,8
+    RTEXT           "Level:",IDC_STATIC,54,115,30,8
+    GROUPBOX        "Session Players",IDC_STATIC,154,70,110,60
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,205
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,222,
+                    256,1
+    GROUPBOX        "IP Addresses",IDC_STATIC,50,137,213,75
+END
+
+NET_PLAYER DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,57,37,85,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COLOR,57,72,85,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NETCONNECTION,57,107,85,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ordog",IDC_ORDOG,"Button",BS_AUTORADIOBUTTON,167,38,70,
+                    10
+    CONTROL         "Enforcer",IDC_ENFORCER,"Button",BS_AUTORADIOBUTTON,167,
+                    50,70,10
+    CONTROL         "Akuma",IDC_AKUMA,"Button",BS_AUTORADIOBUTTON,167,62,70,
+                    10
+    CONTROL         "Predator",IDC_PREDATOR,"Button",BS_AUTORADIOBUTTON,167,
+                    73,70,10
+    CONTROL         "Limit to",IDC_LIMIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,165,108,34,10
+    EDITTEXT        IDC_FPS,201,107,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "fps",IDC_STATIC,227,108,25,8
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Would you like to customize your player and client?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Mobile Combat Armor",IDC_STATIC,158,25,105,65
+    GROUPBOX        "Name",IDC_STATIC,50,25,100,30
+    GROUPBOX        "Color",IDC_STATIC,50,60,100,30
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    GROUPBOX        "Connection Speed",IDC_STATIC,50,95,100,30
+    GROUPBOX        "Frame Rate",IDC_STATIC,158,95,105,30
+END
+
+NET_GAME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,38,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,78,30,10
+    EDITTEXT        IDC_FRAGS,102,77,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,94,30,10
+    EDITTEXT        IDC_MINUTES,102,93,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MAXPLAYERS,193,109,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PORTNUM,193,125,30,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What settings would you like for this game session?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Session Name",IDC_STATIC,50,26,213,30
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "How would you like each level to end?",IDC_STATIC,50,65,
+                    213,8
+    LTEXT           "frags",IDC_STATIC,137,78,50,8
+    LTEXT           "minutes",IDC_STATIC,137,94,50,8
+    RTEXT           "How many players would you like to allow?",IDC_STATIC,
+                    50,111,140,8
+    RTEXT           "What port would you like to host on?",IDC_PORTNUMTEXT,
+                    49,127,140,8
+END
+
+NET_WELCOME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Welcome to the Shogo Multiplayer Wizard.  This wizard will guide you through the steps necessary to start a multiplayer game of Shogo.",
+                    IDC_STATIC,50,10,213,40
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_FINISHED DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "You have provided all the information necessary to start a mutliplayer game of Shogo.  Click on ""Finished"" to start the game.",
+                    IDC_STATIC,50,10,213,32
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_GAMEEND DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTORADIOBUTTON,90,30,
+                    30,10
+    EDITTEXT        IDC_FRAGS,122,29,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTORADIOBUTTON,90,
+                    46,30,10
+    EDITTEXT        IDC_MINUTES,122,45,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "How would you like each level to end?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "frags",IDC_STATIC,157,30,50,8
+    LTEXT           "minutes",IDC_STATIC,157,46,50,8
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_GAMELEVELS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_RETAILLIST,50,35,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CUSTOMLIST,50,92,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add >",IDC_ADDRETAIL,142,49,35,14
+    PUSHBUTTON      "< &Remove",IDC_REMOVE,142,77,35,14
+    PUSHBUTTON      "A&dd >",IDC_ADDCUSTOM,142,105,35,14
+    LISTBOX         IDC_GAMELIST,183,35,80,85,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save Levels",IDC_SAVELEVELS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,124,80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which levels would you like to play?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "Retail Levels:",IDC_STATIC,50,25,80,8
+    LTEXT           "Custom Levels:",IDC_STATIC,50,82,80,8
+    LTEXT           "Game Levels:",IDC_STATIC,183,25,80,8
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_NOSESSIONS DIALOG DISCARDABLE  0, 0, 187, 75
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Shogo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",ID_YES,35,38,50,14
+    PUSHBUTTON      "&No",ID_NO,101,38,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,7,55,173,1
+    CONTROL         "Don't display this message again",IDC_DONTDISPLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,58,173,10
+    LTEXT           "No game sessions were found, would you like to continue looking for game sessions?",
+                    IDC_STATIC,7,7,173,20
+END
+
+NET_TCPIPADDRESS DIALOG DISCARDABLE  0, 0, 200, 63
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TCP/IP Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IPADDRESS,7,20,186,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,42,50,14
+    LTEXT           "Please enter a TCP/IP address to search for games on:",
+                    IDC_STATIC,7,7,186,8
+END
+
+NET_OPTIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tractor Beam",IDC_TRACTORBEAM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,38,80,10
+    CONTROL         "Double Jump",IDC_DOUBLEJUMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,57,48,80,10
+    CONTROL         "Ramming Damage",IDC_RAMMINGDAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,57,58,80,10
+    EDITTEXT        IDC_TIMESPEED,197,40,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_TIMESPEED,245,40,14,12
+    EDITTEXT        IDC_NIGHTCOLOR,197,54,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_NIGHTCOLOR,245,54,14,12
+    EDITTEXT        IDC_RUNSPEED,87,97,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RUNSPEED,123,97,14,12
+    EDITTEXT        IDC_MISSILESPEED,87,111,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_MISSILESPEED,123,111,14,12
+    EDITTEXT        IDC_RESPAWNSCALE,209,98,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RESPAWNSCALE,245,98,14,12
+    EDITTEXT        IDC_HEALSCALE,209,112,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_HEALSCALE,245,112,14,12
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What server options would you like for this game?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    RTEXT           "Run:",IDC_STATIC,53,98,32,8
+    RTEXT           "Missile:",IDC_STATIC,53,112,32,8
+    RTEXT           "Time Speed:",IDC_STATIC,150,41,45,8
+    RTEXT           "Night Color:",IDC_STATIC,150,55,45,8
+    GROUPBOX        "Toggles",IDC_STATIC,50,25,90,50
+    GROUPBOX        "Speeds",IDC_STATIC,51,82,90,50
+    GROUPBOX        "World",IDC_STATIC,148,25,115,50
+    GROUPBOX        "Scales",IDC_STATIC,148,82,115,50
+    RTEXT           "Respawn:",IDC_STATIC,171,99,35,8
+    RTEXT           "Heal:",IDC_STATIC,171,113,35,8
+END
+
+NET_SETTINGS DIALOG DISCARDABLE  0, 0, 250, 155
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,14,22,100,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COLOR,14,57,100,120,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NETCONNECTION,14,92,100,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ordog",IDC_ORDOG,"Button",BS_AUTORADIOBUTTON,140,23,70,
+                    10
+    CONTROL         "Enforcer",IDC_ENFORCER,"Button",BS_AUTORADIOBUTTON,140,
+                    35,70,10
+    CONTROL         "Akuma",IDC_AKUMA,"Button",BS_AUTORADIOBUTTON,140,47,70,
+                    10
+    CONTROL         "Predator",IDC_PREDATOR,"Button",BS_AUTORADIOBUTTON,140,
+                    58,70,10
+    CONTROL         "Limit to",IDC_LIMIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,93,34,10
+    EDITTEXT        IDC_FPS,172,92,20,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,67,120,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,133,120,50,14
+    CONTROL         "Don't display this dialog again",IDC_DONTDISPLAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,143,236,10
+    GROUPBOX        "Mobile Combat Armor",IDC_STATIC,129,10,114,65
+    GROUPBOX        "Name",IDC_STATIC,7,10,114,30
+    GROUPBOX        "Color",IDC_STATIC,7,45,114,30
+    GROUPBOX        "Connection Speed",IDC_STATIC,7,80,114,30
+    GROUPBOX        "Frame Rate",IDC_STATIC,129,80,114,30
+    LTEXT           "fps",IDC_STATIC,198,93,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,7,141,236,1
+END
+
+NET_SESSIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shogo Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SESSIONLIST,50,22,213,42,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_HOSTNAME,86,86,60,8
+    LTEXT           "",IDC_GAMETYPE,86,96,60,8
+    LTEXT           "",IDC_NUMPLAYERS,86,106,60,8
+    LTEXT           "",IDC_LEVEL,86,116,60,8
+    LISTBOX         IDC_PLAYERLIST,159,85,100,40,LBS_SORT | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finished",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which game session would you like to join?",IDC_STATIC,
+                    50,10,213,8
+    GROUPBOX        "Session Info",IDC_STATIC,50,72,100,60
+    RTEXT           "Host:",IDC_STATIC,54,86,30,8
+    RTEXT           "Type:",IDC_STATIC,54,96,30,8
+    RTEXT           "Players:",IDC_STATIC,54,106,30,8
+    RTEXT           "Level:",IDC_STATIC,54,116,30,8
+    GROUPBOX        "Session Players",IDC_STATIC,154,72,110,60
+    CONTROL         "SHOGO",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_ADDIP DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IP Address"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_IPADDRESS,7,50,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,39,74,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,74,50,14
+    LTEXT           "Please enter the IP to add (such as 243.23.4.1).  \n\nIf you want to specify a specific port to look on, add a colon and the port number like this:  243.23.4.1:1532.",
+                    IDC_STATIC,7,7,172,37
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "NET_SERVICES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_JOINHOST", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SESSIONS_TCPIP", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    "NET_PLAYER", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_WELCOME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_FINISHED", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMEEND", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMELEVELS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_NOSESSIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    "NET_TCPIPADDRESS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    "NET_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SETTINGS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    "NET_SESSIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_ADDIP", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+CREDITS                 TEXT    DISCARDABLE     "credits.txt"
+INTRO                   TEXT    DISCARDABLE     "intro.txt"
+DEMOINTRO               TEXT    DISCARDABLE     "demointro.txt"
+DEMOINFO                TEXT    DISCARDABLE     "demoinfo.txt"
+DEMOMULTI               TEXT    DISCARDABLE     "demomulti.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+SHOGO                   BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VERSION             "v 2.2"
+    IDS_TITLE_MAINMENU      "MAIN MENU"
+    IDS_TITLE_GAME          "GAME"
+    IDS_TITLE_DIFFICULTY    "DIFFICULTY"
+    IDS_TITLE_OPTIONS       "OPTIONS"
+    IDS_TITLE_NEWGAME       "NEW GAME"
+    IDS_TITLE_LOADGAME      "LOAD GAME"
+    IDS_TITLE_SAVEGAME      "SAVE GAME"
+    IDS_TITLE_CUSTOMLEVELS  "CUSTOM LEVELS"
+    IDS_TITLE_DISPLAYOPTIONS "DISPLAY OPTIONS"
+    IDS_TITLE_DISPLAYMODE   "DISPLAY MODE"
+    IDS_TITLE_ADVANCEDDISPLAY "ADVANCED DISPLAY"
+    IDS_TITLE_SOUND         "SOUND"
+    IDS_TITLE_KEYBOARD      "KEYBOARD"
+    IDS_TITLE_MOUSE         "MOUSE"
+    IDS_TITLE_JOYSTICK      "JOYSTICK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SINGLEPLAYER        "single player"
+    IDS_MULTIPLAYER         "multiplayer"
+    IDS_OPTIONS             "options"
+    IDS_CREDITS             "credits"
+    IDS_EXIT                "quit"
+    IDS_NEWGAME             "new game"
+    IDS_LOADGAME            "load game"
+    IDS_SAVEGAME            "save game"
+    IDS_WARP                "custom level..."
+    IDS_SCREEN              "display"
+    IDS_SOUND               "sound"
+    IDS_KEYBOARD            "keyboard"
+    IDS_MOUSE               "mouse"
+    IDS_JOYSTICK            "joystick"
+    IDS_BACK                "back"
+    IDS_ERROR               "error"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CUSTOM              "custom"
+    IDS_ON                  "on"
+    IDS_OFF                 "off"
+    IDS_YES                 "yes"
+    IDS_NO                  "no"
+    IDS_NONE                "none"
+    IDS_FEW                 "few"
+    IDS_SOME                "some"
+    IDS_LOTS                "lots"
+    IDS_NOTSHOWN            "not shown"
+    IDS_PULLEDBACK          "pulled back"
+    IDS_FULL                "full"
+    IDS_HALF                "half"
+    IDS_ALL                 "all"
+    IDS_CLOSE               "close"
+    IDS_FARTHER             "medium"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FURTHEST            "far"
+    IDS_RESTOREDEFAULTS     "restore defaults"
+    IDS_SHARP               "sharp"
+    IDS_SOFT                "soft"
+    IDS_YESNO               "(y/n)"
+    IDS_PULSERIFLE          "interface/PulseRifle.pcx"
+    IDS_LASERCANNON         "interface/LaserCannon.pcx"
+    IDS_SPIDER              "interface/UtilityLauncher.pcx"
+    IDS_BULLGUT             "interface/BullGut.pcx"
+    IDS_SNIPERRIFLE         "interface/SniperRifle.pcx"
+    IDS_JUGGERNAUT          "interface/JuggerNaut.pcx"
+    IDS_SHREDDER            "interface/Shredder.pcx"
+    IDS_DONTDISPLAY_TITLE   "Shogo Multiplayer Settings"
+    IDS_REDRIOT             "interface/RedRiot.pcx"
+    IDS_DONTDISPLAY_INFO    "This dialog will not be displayed again unless you hold down the shift key."
+    IDS_NETERR_CONNECTIONREJECTED "Connection rejected."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLT45              "interface/Colt45.pcx"
+    IDS_SHOTGUN             "interface/ShotGun.pcx"
+    IDS_ASSAULTRIFLE        "interface/AssaultRifle.pcx"
+    IDS_ENERGYGRENADE       "interface/EnergyGrenade.pcx"
+    IDS_KATOGRENADE         "interface/KatoGrenade.pcx"
+    IDS_MAC10               "interface/Mac10.pcx"
+    IDS_TOW                 "interface/Tow.pcx"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HEALTH              "HEALTH"
+    IDS_ARMOR               "ARMOR"
+    IDS_AMMO                "AMMUNITION"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CROSSHAIR_ONFOOT    "interface/OnFootCrosshair.pcx"
+    IDS_CROSSHAIR_ENFORCER  "interface/EnforcerCrosshair.pcx"
+    IDS_CROSSHAIR_AKUMA     "interface/AkumaCrosshair.pcx"
+    IDS_CROSSHAIR_ORDOG     "interface/OrdogCrosshair.pcx"
+    IDS_CROSSHAIR_PREDATOR  "interface/PredatorCrosshair.pcx"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_FORWARD     "forward"
+    IDS_CONTROL_BACKWARD    "backward"
+    IDS_CONTROL_TURNLEFT    "turn left"
+    IDS_CONTROL_TURNRIGHT   "turn right"
+    IDS_CONTROL_STRAFE      "sidestep"
+    IDS_CONTROL_STRAFELEFT  "step left"
+    IDS_CONTROL_STRAFERIGHT "step right"
+    IDS_CONTROL_TURNAROUND  "turn around"
+    IDS_CONTROL_RUN         "run"
+    IDS_CONTROL_FIRE        "fire"
+    IDS_CONTROL_ACTIVATE    "activate"
+    IDS_CONTROL_JUMP        "jump"
+    IDS_CONTROL_DOUBLEJUMP  "double jump"
+    IDS_CONTROL_DUCK        "duck"
+    IDS_CONTROL_NEXTWEAPON  "next weapon"
+    IDS_CONTROL_PREVIOUSWEAPON "prev weapon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_LOOKUP      "look up"
+    IDS_CONTROL_LOOKDOWN    "look down"
+    IDS_CONTROL_CENTERVIEW  "center view"
+    IDS_CONTROL_CHASEVIEW   "chase view"
+    IDS_CONTROL_SHOWORDINANCE "inventory"
+    IDS_CONTROL_FRAGCOUNT   "frag count"
+    IDS_CONTROL_SAY         "say"
+    IDS_CONTROL_TRACTORBEAM "tractor beam"
+    IDS_CONTROL_VEHICLEMODETOGGLE "vehicle mode"
+    IDS_CONTROL_RUNLOCKTOGGLE "always run"
+    IDS_CONTROL_MOUSELOOKTOGGLE "mouse look"
+    IDS_CONTROL_CROSSHAIRTOGGLE "crosshair"
+    IDS_CONTROL_WEAPON1     "weapon 1"
+    IDS_CONTROL_WEAPON2     "weapon 2"
+    IDS_CONTROL_WEAPON3     "weapon 3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONTROL_WEAPON4     "weapon 4"
+    IDS_CONTROL_WEAPON5     "weapon 5"
+    IDS_CONTROL_WEAPON6     "weapon 6"
+    IDS_CONTROL_WEAPON7     "weapon 7"
+    IDS_CONTROL_WEAPON8     "weapon 8"
+    IDS_CONTROL_WEAPON9     "weapon 9"
+    IDS_CONTROL_WEAPON10    "weapon 10"
+    IDS_CONTROL_UNASSIGNED  "unassigned"
+    IDS_ACTIONSTRING_FORWARD "Forward"
+    IDS_ACTIONSTRING_BACKWARD "Backward"
+    IDS_ACTIONSTRING_TURNLEFT "Left"
+    IDS_ACTIONSTRING_TURNRIGHT "Right"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACTIONSTRING_STRAFE "Strafe"
+    IDS_ACTIONSTRING_STRAFELEFT "StrafeLeft"
+    IDS_ACTIONSTRING_STRAFERIGHT "StrafeRight"
+    IDS_ACTIONSTRING_TURNAROUND "TurnAround"
+    IDS_ACTIONSTRING_RUN    "Speed"
+    IDS_ACTIONSTRING_FIRE   "Fire"
+    IDS_ACTIONSTRING_ACTIVATE "Activate"
+    IDS_ACTIONSTRING_JUMP   "Jump"
+    IDS_ACTIONSTRING_DOUBLEJUMP "DoubleJump"
+    IDS_ACTIONSTRING_DUCK   "Duck"
+    IDS_ACTIONSTRING_NEXTWEAPON "NextWeapon"
+    IDS_ACTIONSTRING_PREVIOUSWEAPON "PrevWeapon"
+    IDS_ACTIONSTRING_LOOKUP "LookUp"
+    IDS_ACTIONSTRING_LOOKDOWN "LookDown"
+    IDS_ACTIONSTRING_CENTERVIEW "CenterView"
+    IDS_ACTIONSTRING_CHASEVIEW "ChaseView"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACTIONSTRING_SHOWORDINANCE "ShowOrdinance"
+    IDS_ACTIONSTRING_FRAGCOUNT "FragCount"
+    IDS_ACTIONSTRING_SAY    "SendMessage"
+    IDS_ACTIONSTRING_TRACTORBEAM "TractorBeam"
+    IDS_ACTIONSTRING_VEHICLEMODETOGGLE "VehicleModeToggle"
+    IDS_ACTIONSTRING_RUNLOCKTOGGLE "RunLock"
+    IDS_ACTIONSTRING_MOUSELOOKTOGGLE "MouseAim"
+    IDS_ACTIONSTRING_CROSSHAIRTOGGLE "CursorTog"
+    IDS_ACTIONSTRING_UNASSIGNED "unassigned"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBDET_MODELLOD     "Model LOD"
+    IDS_SUBDET_SHADOWS      "Shadows"
+    IDS_SUBDET_BULLETHOLES  "Bullet Holes"
+    IDS_SUBDET_TEXTUREDETAIL "Texture Detail"
+    IDS_SUBDET_DYNAMICLIGHTING "Dynamic Lighting"
+    IDS_SUBDET_LIGHTMAPPING "Lightmapping"
+    IDS_SUBDET_SPECIALFX    "Special FX Detail"
+    IDS_SUBDET_ENVMAPPING   "Environment Mapping"
+    IDS_SUBDET_MODELFB      "Model Fullbrights"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SUBDET_CLOUDMAPLIGHT "Cloud Map Model Lighting"
+    IDS_SUBDET_PVWEAPONS    "Player Weapons"
+    IDS_SUBDET_RENDERDIST   "Rendering Distance"
+    IDS_SUBDET_FOGENABLED   "Fog Enabled"
+    IDS_SUBDET_DRAWSKY      "Draw Sky"
+    IDS_SUBDET_POLYGRIDS    "Polygrids"
+    IDS_QUICKLOAD           "quick load (F7)"
+    IDS_QUICKSAVE           "quick save (F6)"
+    IDS_LOADCURRENT         "restart %1!s!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISPLAY_16BIT       "16 bit textures"
+    IDS_DISPLAY_TITLE       "Configure Display"
+    IDS_DISPLAY_CHANGE      "change mode"
+    IDS_DISPLAY_GORE        "gore setting"
+    IDS_DISPLAY_SCREENFLASH "screen flash"
+    IDS_DISPLAY_DETAIL      "detail setting"
+    IDS_DISPLAY_ADVANCED    "advanced settings"
+    IDS_SOUND_TITLE         "Sound Options"
+    IDS_SOUND_MUSICENABLED  "interactive music"
+    IDS_SOUND_MUSICVOL      "music volume"
+    IDS_SOUND_FX            "sound fx"
+    IDS_SOUND_FXVOL         "sound fx volume"
+    IDS_SOUND_QUALITY       "sound fx quality"
+    IDS_SOUND_NONE          "none"
+    IDS_SOUND_IMA           "direct music"
+    IDS_LOW                 "low"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DISPLAY_CURRENTMODE "display mode"
+    IDS_DISPLAY_8BIT        "8 bit textures"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MEDIUM              "medium"
+    IDS_HIGH                "high"
+    IDS_ADVANCED            "advanced"
+    IDS_MOUSE_MOUSELOOK     "mouselook"
+    IDS_MOUSE_LOOKSPRING    "lookspring"
+    IDS_MOUSE_INVERTYAXIS   "invert y axis"
+    IDS_MOUSE_SENSITIVITY   "sensitivity"
+    IDS_MOUSE_INPUTRATE     "smoothness"
+    IDS_MOUSE_LEFTBUTTON    "left button"
+    IDS_MOUSE_MIDDLEBUTTON  "middle button"
+    IDS_MOUSE_RIGHTBUTTON   "right button"
+    IDS_JOY_JOYLOOK         "joylook"
+    IDS_JOY_INVERTYAXIS     "invert y axis"
+    IDS_JOY_UP              "joystick up"
+    IDS_JOY_DOWN            "joystick down"
+    IDS_JOY_LEFT            "joystick left"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_JOY_RIGHT           "joystick right"
+    IDS_JOY_BUTTON1         "button 1"
+    IDS_JOY_BUTTON2         "button 2"
+    IDS_JOY_BUTTON3         "button 3"
+    IDS_JOY_BUTTON4         "button 4"
+    IDS_JOY_BUTTON5         "button 5"
+    IDS_JOY_BUTTON6         "button 6"
+    IDS_JOY_BUTTON7         "button 7"
+    IDS_JOY_BUTTON8         "button 8"
+    IDS_JOY_BUTTON9         "button 9"
+    IDS_JOY_BUTTON10        "button 10"
+    IDS_NEW_EASY            "easy"
+    IDS_NEW_MEDIUM          "normal"
+    IDS_NEW_HARD            "hard"
+    IDS_NEW_INSANE          "MADNESS"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DMODE_RENDERER      "renderer"
+    IDS_DMODE_RESOLUTION    "resolution"
+    IDS_DMODE_BITDEPTH      "surface depth"
+    IDS_DMODE_DEPTH8        "8 bit"
+    IDS_DMODE_DEPTH16       "16 bit"
+    IDS_DMODE_PLEASEWAIT1   "Please wait while Shogo"
+    IDS_DMODE_PLEASEWAIT2   "builds a list of renderers..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_KILLEDMYSELF        "You killed yourself!"
+    IDS_HEKILLEDME          "You were killed by %1!s!"
+    IDS_IKILLEDHIM          "You killed %1!s!"
+    IDS_HEKILLEDHIMSELF     "%1!s! killed themselves!"
+    IDS_HEKILLEDHIM         "%1!s! killed %2!s!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_PULSERIFLE   "Pulse Rifle"
+    IDS_WEAPON_SPIDER       "Spider"
+    IDS_WEAPON_BULLGUT      "Bullgut"
+    IDS_WEAPON_SNIPERRIFLE  "Sniper Rifle"
+    IDS_WEAPON_JUGGERNAUT   "Juggernaut"
+    IDS_WEAPON_SHREDDER     "Shredder"
+    IDS_WEAPON_REDRIOT      "Red Riot"
+    IDS_WEAPON_ENERGYBATON  "Energy Baton"
+    IDS_WEAPON_ENERGYBLADE  "Energy Blade"
+    IDS_WEAPON_KATANA       "Katana"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WEAPON_MONOKNIFE    "Mono Knife"
+    IDS_WEAPON_COLT45       "Pistols"
+    IDS_WEAPON_SHOTGUN      "Shotgun"
+    IDS_WEAPON_ASSAULTRIFLE "Assault Rifle"
+    IDS_WEAPON_ENERGYGRENADE "Energy Grenades"
+    IDS_WEAPON_KATOGRENADE  "Kato Grenades"
+    IDS_WEAPON_MAC10        "Machine Gun"
+    IDS_WEAPON_TOW          "TOW"
+    IDS_WEAPON_LASERCANNON  "Laser Cannon"
+    IDS_WEAPON_SQUEAKYTOY   "Squeaky Toy"
+    IDS_WEAPON_TANTO        "Tanto"
+    IDS_AMMO_PULSERIFLE     "Charges"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_AMMO_SPIDER         "Sticky Grenades"
+    IDS_AMMO_BULLGUT        "Missiles"
+    IDS_AMMO_SNIPERRIFLE    "Slugs"
+    IDS_AMMO_JUGGERNAUT     "Shells"
+    IDS_AMMO_SHREDDER       "Shells"
+    IDS_AMMO_REDRIOT        "Canisters"
+    IDS_AMMO_COLT45         "Rounds"
+    IDS_AMMO_SHOTGUN        "Shells"
+    IDS_AMMO_ASSAULTRIFLE   "Rounds"
+    IDS_AMMO_ENERGYGRENADE  "Energy Grenades"
+    IDS_AMMO_KATOGRENADE    "Kato Grenades"
+    IDS_AMMO_MAC10          "Rounds"
+    IDS_AMMO_TOW            "Rockets"
+    IDS_AMMO_LASERCANNON    "Charges"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_GUNPICKUP           "Picked up the %1!s!!"
+    IDS_OUTOFAMMO           "%1!s! out of ammo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONLOG          "MISSION LOG"
+    IDS_PRIMARY_OBJECTIVES  "PRIMARY OBJECTIVES:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ORDINANCE           "Ordnance"
+    IDS_WEAPONS             "weapons"
+    IDS_AMMUNITION          "ammunition"
+    IDS_COUNT               "count"
+    IDS_ZEROCOUNT           "000"
+    IDS_PAUSED              "Game Paused"
+    IDS_UNUSED              "Unused"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PRESSANYKEY         "press a key..."
+    IDS_EMPTY               "[ empty ]"
+    IDS_PRESSKEYTOCONTINUE  "press Enter to continue"
+    IDS_SUREWANTQUIT        "Are you sure you want to quit?"
+    IDS_BUMPER_LOADING      "Loading..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENUMUSIC           "sounds\\interface\\music.wav"
+    IDS_CHATSOUND           "sounds\\player\\chat.wav"
+    IDS_INGAMEFONT          "Arial"
+    IDS_REPLACEMENTFONT     "System"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOCUSTOMWORLDS      "No custom worlds found"
+    IDS_DEMONOCUSTOMWORLDS  "Custom worlds are not available in the demo"
+    IDS_DEMODISCONNECT      "Disconnected from Server.  (note: demo games must be hosted by demo servers)"
+    IDS_DEMOINFO            "info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NOJOYSTICKDETECTED  "No joystick detected.  Please check your joystick configuration and connection."
+    IDS_NOQUICKSAVEGAME     "No quick-save game exists."
+    IDS_LOADGAMEFAILED      "Error loading saved game."
+    IDS_SAVEGAMEFAILED      "Error saving game."
+    IDS_NOLOADLEVEL         "Could not load level."
+    IDS_SOUNDNOTINITED      "Could not initialize sound.  Please make sure your sound card is configured correctly."
+    IDS_UNSPECIFIEDERROR    "An unspecified error occurred."
+    IDS_NOREMAPKEY          "That key cannot be remapped."
+    IDS_NOSOUNDCHANGE       "Sound FX must be enabled to change this value."
+    IDS_NOMUSICCHANGE       "Music must be enabled to change this value."
+    IDS_ENDCURRENTGAME      "This will end your current game.  Continue?"
+    IDS_REINITIALIZING_RENDERER "Reinitializing Renderer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_GENERIC      "ERROR - Unable to setup the network game."
+    IDS_NETERR_SELECTSERVICE 
+                            "ERROR - Unable to use the selected network service."
+    IDS_NETERR_FILLSERVICE  "ERROR - Unable to access the available network services."
+    IDS_NETERR_JOINSESSION  "ERROR - Unable to join the selected game session."
+    IDS_NETERR_HOSTSESSION  "ERROR - Unable to host the game session."
+    IDS_NETERR_INIT         "ERROR - Unable to initialize the networking system."
+    IDS_NETERR_CANTBINDTOPORT "ERROR - Unable to bind to the requested port."
+    IDS_NETERR_NOTSAMEGUID  "ERROR - Unable to join because the game server is a different version or a different game."
+    IDS_JOYSTICKMENUDISABLED 
+                            "Joystick menu disabled. Joystick can be configured in joystick.cfg file."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SANJURO             "Sanjuro"
+    IDS_SAY                 "SAY:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CRITICALHIT         "CRITICAL HIT!"
+    IDS_ROCKETLOCKDETECTED  "Missile lock detected!"
+    IDS_ROCKETLOCKON        "Locked on target"
+    IDS_YOUWEREKILLED       "You were killed!"
+    IDS_QUICKSAVING         "Quick Saving..."
+    IDS_JOINEDGAME          "%1!s! joined the game"
+    IDS_LEFTGAME            "%1!s! left the game"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ACCESSGRANTED       "Access Granted"
+    IDS_ACCESSDENIED        "Access Denied"
+    IDS_LOCKED              "Locked"
+    IDS_NO_TIME_NOW         "I don't have time right now"
+    IDS_SURE_ILL_HELP       "Sure, I'll help you"
+    IDS_FOUND_A_SECRET      "You found a secret!"
+    IDS_FOR_GABRIEL         "For Gabriel"
+    IDS_AGAINST_GABRIEL     "Against Gabriel"
+    IDS_ID_REQUIRED         "Authorized personnel only. ID required."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_001 "Fall back to Drop Point Renegade"
+    IDS_MISSIONOBJECTIVE_002 "Find your ID"
+    IDS_MISSIONOBJECTIVE_003 
+                            "Board the Orange Line shuttle, which will take you to MCA Dock S"
+    IDS_MISSIONOBJECTIVE_004 "Report for duty"
+    IDS_MISSIONOBJECTIVE_005 "Select an MCA for your mission"
+    IDS_MISSIONOBJECTIVE_006 "Report to the shuttlebay for departure"
+    IDS_MISSIONOBJECTIVE_007 "Cripple enemy surveillance"
+    IDS_MISSIONOBJECTIVE_008 "Infiltrate distillation plant"
+    IDS_MISSIONOBJECTIVE_009 "Proceed to SW entrance"
+    IDS_MISSIONOBJECTIVE_010 "Cripple Fallen defenses"
+    IDS_MISSIONOBJECTIVE_011 "Gain access to Avernus"
+    IDS_MISSIONOBJECTIVE_012 "Reach the Madison Tunnel"
+    IDS_MISSIONOBJECTIVE_013 "Proceed to CMC headquarters"
+    IDS_MISSIONOBJECTIVE_014 "Locate the central ventilation shaft"
+    IDS_MISSIONOBJECTIVE_015 "Turn off heat to the main ventilation shaft"
+    IDS_MISSIONOBJECTIVE_016 "Reverse airflow in secondary ventilation shaft"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_017 "Ride air current to the upper level"
+    IDS_MISSIONOBJECTIVE_018 "Dock your MCA"
+    IDS_MISSIONOBJECTIVE_019 "Assist Strike Force Carnivore"
+    IDS_MISSIONOBJECTIVE_020 "Proceed to elevator in parking garage"
+    IDS_MISSIONOBJECTIVE_021 "Power down the interference array"
+    IDS_MISSIONOBJECTIVE_022 
+                            "Locate main comm nexus and contact the Leviathan"
+    IDS_MISSIONOBJECTIVE_023 "Help Toshiro before he falls"
+    IDS_MISSIONOBJECTIVE_024 "Find the maintenance access"
+    IDS_MISSIONOBJECTIVE_025 "Get back to your MCA"
+    IDS_MISSIONOBJECTIVE_026 "Meet Hank in the parking garage"
+    IDS_MISSIONOBJECTIVE_027 "Fight off pursuing Cronian soldiers"
+    IDS_MISSIONOBJECTIVE_028 
+                            "Protect Hank until he can override the security system"
+    IDS_MISSIONOBJECTIVE_029 "Select a new MCA"
+    IDS_MISSIONOBJECTIVE_030 "Reach MEV dock 17"
+    IDS_MISSIONOBJECTIVE_031 "Catch the train"
+    IDS_MISSIONOBJECTIVE_032 "Infiltrate the CMC storehouse"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_033 "Get to the street below"
+    IDS_MISSIONOBJECTIVE_034 "Proceed to the Mecca"
+    IDS_MISSIONOBJECTIVE_035 "Find the open air market"
+    IDS_MISSIONOBJECTIVE_036 "Locate the tunnel in front of the hotel"
+    IDS_MISSIONOBJECTIVE_037 "Retrieve Mrs. Haddam's cat"
+    IDS_MISSIONOBJECTIVE_038 "Find the toy"
+    IDS_MISSIONOBJECTIVE_039 "Retrieve the cat"
+    IDS_MISSIONOBJECTIVE_040 "Fight off CMC security"
+    IDS_MISSIONOBJECTIVE_041 "Find the train pass"
+    IDS_MISSIONOBJECTIVE_042 "Validate the train pass"
+    IDS_MISSIONOBJECTIVE_043 "Catch the train"
+    IDS_MISSIONOBJECTIVE_044 "Get to the tram terminal and dock"
+    IDS_MISSIONOBJECTIVE_045 "Relax and enjoy the ride"
+    IDS_MISSIONOBJECTIVE_046 "Find help"
+    IDS_MISSIONOBJECTIVE_047 "Get the guards' attention"
+    IDS_MISSIONOBJECTIVE_048 "Find the main elevator"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_049 "Get to the detention area"
+    IDS_MISSIONOBJECTIVE_050 "Free Kura"
+    IDS_MISSIONOBJECTIVE_051 "Get to the server control room"
+    IDS_MISSIONOBJECTIVE_052 "Power down the firewall"
+    IDS_MISSIONOBJECTIVE_053 "Get to the detention area"
+    IDS_MISSIONOBJECTIVE_054 "Free Kura"
+    IDS_MISSIONOBJECTIVE_055 "Get out of the building with Kura"
+    IDS_MISSIONOBJECTIVE_056 
+                            "Reactivate the autopilot system to stop the tram"
+    IDS_MISSIONOBJECTIVE_057 "Meet Hank"
+    IDS_MISSIONOBJECTIVE_058 "Return to your MCA"
+    IDS_MISSIONOBJECTIVE_059 "Board the airship"
+    IDS_MISSIONOBJECTIVE_060 "Reroute the navigational system"
+    IDS_MISSIONOBJECTIVE_061 "Find the socket wrench"
+    IDS_MISSIONOBJECTIVE_062 "Locate Kura"
+    IDS_MISSIONOBJECTIVE_063 "Retrieve data disk"
+    IDS_MISSIONOBJECTIVE_064 "Find the database terminal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_065 "Upload the information to the Leviathan"
+    IDS_MISSIONOBJECTIVE_066 "Proceed to History of Warfare museum"
+    IDS_MISSIONOBJECTIVE_067 "Confront Toshiro"
+    IDS_MISSIONOBJECTIVE_068 "Get to the shuttle on the rooftop"
+    IDS_MISSIONOBJECTIVE_069 "Return to your MCA"
+    IDS_MISSIONOBJECTIVE_070 "Get to the Madison Tunnel"
+    IDS_MISSIONOBJECTIVE_071 "Cross the bridge"
+    IDS_MISSIONOBJECTIVE_072 "Reach MEV service lift 7"
+    IDS_MISSIONOBJECTIVE_073 "Locate the Fallen's fortress entrance"
+    IDS_MISSIONOBJECTIVE_074 "Get to the main lift"
+    IDS_MISSIONOBJECTIVE_075 "Defeat Baku"
+    IDS_MISSIONOBJECTIVE_076 "Defeat Gabriel"
+    IDS_MISSIONOBJECTIVE_077 "Defeat Shogo"
+    IDS_MISSIONOBJECTIVE_078 "Liberate Kathryn"
+    IDS_MISSIONOBJECTIVE_079 "Head for the energy plant"
+    IDS_MISSIONOBJECTIVE_080 "Increase power supply to life support control"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_081 
+                            "Increase power supply to kato processing control"
+    IDS_MISSIONOBJECTIVE_082 
+                            "Increase power supply to computer systems control"
+    IDS_MISSIONOBJECTIVE_083 "Increase power supply to electronics grid 1701"
+    IDS_MISSIONOBJECTIVE_084 
+                            "Increase power supply to engineering station sub-level 5"
+    IDS_MISSIONOBJECTIVE_085 "Proceed to kato allocation center"
+    IDS_MISSIONOBJECTIVE_086 "Cut off power to all stations"
+    IDS_MISSIONOBJECTIVE_087 "Access main computer core"
+    IDS_MISSIONOBJECTIVE_088 "Shut down remote operations for the kato cannon"
+    IDS_MISSIONOBJECTIVE_089 "Get past security station"
+    IDS_MISSIONOBJECTIVE_090 "Access maintenance ducts"
+    IDS_MISSIONOBJECTIVE_091 "Destroy stabilizer panels"
+    IDS_MISSIONOBJECTIVE_092 "Override emergency lockdown"
+    IDS_MISSIONOBJECTIVE_093 "Proceed to bridge"
+    IDS_MISSIONOBJECTIVE_094 "Continue to kato cannon"
+    IDS_MISSIONOBJECTIVE_095 
+                            "Prevent Admiral Akkaraju from activating the control terminals"
+    IDS_MISSIONOBJECTIVE_096 
+                            "Enter the override code into all three terminals"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_097 
+                            "Report to Regional Diagnostics for mission information"
+    IDS_MISSIONOBJECTIVE_098 "Lower drawbridges for squad mates"
+    IDS_MISSIONOBJECTIVE_099 "Override security lockdown"
+    IDS_MISSIONOBJECTIVE_100 "Proceed to MCA docking area"
+    IDS_MISSIONOBJECTIVE_101 "Find an alternate route to the Mecca"
+    IDS_MISSIONOBJECTIVE_102 "Return to the Haddam residence"
+    IDS_MISSIONOBJECTIVE_103 "Find Kura"
+    IDS_MISSIONOBJECTIVE_104 
+                            "Make a mental note to kick Ryo's motherloving ass"
+    IDS_MISSIONOBJECTIVE_105 "Jump down main shaft"
+    IDS_MISSIONOBJECTIVE_106 "Board the dropship before it leaves"
+    IDS_MISSIONOBJECTIVE_107 
+                            "Seriously, get aboard that dropship or you're toast"
+    IDS_MISSIONOBJECTIVE_108 "Die with some dignity"
+    IDS_MISSIONOBJECTIVE_109 "Escort Kura to data terminal"
+    IDS_MISSIONOBJECTIVE_110 "Go after the admiral"
+    IDS_MISSIONOBJECTIVE_111 "Kick Ryo's punk ass once and for all"
+    IDS_MISSIONOBJECTIVE_112 
+                            "Stomp on that little maggot before he causes any more trouble"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MISSIONOBJECTIVE_113 "Get on with it! He's still alive!"
+    IDS_MISSIONOBJECTIVE_114 "Get on the roof of the Maritropa DMV building"
+    IDS_DISCONNECTED_FROM_SERVER "Disconnected from server"
+    IDS_DISCONNECTED_WRONG_VERSION "Client and server versions do not match. Client or server may need a patch from shogo-mad.com!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPERSCREEN_01     "A UCA reconnaissance mission in the abandoned city of Avernus has gone disastrously awry. Enemy forces have come swarming out of the access tunnels, and Fallen dropships have deposited MCA squads in the path of your retreat. You must fall back to Drop Point Renegade for immediate extraction before the UCA begins its carpet bombing runs from high orbit. A dropship is en route, but it can't stay long. You and your squad mates will have a limited window of opportunity. Don't miss it."
+    IDS_BUMPERSCREEN_02     "Back aboard the UCASF Flagship Leviathan, you and Kathryn find a few precious moments of peace before you must prepare for the mission ahead. From space, Cronus seems tranquil and remote, but it has always defeated you before and the odds have never been so grim. Enjoy the brief respite, for it won't last long."
+    IDS_BUMPERSCREEN_03     "Admiral Akkaraju was always like a father to you, but since the loss of Kura, Toshiro, and Baku, he has grown increasingly distant and preoccupied. His determination to defeat the Fallen borders on obsession, as though by crushing them he can somehow restore what he has lost. It is no secret that your mission was ordered by UCA High Command and that the Admiral's personal wish was to employ the Leviathan's kato cannon to eradicate the Fallen, despite the consequences."
+    IDS_BUMPERSCREEN_04     "Admiral Akkaraju was always like a father to you, but since the loss of Kura, Toshiro, and Baku, he has grown increasingly distant and preoccupied. His determination to defeat the Fallen borders on obsession, as though by crushing them he can somehow restore what he has lost. It is no secret that your mission was ordered by UCA High Command and that the Admiral's personal wish was to employ the Leviathan's kato cannon to eradicate the Fallen, despite the consequences. He is also more easily stirred to anger by your inevitable tardiness..."
+    IDS_BUMPERSCREEN_05     "LZ Minotaur places you 15 klicks SE of an access road leading into Avernus. The entrance is poorly defended, but you should still expect moderate resistance. Larger diversionary strike forces are harrying Fallen defenses further to the north and east to tie up possible reinforcements. Protect your squad mates. Their added firepower will prove useful when you reach the perimeter wall, where you'll encounter the heaviest concentration of defenders."
+    IDS_BUMPERSCREEN_06     "The perimeter wall is just ahead of your position. The battle will only get tougher from here. Eliminate any resistance and proceed to Avernus."
+    IDS_BUMPERSCREEN_07     "The city of Avernus was largely abandoned following a disastrous series of earthquakes, but it continues an eerie existence of its own. The geothermal energy infrastructure filters air, collects condensation, and powers streetlights, making it a viable habitat for the dispossessed and disenfranchised. It's no wonder that the city has become a makeshift fortress for Gabriel's fanatical army. It was here that Toshiro, Kura, and Baku perished in a massive earthquake during the mission to assassinate Ivan Isarevich, the original leader of the Fallen."
+    IDS_BUMPERSCREEN_08     "The trap is sprung. The Fallen have jammed your communications with the Leviathan and blocked your path to downtown Avernus. Your only hope is to navigate the city's central ventilation system and get to the communication center on the surface. There you might be able to restore your link to the UCA and get out alive. Hank Johnson will help you. Pay attention to his advice if you want to survive."
+    IDS_BUMPERSCREEN_09     "UCA soldiers from Strike Force Carnivore have established a foothold against Fallen troopers near the security station on Level K. Meanwhile, Hank is attempting to infiltrate the facility and create a diversion so that you can get inside. Assist the UCA strike team and then proceed to the main facility."
+    IDS_BUMPERSCREEN_10     "To restore communications with the Leviathan, you will have to disable the Interference Array and then contact Kathryn through a tight beam link-up. This facility is well defended, however, so it won't be easy. Perhaps with a little help from Hank you can take the Fallen off guard and meet your objectives."
+    IDS_BUMPERSCREEN_11     "As far back as your memory reaches, Kura, Toshiro, Kathryn, and Baku are there. You were four years old when your parents died, but you have no recollection of them. It was your friends and your brother who defined you, shaped you into what you have become. Some memories stand out more clearly than others, such as the time Toshiro was playing around in the condemned barracks next to the school building and got himself into a predicament."
+    IDS_BUMPERSCREEN_12     "Your orders are clear: fall back to LZ Minotaur for immediate extraction. But the situation doesn't sit well. Kura is alive. She's waiting for you in Maritropa with information on Toshiro and Baku. It's safe to assume the admiral knew about them, as well. What else hasn't he told you? Regardless, with Fallen reinforcements pouring into the facility, your first priority is to get back to your MCA in one piece."
+    IDS_BUMPERSCREEN_13     "It seems that fate has made your decision for you. With no way to get back to LZ Minotaur without an MCA, the only sensible option is to go with Hank to Maritropa and rendezvous with Kura. Admiral Akkaraju won't be happy, but what choice is there? Hank is convinced he can get you inside an old CMC pumping station where you can steal an MCA, but the rest is up to you. Security should be light, so getting to the MCA dock should be fairly straightforward. Or so you hope."
+    IDS_BUMPERSCREEN_14     "Much of the city of Maritropa has been under strict martial law since the Cronian Mining Consortium's fragmentation and the military rise of the Fallen. You can rest assured that a heavily armed MCA will be regarded with more than a little suspicion by CMC security forces. Still, there's no better means of getting where you need to go quickly. Hank has convinced some old friends of his, Maurice and Toshi, to back you up. Together, you'll have to fight your way to MEV dock 17 at Angel Station in the slums. Kura will contact you once you've docked."
+    IDS_BUMPERSCREEN_15     "Catching the train to Crescent Square Station should be relatively simple. It's facing Kura again that gets complicated. After all, as far as you knew, she was dead. Your feelings for her have been compounded by grief and magnified by loss. To lose her was to lose a part of yourself. But now she's alive. And you're dating her sister."
+    IDS_BUMPERSCREEN_16     "According to Kura, there's a selective curfew in effect in the Shinara District, which means that only citizens with proper ID are allowed out of doors. Since you don't happen to belong to that select crowd, you'll have to be especially careful. Kura will guide you as best she can, but you should be prepared to improvise…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPERSCREEN_17     "Mrs. Haddam's cat is somewhere in the building. You'll have to find its squeaky toy before it will come to you. Run-down facilities such as this are ideal lairs for stragglers-men and women whose sanity has been eroded by the harsh conditions of Cronus and the constant rigors of kato harvesting. In packs, they can be dangerous."
+    IDS_BUMPERSCREEN_18     "Give Mrs. Haddam her cat and head to the Mecca to meet Kura."
+    IDS_BUMPERSCREEN_19     "Kura's in trouble. Somehow, the CMC must have figured out where you were headed. She won't be able to hold them off for long. The thought of coming this close and then losing her again is too much to bear. You almost forget that you're still dating her sister."
+    IDS_BUMPERSCREEN_20     "Kura has been captured by CMC security. Ryo Ishikawa, head of Shogo Industries on Cronus, has offered to help you infiltrate CMC security headquarters in exchange for your services once inside. Hank believes the Fallen will do everything in their power to eliminate Kura before she can reveal any information she might have. You've got to get to her before they do."
+    IDS_BUMPERSCREEN_21     "The only way to Canopy Station is through heavily defended downtown Maritropa. You're on your own this time against even tougher odds, so be prepared for fierce resistance. Something tells you that the struggle for Cronus is far more complicated than you previously thought. Ryo Ishikawa has been a long-time ally of the UCA, but his motives have never been entirely clear. What does he have in mind for you at CMC headquarters?"
+    IDS_BUMPERSCREEN_22     "The tram ride to Upper Maritropa should be uneventful. Enjoy the much needed respite and have a look around. You never know what you'll find lying around."
+    IDS_BUMPERSCREEN_23     "When you met Baku, he was a scrawny underachiever, a victim of bullies. Weak and fearful, he was slow to accept your friendship, but once he'd learned to trust you, his loyalty was inviolable. You remember…"
+    IDS_BUMPERSCREEN_24     "Ryo has kept his word. With the ID code he supplied, you've made it inside CMC security headquarters without incident. Kura is imprisoned on level two, but Ryo first wants you to make your way to the lowest level of the building and disable the network safeguards, which are located in a secured server room. Afterward, he will help you get into the heavily fortified holding area. So far, there's no sign of the Fallen, but time is precious."
+    IDS_BUMPERSCREEN_25     "Your ID code will be useless in the high security area you're entering. Ryo has helped you get this far without firing a shot, but there won't be much he can do once you're detected."
+    IDS_BUMPERSCREEN_26     "Fallen assassins are en route. Even if you get to Kura before they do, you should expect that they'll be close behind. Reaching the holding cells will be a lot more difficult now that Ryo has set off alarms throughout the building. You'll have to thank him for that personally."
+    IDS_BUMPERSCREEN_27     "It seems that Admiral Akkaraju intends to target Avernus with the Leviathan's kato cannon, delivering a killing blow to the Fallen in their well fortified home base. But the power of the kato weapon has never been tested on a populated world, and the side effects of the blast could affect Maritropa and Constantine as well. You've got to arrange to meet Toshiro and try to talk sense into him. If Kura is right about Cothineal, then there may be hope. Meanwhile, your escape from Ryo's trap guarantees you'll be running into Shogo soldiers eventually. It's safe to assume it will be sooner rather than later."
+    IDS_BUMPERSCREEN_28     "Kura will be waiting for you at the Oshii Research Station, where she hopes to find conclusive evidence of Cothineal's existence. First you have to get there. Hank's plan is simple. The two of you will stow away aboard a CMC cargo transport and reroute it for Avernus. There's only one small complication…"
+    IDS_BUMPERSCREEN_29     "As long as Ryo is alive, everyone you care about is in danger. He'll pay for killing Hank, but vengeance will have to wait. Kathryn can help you reroute the airship's automated navigational system once you're aboard. Perhaps Kura is right and proof of Cothineal will convince her father to reconsider his plans. If not, you'll have to reach Avernus and confront Toshiro before the admiral issues the order to destroy Avernus. The first trick is to get aboard."
+    IDS_BUMPERSCREEN_30     "With your MCA safely docked aboard the transport, it's time to make your way to the forward cabin and locate the primary navigational system. There is a detachment of CMC soldiers aboard to defend the ship's precious cargo of munitions, so be careful. Getting past them won't be easy."
+    IDS_BUMPERSCREEN_31     "The Oshii Geological Research Center has been attacked by Shogo forces seeking information on Cothineal. Once you meet up with Kura, she'll guide you to the main database. From there you should be able to upload the data to the Leviathan. It may be enough to convince Admiral Akkaraju to let you try to resolve matters your way."
+    IDS_BUMPERSCREEN_32     "Toshiro has guaranteed you safe passage to the History of Warfare museum in Avernus provided you do not attack his soldiers. Aggression will be viewed as a decision to challenge the Fallen without hearing what your brother has to say for himself."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BUMPERSCREEN_33     "The time has come to face your brother and decide your fate."
+    IDS_BUMPERSCREEN_34     "Admiral Akkaraju has agreed to refrain from employing the kato cannon against the Fallen so that you can pursue Toshiro and attempt to free him from the influence of Cothineal. If you cannot free him, you will have to destroy him. Now you must locate the Fallen temple and face Gabriel, for it was Gabriel, Cothineal's puppet general, who stared back at you through your brother's eyes when you refused his offer of allegiance and it is Gabriel you must conquer if you hope to save your brother. Your first objective is to return to the Madison Tunnel. Now that the debris has been cleared, you should be able to reach the downtown area."
+    IDS_BUMPERSCREEN_35     "You've arrived at the midtown bridge without incident. The bridge is heavily fortified, however. It won't be easy getting across. Unfortunately, the streets of downtown Avernus have been blocked by debris from earthquakes. An MEV maintenance lift will allow you to bypass the most damaged areas. Use the rooftop vents to jump from one building to the next."
+    IDS_BUMPERSCREEN_36     "The entrance to Cothineal's lair is heavily fortified, but there is no other choice if you are to confront Gabriel. Find the entrance and board the main MCA lift."
+    IDS_BUMPERSCREEN_37     "Somewhere below, Gabriel awaits. You can feel Cothineal's presence all around you, snaking beneath the surface of the planet for kilometers in every direction. Everything you have lost to Cronus was taken from you by a creature desperate to preserve itself. However understandable its motives might be, one thing remains clear: Toshiro's life hangs in the balance. Ultimately, it is Ryo Ishikawa who must answer for the chaos the Fallen have unleashed upon Cronus, but you will deal with him another time. The important thing now is to defeat Gabriel and free your brother from Cothineal's influence."
+    IDS_BUMPERSCREEN_38     "The battle ahead will not be easily won, for Gabriel is protected by Cothineal's power, but if defeating Gabriel will free your brother, then that is what you must do."
+    IDS_BUMPERSCREEN_39     "Admiral Akkaraju has defied UCA high command with his decision to destroy Avernus. He has placed the Leviathan under military control, forcing all civilian personnel to their quarters and relieving dissenting UCASF officers and troops of duty. His loyal elite guard controls the command sections of the ship with orders to execute rebels with extreme prejudice. Your first order of business is to liberate Kathryn. She's locked in your quarters under guard."
+    IDS_BUMPERSCREEN_40     "The main computer core is only accessible in the event of an emergency, so you'll have to create one. Follow Kathryn's instructions. Once you've gained access to the computer core, you can shut down all remote operations for the kato cannon, which will delay the admiral."
+    IDS_BUMPERSCREEN_41     "It may be possible to intercept the admiral on the bridge before he discovers what you've done. Not likely, but it's worth a shot."
+    IDS_BUMPERSCREEN_42     "Admiral Akkaraju has initiated the firing sequence for the kato cannon. To prevent it from firing, you will have to get the override code from him and enter it manually into the three main control terminals. You have two minutes to shut down the firing sequence.  If you are unsuccessful, the surface of Cronus will be devastated, and all will be lost."
+    IDS_BUMPERSCREEN_43     "Weakening Cothineal freed your brother from Cothineal's influence, but the tremendous strain of his long psychic imprisonment has taken its toll. His demeanor has always been somewhat cold, but now there is an even greater distance in his eyes. Perhaps his convalescence in the care of the UCA will restore some of his former self. Admiral Akkaraju is under investigation from UCA High Command, but with no actual harm done, it seems unlikely that charges will be brought against him. Meanwhile, the death of Ryo Ishikawa has undermined Shogo's hold on Cronus. With the Fallen army in ruins and the CMC crippled by the long, brutal war, the UCA stands to regain control of the planet. In the wake of Gabriel's defeat, it may be possible for humanity to make peace with Cothineal. That remains to be seen. As for other matters..."
+    IDS_BUMPERSCREEN_44     "Admiral Akkaraju has been arrested and will stand trial before UCA High Command. Meanwhile, the situation on Cronus has calmed considerably. The Fallen have declared a truce, and the UCA has accepted the unconditional surrender of the CMC. With Shogo out of the way following Ryo Ishikawa's untimely demise, a peaceful resolution seems likely. Time will tell. Toshiro has elected to remain on Cronus as Cothineal's ambassador to the human race at least until an accord can be reached. One dispute remains unsettled, however..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_01     "Don't miss the train, Sanjuro. The next one doesn't come for half an hour."
+    IDS_TRANSMISSION_02     "Get inside the storehouse next to the depot. It leads out onto the street. I can give you directions from there."
+    IDS_TRANSMISSION_03     "Be careful."
+    IDS_TRANSMISSION_04     "Watch out for soldiers."
+    IDS_TRANSMISSION_05     "Sure."
+    IDS_TRANSMISSION_06     "Not a chance."
+    IDS_TRANSMISSION_07     "You wish."
+    IDS_TRANSMISSION_08     "The CMC has restricted street traffic because of the Fallen, so you're gonna have to be creative."
+    IDS_TRANSMISSION_09     "There's an open air market behind the Hotel St. Michel. Look for the alley just beyond it."
+    IDS_TRANSMISSION_10     "You're almost there. You need to find the pumping substation. The Mecca's on the other side."
+    IDS_TRANSMISSION_11     "Sanjuro!"
+    IDS_TRANSMISSION_12     "CMC soldiers!"
+    IDS_TRANSMISSION_13     "Hurry! I can't hold them!"
+    IDS_TRANSMISSION_14     "Hmmm, looks like Kura's been captured by the CMC. They're taking her to their main security offices in Upper Maritropa."
+    IDS_TRANSMISSION_15     "I can help you get inside, but you've got to do me a favor first."
+    IDS_TRANSMISSION_16     "Head back to your MCA. I'll be in touch soon."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_17     "Hey, sweetie, you're wanted at MCA Dock S. Don't forget your ID. I think I saw it on the nightstand."
+    IDS_TRANSMISSION_18     "Sanjuro, this is Admiral Akkaraju, stop fooling around and get to Dock S."
+    IDS_TRANSMISSION_19     "Commander, report immediately to Dock S. My patience is wearing thin."
+    IDS_TRANSMISSION_20     "Glad to see you’ve regained communications Sanjuro! I have bad news for you though. Surveillance shows CMC soldiers heading toward your mecha. You better get back quick!!"
+    IDS_TRANSMISSION_21     "You gotta take out all five mainframes. Ya got it?"
+    IDS_TRANSMISSION_22     "This place is packed with bad guys. I'm gonna have to create a distraction for ya."
+    IDS_TRANSMISSION_23     "I got 'em on the run! Go for it!"
+    IDS_TRANSMISSION_24     "Find the computer that controls the forcefield and shut it down."
+    IDS_TRANSMISSION_25     "Uh, Sanjuro? I think I got myself into trouble here..."
+    IDS_TRANSMISSION_26     "What the hell happened? Are you okay?"
+    IDS_TRANSMISSION_27     "Get in touch when you get somewhere safe! Be careful!"
+    IDS_TRANSMISSION_28     "Crap, we got uninvited company. Your best chance is to head for the maintenance tunnels. Looks like the main area's pretty well guarded."
+    IDS_TRANSMISSION_29     "I'll meet you in the garage."
+    IDS_TRANSMISSION_30     "Hello, Sanjuro."
+    IDS_TRANSMISSION_31     "You're heading into a heavily fortified area. Try to keep a low profile."
+    IDS_TRANSMISSION_32     "You need to get to the Venus District. I can guide you to the docks from there."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_33     "The connecting highway is barricaded, so you've got to do some climbing. See if you can figure out a way to get on top of the Maritropa DMV."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2053   "Recon 4, fall back to Drop Point Renegade for immediate evac. We're picking up Fallen reinforcements approaching from the southeast. Repeat, Fallen reinforcements approaching from the southeast. Get your team clear ASAP. Over."
+    IDS_TRANSMISSION_2055   "This is Avenging Angel on final approach. Drop point secure. Over."
+    IDS_TRANSMISSION_2056   "Roger, fire for effect. Over."
+    IDS_TRANSMISSION_2057   "All right, Recon 4, dust-off in 30. Out."
+    IDS_TRANSMISSION_2060   "Hey, sweetie, you're wanted at MCA Dock S. Don't forget your ID. I think I saw it on the nightstand."
+    IDS_TRANSMISSION_2063   "Sanjuro, this is Admiral Akkaraju. Stop fooling around and report for duty."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2064   "Commander, report immediately to Dock S. My patience is wearing thin."
+    IDS_TRANSMISSION_2065   "You've just earned yourself a demerit. I hope you're pleased with yourself."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2110   "Be careful, he's a bit upset."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2116   "Each terminal moves a specific MCA into docking position. You can board that MCA by circling around to the corresponding access door."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2139   "I hope you succeed, Commander. I would hate to have to resort to more drastic measures to eliminate the Fallen. Akkaraju out."
+    IDS_TRANSMISSION_2140   "Be careful, Sanjuro. You'd better come home to me."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2147   "Permission granted, Commander. You're in for one hell of a ride."
+    IDS_TRANSMISSION_2151   "Good. There's a fortified condenser station between you and the southwest entrance. You'll have to pass through it to get to Avernus."
+    IDS_TRANSMISSION_2153   "Make sure to take out any surveillance measures. Don't give them the opportunity to call in reinforcements."
+    IDS_TRANSMISSION_2156   "I'm showing Fallen reinforcements just south of your position near the main service tunnel. They know you're coming."
+    IDS_TRANSMISSION_2159   "Who the hell do you think you are busting in here like this? I'm gonna teach you some manners!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2160   "Who the hell do you think you are busting in here? I'm gonna kick your ass, scumbag."
+    IDS_TRANSMISSION_2162   "We'll cover you while you lower the bridges, Commander."
+    IDS_TRANSMISSION_2165   "You're getting close to the entrance. Stay sharp."
+    IDS_TRANSMISSION_2167   "Perimeter secure, Commander. Be careful."
+    IDS_TRANSMISSION_2172   "The city's underground support system is directly beneath your position. It will lead you to a substation where you can override the security failsafes."
+    IDS_TRANSMISSION_2174   "Just do what I tell you."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2176   "You got company coming."
+    IDS_TRANSMISSION_2177   "You got company coming, hotshot."
+    IDS_TRANSMISSION_2179   "A friend of a friend. Hank Johnson's the name."
+    IDS_TRANSMISSION_2181   "Now locate the Madison Tunnel and head for CMC headquarters."
+    IDS_TRANSMISSION_2184   "Ever hear of Uziel? That's Gabriel's right hand man. He's close by so be careful."
+    IDS_TRANSMISSION_2185   "Ever hear of Uziel? That's Gabriel's right hand man. The bastard's close by, so be careful."
+    IDS_TRANSMISSION_2188   "Get out of there, Sanjuro! It's a trap!"
+    IDS_TRANSMISSION_2189   "Get outta there, Sanjuro! It's a friggin' trap!"
+    IDS_TRANSMISSION_2190   "Sanjuro, what's going on? I'm losing-"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2192   "Sanjuro? Hmmm."
+    IDS_TRANSMISSION_2195   "The Fallen are jamming your com signal. You won't be able to communicate with the Leviathan unless you shut down the interference array. Go back the way you came, but watch out. They've got reinforcements pouring into the area."
+    IDS_TRANSMISSION_2196   "The Fallen are jamming your com signal. You've gotta shut down their interference array. Go back out the way you came in, but watch out for Fallen reinforcements."
+    IDS_TRANSMISSION_2197   "Them Fallen bastards are jamming your com signal. You gotta shut down their interference array. Go back out the way you came in, but watch out for Fallen reinforcements."
+    IDS_TRANSMISSION_2199   "If you can get to the central ventilation shaft, I can get you to the surface in a jiffy. That oughta take you right to the main communication facility."
+    IDS_TRANSMISSION_2202   "The access to the ventilation shaft is to your left. I'll see if I can bypass the security system."
+    IDS_TRANSMISSION_2207   "There you are! Prepare to die, maggot!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2211   "All right, you're gonna have to reverse the air flow in the main shaft. You can ride the air current to the upper level."
+    IDS_TRANSMISSION_2213   "You doubting me, boy?"
+    IDS_TRANSMISSION_2214   "Power down the heating units or you'll fry."
+    IDS_TRANSMISSION_2215   "Shut off them heating units or you'll fry your pretty ass."
+    IDS_TRANSMISSION_2219   "Commander Makabe, this is Lieutenant Cloud from Strike Force Carnivore. We're holding out near the security station on level K. We sure could use some help, sir."
+    IDS_TRANSMISSION_2221   "I'm gonna see if I can get inside the facility and create a distraction for ya. Be in touch soon."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2225   "Good to hear it, sir. We're just up ahead."
+    IDS_TRANSMISSION_2226   "They just keep coming, ahhhh!"
+    IDS_TRANSMISSION_2229   "Looks like things are calming down. We'll stay and guard your MCA."
+    IDS_TRANSMISSION_2230   "Looks clear, sir. We'll stay here and guard your retreat."
+    IDS_TRANSMISSION_2232   "Get to the elevator in the parking garage. It'll take you up into the main comm facility."
+    IDS_TRANSMISSION_2235   "I got 'em on the run! Find the interference array and shut it down."
+    IDS_TRANSMISSION_2236   "I got the sissies on the run! Find the interference array and shut it down!"
+    IDS_TRANSMISSION_2239   "You wanna piece of me, you motherloving butt monkey?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2240   "Come on, ya worms! Is that all ya got?"
+    IDS_TRANSMISSION_2241   "Uh oh!"
+    IDS_TRANSMISSION_2242   "I'm outta here, brother. Watch yer butt!"
+    IDS_TRANSMISSION_2246   "Okay, look for Comm Control. You can reestablish a link to the UCA there."
+    IDS_TRANSMISSION_2250   "Hello, Sanjuro."
+    IDS_TRANSMISSION_2252   "It's good to hear your voice again."
+    IDS_TRANSMISSION_2254   "Good guess."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2256   "Can you meet me in Maritropa? I need to talk to you. It's about Toshiro and Baku."
+    IDS_TRANSMISSION_2257   "I need to talk with you face to face. It's about Toshiro and Baku."
+    IDS_TRANSMISSION_2259   "Head out for Maritropa, I'll contact you there. Kura out."
+    IDS_TRANSMISSION_2260   "Sanjuro? What the hell happened? Are you okay?"
+    IDS_TRANSMISSION_2262   "I see."
+    IDS_TRANSMISSION_2263   "…"
+    IDS_TRANSMISSION_2264   "Fall back to LZ Minotaur for immediate extraction Commander. I'm aborting the mission. It's time to settle matters once and for all."
+    IDS_TRANSMISSION_2266   "Of course she is. Where do you think our intelligence has been coming from?"
+    IDS_TRANSMISSION_2268   "Kura is a soldier, Commander. She does what she's told. You'd do well to follow her example."
+    IDS_TRANSMISSION_2270   "Permission denied. I will not stand for insubordination. You have your orders. Akkaraju out."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2283   "Sanjuro! Quit yer daydreaming! You gotta get outta there fast! Reinforcements are pouring into the place! They've got the lobby secure, so you might want to head for the service tunnel access back over by the interference array. It'll be a lot safer."
+    IDS_TRANSMISSION_2284   "Sanjuro! Quit yer damn daydreaming! You gotta get outta there pronto! Reinforcements are pouring into the place! They got the lobby secure, so you better head for the service tunnel access over by the interference array. It'll be a hell of a lot safer."
+    IDS_TRANSMISSION_2286   "Commander, we've got trouble!"
+    IDS_TRANSMISSION_2287   "We're almost out of ammo! We can't hold them!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2289   "They've got us pinned down, sir!"
+    IDS_TRANSMISSION_2294   "Ahhhhhh!"
+    IDS_TRANSMISSION_2297   "They've captured your MCA. You can't go back there now."
+    IDS_TRANSMISSION_2298   "The bastards got yer MCA. You can't go back there now."
+    IDS_TRANSMISSION_2300   "Meet me in the garage. I got an idea."
+    IDS_TRANSMISSION_2302   "I didn't know about Kura. I swear."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2305   "Be careful, Sanjuro."
+    IDS_TRANSMISSION_2308   "Hurry up and jump in!"
+    IDS_TRANSMISSION_2309   "Get yer ass in the back!"
+    IDS_TRANSMISSION_2313   "Sanjuro!"
+    IDS_TRANSMISSION_2314   "You lost what? Abort, Sanjuro! It's over."
+    IDS_TRANSMISSION_2316   "It's because of Kura, isn't it?"
+    IDS_TRANSMISSION_2317   "…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2346   "All right, you're set. Take your pick."
+    IDS_TRANSMISSION_2347   "Head for MEV dock 17 in the Shinara district. You can catch a train to Crescent Square Station, which is right around the corner from a nightclub called the Mecca. I'll meet you there."
+    IDS_TRANSMISSION_2349   "Some guys I know are gonna help you get past the CMC. Security's pretty tight with the martial order and all, so it ain't gonna be easy. All you gotta do is get to the Shinara district and you'll be set."
+    IDS_TRANSMISSION_2351   "My pleasure."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2354   "The admiral is really upset. He wants you to get out of there ASAP. But you're not going to, are you?"
+    IDS_TRANSMISSION_2355   "Sanjuro?"
+    IDS_TRANSMISSION_2357   "Toshiro and Baku are dead. "
+    IDS_TRANSMISSION_2359   "Because Kura's alive."
+    IDS_TRANSMISSION_2362   "Say hello to Maurice and Toshi, Commander."
+    IDS_TRANSMISSION_2363   "Good to meet you."
+    IDS_TRANSMISSION_2364   "Greetings, Commander."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2369   "Those energy grids are powered by mobile generators. Take out the generators and you'll be able to get through."
+    IDS_TRANSMISSION_2372   "Good, now find that dock. You don't want to miss the train!"
+    IDS_TRANSMISSION_2373   "Good luck, Commander."
+    IDS_TRANSMISSION_2377   "We meet again."
+    IDS_TRANSMISSION_2378   "Die!"
+    IDS_TRANSMISSION_2381   "Don't miss the train, Sanjuro. The next one doesn't come for half an hour."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2388   "Get inside the storehouse next to the depot. It leads out onto the street. I can give you directions from there."
+    IDS_TRANSMISSION_2389   "Always late. Um, okay...get inside the storehouse next to the depot. It leads out onto the street. I can give you directions from there."
+    IDS_TRANSMISSION_2393   "That street should lead straight to the Mecca."
+    IDS_TRANSMISSION_2399   "All right, head down the stairs to the right of the gate. There's an open air market that will lead you to a hotel. Look for the tunnel out in front."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2402   "Great. I'm out of ideas."
+    IDS_TRANSMISSION_2406   "Sanjuro!"
+    IDS_TRANSMISSION_2408   "The CMC! They're all over the place."
+    IDS_TRANSMISSION_2409   "Listen to me, Toshiro is Gabriel. But there's more to it than that. Cothineal-"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2447   "Where are you now?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2449   "…"
+    IDS_TRANSMISSION_2463   "What's going on, Sanjuro? Where's Kura?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2464   "Hmmm, looks like your friend's been captured by the CMC."
+    IDS_TRANSMISSION_2466   "They're taking her to their main security offices in Upper Maritropa. I can help you get inside, but you've got to do me a favor first."
+    IDS_TRANSMISSION_2469   "Head back to your MCA. I'll be in touch soon."
+    IDS_TRANSMISSION_2470   "If the Fallen find she's been captured, she could be in big trouble. You gotta get there before they do."
+    IDS_TRANSMISSION_2471   "If them Fallen freak boys find she's been captured, she could be in big trouble. You gotta get there before they do."
+    IDS_TRANSMISSION_2472   "What have you done, Sanjuro? If she comes to harm, I swear I will kill you with my own hands."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2485   "Okay, look for Canopy Station and dock your MCA. You can catch a tram to Upper Maritropa. Don't be late this time."
+    IDS_TRANSMISSION_2488   "Cothineal is the reason the Fallen exist. Kura can explain everything. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2498   "You shouldn't have any trouble. I've guaranteed that CMC security has its hands full elsewhere. I'll contact you once you're inside."
+    IDS_TRANSMISSION_2500   "Soon."
+    IDS_TRANSMISSION_2502   "You shouldn't have any trouble. I've guaranteed that CMC security has its hands full elsewhere. I'll contact you once you're inside."
+    IDS_TRANSMISSION_2504   "The press bends the truth to suit its own agenda. You should know that better than anyone. Leave it at that. Ryo out."
+    IDS_TRANSMISSION_2509   "From Shogo?"
+    IDS_TRANSMISSION_2511   "Well, be careful. Oh, Sanjuro…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2513   "I just wanted to apologize for how I reacted when I heard Kura was alive. I love my sister as much as you do. I'm just…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2529   "The front desk is up ahead. Head for the security gate on the left. You shouldn't have any trouble unless you start shooting people."
+    IDS_TRANSMISSION_2533   "There should be an elevator straight ahead. Ride that down to the lowest level."
+    IDS_TRANSMISSION_2535   "So you think you can rescue Kura without my help, huh? Go ahead and try."
+    IDS_TRANSMISSION_2536   "Goodbye, Commander."
+    IDS_TRANSMISSION_2542   "I've shut down the alarm system for the entire floor, but you should expect trouble once I bring down the security force field."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2545   "Okay, turn right and head for the elevators."
+    IDS_TRANSMISSION_2547   "Extend the force bridge and head for the server room."
+    IDS_TRANSMISSION_2550   "Thanks for your assistance, Commander. You're no longer useful to me. Sorry to leave you hanging."
+    IDS_TRANSMISSION_2553   "A Fallen death squad is on its way, Sanjuro. Get Kura out of there fast."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2560   "Uh, why do you ask?"
+    IDS_TRANSMISSION_2561   "Actually, I've been dating your sister."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2578   "Save the puppy love for later. Those Fallen assassins are on their way to the prison area!"
+    IDS_TRANSMISSION_2581   "So have you two had a chance to catch up on old times yet?"
+    IDS_TRANSMISSION_2582   "Sorry, I didn't mean that."
+    IDS_TRANSMISSION_2583   "Listen, the admiral has issued orders to prep the kato cannon. I think he's planning to wipe out Avernus against direct orders from UCA high command. If Toshiro and Baku are really there, they're in danger."
+    IDS_TRANSMISSION_2585   "I'm not sure, he won't talk to me."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2595   "Head back to the pumping station. There's an airship dock near here. If we can get aboard one of the automated transports, I can reroute the navigational computer to get us to Avernus."
+    IDS_TRANSMISSION_2597   "I admire your tenacity, Commander. You won't be so lucky this time."
+    IDS_TRANSMISSION_2599   "Two years ago, when you led your squad into Avernus and killed Ivan Isarevich, you did a lot more than liquidate an up and coming tyrant-you wrecked a scheme I had been nurturing for years. It's taken me a long time to recover from the mess you made. And now you're trying to ruin me again."
+    IDS_TRANSMISSION_2600   "Who did you think tipped off the CMC about your little lovebird, anyway?"
+    IDS_TRANSMISSION_2602   "Goodbye, Commander. I'll send your regards to Kura."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2614   "Well, hello. Looks like I've got the advantage this time."
+    IDS_TRANSMISSION_2623   "Get to the airship dock. I can help you reroute the nav computer."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2625   "Do you want to save Toshiro or not? Get going, Commander."
+    IDS_TRANSMISSION_2628   "This is as far as you go."
+    IDS_TRANSMISSION_2630   "I know who you are, but I won't let that interfere with my duty."
+    IDS_TRANSMISSION_2632   "You cannot hope to defeat us, Commander."
+    IDS_TRANSMISSION_2634   "No, brother, it is you who are in danger."
+    IDS_TRANSMISSION_2636   "Very well. I will meet with you in the History of Warfare museum in Avernus. A fitting location, don't you think? You'll be granted safe passage so long as you do not attack my soldiers."
+    IDS_TRANSMISSION_2638   "Loud and clear. I'll try to delay my father."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2642   "Get to the navigational computer in the forward cabin. Watch out for security personnel."
+    IDS_TRANSMISSION_2646   "Okay, I'm uploading an override code to your comlink. Feed it into the main computer."
+    IDS_TRANSMISSION_2648   "Commander, we'll discuss your insubordination later. I've confined Kathryn to quarters for assisting you."
+    IDS_TRANSMISSION_2649   "Do not proceed to Avernus. The kato cannon is charging and will be ready to fire within two hours. I will not delay the attack for any reason."
+    IDS_TRANSMISSION_2651   "He is a traitor to the UCA."
+    IDS_TRANSMISSION_2653   "Ryo Ishikawa has provided irrefutable evidence-"
+    IDS_TRANSMISSION_2655   "Mr. Ishikawa has been a valuable ally to the UCA for over a decade. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2657   "Those fools don't understand the situation here!"
+    IDS_TRANSMISSION_2659   "Nonsense! You're as ignorant as those idiots in high command. The Fallen are on the verge of victory. I can't stand by and let Cronus fall into the hands of murderous zealots."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2685   "I'm just ahead of you. I need you to cover me while I make a run for the database."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2694   "There should be a database terminal near your position. Let me know when you get there."
+    IDS_TRANSMISSION_2696   "Pop in the disk. It should auto-run."
+    IDS_TRANSMISSION_2699   "That's it! Now get to the museum. I'll get in touch with my father and try to stall him."
+    IDS_TRANSMISSION_2701   "I really missed you, Sanjuro."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2704   "Welcome to Avernus, Commander. You may approach."
+    IDS_TRANSMISSION_2705   "I haven't been able to contact my father, so you won't have much time. If Kathryn was right, the kato cannon will be fully charged within the hour."
+    IDS_TRANSMISSION_2707   "Is this how you repay my good faith? So be it. "
+    IDS_TRANSMISSION_2710   "All right, Commander, I am willing to give you one last chance. Either you must incapacitate Gabriel or I will destroy Avernus. If you face Gabriel, perhaps you can save Toshiro. Otherwise, he and the rest of the Fallen will perish. The choice is yours."
+    IDS_TRANSMISSION_2715   "Look around you, Sanjuro. This place is a shrine to what it means to be human. What more concise symbol of humanity is there than a clenched fist, a raised knife, a loaded gun? We are destroyers, colonizers, devourers. Our appetites define us. Human achievement is a destructive thing. It is measured in conquest and bloodshed."
+    IDS_TRANSMISSION_2716   "Cothineal exists and that is all. Its only hunger is for self-preservation. When humans came to this world, to Coth, they came for power. They came to harvest. For many years, Cothineal tolerated them, for they posed no threat. When a threat finally arose, Cothineal reached out to the invaders and beseeched them to moderate their harvesting. Ivan Isarevich was the ambassador of Coth, and when humanity scorned him, he turned to terrorism. When we killed him, Cothineal was angered. I became the new ambassador."
+    IDS_TRANSMISSION_2717   "Isarevich failed because he was not a warrior. He did not know the true language of humanity. But I'm fluent in violence and I have triumphed."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2721   "To hell with your bargain. You took Toshiro from me and I plan to take him back."
+    IDS_TRANSMISSION_2722   "Very well, I'll go back to the Leviathan and try to stop the admiral from firing the cannon."
+    IDS_TRANSMISSION_2723   "Very well, you have my loyalty. I'll go back to the Leviathan and try to stop the admiral from firing the cannon."
+    IDS_TRANSMISSION_2726   "Sanjuro, my father put me back on duty and gave me access to all our intelligence reports. I should be able to guide you most of the way there."
+    IDS_TRANSMISSION_2728   "Just don't go getting yourself killed."
+    IDS_TRANSMISSION_2731   "Be careful, Sanjuro. We've got a lot of catching up to do. Kura out."
+    IDS_TRANSMISSION_2734   "I'm picking up incoming aircraft. Get ready to run!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2740   "The service lift should be on your right."
+    IDS_TRANSMISSION_2745   "The lift should place you in a tunnel that will take you to the surface. You're getting close."
+    IDS_TRANSMISSION_2747   "I'd understand if you wanted to be with Kura again."
+    IDS_TRANSMISSION_2748   "…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2754   "You're getting close. You'll know it when you see it."
+    IDS_TRANSMISSION_2756   "Can you get inside?"
+    IDS_TRANSMISSION_2760   "All right, look for the main lift. It leads to the temple."
+    IDS_TRANSMISSION_2762   "You'll have to weaken Cothineal or else you won't have any effect on Gabriel."
+    IDS_TRANSMISSION_2766   "I'm worried."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2768   "That's not a very nice thing to say."
+    IDS_TRANSMISSION_2770   "Fine. Get yourself killed. See if I care."
+    IDS_TRANSMISSION_2772   "This time we end it."
+    IDS_TRANSMISSION_2774   "I don't live in your shadow anymore, Sanjuro."
+    IDS_TRANSMISSION_2779   "Welcome, brother. Let us embrace."
+    IDS_TRANSMISSION_2780   "You cannot win."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2784   "Sanjuro?"
+    IDS_TRANSMISSION_2785   "Sanjuro, Shogo dropships are approaching from the southeast. It's a trap!"
+    IDS_TRANSMISSION_2789   "Here they come!"
+    IDS_TRANSMISSION_2790   "I will take great pleasure in watching you die, Commander."
+    IDS_TRANSMISSION_2794   "You did it!"
+    IDS_TRANSMISSION_2796   "Good work, Commander. Mission accomplished. I look forward to debriefing you."
+    IDS_TRANSMISSION_2797   "Watch it, you little hussy!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2800   "You disgust me, Commander. You are a traitor and a coward."
+    IDS_TRANSMISSION_2814   "Good luck, Sanjuro. I'd like us to catch up when this is all over. If you're interested. Kura out."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2817   "There are five critical stations in the energy plant. If you increase power to all of them and then pull the plug, you'll overload the system. I'm uploading info to your comlink."
+    IDS_TRANSMISSION_2820   "Now head to the power allocation station and cut the power."
+    IDS_TRANSMISSION_2822   "Power cut. Wow, it worked."
+    IDS_TRANSMISSION_2823   "The computer core should be accessible. I've uploaded an override code into your comlink. It'll automatically shut down remote operations."
+    IDS_TRANSMISSION_2826   "Great! Now head for the command area and see if you can head off my father."
+    IDS_TRANSMISSION_2829   "Be careful, there's a security station just ahead of your position."
+    IDS_TRANSMISSION_2831   "They've activated an emergency lockdown. You won't be able to get through the main passage."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2833   "There's a maintenance duct in the MCA throughway. Don't get stepped on."
+    IDS_TRANSMISSION_2834   "Head up the ladder and all the way to the left. The first panel should be just below you."
+    IDS_TRANSMISSION_2836   "Now go all the way back down the passageway. There should be a ladder on the right."
+    IDS_TRANSMISSION_2837   "Keep going until you get to the second panel."
+    IDS_TRANSMISSION_2839   "Yea, I think so."
+    IDS_TRANSMISSION_2840   "You need to head back toward the security station. Get to the security control room and override the emergency lockdown."
+    IDS_TRANSMISSION_2842   "The admiral is still on the bridge. Try to head him off before he figures out what you've done."
+    IDS_TRANSMISSION_2844   "You're too late, Sanjuro."
+    IDS_TRANSMISSION_2845   "He's heading for the kato cannon!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2854   "The firing sequence is active. I've uploaded the override codes to your comlink. You have two minutes to interface with all three terminals. Otherwise, the cannon will fire."
+    IDS_TRANSMISSION_2855   "Too late, Commander. The Fallen are doomed."
+    IDS_TRANSMISSION_2857   "Guards, kill him!"
+    IDS_TRANSMISSION_2859   "Coward. You're handing over Cronus to zealots."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2865   "I knew you'd do it!"
+    IDS_TRANSMISSION_2867   "Too late!"
+    IDS_TRANSMISSION_2870   "I've had enough of your meddling. I'll fire the cannon myself! Just as soon as I put you down."
+    IDS_TRANSMISSION_2872   "Congratulations, Commander. Now that all of this is over, I've got a little undercover assignment in mind for you."
+    IDS_TRANSMISSION_2873   "Why you! You're gonna wish you'd stayed dead when I get through with you!"
+    IDS_TRANSMISSION_2875   "Stop!"
+    IDS_TRANSMISSION_2876   "Intruder!"
+    IDS_TRANSMISSION_2877   "Security!"
+    IDS_TRANSMISSION_2878   "Medic!"
+    IDS_TRANSMISSION_2879   "Can you say that again slowly?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2880   "I need some backup!"
+    IDS_TRANSMISSION_2881   "Hey!"
+    IDS_TRANSMISSION_2882   "Help!"
+    IDS_TRANSMISSION_2883   "He'll have to start the firing sequence manually. Once the sequence is active, you'll have two minutes to override it."
+    IDS_TRANSMISSION_2884   "Drop your weapon!"
+    IDS_TRANSMISSION_2885   "This area is off limits."
+    IDS_TRANSMISSION_2886   "Hello."
+    IDS_TRANSMISSION_2887   "Hi."
+    IDS_TRANSMISSION_2888   "May I help you?"
+    IDS_TRANSMISSION_2889   "Murderer!"
+    IDS_TRANSMISSION_2890   "What's going on?"
+    IDS_TRANSMISSION_2891   "Make it stop!"
+    IDS_TRANSMISSION_2892   "That's it!"
+    IDS_TRANSMISSION_2893   "You're going down!"
+    IDS_TRANSMISSION_2894   "I'm outta here!"
+    IDS_TRANSMISSION_2895   "Mama!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2896   "You're dead!"
+    IDS_TRANSMISSION_2897   "Fall back!"
+    IDS_TRANSMISSION_2898   "Die!"
+    IDS_TRANSMISSION_2899   "Captain!"
+    IDS_TRANSMISSION_2900   "Aaaaahhhhh!"
+    IDS_TRANSMISSION_2901   "He's over here!"
+    IDS_TRANSMISSION_2902   "Watch where you're going."
+    IDS_TRANSMISSION_2903   "Idiot."
+    IDS_TRANSMISSION_2904   "Oof."
+    IDS_TRANSMISSION_2905   "Watch it."
+    IDS_TRANSMISSION_2906   "Hey, look out!"
+    IDS_TRANSMISSION_2907   "What's your problem?"
+    IDS_TRANSMISSION_2908   "Hey, wait up!"
+    IDS_TRANSMISSION_2909   "Hold on!"
+    IDS_TRANSMISSION_2910   "Give me a second!"
+    IDS_TRANSMISSION_2911   "Where are you going?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2912   "I lost him."
+    IDS_TRANSMISSION_2913   "Where'd he go?"
+    IDS_TRANSMISSION_2914   "Where is he?"
+    IDS_TRANSMISSION_2915   "He's gotta be around here somewhere."
+    IDS_TRANSMISSION_2916   "Give me the grenade launcher."
+    IDS_TRANSMISSION_2917   "This way!"
+    IDS_TRANSMISSION_2918   "I've had it!"
+    IDS_TRANSMISSION_2919   "Eat this!"
+    IDS_TRANSMISSION_2920   "What'z up....I guess the sky is up."
+    IDS_TRANSMISSION_2921   "It's modern, yet functional."
+    IDS_TRANSMISSION_2922   "Doooo..  I zipped my wee-wee again, mom."
+    IDS_TRANSMISSION_2923   "Me wee-wee need lovin."
+    IDS_TRANSMISSION_2924   "I want a doggie burger with fri to go."
+    IDS_TRANSMISSION_2925   "It's only a flesh wound."
+    IDS_TRANSMISSION_2926   "There he is … open fire."
+    IDS_TRANSMISSION_2927   "Look out, he's got a gun."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2928   "Don't shoot, I'm unarmed."
+    IDS_TRANSMISSION_2929   "You want a piece of me … come and get it."
+    IDS_TRANSMISSION_2930   "Whatcha do that for?"
+    IDS_TRANSMISSION_2931   "Giddy up!"
+    IDS_TRANSMISSION_2932   "Yaaaaa…"
+    IDS_TRANSMISSION_2933   "So basically, you're telling me…"
+    IDS_TRANSMISSION_2934   "Well, we can talk about that later, but in regard to certain issues…"
+    IDS_TRANSMISSION_2935   "Keep an eye out. Comm data shows he's in the area."
+    IDS_TRANSMISSION_2936   "Roger."
+    IDS_TRANSMISSION_2937   "He better not come my way. I gotta round of lead waiting for a new home."
+    IDS_TRANSMISSION_2938   "My wife is pissed about me working double patrols."
+    IDS_TRANSMISSION_2939   "Unit 8 here, no sign of him…"
+    IDS_TRANSMISSION_2940   "Yeah, I hear he's a mecha pilot. My money says that academy boy can't fight like a trooper who's seen some shit."
+    IDS_TRANSMISSION_2941   "Yeah, I hear he's a mecha pilot. My money says that academy boy can't fight like a trooper who's seen some action."
+    IDS_TRANSMISSION_2942   "Unit 4 isn't responding. Those idiots must've turned off their radios again. I'm reporting them."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_2999   "A good one. We can discuss it later."
+    IDS_TRANSMISSION_3000   " … Sanjuro, you there. Come in Sanjuro."
+    IDS_TRANSMISSION_3001   "Gonna break down some punks!"
+    IDS_TRANSMISSION_3002   "Grrrr."
+    IDS_TRANSMISSION_3003   "Ha!"
+    IDS_TRANSMISSION_3004   "Hey!"
+    IDS_TRANSMISSION_3005   "I got me some anger."
+    IDS_TRANSMISSION_3006   "I'm fixin' to bust some skulls."
+    IDS_TRANSMISSION_3007   "It ain't over till granny breaks wind."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3008   "No time to cuddle."
+    IDS_TRANSMISSION_3009   "Sanjuro!"
+    IDS_TRANSMISSION_3010   "Watch it!"
+    IDS_TRANSMISSION_3011   "Watch out for her, she'll break you in two."
+    IDS_TRANSMISSION_3012   "Why that dirty dog!"
+    IDS_TRANSMISSION_3013   "You got yerself a predicament, boy."
+    IDS_TRANSMISSION_3014   "You wanna dance or something?"
+    IDS_TRANSMISSION_3015   "'Course it worked. I told ya it would, didn't I?"
+    IDS_TRANSMISSION_3016   "All right, listen up. There's two main ventilation shafts-A and B-and 4 secondary shafts-1 through 4. You have to reverse the airflow in shaft B so you can ride the wind current to the upper level. Right now, it's sucking air into the filters. You jump into it now and them fans'll chew you up good."
+    IDS_TRANSMISSION_3017   "Bad idea. If they know you're coming, you're as good as dead."
+    IDS_TRANSMISSION_3018   "Damn it! Those energy grids can't be shut down locally. You're gonna have to find another way to get past 'em."
+    IDS_TRANSMISSION_3019   "Get to the elevator in the parking garage. It'll take you up into the main comm facility. You should be able to re-establish contact with the UCA from there."
+    IDS_TRANSMISSION_3020   "Good, now you're gonna have to shut down the heating coils for shaft A. The coils are near your position. Find 'em, then destroy their control panels."
+    IDS_TRANSMISSION_3021   "Okay, now for the fun part. You gotta jump down shaft A. The current should slow your descent enough to keep ya from cratering. There's a platform near the base of the shaft that'll lead you to shaft B."
+    IDS_TRANSMISSION_3022   "Sanjuro, get outta here! Shogo troopers are storming the place! There's too many … Hurry, Sanjuro!"
+    IDS_TRANSMISSION_3023   "Say hello to Maurice and Toshi, Commander. They're here to help you out."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3024   "See that air intake tube?"
+    IDS_TRANSMISSION_3025   "You're not going to like this…"
+    IDS_TRANSMISSION_3026   "Wait up, hotshot."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3093   "Gotta go!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3148   "Don't test my patience."
+    IDS_TRANSMISSION_3149   "Sanjuro!"
+    IDS_TRANSMISSION_3150   "Stand off, soldier!"
+    IDS_TRANSMISSION_3151   "That will be all, Commander."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3152   "The Fallen will perish."
+    IDS_TRANSMISSION_3153   "Traitor!"
+    IDS_TRANSMISSION_3154   "You disappoint me, Commander."
+    IDS_TRANSMISSION_3155   "You're a failure."
+    IDS_TRANSMISSION_3156   "Good work, Commander, I look forward to the debriefing."
+    IDS_TRANSMISSION_3157   "Hmmm."
+    IDS_TRANSMISSION_3158   "Good, you're here … I'll get to the point. Your mission is to find and eliminate Gabriel at all costs."
+    IDS_TRANSMISSION_3159   "Kill that traitor."
+    IDS_TRANSMISSION_3160   "Its about time Commander!"
+    IDS_TRANSMISSION_3161   "By the way, Commander, I'm pleased to note that you checked into Regional Diagnostics. It's about time you showed a little initiative."
+    IDS_TRANSMISSION_3162   "By the way, Commander, you never checked into Regional Diagnostics. I was hoping you'd be a little more responsible about this mission."
+    IDS_TRANSMISSION_3163   "Commander-"
+    IDS_TRANSMISSION_3164   "Commander, make sure to stop by Regional Diagnostics. You can access the database for background information on your mission."
+    IDS_TRANSMISSION_3165   "Commander, we'll discuss your insubordination later. I've confined Kathryn to quarters for assisting you."
+    IDS_TRANSMISSION_3166   "Do not proceed to Avernus. The kato cannon is charging and will be ready to fire within two hours. I will not delay the attack for any reason."
+    IDS_TRANSMISSION_3167   "Do you have something you wish to share with me, Commander?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3168   "He is a traitor to the UCA."
+    IDS_TRANSMISSION_3169   "His forces have been massing in the abandoned city of Avernus. Within a few days, we feel they will attempt a final assault on Maritropa. If Gabriel is allowed to continue, the Fallen will destroy the CMC and gain control of Cronus. If this happens, the flow of Kato throughout our system will cease. This can not and will not happen. I'll see to that myself if I have to."
+    IDS_TRANSMISSION_3170   "Hmmm, I seem to recall hearing THAT before."
+    IDS_TRANSMISSION_3171   "Mr. Ishikawa has been a valuable ally to the UCA for over a decade."
+    IDS_TRANSMISSION_3172   "Nonsense! You're as ignorant as those idiots in high command. The Fallen are on the verge of victory. I can't stand by and let Cronus fall into the hands of murderous zealots."
+    IDS_TRANSMISSION_3173   "Ryo Ishikawa has provided irrefutable evidence-"
+    IDS_TRANSMISSION_3174   "Those fools don't understand the situation here!"
+    IDS_TRANSMISSION_3175   "You may select an MCA for this mission. Consult the terminal in each bay for specifications on the various units. Good luck, Commander."
+    IDS_TRANSMISSION_3176   "You mean Lt. Commander Akkaraju. Yes, she is."
+    IDS_TRANSMISSION_3177   "You're dismissed."
+    IDS_TRANSMISSION_3178   "You're too late, Sanjuro. Today, I will bring peace to Cronus."
+    IDS_TRANSMISSION_3179   "Your mission is to find and eliminate Gabriel, the leader of the Fallen. His forces are massing in the abandoned city of Avernus. Within a few days, they will attempt a final assault on Maritropa. If Gabriel is allowed to continue, the Fallen will destroy the CMC and gain control Cronus. If this happens, the flow of Kato throughout our system will cease. This cannot and will not happen. I'll see to that myself if I have to. Now get out of my sight."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3303   "I'm having trouble picturing it. Maybe you could demonstrate."
+    IDS_TRANSMISSION_3304   "Baku's insane. I don't know what he's become, but he's dangerous."
+    IDS_TRANSMISSION_3305   "Be careful."
+    IDS_TRANSMISSION_3306   "Come a little closer."
+    IDS_TRANSMISSION_3307   "Cothineal's a lifeform so vast that people have been looking at it for 200 years without recognizing what it was. It stretches for hundreds of kilometers under the surface of Cronus. Cothineal is the source of kato. It's using Toshiro to protect itself."
+    IDS_TRANSMISSION_3308   "Don't keep me waiting."
+    IDS_TRANSMISSION_3309   "Grrrr."
+    IDS_TRANSMISSION_3310   "I knew you'd come. It's good to see you again."
+    IDS_TRANSMISSION_3311   "I look forward to debriefing you as well."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3312   "I need to convince my father about Cothineal. He thinks Toshiro is a traitor. Meet me at the Oshii Research Station in Avernus. There's enough evidence of Cothineal in the survey records and geological reports to prove it once and for all."
+    IDS_TRANSMISSION_3313   "I told you that Toshiro is Gabriel. Well, that's only partly true."
+    IDS_TRANSMISSION_3314   "I'll be waiting."
+    IDS_TRANSMISSION_3315   "I'm not angry about Kathryn. Well, I am angry, but I'm not going to kill you."
+    IDS_TRANSMISSION_3316   "I'm outta here."
+    IDS_TRANSMISSION_3317   "It's about time, Sanjuro. A Shogo invasion force is seizing the station!"
+    IDS_TRANSMISSION_3318   "It's been a long time. If you know what I mean."
+    IDS_TRANSMISSION_3319   "It's not so much where he is, but who he is and what he's fighting for. It's much bigger than you could ever possibly imagine."
+    IDS_TRANSMISSION_3320   "Kick his ass."
+    IDS_TRANSMISSION_3321   "Promise?"
+    IDS_TRANSMISSION_3322   "Sanjuro!"
+    IDS_TRANSMISSION_3323   "Should I even ask?"
+    IDS_TRANSMISSION_3324   "Sorry, I have some unfinished business to attend to. Besides, you're gonna need your MCA."
+    IDS_TRANSMISSION_3325   "They couldn't. I've been working undercover. My father assigned me to learn everything I could about the Fallen."
+    IDS_TRANSMISSION_3326   "This is about Gabriel. Hurry!"
+    IDS_TRANSMISSION_3327   "Watch my ass."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3328   "We've got to upload that data to the Leviathan and then wipe the system. That will delay them for a while, at least."
+    IDS_TRANSMISSION_3329   "Well, hello."
+    IDS_TRANSMISSION_3330   "Well, I guess you missed me, eh?"
+    IDS_TRANSMISSION_3331   "What now?"
+    IDS_TRANSMISSION_3332   "Yeah, I'm fine."
+    IDS_TRANSMISSION_3333   "Yeah?"
+    IDS_TRANSMISSION_3334   "You really missed me, didn't you?"
+    IDS_TRANSMISSION_3335   "You've got to stop him!"
+    IDS_TRANSMISSION_3336   "You've got to stop him, Sanjuro. Forget he's my father. My father wouldn't do something like this."
+    IDS_TRANSMISSION_3337   "Wait up, Sanjuro!"
+    IDS_TRANSMISSION_3338   "You trying to ditch me?"
+    IDS_TRANSMISSION_3339   "Sanjuro!"
+    IDS_TRANSMISSION_3340   "Hold on a minute!"
+    IDS_TRANSMISSION_3341   "Jeez, gimme a break! I'm just an AI!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3365   "You're SO mean!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3376   "Shogo's scrambled two squadrons of Ikari Fighters. They're attacking the Leviathan. We can handle them, just get to Gabriel."
+    IDS_TRANSMISSION_3377   "Ha!"
+    IDS_TRANSMISSION_3378   "So did you and Kura have a chance to catch up on old times?"
+    IDS_TRANSMISSION_3379   "What about Kura?"
+    IDS_TRANSMISSION_3380   "Just you wait."
+    IDS_TRANSMISSION_3381   "And how about you, my love?"
+    IDS_TRANSMISSION_3382   "Aren't you forgetting your squad mates?"
+    IDS_TRANSMISSION_3383   "Be careful, Sanjuro, the admiral's a bit upset"
+    IDS_TRANSMISSION_3384   "Don't make me come down there."
+    IDS_TRANSMISSION_3385   "Don't mess with me."
+    IDS_TRANSMISSION_3386   "Figures."
+    IDS_TRANSMISSION_3387   "Get to the airship dock. I can help you re-route the nav computer once you're aboard."
+    IDS_TRANSMISSION_3388   "How's Toshiro?"
+    IDS_TRANSMISSION_3389   "I missed you too."
+    IDS_TRANSMISSION_3390   "I'm not sure."
+    IDS_TRANSMISSION_3391   "I'm sorry, Sanjuro."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3392   "I've had just about enough of this crap!"
+    IDS_TRANSMISSION_3393   "It's somewhere near your current position. You're just gonna have to look for it."
+    IDS_TRANSMISSION_3394   "Just because I've sworn off violence doesn't mean I won't crack open your head, mister!"
+    IDS_TRANSMISSION_3395   "Just kidding."
+    IDS_TRANSMISSION_3396   "Kick his ass, sweetie."
+    IDS_TRANSMISSION_3397   "Listen, the admiral has issued orders to prep the kato cannon aboard the Leviathan. I think he's planning to wipe out Avernus-against direct orders from UCA high command. If Toshiro and Baku are really there, they're in danger."
+    IDS_TRANSMISSION_3398   "Sanjuro!"
+    IDS_TRANSMISSION_3399   "Sanjuro, Ryo's aboard the Leviathan. In fact, he's the one that insisted on locking me up. Now he's pressuring my father to fire the weapon."
+    IDS_TRANSMISSION_3400   "Sanjuro, you were right. Those gunships are approaching from the southeast. Ryo's with them."
+    IDS_TRANSMISSION_3401   "Sorry, I didn't mean that."
+    IDS_TRANSMISSION_3402   "Stop fooling around!"
+    IDS_TRANSMISSION_3403   "That's so not me."
+    IDS_TRANSMISSION_3404   "The transport will drop you off near the SW entrance to Avernus. According to our intelligence, it's the least defended access to the city."
+    IDS_TRANSMISSION_3405   "There's no time for that!"
+    IDS_TRANSMISSION_3406   "There's no time to intercept them."
+    IDS_TRANSMISSION_3407   "They can't wait long, so be on time for once in your life."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3408   "Very funny."
+    IDS_TRANSMISSION_3409   "Way to go Sanjuro. We've got the Shogo fleet on the run."
+    IDS_TRANSMISSION_3410   "We've detected a group of Shogo gunships entering the Cronian atmosphere. Looks like the attack up here was just a diversion."
+    IDS_TRANSMISSION_3411   "Well, Shogo's up to something, all right. They're massing what looks like a war fleet outside this system."
+    IDS_TRANSMISSION_3412   "What about Gabriel?"
+    IDS_TRANSMISSION_3413   "What are you thinking?"
+    IDS_TRANSMISSION_3414   "Yeah, but I'm worried about my father. There's something wrong with him. If you don't stop him now, he's gonna fire the kato cannon."
+    IDS_TRANSMISSION_3415   "You better be nice to Kura, 'cause you're coming home to an empty bed, tough guy."
+    IDS_TRANSMISSION_3416   "You'll need to locate the Madison Tunnel. It'll lead to the old CMC headquarters in downtown Avernus. You should be able to track Gabriel down there."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3535   "Here they come!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3536   "I… I think so."
+    IDS_TRANSMISSION_3537   "If you choose to pursue your mission, Avernus may be spared, but you will learn the true power of Gabriel."
+    IDS_TRANSMISSION_3538   "Look around you, Sanjuro. This place is a shrine to what it means to be human. What more concise symbol of humanity is there than a clenched fist, a raised knife, a loaded gun? We are destroyers, colonizers, devourers. Our appetites define us. Human achievement is a destructive thing. It is measured in conquest and bloodshed."
+    IDS_TRANSMISSION_3539   "Cothineal exists and that is all. Its only hunger is for self-preservation. When humans came to this world, to Coth, they came for power. They came to harvest. For many years, Cothineal tolerated them, for they posed no threat. When a threat finally arose, Cothineal reached out to the invaders and beseeched them to moderate their harvesting. Ivan Isarevich was the ambassador of Coth, and when humanity scorned him, he turned to terrorism. When we killed him, Cothineal was angered. I became the new ambassador."
+    IDS_TRANSMISSION_3540   "Isarevich failed because he was not a warrior. He did not know the true language of humanity. But I'm fluent in violence and I have triumphed."
+    IDS_TRANSMISSION_3541   "No, brother, you are in danger. More than you can imagine."
+    IDS_TRANSMISSION_3542   "Sanjuro?"
+    IDS_TRANSMISSION_3543   "Shogo cannot defeat us. We are too strong."
+    IDS_TRANSMISSION_3544   "Then you will die."
+    IDS_TRANSMISSION_3545   "Very well. I will meet with you in the History of Warfare museum in Avernus. A fitting location, don't you think? You'll be granted safe passage so long as you do not attack my soldiers."
+    IDS_TRANSMISSION_3546   "Welcome, brother. Let us embrace."
+    IDS_TRANSMISSION_3547   "You cannot hope to defeat us, Commander."
+    IDS_TRANSMISSION_3548   "You cannot win."
+    IDS_TRANSMISSION_3549   "You must choose your path, Sanjuro. We will offer a bargain-swear allegiance to us and your brother will be spared, providing that you can prevent your admiral from destroying Avernus."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3666   "Fair enough. Oh, and Baku, I'm glad to see you're alive."
+    IDS_TRANSMISSION_3667   "I don't think so."
+    IDS_TRANSMISSION_3668   "I remember… you saved my life. In return, I'll spare yours. This time."
+    IDS_TRANSMISSION_3669   "This is as far as you go, Sanjuro."
+    IDS_TRANSMISSION_3670   "We'll finish this later."
+    IDS_TRANSMISSION_3671   "Recon 4, fall back to Drop Point Renegade for immediate evac. We're picking up Fallen reinforcements approaching from the southeast. Get your team clear ASAP. Over."
+    IDS_TRANSMISSION_3672   "Roger, fire for effect. Over."
+    IDS_TRANSMISSION_3676   "Get out of here. I won't spare you next time."
+    IDS_TRANSMISSION_3677   "Sanjuro? I know you…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TRANSMISSION_3700   "Kura died! Mission Failure!"
+    IDS_TRANSMISSION_3701   "Hank died! Mission Failure!"
+    IDS_TRANSMISSION_3702   "Mission Failure! Kato cannon fired!"
+    IDS_PIT_UNKNOWN         "Picked up an unknown item"
+    IDS_PIT_ARMOR_REPAIR100 "Picked up 100 Armor Repair"
+    IDS_PIT_ARMOR_REPAIR250 "Picked up 250 Armor Repair"
+    IDS_PIT_ARMOR_REPAIR500 "Picked up 500 Armor Repair"
+    IDS_PIT_ARMOR_BODY50    "Picked up 50 Body Armor"
+    IDS_PIT_ARMOR_BODY100   "Picked up 100 Body Armor"
+    IDS_PIT_ARMOR_BODY200   "Picked up 200 Body Armor"
+    IDS_PIT_ENHANCEMENT_DAMAGE "Picked up Damage Enhancement"
+    IDS_PIT_ENHANCEMENT_MELEEDAMAGE "Picked up Melee Damage Enhancement"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PIT_ENHANCEMENT_PROTECTION "Picked up Protection Enhancement"
+    IDS_PIT_ENHANCEMENT_ENERGYPROTECTION 
+                            "Picked up Energy Protection Enhancement"
+    IDS_PIT_ENHANCEMENT_PROJECTILEPROTECTION 
+                            "Picked up Projectile Protection Enhancement"
+    IDS_PIT_ENHANCEMENT_EXPLOSIVEPROTECTION 
+                            "Picked up Explosive Protection Enhancement"
+    IDS_PIT_ENHANCEMENT_REGEN "Picked up Regeneration Enhancement"
+    IDS_PIT_ENHANCEMENT_HEALTH "Picked up Health Enhancement"
+    IDS_PIT_ENHANCEMENT_ARMOR "Picked up Armor Enhancement"
+    IDS_PIT_FIRSTAID_10     "Picked up 10 First Aid"
+    IDS_PIT_FIRSTAID_15     "Picked up 15 First Aid"
+    IDS_PIT_FIRSTAID_25     "Picked up 25 First Aid"
+    IDS_PIT_FIRSTAID_50     "Picked up 50 First Aid"
+    IDS_PIT_POWERSURGE_50   "Picked up 50 Power Surge"
+    IDS_PIT_POWERSURGE_100  "Picked up 100 Power Surge"
+    IDS_PIT_POWERSURGE_150  "Picked up 150 Power Surge"
+    IDS_PIT_POWERSURGE_250  "Picked up 250 Power Surge"
+    IDS_PIT_ULTRA_DAMAGE    "Picked up Ultra Damage"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PIT_ULTRA_HEALTH    "Picked up Ultra Health"
+    IDS_PIT_ULTRA_POWERSURGE "Picked up Ultra Power Surge"
+    IDS_PIT_ULTRA_SHIELD    "Picked up Ultra Shield"
+    IDS_PIT_ULTRA_STEALTH   "Picked up Ultra Stealth"
+    IDS_PIT_ULTRA_REFLECT   "Picked up Ultra Reflect"
+    IDS_PIT_ULTRA_NIGHTVISION "Picked up Ultra Nightvision"
+    IDS_PIT_ULTRA_INFRARED  "Picked up Ultra Infrared"
+    IDS_PIT_ULTRA_SILENCER  "Picked up Ultra Silencer"
+    IDS_PIT_ULTRA_RESTORE   "Picked up Ultra Restore"
+    IDS_PIT_UPGRADE_DAMAGE  "Picked up Damage Upgrade"
+    IDS_PIT_UPGRADE_PROTECTION "Picked up Protection Upgrade"
+    IDS_PIT_UPGRADE_REGEN   "Picked up Regeneration Upgrade"
+    IDS_PIT_UPGRADE_HEALTH  "Picked up Health Upgrade"
+    IDS_PIT_UPGRADE_ARMOR   "Picked up Armor Upgrade"
+    IDS_PIT_UPGRADE_TARGETING "Picked up Targeting Upgrade"
+    IDS_PIT_CAT             "Picked up Cat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PIT_SHOGO_S         "Picked up 'S'"
+    IDS_PIT_SHOGO_H         "Picked up 'H'"
+    IDS_PIT_SHOGO_O         "Picked up 'O'"
+    IDS_PIT_SHOGO_G         "Picked up 'G'"
+    IDS_MESSAGE_INVALID3DSOUNDPROVIDER "Invalid 3D sound provider."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ENABLETEXTHARDWRAP  "FALSE"
+    IDS_EXCLUDELINESTARTCHARS "."
+    IDS_HEIGHTCFONT08       "8.0"
+    IDS_HEIGHTCFONT12       "12.0"
+    IDS_HEIGHTCFONT18       "18.0"
+    IDS_HEIGHTCFONT28       "28.0"
+    IDS_CREDITSTEXTWIDTH    "8"
+    IDS_CREDITSTEXTHEIGHT   "14"
+    IDS_CREDITSTEXTWIDTH360 "10"
+    IDS_CREDITSTEXTHEIGHT360 "16"
+    IDS_CREDITSTEXTWIDTH520 "16"
+    IDS_CREDITSTEXTHEIGHT520 "22"
+    IDS_MISSIONOBJECTIVETITLEWIDTH "10"
+    IDS_MISSIONOBJECTIVETITLEHEIGHT "26"
+    IDS_MISSIONOBJECTIVETEXTWIDTH "6"
+    IDS_MISSIONOBJECTIVETEXTHEIGHT "13"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ORDINANCETITLEWIDTH "15"
+    IDS_ORDINANCETITLEHEIGHT "30"
+    IDS_ORDINANCETEXTWIDTH  "6"
+    IDS_ORDINANCETEXTHEIGHT "13"
+    IDS_GAMEMESSAGETEXTWIDTH "9"
+    IDS_GAMEMESSAGETEXTHEIGHT "18"
+    IDS_TRANSMISSIONTEXTWIDTH "6"
+    IDS_TRANSMISSIONTEXTHEIGHT "12"
+    IDS_MENUREPLACEMENTFONT "System"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_YES_VK_CODE         "89"
+    IDS_NO_VK_CODE          "78"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ALLOW_NO_GORE       "FALSE"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HELP_RUNSPEED       "Multiplies the player's run speed.\n\nDefault value is 1.0."
+    IDS_TITLE_RUNSPEED      "Server Option: Run Speed"
+    IDS_HELP_MISSILESPEED   "Multiplies the TOW missile speed.\n\nDefault value is 1.0."
+    IDS_TITLE_MISSILESPEED  "Server Option: Missile Speed"
+    IDS_HELP_TIMESPEED      "Multiplies the world time speed.\n\nDefault value is 1.0."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_TIMESPEED     "Server Option: World Time Speed"
+    IDS_HELP_NIGHTCOLOR     "Specifies the color of the night sky in RGB format.\n\nDefault value is ""0.5 0.5 0.5""."
+    IDS_TITLE_NIGHTCOLOR    "Server Option: World Night Color"
+    IDS_HELP_RESPAWNSCALE   "Multiplies the respawn rate of items.\n\nDefault value is 1.0."
+    IDS_TITLE_RESPAWNSCALE  "Server Option: Respawn Scale"
+    IDS_HELP_HEALSCALE      "Scales how much health the health powerups give players.\n\nDefault value is 1.0."
+    IDS_TITLE_HEALSCALE     "Server Option: Heal Scale"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

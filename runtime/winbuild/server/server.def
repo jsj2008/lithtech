@@ -1,0 +1,8 @@
+; server.def : Declares the module parameters.
+
+LIBRARY      "server.DLL"
+
+EXPORTS
+
+	CreateServer @1
+	DeleteServer @2

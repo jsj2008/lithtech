@@ -1,0 +1,124 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\ResShared.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\ResShared.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_LOGINOK        "SCMD-Login erfolgreich."
+    IDS_SCMD_ADMINLOGGEDIN  "Admin bereits in SCMD eingeloggt."
+    IDS_SCMD_INCORRECTPASSWORD "Falsches SCMD-Passwort."
+    IDS_SCMD_LOGGEDOUTOK    "Aus SCMD ausgeloggt."
+    IDS_SCMD_NOTLOGGEDIN    "Nicht in SCMD eingeloggt."
+    IDS_SCMD_WRITEALLCOMMANDSHEADER "SCMD-Befehle:"
+    IDS_SCMD_HELP_HELP      "HELP - Zeigt alle verfügbaren SCMD-Befehle an."
+    IDS_SCMD_HELP_LOGOUT    "LOGOUT - Als SCMD-Administrator ausloggen."
+    IDS_SCMD_HELP_LOGIN     "LOGIN <Passwort> - Als SCMD-Administrator einloggen."
+    IDS_SCMD_LISTCLIENTSHEADER "Client-Listen-Format: Client-ID) [Name][Ping][IP]"
+    IDS_SCMD_NOCLIENTS      "Keine Clients."
+    IDS_SCMD_HELP_LISTCLIENTS "LISTCLIENTS - Zeigt eine Liste der Clients an."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_HELP_NEXTMISSION "NEXTMISSION - Zur nächsten Mission in der Missionsliste weitergehen."
+    IDS_SCMD_HELP_NEXTROUND "NEXTROUND - Zur nächsten Runde dieses Levels weitergehen."
+    IDS_SCMD_COMMANDFAILED  "SCMD-Befehl fehlgeschlagen."
+    IDS_SCMD_HELP_BOOTNAME  "BOOTNAME <Spielername> - Wirft einen Spieler anhand des Spielernamens hinaus."
+    IDS_SCMD_HELP_BOOTID    "BOOTID <Client-ID> - Wirft einen Spieler anhand der Client-ID hinaus."
+    IDS_SCMD_LISTMISSIONSHEADER "Missionslisten-Format: Mission-Index) [Mission][*]"
+    IDS_SCMD_COMMANDOK      "SCMD-Befehl erfolgreich."
+    IDS_SCMD_HELP_LISTMISSIONS "LISTMISSIONS - Zeigt alle Missionen der aktuellen Kampagne an."
+    IDS_SCMD_HELP_SETMISSION "SETMISSION <Missions-Index> - Schaltet in der Kampagne auf Mission-Index weiter."
+    IDS_SCMD_HELP_ADDBAN    "ADDBAN <IP> - Fügt die IP zur Bann-Liste hinzu (z. B. 123.456.789.012 oder 123.456.*)"
+    IDS_SCMD_HELP_REMOVEBAN "REMOVEBAN <Bann-ID> - Entfernt eine IP anhand der Bann-ID von der Bann-Liste."
+    IDS_SCMD_HELP_LISTBANS  "LISTBANS - Zeigt alle momentan verbannten IPs an."
+    IDS_SCMD_LISTBANSHEADER "Bann-IP-Listen-Format: Bann-ID) [IP]"
+    IDS_SCMD_NOBANS         "Kein IP-Verbannungen."
+    IDS_SCMD_HELP_BANCLIENT "BANCLIENT <Client-ID> - Verbannt einen Client anhand der Client-ID."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COOPERATIVE         "Kooperativ"
+    IDS_DEATHMATCH          "Deathmatch"
+    IDS_FRAG_LIMIT          "Punkte-Limit"
+    IDS_TIME_LIMIT          "Zeit-Limit"
+    IDS_RUN_SPEED           "Laufgeschwindigkeit"
+    IDS_FRIENDLY_FIRE       "Freund/Feind-Erkennung"
+    IDS_DIFFICULTY          "Schwierigkeit"
+    IDS_HOST_PLAYERDIFF     "Spieler-Schwierigkeitsgrad"
+    IDS_SCMD_NOGAMEOPTIONS  "Keine Spiel-Optionen verfügbar."
+    IDS_SCMD_HELP_LISTGAMEOPTIONS "LISTGAMEOPTIONS - Zeigt die Spiel-Optionen an."
+    IDS_SCMD_LISTGAMEOPTIONSHEADER "Spiel-Optionen-Listen-Format: Optionen-ID) [Option][Wert]"
+    IDS_SCMD_HELP_SETGAMEOPTION "SETGAMEOPTION <Optionen-ID> <Wert> - Stellt die Spiel-Option anhand der Optionen-ID ein."
+    IDS_TEAMDEATHMATCH      "Team-Deathmatch"
+    IDS_DOOMSDAY            "Weltuntergang"
+    IDS_ROUNDS              "Runden"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

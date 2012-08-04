@@ -1,0 +1,23 @@
+No One Lives Forever
+Developed by
+Monolith Productions Inc.
+>TIME:5.0
+>BIG
+##
+No One Lives Forever
+is powered by LithTech
+>BIG
+##
+Text in the upper-left corner
+>POS:UL
+##
+Text in the upper-right corner
+>POS:UR
+##
+Text in the lower-right corner
+>POS:LR
+##
+Text in the lower-left corner
+>POS:LL
+##
+>END

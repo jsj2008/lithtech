@@ -1,0 +1,264 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\LTDMTest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LTDMTest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About LTDMTest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "LTDMTest Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1999-2001 LithTech, Inc.",IDC_STATIC,40,
+                    25,154,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_LTDMTEST_DIALOG DIALOGEX 0, 0, 392, 335
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LTDMTest  Aug-2002"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Init Level",IDInitLevel,15,75,105,14
+    PUSHBUTTON      "Term Level",IDTermLevel,15,105,106,14
+    PUSHBUTTON      "Play Music",IDPlayMusic,145,75,106,14
+    PUSHBUTTON      "Stop Music",IDStopMusic,145,105,106,14
+    LTEXT           "Directory in Rez File",IDC_STATIC,15,29,85,10,0,
+                    WS_EX_RIGHT
+    LTEXT           "Control File Name",IDC_STATIC,15,49,85,10,0,WS_EX_RIGHT
+    LTEXT           "Intensity",IDC_STATIC,280,81,32,10
+    LTEXT           "Volume (DB)",IDC_STATIC,280,103,41,10
+    PUSHBUTTON      "Exit",ID_CANCEL,320,310,63,14
+    COMBOBOX        IDC_Intensity,326,80,35,181,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_Volume,326,100,33,12,ES_AUTOHSCROLL
+    LTEXT           "Name",IDC_STATIC,24,149,23,9
+    PUSHBUTTON      "Play ",IDPlaySecondary,152,148,53,14
+    PUSHBUTTON      "Stop",IDStopSecondary,212,148,53,14
+    GROUPBOX        "Secondary Segment",IDC_STATIC,10,130,371,47
+    COMBOBOX        IDC_SecondarySegment,52,148,90,120,CBS_DROPDOWNLIST | 
+                    CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Enact",IDC_STATIC,278,149,23,9
+    COMBOBOX        IDC_SecondaryEnact,302,148,65,120,CBS_DROPDOWNLIST | 
+                    CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Name",IDC_STATIC,24,204,23,9
+    PUSHBUTTON      "Play ",IDPlayMotif,152,202,53,14
+    PUSHBUTTON      "Stop",IDStopMotif,212,202,53,14
+    GROUPBOX        "Motif",IDC_STATIC,10,185,371,47
+    COMBOBOX        IDC_MotifName,52,201,90,120,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Enact",IDC_STATIC,278,204,23,9
+    COMBOBOX        IDC_MotifEnact,302,201,65,120,CBS_DROPDOWNLIST | 
+                    CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Base Directory / Rez File",IDC_STATIC,15,10,85,10,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_WorkingDirectory,111,29,250,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ControlFileName,111,49,250,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REZFILE,111,10,250,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DEBUGOUTPUT,"RICHEDIT",ES_MULTILINE | 
+                    ES_NOHIDESEL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,10,240,370,60
+    LTEXT           "Debug output level",IDC_STATIC,10,311,65,10
+    COMBOBOX        IDC_DEBUGOUTPUTLEVEL,80,310,35,181,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "LTDMTest MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "LTDMTest\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "LTDMTest.EXE\0"
+            VALUE "ProductName", "LTDMTest Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_LTDMTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LTDMTEST_DIALOG DLGINIT
+BEGIN
+    IDC_SecondarySegment, 0x403, 1, 0
+"\000" 
+    IDC_MotifName, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About LTDMTest..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\LTDMTest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

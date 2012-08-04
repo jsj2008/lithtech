@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "ServerRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE  
+BEGIN
+    "ServerRes.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DUMMYSTRING								"placeholder"
+	
+	// Basic Powerups...
+
+	IDS_MODEL_FIRSTAID_10						"models\\powerups\\FirstAid_10.abc"
+	IDS_SKIN_FIRSTAID_10						"skins\\powerups\\FirstAid_10_a.dtx"
+	IDS_SOUND_FIRSTAID_10						"sounds\\powerups\\FirstAid.wav"
+	IDS_MODEL_FIRSTAID_15						"models\\powerups\\FirstAid_15.abc"
+	IDS_SKIN_FIRSTAID_15						"skins\\powerups\\FirstAid_15_a.dtx"
+	IDS_SOUND_FIRSTAID_15						"sounds\\powerups\\FirstAid.wav"
+	IDS_MODEL_FIRSTAID_25						"models\\powerups\\FirstAid_25.abc"
+	IDS_SKIN_FIRSTAID_25						"skins\\powerups\\FirstAid_25_a.dtx"
+	IDS_SOUND_FIRSTAID_25						"sounds\\powerups\\FirstAid.wav"
+	IDS_MODEL_FIRSTAID_50						"models\\powerups\\FirstAid_50.abc"
+	IDS_SKIN_FIRSTAID_50						"skins\\powerups\\FirstAid_50_a.dtx"
+	IDS_SOUND_FIRSTAID_50						"sounds\\powerups\\FirstAid.wav"
+	
+	IDS_MODEL_POWERSURGE_50						"models\\powerups\\PowerSurge_50.abc"
+	IDS_SKIN_POWERSURGE_50						"skins\\powerups\\PowerSurge_50_a.dtx"
+	IDS_SOUND_POWERSURGE_50						"sounds\\powerups\\PowerSurge.wav"
+	IDS_MODEL_POWERSURGE_100					"models\\powerups\\PowerSurge_100.abc"
+	IDS_SKIN_POWERSURGE_100						"skins\\powerups\\PowerSurge_100_a.dtx"
+	IDS_SOUND_POWERSURGE_100					"sounds\\powerups\\PowerSurge.wav"
+	IDS_MODEL_POWERSURGE_150					"models\\powerups\\PowerSurge_150.abc"
+	IDS_SKIN_POWERSURGE_150						"skins\\powerups\\PowerSurge_150_a.dtx"
+	IDS_SOUND_POWERSURGE_150					"sounds\\powerups\\PowerSurge.wav"
+	IDS_MODEL_POWERSURGE_250					"models\\powerups\\PowerSurge_250.abc"
+	IDS_SKIN_POWERSURGE_250						"skins\\powerups\\PowerSurge_250_a.dtx"
+	IDS_SOUND_POWERSURGE_250					"sounds\\powerups\\PowerSurge.wav"
+	
+	IDS_MODEL_BODYARMOR_50						"models\\powerups\\BodyArmor_50.abc"
+	IDS_SKIN_BODYARMOR_50						"skins\\powerups\\BodyArmor_50_a.dtx"
+	IDS_SOUND_BODYARMOR_50						"sounds\\powerups\\BodyArmor.wav"
+	IDS_MODEL_BODYARMOR_100						"models\\powerups\\BodyArmor_100.abc"
+	IDS_SKIN_BODYARMOR_100						"skins\\powerups\\BodyArmor_100_a.dtx"
+	IDS_SOUND_BODYARMOR_100						"sounds\\powerups\\BodyArmor.wav"
+	IDS_MODEL_BODYARMOR_200						"models\\powerups\\BodyArmor_200.abc"
+	IDS_SKIN_BODYARMOR_200						"skins\\powerups\\BodyArmor_200_a.dtx"
+	IDS_SOUND_BODYARMOR_200						"sounds\\powerups\\BodyArmor.wav"
+	
+	IDS_MODEL_ARMORREPAIR_100					"models\\powerups\\ArmorRepair_100.abc"
+	IDS_SKIN_ARMORREPAIR_100					"skins\\powerups\\ArmorRepair_100_a.dtx"
+	IDS_SOUND_ARMORREPAIR_100					"sounds\\powerups\\ArmorRepair.wav"
+	IDS_MODEL_ARMORREPAIR_250					"models\\powerups\\ArmorRepair_250.abc"
+	IDS_SKIN_ARMORREPAIR_250					"skins\\powerups\\ArmorRepair_250_a.dtx"
+	IDS_SOUND_ARMORREPAIR_250					"sounds\\powerups\\ArmorRepair.wav"
+	IDS_MODEL_ARMORREPAIR_500					"models\\powerups\\ArmorRepair_500.abc"
+	IDS_SKIN_ARMORREPAIR_500					"skins\\powerups\\ArmorRepair_500_a.dtx"
+	IDS_SOUND_ARMORREPAIR_500					"sounds\\powerups\\ArmorRepair.wav"
+
+	// Upgrades...
+	
+	IDS_MODEL_DAMAGEUPGRADE						"models\\powerups\\DamageUpgrade.abc"
+	IDS_SKIN_DAMAGEUPGRADE						"skins\\powerups\\DamageUpgrade_a.dtx"
+	IDS_SOUND_DAMAGEUPGRADE						"sounds\\powerups\\DamageUpgrade.wav"
+
+	IDS_MODEL_PROTECTIONUPGRADE					"models\\powerups\\ProtectionUpgrade.abc"
+	IDS_SKIN_PROTECTIONUPGRADE					"skins\\powerups\\ProtectionUpgrade_a.dtx"
+	IDS_SOUND_PROTECTIONUPGRADE					"sounds\\powerups\\ProtectionUpgrade.wav"
+
+	IDS_MODEL_REGENUPGRADE						"models\\powerups\\RegenUpgrade.abc"
+	IDS_SKIN_REGENUPGRADE						"skins\\powerups\\RegenUpgrade_a.dtx"
+	IDS_SOUND_REGENUPGRADE						"sounds\\powerups\\RegenUpgrade.wav"
+
+	IDS_MODEL_HEALTHUPGRADE						"models\\powerups\\HealthUpgrade.abc"
+	IDS_SKIN_HEALTHUPGRADE						"skins\\powerups\\HealthUpgrade_a.dtx"
+	IDS_SOUND_HEALTHUPGRADE						"sounds\\powerups\\HealthUpgrade.wav"
+
+	IDS_MODEL_ARMORUPGRADE						"models\\powerups\\ArmorUpgrade.abc"
+	IDS_SKIN_ARMORUPGRADE						"skins\\powerups\\ArmorUpgrade_a.dtx"
+	IDS_SOUND_ARMORUPGRADE						"sounds\\powerups\\ArmorUpgrade.wav"
+
+	IDS_MODEL_TARGETINGUPGRADE					"models\\powerups\\TargetingUpgrade.abc"
+	IDS_SKIN_TARGETINGUPGRADE					"skins\\powerups\\TargetingUpgrade.dtx"
+	IDS_SOUND_TARGETINGUPGRADE					"sounds\\powerups\\TargetingUpgrade.wav"
+    
+	// Enhancements...
+
+	IDS_MODEL_DAMAGEENHANCEMENT					"models\\powerups\\DamageEnhancement.abc"
+	IDS_SKIN_DAMAGEENHANCEMENT					"skins\\powerups\\DamageEnhancement_a.dtx"
+	IDS_SOUND_DAMAGEENHANCEMENT					"sounds\\powerups\\DamageEnhancement.wav"
+
+	IDS_MODEL_MELEEDAMAGEENHANCEMENT			"models\\powerups\\MeleeDamageEnhancement.abc"
+	IDS_SKIN_MELEEDAMAGEENHANCEMENT				"skins\\powerups\\MeleeDamageEnhancement_a.dtx"
+	IDS_SOUND_MELEEDAMAGEENHANCEMENT			"sounds\\powerups\\MeleeDamageEnhancement.wav"
+
+	IDS_MODEL_PROTECTIONENHANCEMENT				"models\\powerups\\ProtectionEnhancement.abc"
+	IDS_SKIN_PROTECTIONENHANCEMENT				"skins\\powerups\\ProtectionEnhancement_a.dtx"
+	IDS_SOUND_PROTECTIONENHANCEMENT				"sounds\\powerups\\ProtectionEnhancement.wav"
+
+	IDS_MODEL_ENERGYPROTECTIONENHANCEMENT		"models\\powerups\\EnergyProtectionEnhancement.abc"
+	IDS_SKIN_ENERGYPROTECTIONENHANCEMENT		"skins\\powerups\\EnergyProtectionEnhancement_a.dtx"
+	IDS_SOUND_ENERGYPROTECTIONENHANCEMENT		"sounds\\powerups\\EnergyProtectionEnhancement.wav"
+
+	IDS_MODEL_PROJECTILEPROTECTIONENHANCEMENT	"models\\powerups\\ProjectileProtectionEnhancement.abc"
+	IDS_SKIN_PROJECTILEPROTECTIONENHANCEMENT	"skins\\powerups\\ProjectileProtectionEnhancement_a.dtx"
+	IDS_SOUND_PROJECTILEPROTECTIONENHANCEMENT	"sounds\\powerups\\ProjectileProtectionEnhancement.wav"
+
+	IDS_MODEL_EXPLOSIVEPROTECTIONENHANCEMENT	"models\\powerups\\ExplosiveProtectionEnhancement.abc"
+	IDS_SKIN_EXPLOSIVEPROTECTIONENHANCEMENT		"skins\\powerups\\ExplosiveProtectionEnhancement_a.dtx"
+	IDS_SOUND_EXPLOSIVEPROTECTIONENHANCEMENT	"sounds\\powerups\\ExplosiveProtectionEnhancement.wav"
+
+	IDS_MODEL_REGENENHANCEMENT					"models\\powerups\\RegenEnhancement.abc"
+	IDS_SKIN_REGENENHANCEMENT					"skins\\powerups\\RegenEnhancement_a.dtx"
+	IDS_SOUND_REGENENHANCEMENT					"sounds\\powerups\\RegenEnhancement.wav"
+
+	IDS_MODEL_HEALTHENHANCEMENT					"models\\powerups\\HealthEnhancement.abc"
+	IDS_SKIN_HEALTHENHANCEMENT					"skins\\powerups\\HealthEnhancement_a.dtx"
+	IDS_SOUND_HEALTHENHANCEMENT					"sounds\\powerups\\HealthEnhancement.wav"
+
+	IDS_MODEL_ARMORENHANCEMENT					"models\\powerups\\ArmorEnhancement.abc"
+	IDS_SKIN_ARMORENHANCEMENT					"skins\\powerups\\ArmorEnhancement_a.dtx"
+	IDS_SOUND_ARMORENHANCEMENT					"sounds\\powerups\\ArmorEnhancement.wav"
+
+	// UltraPowerups...
+
+	IDS_MODEL_ULTRADAMAGE						"models\\powerups\\UltraDamage.abc"
+	IDS_SKIN_ULTRADAMAGE						"skins\\powerups\\UltraDamage_a.dtx"
+	IDS_SOUND_ULTRADAMAGE						"sounds\\powerups\\UltraDamage.wav"
+
+	IDS_MODEL_ULTRAPOWERSURGE					"models\\powerups\\UltraPowerSurge.abc"
+	IDS_SKIN_ULTRAPOWERSURGE					"skins\\powerups\\UltraPowerSurge_a.dtx"
+	IDS_SOUND_ULTRAPOWERSURGE					"sounds\\powerups\\UltraPowerSurge.wav"
+
+	IDS_MODEL_ULTRAHEALTH						"models\\powerups\\UltraHealth.abc"
+	IDS_SKIN_ULTRAHEALTH						"skins\\powerups\\UltraHealth_a.dtx"
+	IDS_SOUND_ULTRAHEALTH						"sounds\\powerups\\UltraHealth.wav"
+
+	IDS_MODEL_ULTRASHIELD						"models\\powerups\\UltraShield.abc"
+	IDS_SKIN_ULTRASHIELD						"skins\\powerups\\UltraShield_a.dtx"
+	IDS_SOUND_ULTRASHIELD						"sounds\\powerups\\UltraShield.wav"
+
+	IDS_MODEL_ULTRASTEALTH						"models\\powerups\\UltraStealth.abc"
+	IDS_SKIN_ULTRASTEALTH						"skins\\powerups\\UltraStealth_a.dtx"
+	IDS_SOUND_ULTRASTEALTH						"sounds\\powerups\\UltraStealth.wav"
+
+	IDS_MODEL_ULTRAREFLECT						"models\\powerups\\UltraReflect.abc"
+	IDS_SKIN_ULTRAREFLECT						"skins\\powerups\\UltraReflect_a.dtx"
+	IDS_SOUND_ULTRAREFLECT						"sounds\\powerups\\UltraReflect.wav"
+
+	IDS_MODEL_ULTRANIGHTVISION					"models\\powerups\\UltraNightVision.abc"
+	IDS_SKIN_ULTRANIGHTVISION					"skins\\powerups\\UltraNightVision_a.dtx"
+	IDS_SOUND_ULTRANIGHTVISION					"sounds\\powerups\\UltraNightVision.wav"
+
+	IDS_MODEL_ULTRAINFRARED						"models\\powerups\\UltraInfrared.abc"
+	IDS_SKIN_ULTRAINFRARED						"skins\\powerups\\UltraInfrared_a.dtx"
+	IDS_SOUND_ULTRAINFRARED						"sounds\\powerups\\UltraInfrared.wav"
+
+	IDS_MODEL_ULTRASILENCER						"models\\powerups\\UltraSilencer.abc"
+	IDS_SKIN_ULTRASILENCER						"skins\\powerups\\UltraSilencer_a.dtx"
+	IDS_SOUND_ULTRASILENCER						"sounds\\powerups\\UltraSilencer.wav"
+
+	IDS_MODEL_ULTRARESTORE						"models\\powerups\\UltraRestore.abc"
+	IDS_SKIN_ULTRARESTORE						"skins\\powerups\\UltraRestore_a.dtx"
+	IDS_SOUND_ULTRARESTORE						"sounds\\powerups\\UltraRestore.wav"
+
+	// Special Moves...
+
+	IDS_MODEL_BEAM								"models\\powerups\\Beam.abc"
+	IDS_SKIN_BEAM								"skins\\powerups\\Beam_a.dtx"
+
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+
+

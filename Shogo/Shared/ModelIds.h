@@ -1,0 +1,78 @@
+// ----------------------------------------------------------------------- //
+//
+// MODULE  : ModelIds.h
+//
+// PURPOSE : Model ids
+//
+// CREATED : 6/14/98
+//
+// ----------------------------------------------------------------------- //
+
+#ifndef __MODEL_IDS_H__
+#define __MODEL_IDS_H__
+
+enum ModelIdType 
+{
+	// Player ids...
+
+	MI_FIRST=0,
+
+	MI_PLAYER_ONFOOT_ID=0,
+	MI_PLAYER_KID_ID,
+	MI_PLAYER_AKUMA_ID,
+	MI_PLAYER_PREDATOR_ID,
+	MI_PLAYER_ORDOG_ID,
+	MI_PLAYER_ENFORCER_ID,
+
+	// AI ids...
+
+	MI_AI_LITTLEBOY_ID,
+	MI_AI_LITTLEGIRL_ID,
+	MI_AI_CIVILIAN1_ID,
+	MI_AI_CIVILIAN1B_ID,
+	MI_AI_CIVILIAN2_ID,
+	MI_AI_OFFICER_ID,
+	MI_AI_TROOPER_ID,
+	MI_AI_ETROOPER_ID,
+	MI_AI_STROOPER_ID,
+	MI_AI_ESTROOPER_ID,
+	MI_AI_AVC_ID,
+	MI_AI_ORDOG_ID,
+	MI_AI_AKUMA_ID,
+	MI_AI_ENFORCER_ID,
+	MI_AI_PREDATOR_ID,
+	MI_AI_ASSASSIN_ID,
+	MI_AI_ANDRA5_ID,
+	MI_AI_ANDRA10_ID,
+	MI_AI_RAKSHA_ID,
+	MI_AI_TENMA_ID,
+	MI_AI_COTHINEAL_ID,
+
+	// Vehicle ids...
+
+	MI_AI_RASCAL_ID,
+	MI_AI_VIGILANCE_ID,
+	MI_AI_HAMMERHEAD_ID,
+	MI_AI_VANDAL_ID,
+	MI_AI_SPARROWHAWK_ID,
+	MI_AI_RUIN150_ID,
+	MI_AI_UHLANA3_ID,
+
+	// Major Character ids...
+
+	MI_AI_KURA_ID,
+	MI_AI_HANK_ID,
+	MI_AI_ADMIRAL_ID,
+	MI_AI_KATHRYN_ID,
+	MI_AI_RYO_ID,
+	MI_AI_TOSHIRO_ID,
+	MI_AI_GABRIEL_ID,
+	MI_AI_BAKU_ID,
+	MI_AI_SAMANTHA_ID,
+
+	MI_LAST,
+	MI_UNDEFINED
+};
+
+
+#endif // __MODEL_IDS_H__

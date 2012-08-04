@@ -1,0 +1,516 @@
+ 
+>TIME:0.1
+##
+Blood 2: The Chosen
+is powered/transfused by LithTech
+>TIME:4.0
+##
+LithTech:  The Engine Of Choice, 
+By Choosy Engine Lovers!
+>TIME:4.0
+##
+Game Concept, Design And Prime Gibs
+Monolith Productions
+>TIME:4.0
+##
+Lead Game Designer
+Keeper Of The Cabal
+Jay Wilson
+>TIME:5.0
+##
+Product Manager
+SoccerMom/The-Glue-That-Binds 
+Karen Burger
+>TIME:5.0
+##
+Lead Engineer
+Big Bit-Head, Keeper Of The Code
+Greg Kettell
+>TIME:5.0
+##
+Lead Level Designer
+Closet Lord of Kirkland
+Bill Vandervoort
+>TIME:5.0
+##
+Lead Artist
+If U Can Call It "Art"
+Kevin Kilstrom
+>TIME:5.0
+##
+Lead LithTech Engineer
+The Creator
+Mike Dussault
+>TIME:5.0
+##
+Storyline
+Cabalco Public Relations Dweeb
+Jay Wilson
+>TIME:5.0
+##
+Concept Art
+Gun-Runner
+Eric Kohler
+>TIME:5.0
+##
+3D Art Engineer
+Isn't It Fun To See Art
+And Engineer In The Same Sentence?
+Sure, Ernie.
+Brian Waite
+>TIME:9.0
+##
+Blood 2 AI Engineer
+Scott "Pookie Smoothbone" Schlegel
+>TIME:4.0
+##
+Blood 2 Engineer
+Special Effects Wizard
+Quiet, but Deadly
+Andy Mattingly 
+>TIME:7.0
+##
+Blood 2 Engineer
+We're sorry you moved back to Canada
+Paul Lord
+>TIME:5.0
+##
+Level Design
+Sadists In Training
+Jay Wilson
+Ben Coleman
+David Kelvin
+>TIME:9.0
+##
+3D Art
+Parts Is Parts
+Brian Waite
+Kevin Kilstrom
+Eric Kohler
+>TIME:8.0
+##
+2D Art
+Zero Thickness Brush Specialists
+Kevin Kilstrom
+Eric Kohler
+>TIME:7.0
+##
+Scripted Scenes
+They Walk, They Talk, 
+They're The Chosen!!!
+Nathan Hendrickson
+Bill Vandervoort
+Ben Coleman
+>TIME:9.0
+##
+Intro Cut Scene
+You Guys Came Through In A Pinch
+Matt Allen
+Rick Winter
+Nathan Hendrickson
+>TIME:8.0
+##
+Music Composition
+They Sing, They Dance, 
+They're The Chosen!!!
+Guy Whitmore
+Daniel Bernstein
+Matt Allen
+>TIME:9.0
+##
+Interactive Music Arrangement
+Repetitive?
+We Don't Need No Steenking Repetitive!
+Guy Whitmore
+Daniel Bernstein
+>TIME:9.0
+##
+Sound Design
+Moans, Groans, Foley, Da Mix, Thuds,
+Chuds, It Clicks!  Ambience R Us!
+James Ackley
+Cassano Thruston
+Boyd Post
+>TIME:10.0
+##
+Lead AtMosFear Monger, 
+Ghost-Writer For 
+"The Voice" (blame him!),
+Feature Beggar, Catering Services, 
+Keeper Of The Whip, and er, 
+That GT Producer-Type
+Rick Raymo
+>TIME:11.0
+##
+Associate Producer GT
+Lead Tester Torturer
+Marianne Arotzarena
+>TIME:5.0
+##
+Business Production
+Suit!  Suit!  Suit!
+Matt Saettler
+>TIME:5.0
+##
+Additional LithTech Engineering
+Will Code For Food . . . 
+Brad Pendleton
+Scott Schlegel
+Scott H. Pultz
+Bryan Bouwman
+>TIME:10.0
+##
+Additional Blood 2 Engineering
+Will Code While Nude . . .
+Jeremy Blackman
+Scott H. Pultz
+Kevin Stephens
+Brian Goble
+>TIME:10.0
+##
+Additional Level Design
+Help!?!  Oh. Hi. Really?
+Thanks. We Needed That!
+Darren Korman
+Mark Brown
+Craig Hubbard
+C. Wes Saulsberry III
+Nathan Hendrickson
+>TIME:12.0
+##
+Additional 3D Art
+Animations, Humiliations,
+Depilations, Are Our "Speciality."
+Edmon Carreon
+Akika Tanaka
+Oscar Nebres
+Rick Winter
+>TIME:11.0
+##
+Additional 3D Art
+Aaron Carlson
+Aaron Rose
+Cole Drumb
+Dan Davis
+Jason Calhoun
+>TIME:10.0
+##
+Additional 2D Art
+Gods Of Sky And Interface
+Incarnate!
+C. Wes Saulsberry
+Matt Allen
+>TIME:9.0
+##
+Voice Talent
+And Boy Do We Mean Talent.
+Thanks All!
+Stephan Weyte
+. . . Caleb
+>TIME:9.0
+##
+Voice Talent
+Lani Minella
+. . . Ophelia and Gabriella
+>TIME:4.0
+##
+Voice Talent
+Ted D'Arms
+. . . Gideon 
+>TIME:4.0
+##
+Voice Talent
+Mike Shapiro
+. . . Ishmael
+>TIME:4.0
+##
+Voice Talent
+Except For You Jace.
+In Your Case, If We Said Talent
+We'd Never Hear The End Of It.
+Jason Hall
+. . . .The Voice
+>TIME:10.0
+##
+Voice Talent
+Chris Wickland  
+Scott Burns
+Kathy Levin
+Henry Dardenne
+Lynn Rott
+>TIME:10.0
+##
+Voice Talent
+Drake Collier
+Chris Wickland
+Krisha Fairchild
+David White
+John Armstrong
+>TIME:10.0
+##
+Additional Voice/Yessir.
+Mike Madeoy 
+Boyd Post
+>TIME:5.0
+##
+Phone Gags/Childishness
+Kevin Kilstrom
+Garrett Price
+Andy Eddy
+Dan Amrich
+>TIME:8.0
+##
+Writing
+Scribbling, Crayon Specialists
+Jay Wilson
+Nathan Hendrickson
+Craig Hubbard
+>TIME:8.0
+##
+Motion Capture Specialists
+No. Really. Fall Again.
+Simon Wong
+Bill Cass
+>TIME:7.0
+##
+Motion Capture Actor
+You Want Me To Do What???
+Israel Evans
+>TIME:5.0
+##
+Quality Assurance Manager
+Lead Exterminator
+Jonathan Stein
+>TIME:5.0
+##
+Quality Assurance
+If I Have To Play Through This . . .
+Ryan "JackBooty" Mattson
+Ben Dobbs
+Steve "Professor Madness" Allen
+Jordan "Civik" Minkove
+Isaac "Diane" Marshall
+>TIME:11.0
+##
+Quality Assurance
+Hey!  Wait!  
+It's Getting Fun!
+More Bloodbath!  More Bloodbath!
+Ben Chamberlain
+Kelly Kristek
+Benny Kee
+Bob Givnin
+Oscar Nebres
+>TIME:13.0
+##
+Manual
+Digital, Mechanical
+Karen Burger
+Jay Wilson
+John Jack
+Akika Tanaka
+>TIME:9.0
+##
+Technical Support
+The Any Key?
+You've Got To Be Sh!tting Me!
+Benny Kee
+Bob Givnin
+>TIME:9.0
+##
+Marketing Direction
+Miss U.
+Jenni Gant
+>TIME:5.0
+##
+Web Dudz,
+Blood II: The Chosen
+Internet Site:
+http://www.the-chosen.com
+Spencer Maiers
+Paul Butterfield
+Joel Reiff
+Adam Ketola
+>TIME:12.0
+##
+Information Systems
+Keepers Of The Iron
+Jim Totaro
+Eric Minimoto
+Dan Erickson
+Chris Norehad
+>TIME:10.0
+##
+Professional Assist Department
+You Rock!  Mad Props.
+Team Shogo
+>TIME:5.0
+##
+Special Thanks. Vewy, Vewy Special.
+Nick Newhard
+. . . original Blood concept
+>TIME:4.0
+##
+Special Thanks
+Steven Mitchell Studios
+Gareth Von Kallenbach
+Andreas Rylander 
+Glen Maydom
+>TIME:8.0
+##
+Special Thanks
+Peter Susfal
+. . . DeathMatch level contribution
+>TIME:5.0
+##
+Special Thanks
+Arthur Lee Williams III
+. . . DeathMatch level 
+>TIME:5.0
+##
+Blood 2 One Liner
+contest winners:
+>TIME:5.0
+##
+Glen Maydom
+"When you get to hell, tell
+them I sent you.  You can get
+a group discount."
+>TIME:7.0
+##
+Josh Cheney
+"If you run, you're only gonna
+die tired."
+>TIME:7.0
+##
+Chris Brown
+"If I'm going to miss getting
+into Heaven...why miss it by
+inches?"
+>TIME:7.0
+##
+David Goldstein
+"Every night it's get revenge
+this and get revenge that--
+what about MY needs?"
+>TIME:7.0
+##
+Michael Hogan
+"Hope you weren't a procrastinator
+--you just ran out of tomorrows."
+>TIME:7.0
+##
+Dave Hunter
+"And me without a spoon..."
+>TIME:5.0
+##
+Blood 2 Suicide/Kill Line
+contest winners:
+>TIME:4.0
+##
+Anthony Beeman
+"severe case of anal leakage"
+>TIME:5.0
+##
+Janto Gildenhuys
+"performed a Kevorkian on himself"
+>TIME:5.0
+##
+Ron Bauerle
+"interned at White House"
+>TIME:5.0
+##
+Jason Kimball
+"time to go bye bye"
+>TIME:5.0
+##
+J. Perkins
+"demonstrates the ankle grab"
+>TIME:5.0
+##
+Thank you to all the
+friends and families of those so
+deeply involved in this title.
+You've been neglected over the
+past months, and your
+endless support is greatly
+appreciated.
+>TIME:11.0
+##
+Monolith Rulez...
+>TIME:4.0
+##
+The Companies Who Helped Greatly 
+(Alphabetically, 
+     For Their Lowered Tension)
+>TIME:4.0
+##
+3DFX
+Visit them at
+www.3dfx.com
+>TIME:4.0
+##
+AMD
+Visit them at
+www.AMD.com
+>TIME:4.0
+##
+Creative Labs
+Visit them at
+www.creaf.com
+>TIME:4.0
+##
+GT Interactive Software
+Visit them at
+www.gtgames.com
+>TIME:4.0
+##
+GameSpy
+Visit them at
+www.gamespy.com
+>TIME:4.0
+##
+HEAT
+Visit them at
+www.heat.net
+>TIME:4.0
+##
+Intel
+Visit them at
+www.intel.com
+>TIME:4.0
+##
+Microsoft
+(well, some portions of the company)
+Visit them at
+www.microsoft.com
+>TIME:4.0
+##
+NVIDIA
+Visit them at
+www.NVIDIA.com
+>TIME:4.0
+##
+Quantum 3D
+Visit them at
+www.quantum3d.com
+>TIME:4.0
+##
+Most of all, we'd like to thank our fans.  
+There's more Blood-universe gaming
+coming soon folks!  
+Enjoy.
+>TIME:7.0
+##
+ATTENTION, Spurts Fans!
+Keep on the lookout for BloodBall!
+The Multiplayer Mod That Puts Something 
+Other Than Your Butt On The Line!
+(coming to an add-on near you, after 
+the holidays)
+>TIME:13.0
+##
+Monolith still rulez!!!
+>TIME:5.0
+##
+>END

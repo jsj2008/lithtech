@@ -1,0 +1,93 @@
+Fox Interactive presents
+>TIME:5.0
+##
+A game by Monolith Productions
+>TIME:5.0
+##
+Starring
+Cate Archer as The Operative
+>TIME:5.0
+##
+in
+>TIME:0.5
+##
+No One Lives Forever
+>TIME:5.0
+>BIG
+##
+With Kit Harris as the voice of Cate Archer
+>TIME:4.0
+##
+Jock Blaney
+Dmitrij Volkov
+>POS:UR
+>TIME:3.0
+##
+Ken Boynton
+Santa
+>POS:LL
+>TIME:3.0
+##
+Scott Burns
+Thugs
+>POS:UL
+>TIME:3.0
+##
+Roger Curtis
+Mr. Smith
+>POS:LR
+>TIME:3.0
+##
+Mark Dias
+Thugs
+>POS:UR
+>TIME:3.0
+##
+Barbara Dirickson
+Baroness Dumas
+>POS:LL
+>TIME:3.0
+##
+John Patrick Lowrie
+Bruno Lawrie
+>POS:UL
+>TIME:3.0
+##
+Mike Madeoy
+Tom Goodman
+>POS:LR
+>TIME:3.0
+##
+Nigel Neale
+Mr. Jones
+>POS:UR
+>TIME:3.0
+##
+David Stalker
+Magnus Armstrong
+>POS:LL
+>TIME:3.0
+##
+Jeff Steitzer
+Baron Dumas
+>POS:UR
+>TIME:3.0
+##
+CHOREOGRAPHY:
+Jenna Hawkins
+Andrew Heffernan
+Jamil Mullen
+>TIME:3.0
+##
+Music Composed and Arranged
+Guy Whitmore
+>TIME:3.0
+##
+Title Track
+Rich Ragsdale
+>TIME:3.0
+##
+Filmed in LithScope
+>TIME:2.0
+##
+>END

@@ -1,0 +1,823 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\CoolServ.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CoolServ.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+NET_GAME DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,35,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,78,27,10
+    EDITTEXT        IDC_FRAGS,88,77,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,94,27,10
+    EDITTEXT        IDC_MINUTES,88,93,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "Bloodbath",IDC_BB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,171,77,80,10
+    CONTROL         "Capture the flag",IDC_CTF,"Button",BS_AUTORADIOBUTTON,
+                    171,87,80,10
+    CONTROL         "Teams",IDC_TEAMS,"Button",BS_AUTORADIOBUTTON,171,97,80,
+                    10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What settings would you like for this game server?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Server Name",IDC_STATIC,50,23,213,30
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "frags",IDC_STATIC,120,78,32,8
+    LTEXT           "minutes",IDC_STATIC,120,94,32,8
+    GROUPBOX        "Levels End",IDC_STATIC,50,64,105,50
+    GROUPBOX        "Game Type",IDC_STATIC,163,64,100,50
+END
+
+NET_GAMELEVELS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_RETAILLIST,50,35,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CUSTOMLIST,50,92,80,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADDRETAIL,142,49,35,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,142,77,35,14
+    PUSHBUTTON      "Add >",IDC_ADDCUSTOM,142,105,35,14
+    LISTBOX         IDC_GAMELIST,183,35,80,85,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Save levels",IDC_SAVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,124,80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Finish",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which levels would you like to play?",IDC_STATIC,50,10,
+                    213,8
+    LTEXT           "Retail Levels:",IDC_STATIC,50,25,80,8
+    LTEXT           "Custom Levels:",IDC_STATIC,50,82,80,8
+    LTEXT           "Game Levels:",IDC_STATIC,183,25,80,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+END
+
+NET_SERVICES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SERVICELIST,50,25,213,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Communicate with GameSpy (tcp/ip only)",IDC_USEGAMESPY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,92,150,10
+    CONTROL         "Update game info for new joiners",IDC_UPDATEINFO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,104,150,10
+    CONTROL         "Register server with Blood2 web site (tcp/ip only)",
+                    IDC_SERVERREG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    116,203,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which networking service you would like to use?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What information would you like to broadcast?",
+                    IDC_STATIC,50,80,213,8
+END
+
+IDD_GAMESERVER DIALOG DISCARDABLE  0, 0, 399, 271
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server v2.1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Shutdown",IDCANCEL,244,27,50,16
+    PUSHBUTTON      "&Next Level",IDC_COMMANDS_NEXTLEVEL,304,27,50,16
+    PUSHBUTTON      "&Boot",IDC_PLAYERS_BOOT,70,245,60,14,WS_DISABLED
+    EDITTEXT        IDC_CONSOLE_COMMAND,210,245,147,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_CONSOLE_CLEAR,361,245,25,14
+    GROUPBOX        "Server Info",IDC_STATIC,7,7,190,50
+    RTEXT           "Name:",IDC_STATIC,12,23,50,8
+    RTEXT           "Running Time:",IDC_STATIC,12,33,50,8
+    RTEXT           "Net Service:",IDC_STATIC,12,43,50,8
+    GROUPBOX        "Game Info",IDC_STATIC,7,63,190,70
+    RTEXT           "Players:",IDC_STATIC,12,79,50,8
+    RTEXT           "Current Level:",IDC_STATIC,12,89,50,8
+    RTEXT           "Next Level:",IDC_STATIC,12,99,50,8
+    RTEXT           "Time in Level:",IDC_STATIC,12,109,50,8
+    RTEXT           "Level Goal:",IDC_STATIC,12,119,50,8
+    LISTBOX         IDC_LEVELS_LIST,211,79,175,48,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Players",IDC_STATIC,7,139,190,125
+    LISTBOX         IDC_PLAYERS_LIST,16,151,173,90,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Console",IDC_STATIC,202,139,190,125
+    GROUPBOX        "Levels",IDC_STATIC,202,63,190,70
+    GROUPBOX        "Commands",IDC_STATIC,202,7,190,50
+    EDITTEXT        IDC_CONSOLE_WINDOW,210,151,176,90,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Static",IDC_SERVER_NAME,64,23,126,8
+    LTEXT           "Static",IDC_SERVER_TIME,64,33,126,8
+    LTEXT           "Static",IDC_SERVER_SERVICE,64,43,126,8
+    LTEXT           "Static",IDC_GAME_PLAYERS,64,79,126,8
+    LTEXT           "Static",IDC_GAME_CURLEVEL,64,89,126,8
+    LTEXT           "Static",IDC_GAME_NEXTLEVEL,64,99,126,8
+    LTEXT           "Static",IDC_GAME_TIME,64,109,126,8
+    LTEXT           "Static",IDC_GAME_GOAL,64,119,126,8
+    DEFPUSHBUTTON   "Send",IDC_CONSOLE_SEND,175,249,17,7,NOT WS_VISIBLE
+END
+
+NET_REZFILES DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SOURCELIST,50,35,80,97,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,139,60,35,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,139,80,35,14
+    LISTBOX         IDC_DESTLIST,183,35,80,95,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Which additional rez files would you like to load?",-1,
+                    50,10,213,8
+    LTEXT           "Available Rez Files:",-1,50,25,80,8
+    LTEXT           "Rez Files to Load:",-1,183,25,80,8
+    CONTROL         "GAME",-1,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",-1,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,256,1
+END
+
+NET_OPTIONS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_MAXPLAYERS,200,37,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PORTNUM,200,53,30,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What options would you like for this game server?",
+                    IDC_STATIC,50,10,213,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    RTEXT           "How many players would you like to allow?",IDC_STATIC,
+                    57,39,140,8
+    RTEXT           "What port would you like to host on?",IDC_PORTNUMTEXT,
+                    62,55,134,8,NOT WS_VISIBLE
+    GROUPBOX        "Misc",IDC_STATIC,50,25,213,48
+END
+
+SERVER_OPTIONS DIALOG DISCARDABLE  0, 0, 226, 95
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Server Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_RUNSPEED,43,22,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_RUNSPEED,79,22,14,12
+    EDITTEXT        IDC_MISSILESPEED,43,36,32,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_MISSILESPEED,79,36,14,12
+    EDITTEXT        IDC_TIMESPEED,153,22,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_TIMESPEED,201,22,14,12
+    PUSHBUTTON      "Night Color:",IDC_COLORPICKER,109,36,42,12,BS_RIGHT
+    EDITTEXT        IDC_NIGHTCOLOR,153,36,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_HELP_NIGHTCOLOR,201,36,14,12
+    DEFPUSHBUTTON   "&OK",IDC_NEXT,55,74,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,121,74,50,14
+    RTEXT           "Run:",-1,9,23,32,8
+    RTEXT           "Missile:",-1,9,37,32,8
+    RTEXT           "Time Speed:",-1,105,23,45,8
+    GROUPBOX        "Speeds",-1,7,7,90,50
+    GROUPBOX        "World",-1,104,7,115,50
+END
+
+NET_GAMEDAMAGE DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow falling damage",IDC_FALLDAMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,70,24,100,10
+    COMBOBOX        IDC_HEALRATE,70,64,80,110,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "Would you like to allow falling damage?",IDC_STATIC,50,
+                    10,213,8
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "Which healing rate would you like?",IDC_STATIC,50,50,
+                    213,8
+END
+
+NET_GAMEITEMS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_AMMO_LEVEL,60,35,80,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_AMMO_RESPAWN,103,52,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_ARMOR_LEVEL,173,35,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_ARMOR_RESPAWN,216,52,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_HEALTH_LEVEL,60,95,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_HEALTH_RESPAWN,103,112,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_POWERUPS_LEVEL,173,95,80,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_POWERUPS_RESPAWN,216,112,25,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    GROUPBOX        "Ammo",IDC_STATIC,50,20,102,52
+    GROUPBOX        "Armor",IDC_STATIC,161,20,102,52
+    GROUPBOX        "Health",IDC_STATIC,50,80,102,52
+    GROUPBOX        "Powerups",IDC_STATIC,161,80,102,52
+    LTEXT           "What items would you like to make available?",
+                    IDC_STATIC,50,7,213,8
+    RTEXT           "Respawn:",IDC_STATIC,56,54,44,8
+    RTEXT           "Respawn:",IDC_STATIC,169,54,44,8
+    RTEXT           "Respawn:",IDC_STATIC,56,114,44,8
+    RTEXT           "Respawn:",IDC_STATIC,169,114,44,8
+END
+
+NET_OPTIONS_CTF DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,35,140,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,70,140,10
+    CONTROL         "Only flag capturing scores points",IDC_ONLYFLAGSCORES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,80,174,10
+    CONTROL         "Use enemy team size as flag score multiplier",
+                    IDC_USETEAMSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    90,193,10
+    EDITTEXT        IDC_FLAGVALUE,113,109,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What CTF-play options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,20,213,30
+    GROUPBOX        "Scoring",IDC_STATIC,50,57,213,75
+    RTEXT           "Flag value:",IDC_STATIC,60,110,50,8
+END
+
+NET_OPTIONS_TEAMS DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,40,140,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,75,140,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What Team-play options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,25,213,30
+    GROUPBOX        "Scoring",IDC_STATIC,50,62,213,30
+END
+
+NET_GAME_AO DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,60,38,192,12,ES_AUTOHSCROLL
+    CONTROL         "After",IDC_AFTERFRAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,81,27,10
+    EDITTEXT        IDC_FRAGS,88,80,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "After",IDC_AFTERMINUTES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,58,97,27,10
+    EDITTEXT        IDC_MINUTES,88,96,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "Bloodbath",IDC_BB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,171,77,80,10
+    CONTROL         "Capture the flag",IDC_CTF,"Button",BS_AUTORADIOBUTTON,
+                    171,87,80,10
+    CONTROL         "Teams",IDC_TEAMS,"Button",BS_AUTORADIOBUTTON,171,97,80,
+                    10
+    CONTROL         "Soccer",IDC_SOCCER,"Button",BS_AUTORADIOBUTTON,171,107,
+                    80,10
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    LTEXT           "What settings would you like for this game session?",
+                    IDC_STATIC,50,10,213,8
+    GROUPBOX        "Session Name",IDC_STATIC,50,26,213,30
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "frags",IDC_STATIC,120,81,32,8
+    LTEXT           "minutes",IDC_STATIC,120,97,32,8
+    GROUPBOX        "Levels End",IDC_STATIC,50,64,105,55
+    GROUPBOX        "Game Type",IDC_STATIC,163,64,100,55
+END
+
+NET_OPTIONS_SOCCER DIALOG DISCARDABLE  0, 0, 270, 170
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blood2 Multiplayer Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Allow friendly fire",IDC_FRIENDLYFIRE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,60,35,75,10
+    CONTROL         "Soccer ball skin",IDC_SKIN_SOCCER,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,168,35,80,10
+    CONTROL         "Zombie head skin",IDC_SKIN_ZOMBIE,"Button",
+                    BS_AUTORADIOBUTTON,168,45,80,10
+    CONTROL         "Score negative frags for friendly fire",IDC_NEGFRAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,60,80,
+                    140,10
+    CONTROL         "Only scoring goals scores points",IDC_ONLYGOALSCORES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,90,174,10
+    CONTROL         "Use enemy team size as goal score multiplier",
+                    IDC_USETEAMSIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,
+                    100,193,10
+    EDITTEXT        IDC_GOALVALUE,113,115,25,12,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "< &Back",IDC_BACK,85,149,50,14
+    DEFPUSHBUTTON   "&Next >",IDC_NEXT,135,149,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,213,149,50,14
+    CONTROL         "GAME",IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    WS_BORDER,7,7,36,125
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,7,142,
+                    256,1
+    LTEXT           "What soccer options would you like?",IDC_STATIC,50,7,
+                    213,8
+    GROUPBOX        "Teams",IDC_STATIC,50,20,100,40
+    GROUPBOX        "Scoring",IDC_STATIC,50,67,213,65
+    RTEXT           "Goal value:",IDC_STATIC,60,116,50,8
+    GROUPBOX        "Soccer Ball",IDC_STATIC,158,20,105,40
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "monolith@lith.com\0"
+            VALUE "CompanyName", "Monolith Productions Inc.\0"
+            VALUE "FileDescription", "Blood2 Stand-Alone Server\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Blood2Serv\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998, Monolith Productions, Inc.\0"
+            VALUE "OriginalFilename", "Blood2Sv.exe\0"
+            VALUE "ProductName", "Blood2Serv\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "NET_GAME", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMELEVELS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_SERVICES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_GAMESERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    "NET_REZFILES", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "SERVER_OPTIONS", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    "NET_GAMEDAMAGE", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAMEITEMS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_CTF", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_TEAMS", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_GAME_AO", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    "NET_OPTIONS_SOCCER", DIALOG
+    BEGIN
+        LEFTMARGIN, 50
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_REG)
+#if defined(APSTUDIO_INVOKED)
+GAME$(_REG)             BITMAP  DISCARDABLE     "bitmap1.bmp"
+#else
+GAME                    BITMAP  DISCARDABLE     "bitmap1.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_ADDON)
+#if defined(APSTUDIO_INVOKED)
+GAME$(_ADDON)           BITMAP  DISCARDABLE     "res\\game1.bmp"
+#else
+GAME                    BITMAP  DISCARDABLE     "res\\game1.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+NET_GAMEITEMS DLGINIT
+BEGIN
+    IDC_AMMO_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_AMMO_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_ARMOR_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_ARMOR_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_HEALTH_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_HEALTH_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    IDC_POWERUPS_LEVEL, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 5, 0
+0x6148, 0x666c, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6f44, 0x6275, 0x656c, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 7, 0
+0x6e49, 0x6173, 0x656e, "\000" 
+    IDC_POWERUPS_LEVEL, 0x403, 10, 0
+0x6e55, 0x696c, 0x696d, 0x6574, 0x0064, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERROR_REZFILE       "ERROR - Unable to access the Blood2 game resources.  Please make sure Blood2 is installed properly and try again."
+    IDS_ERROR_LOADREZ       "ERROR - Unable to load Blood2 resources."
+    IDS_ERROR_LOADSERVER    "ERROR - Unable to load SERVER.DLL."
+    IDS_ERROR_ACCESSSERVER  "ERROR - Unable to access SERVER.DLL."
+    IDS_ERROR_MEMORY        "ERROR - Out of memory.  The Blood2 server will be shutdown."
+    IDS_HELP_RUNSPEED       "Multiplies the player's run speed.\n\nDefault value is 1.0."
+    IDS_TITLE_RUNSPEED      "Server Option: Run Speed"
+    IDS_HELP_MISSILESPEED   "Multiplies the missile speed.\n\nDefault value is 1.0."
+    IDS_TITLE_MISSILESPEED  "Server Option: Missile Speed"
+    IDS_HELP_TIMESPEED      "Multiplies the time speed of the world.\n\nDefault value is 1.0.  A value of -1 makes time stand still."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DEFAULTSERVERNAME   "Blood2 Server"
+    IDS_SPYGAMENAME         "blood2"
+    IDS_GAMETYPE_DEATHMATCH "Bloodbath"
+    IDS_SPYGAMEVER          "blood2 2.1"
+    IDS_SPYGAMEKEY          "jUOF0p"
+    IDS_WEBGAMENAME         "Blood2"
+    IDS_WEBGAMEVER          "2.1"
+    IDS_GAMETYPE_UNKNOWN    "Unknown"
+    IDS_GAMETYPE_CAPTUREFLAG "Capture the flag"
+    IDS_GAMETYPE_COOPERATIVE "Cooperative"
+    IDS_GAMETYPE_TEAM       "Teams"
+    IDS_GAMETYPE_SOCCER     "Soccer"
+    IDS_GAMETYPE_TOETAG     "Toe Tag"
+    IDS_WEBREGURL           "http://www.the-chosen.com/servers/server.asp"
+    IDS_NEXTLEVEL           "Preparing to load the next level..."
+    IDS_DEFAULTSERVERNAME_AO "Blood2 Nightmares Server"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETERR_GENERIC      "ERROR - Unable to setup the network game server."
+    IDS_NETERR_SELECTSERVICE 
+                            "ERROR - Unable to use the selected network service."
+    IDS_NETERR_FILLSERVICE  "ERROR - Unable to access the available network services."
+    IDS_NETERR_JOINSESSION  "ERROR - Unable to join the selected game session."
+    IDS_NETERR_HOSTSESSION  "ERROR - Unable to host the game session."
+    IDS_NETERR_INIT         "ERROR - Unable to initialize the networking system."
+    IDS_REZBASE             "blood2"
+    IDS_APPNAME             "Blood2Sv"
+    IDS_CONFIGFILE          "Blood2Sv.cfg"
+    IDS_APPNAME_AO          "Blood2 Nightmares Server"
+    IDS_CONFIGFILE_AO       "B2NmSrv.cfg"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TITLE_TIMESPEED     "Server Option: World Time Speed"
+    IDS_HELP_NIGHTCOLOR     "Specifies the color of the night sky in red, green, and blue float value components (from 0.0 to 1.0).  You can click the ""Night Color"" button to bring up a color picker dialog.\n\nDefault value is ""0.5 0.5 0.5""."
+    IDS_TITLE_NIGHTCOLOR    "Server Option: World Night Color"
+    IDS_HELP_RESPAWNSCALE   "Multiplies the respawn rate of items.\n\nDefault value is 1.0."
+    IDS_TITLE_RESPAWNSCALE  "Server Option: Respawn Scale"
+    IDS_HELP_HEALSCALE      "Scales how much health the health powerups give players.\n\nDefault value is 1.0."
+    IDS_TITLE_HEALSCALE     "Server Option: Heal Scale"
+    IDS_TITLE_DASHGO        "Blood2 Server"
+    IDS_HELP_DASHGO         "Power users can specify the ""-go"" command-line parameter when running Blood2Sv to skip all the dialogs (the previous settings will be used).\n\nFor more information about Blood2Sv, please view the Blood2Sv.txt file."
+    IDS_CHECKEXIT           "Are you sure you want to exit?"
+    IDS_CONSOLE_INITSERVER  "Initializing the server..."
+    IDS_CONSOLE_SERVERINITED "Server initialized."
+    IDS_CONSOLE_UNABLETOHOST "ERROR - Unable to host the game."
+    IDS_CONSOLE_SERVERRUNNING "Server is running."
+    IDS_CONSOLE_LASTPLAYERLEFT "Last player has left, shutting down..."
+    IDS_CONSOLE_UNABLETOSTARTWORLD "ERROR - Unable to start world:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_NETWIZ_ITEMS_NONE   "None"
+    IDS_NETWIZ_ITEMS_HALF   "Half"
+    IDS_NETWIZ_ITEMS_NORMAL "Normal"
+    IDS_NETWIZ_ITEMS_DOUBLE "Double"
+    IDS_NETWIZ_ITEMS_INSANE "Insane"
+    IDS_NETWIZ_HEAL_NOHEALING "No Healing"
+    IDS_NETWIZ_HEAL_REALLYSLOW "Really Slow"
+    IDS_NETWIZ_HEAL_SLOW    "Slow"
+    IDS_NETWIZ_HEAL_NORMAL  "Normal"
+    IDS_NETWIZ_HEAL_FAST    "Fast"
+    IDS_NETWIZ_HEAL_REALLYFAST "Really Fast"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SPYGAMEVER_AO       "nightmares 1.0"
+    IDS_WEBGAMENAME_AO      "Blood2 Nightmares"
+    IDS_WEBGAMEVER_AO       "1.0"
+    IDS_DIALOGTITLE_AO      "Blood2 Nightmares Server 1.0"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\CoolServ.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,123 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\..\ResShared.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\..\\ResShared.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_LOGINOK        "Connexion SCMD terminée."
+    IDS_SCMD_ADMINLOGGEDIN  "Administrateur déjà connecté au SCMD."
+    IDS_SCMD_INCORRECTPASSWORD "Mot de passe SCMD incorrect."
+    IDS_SCMD_LOGGEDOUTOK    "Déconnecté de SCMD."
+    IDS_SCMD_NOTLOGGEDIN    "Non connecté au SCMD."
+    IDS_SCMD_WRITEALLCOMMANDSHEADER "Commandes SCMD."
+    IDS_SCMD_HELP_HELP      "HELP - liste des commandes SCMD disponibles."
+    IDS_SCMD_HELP_LOGOUT    "LOGOUT - déconnexion de l'administrateur SCMD."
+    IDS_SCMD_HELP_LOGIN     "LOGIN <mot de passe> - connexion en tant qu'administrateur SCMD."
+    IDS_SCMD_LISTCLIENTSHEADER "Format de la liste des clients : ClientId) [nom][ping][IP]"
+    IDS_SCMD_NOCLIENTS      "Aucun client."
+    IDS_SCMD_HELP_LISTCLIENTS "LISTCLIENTS - affiche la liste des clients."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCMD_HELP_NEXTMISSION "NEXTMISSION - lancer la mission suivante dans la liste des missions."
+    IDS_SCMD_HELP_NEXTROUND "NEXTROUND - Lancer la manche suivante pour ce niveau"
+    IDS_SCMD_COMMANDFAILED  "Echec de la commande SCMD."
+    IDS_SCMD_HELP_BOOTNAME  "BOOTNAME <nomdujoueur> - bannir le client en fonction du nom du joueur."
+    IDS_SCMD_HELP_BOOTID    "BOOTID <clientid> - bannir le client d'après son ID client."
+    IDS_SCMD_LISTMISSIONSHEADER "Format de la liste des missions : mission_index) [mission][*]"
+    IDS_SCMD_COMMANDOK      "Commande SCMD exécutée."
+    IDS_SCMD_HELP_LISTMISSIONS "LISTMISSIONS - liste toutes les missions dans la campagne en cours."
+    IDS_SCMD_HELP_SETMISSION "SETMISSION <mission_index> - utilise la campagne mission_index."
+    IDS_SCMD_HELP_ADDBAN    "ADDBAN <IP> - ajoute cette IP à la liste noire (ex. : 123.456.789.012 ou 123.456.*)"
+    IDS_SCMD_HELP_REMOVEBAN "REMOVEBAN <banid> - retire l'IP de la liste noire."
+    IDS_SCMD_HELP_LISTBANS  "LISTBANS - liste toutes les IP de la liste noire."
+    IDS_SCMD_LISTBANSHEADER "Format de la liste noire : banid) [IP]"
+    IDS_SCMD_NOBANS         "Aucune IP bannie"
+    IDS_SCMD_HELP_BANCLIENT "BANCLIENT <clientid> - bannir le client d'après l'ID client."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COOPERATIVE         "Coopératif"
+    IDS_DEATHMATCH          "Deathmatch"
+    IDS_FRAG_LIMIT          "Limite de score"
+    IDS_TIME_LIMIT          "Limite de temps"
+    IDS_RUN_SPEED           "Vitesse de course"
+    IDS_FRIENDLY_FIRE       "Tir fraternel"
+    IDS_DIFFICULTY          "Difficulté"
+    IDS_HOST_PLAYERDIFF     "Incrément de difficulté"
+    IDS_SCMD_NOGAMEOPTIONS  "Pas d'options de jeu disponibles."
+    IDS_SCMD_HELP_LISTGAMEOPTIONS "LISTGAMEOPTIONS - liste les options de jeu."
+    IDS_SCMD_LISTGAMEOPTIONSHEADER "Format de la liste des options de jeu : optionid) [option][valeur]"
+    IDS_SCMD_HELP_SETGAMEOPTION "SETGAMEOPTION <optionid> <valeur> - paramètre les options d'après l'optionid."
+    IDS_TEAMDEATHMATCH      "Deathmatch par équipe"
+    IDS_DOOMSDAY            "Jugement dernier"
+    IDS_ROUNDS              "Manches"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED

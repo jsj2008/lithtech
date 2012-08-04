@@ -1,0 +1,332 @@
+Monolith Productions:
+>BIG
+>TIME:2.0
+>POS:UL
+##
+James Ackley, Responsable conception sonore
+Scott Albaugh, Infographiste/animateur 2D/3D senior
+Curt Collins, Infographiste 2D/3D
+Brian Davis, Infographiste 2D/3D
+Michael Drummond, Conception des niveaux
+Kevin Francis, Ingénieur
+Terry Franguiadakis, Ingénieur
+Jim Geldmacher, Ingénieur
+Jon Gramlich, Responsable AQ
+Nathan Grigg, Compositeur
+Chris Hewett, Directeur du développement
+J.J. Hoesing, Ingénieur
+>TIME:8.0
+>POS:UL
+##
+Rodney Houle,  Conception des niveaux
+Craig Hubbard, Directeur créatif/Concepteur principal
+Steve Lee, Infographiste senior 2D/3D
+David Longo, Directeur artistique/Responsable infographie 3D
+Dan Miller,  Conception des niveaux
+John Mulkey, Responsable conception des niveaux
+Jeff Orkin, Programmeur senior
+John O'Rorke, Ingénieur
+Brian Pamintuan, Conception sonore
+Russ Pecoraro, Ingénieur
+Brad Pendleton, Ingénieur principal
+Sasha Runnels, Infographiste senior 2D/3D
+>TIME:8.0
+>POS:UL
+##
+Samantha Ryan, Producteur
+Wes Saulsberry, Directeur artistique
+Kevin Stephens, Directeur technique
+Akika Tanaka, Infographiste 2D/3D
+Cassano Thruston, Conception sonore
+Simon Wong, Ingénieur Motion Capture
+  
+Conception complémentaire :
+Nathan Cheever
+Dan Thibadeau
+  
+Conception des personnages :
+Eric Kohler
+>TIME:8.0
+>POS:UL
+##
+Merci aux membres
+suivants de Monolith:
+Matt Allen
+Andrea Barringer
+Bryan Bouwman
+Wayne Burns
+Dan Fagan
+Andy Grant
+Jason Hall
+Patti Kail
+Gary Kussman
+Kevin Lambert
+>TIME:8.0
+>POS:UL
+##
+Rick Lambright
+Brian Legge
+Brian Long
+Spencer Maiers
+Kristin McLellan
+Andrew Megowan
+Ryan O'Rourke
+Matt Scott
+Mark Spadoni
+Jim Totaro
+Jim Wallingford
+Sandra Watanabe
+Kiyotaka Yaguchi
+>TIME:8.0
+>POS:UL
+##
+Merci aux membres
+aux membres suivants de LithTech:
+Jonathan Branam
+Bob Givnin
+Brian Goble
+Matt Grimshaw
+Chris Hedberg
+Jeff Hutt
+David Koenig
+Dan White
+Paige Young
+>TIME:8.0
+>POS:UL
+##
+Remerciements à:
+Steve Burke, NVIDIA
+Justin Cooney, ATI
+Todd Clauson, Intel 
+Keith Galocy, NVIDIA
+Greg James, NVIDIA
+Matt McClellan, Intel
+Derek Reynolds, Intel 
+Randy 'ydnar' Reddig
+
+Metrolabs, créateurs de
+XTZ Caffeine et de boissons
+énergisantes à base de plantes
+>TIME:6.0
+>POS:UL
+##
+Musique et thème de NOLF 2 :
+Nathan Grigg  
+  
+Musique des séquences:
+Nathan Grigg
+Guy Whitmore
+  
+Musiciens :
+Andrea Wittgens : paroles (Thème NOLF 2)
+Nathan Grigg : paroles (Thème NOLF 2, Inde, Ile)
+Jack Klitzman : saxophone (Thème NOLF 2, Inde)
+Vincent Gates : guitare (Thème NOLF 2)
+Lori Goldston: violoncelle 
+(Motif C.R.I.M.E., par Guy Whitmore)
+>TIME:7.0
+>POS:UL
+##
+Ingénieurs son:
+Jay Kenney
+Vincent Gates
+Nathan Grigg
+  
+Remerciements:
+Rich Ragsdale 
+(pour l'utilisation du thème NOLF)
+>TIME:5.0
+>POS:UL
+##
+Acteurs ayant prêté leur voix:
+>TIME:2.0
+>BIG
+>POS:UL
+##
+JEN TAYLOR: 
+Cate Archer 
+Isako 
+Réceptionniste de l'UNION
+Ninjas
+Passants
+>TIME:4.0
+>POS:UL
+##
+JOCK BLANEY:
+Dmitrij Volkov
+>TIME:2.0
+>POS:UL
+##
+KEN BOYNTON:
+Santa
+Général Morgan Hawkins
+Mischa le pilote
+Kamal
+Anoop Banerjee
+Crazy Harij
+Balaji Malpani
+Personnels soviétiques
+Personnels du C.R.I.M.E. en Inde
+Personnels du C.R.I.M.E.
+Mimes
+>TIME:5.0
+>POS:UL
+##
+DAVID SCULLY:
+Isaac Barnes
+>TIME:2.0
+>POS:UL
+##
+DEENA BURKE:
+Maman
+Ninjas
+>TIME:3.0
+>POS:UL
+##
+JOHN ARMSTRONG:
+Le Directeur
+Pierre
+Personnels du C.R.I.M.E.
+Hommes-caisses
+Mimes
+>TIME:4.0
+>POS:UL
+##
+GARY SCHWARTZ:
+Super soldats
+Personnels soviétiques
+Personnels du C.R.I.M.E. en Inde
+>TIME:3.0
+>POS:UL
+##
+JOHN PATRICK LOWRIE:
+Bruno Lawrie
+>TIME:2.0
+>POS:UL
+##
+TODD LICEA:
+Personnels de l'Alliance Maléfique
+Personnels du C.R.I.M.E.
+>TIME:3.0
+>POS:UL
+##
+JEFF STEITZER:
+Dr. Schenker 
+Super ordinateur 
+Robots
+>TIME:3.0
+>POS:UL
+##
+ANDRE SOGLIUZZO:
+Magnus Armstrong
+>TIME:2.0
+>POS:UL
+##
+TERRENCE SLOGGINS:
+dans son propre rôle
+>TIME:2.0
+>POS:UL
+##
+Acteurs Motion Capture:
+Jenna Hawkins
+John Kaufmann
+Lisa P. Leon-Guerrero
+Justin Emeka
+Kerry Wong
+Hans Altwies
+>TIME:6.0
+>POS:UL
+##
+Sierra Entertainment/Vivendi Universal Publishing :
+>TIME:2.0
+>BIG
+>POS:UL
+##
+Bill Dugan, Producteur exécutif
+Bernadette Pryor, Producteur
+Lee Rosini, Directeur du Marketing
+Mike Rodgers, Chef de marque
+Rozita Tolouey, Chef de marque
+Rich Robinson, Vice-président Studios
+Barbara Schwabe, VP du Marketing
+Mike Nicolino, Développement réseau
+Julie Pitt, Responsable des services de production
+Sarita Churchill, Responsable RP
+Gary Stevens, Directeur AQ
+Ken Eaton, Superviseur AQ
+>TIME:8.0
+>POS:UL
+##
+Tharlie Richardson, Responsable des tests AQ
+Sweeney Designs, Conception du manuel
+Guy Welch, Responsable marketing online
+Mike Taskey, Evangélisateur online
+Randy Linch, Directeur certification produit
+Rod Shean, Directeur certification produit
+Chris Rooker, Test certification produit
+Cyra Talton, Test certification produit
+Brandon Valdez, Test certification produit
+Richard Benavides, Ingénieur certification produit
+Ben Chan, Testeur certification produit
+Mary Barker, Responsable trade marketing
+>TIME:8.0
+>POS:UL
+##
+Remerciements :
+Erin Alvarez
+Molly O'Brien
+Pat Callahan
+Julie Daino
+Tracy Gibbs
+Adam Lumsden
+Peter Della Pena
+Eric Roeder
+Mike Ryder
+James Shaw
+>TIME:7.0
+>POS:UL
+##
+(c)2002 Monolith Productions, Inc. Tous droits réservés.
+Cate Archer et A Spy in H.A.R.M's Way 
+sont des marques déposées de Monolith Productions, Inc. 
+  
+Copyright (C)2002 Sierra Entertainment, Inc. 
+(C)1998-2002 Sierra Entertainment, Inc.  
+Sierra et le logo Sierra sont des marques déposées de Sierra Entertainment.
+  
+Fox Interactive, No One Lives Forever et les logos associés
+sont des marques déposées de 
+Twentieth Century Fox Film Corporation. 
+(c)2002 Twentieth Century Fox Film Corporation.  
+>TIME:6.0
+##
+Utilise Bink Video Technology Copyright 
+(c) 1994-2002 RAD Game Tools, Inc.
+  
+Technologie de compression audio MPEG Layer-3
+sous licence de Fraunhofer IIS et Thomson multimedia.
+  
+Ce produit utilise le LithTech(tm) Jupiter
+System sous licence de LithTech, Inc.  
+LithTech Jupiter System (c) 1997-2002
+LithTech, Inc. Tous droits réservés.
+LithTech et le logo LithTech sont
+marques déposées de LithTech, Inc.
+>TIME:6.0
+##
+NVIDIA, le logo NVIDIA, le logo NVIDIA The Way It's
+Meant to be Played et les autres marques de NVIDIA
+sont des marques déposées de NVIDIA Corporation
+aux USA et dans d'autres pays.
+  
+Windows est une marque déposée de
+Microsoft Corporation aux 
+USA et/ou dans d'autres pays.
+  
+L'icône de classement est une marque déposée de la
+Interactive Digital Software Association.
+>TIME:6.0
+##
+>END
+
+

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exe_LithTech", "EXE_Lithtech.vcproj", "{24CA0D6C-5D79-4346-A73B-92E350414832}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Eval = Eval
+		Final = Final
+		Release = Release
+		Release Public Dev = Release Public Dev
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Debug.ActiveCfg = Debug|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Debug.Build.0 = Debug|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Eval.ActiveCfg = Eval|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Eval.Build.0 = Eval|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Final.ActiveCfg = Final|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Final.Build.0 = Final|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Release.ActiveCfg = Release|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Release.Build.0 = Release|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Release Public Dev.ActiveCfg = Release Public Dev|Win32
+		{24CA0D6C-5D79-4346-A73B-92E350414832}.Release Public Dev.Build.0 = Release Public Dev|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
