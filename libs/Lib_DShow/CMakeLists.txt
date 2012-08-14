@@ -1,3 +1,9 @@
+cmake_minimum_required (VERSION 2.8)
+project (Lib_DShow)
+
+include_directories(.
+	"C:\\Program Files (x86)\\Microsoft DirectX SDK (February 2006)\\Include")
+
 add_library(Lib_DShow STATIC
 	amfilter.cpp
 	amvideo.cpp

@@ -1,392 +1,94 @@
 cmake_minimum_required (VERSION 2.8)
 project (Lithtech)
 
-set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})
+option(BUILD_ENGINE "Build engine" ON)
+option(BUILD_NOLF2 "Build No One Lives Forever 2 game code" OFF)
+option(BUILD_TRON "Build Tron 2.0 game code" OFF)
+option(BUILD_BLOOD2 "Build Blood II game code" OFF)
+option(BUILD_FEAR "Build F.E.A.R. game code" OFF)
+option(BUILD_NOLF "Build No One Lives Forever game code" OFF)
+option(BUILD_SHOGO "Build Shogo game code" OFF)
+option(BUILD_TOOLS "Build tools" OFF)
+option(ENABLE_D3D "Enable Direct3D" ON)
+option(ENABLE_DIRECTX "Enable DirectX" ON)
+option(ENABLE_DIRECTSHOW "Enable DirectShow" ON)		
+option(USE_INTERNAL_ZLIB "Use bundled zlib" ON)			# eventually want default to be OFF
+option(USE_INTERNAL_FREETYPE "Use bundled freetype" ON)	# eventually want default to be OFF
 
-add_definitions (-D_CRT_SECURE_NO_WARNINGS -D__D3D -D__D3DREND -DMODEL_SUPPORT_ABC)
-#set_property(GLOBAL Lithtech
-#	PROPERTY COMPILE_DEFINITIONS_RELEASE _FINAL)
-#set_property(GLOBAL Lithtech
-#	PROPERTY COMPILE_DEFINITIONS_MINSIZEREL _FINAL)
-#set_property(GLOBAL Lithtech
-#	PROPERTY COMPILE_DEFINITIONS_RELWITHDEBINFO _FINAL)
-	
-include_directories (server/src
-	runtime/shared/src
-	runtime/kernel/src
-	sdk/inc
-	libs/stdlith
-	runtime/kernel/mem/src
-	runtime/world/src
-	runtime/kernel/io/src
-	runtime/kernel/net/src
-	runtime/model/src
-	runtime/client/src
-	runtime/kernel/src/sys/win
-	runtime/sound/src
-	libs/rezmgr
-	runtime/shared/src/sys/win
-	runtime/lithtemplate
-	libs/lith
-	sdk/inc/physics
-	runtime/physics/src
-	runtime/server/src
-	runtime/info/src
-	runtime/render_a/src/sys/d3d
-	runtime/render_b/src
-	libs/Lib_DShow
-	runtime/ui/src
-	runtime/controlfilemgr
-	"C:\\Program Files (x86)\\Microsoft DirectX SDK (February 2006)\\Include")
-if(CMAKE_CL_64)
-	link_directories("C:\\Program Files (x86)\\Microsoft DirectX SDK (February 2006)\\Lib\\x64")
-else()
-	link_directories("C:\\Program Files (x86)\\Microsoft DirectX SDK (February 2006)\\Lib\\x86")
-endif()
+if(ENABLE_D3D)
+	add_definitions(-D__D3D -D__D3DREND)
+endif(ENABLE_D3D)
 
-	
-add_subdirectory(libs/lith)
-add_subdirectory(libs/stdlith)
-add_subdirectory(libs/ltmem)
-add_subdirectory(libs/rezmgr)
-add_subdirectory(runtime/ui/src)
-add_subdirectory(runtime/info/src)
-add_subdirectory(libs/zlib)
-add_subdirectory(libs/Lib_DShow)
-add_subdirectory(runtime/render_a/src/sys/d3d)
-add_subdirectory(runtime/sound/src)
-add_subdirectory(runtime/winbuild/ltmsg)
-add_subdirectory(runtime/sound/src/sys/s_dx8)
-add_subdirectory(NOLF2/ClientFxDLL)
-add_subdirectory(NOLF2/ClientRes)
-add_subdirectory(NOLF2/ClientShellDLL)
-add_subdirectory(NOLF2/ObjectDLL)
-add_subdirectory(NOLF2/ServerRes/TO2)
+if(USE_INTERNAL_ZLIB)
+	#set zlib vars
+	add_subdirectory(libs/zlib)
+else(USE_INTERNAL_ZLIB)
+	find_package(ZLIB)
+endif(USE_INTERNAL_ZLIB)
 
-add_library (DLL_Server SHARED 
-	runtime/server/src/server_iltcommon.cpp
-	runtime/shared/src/shared_iltcommon.cpp
-	runtime/shared/src/modellt_impl.cpp
-	runtime/server/src/server_iltmodel.cpp
-	runtime/server/src/server_iltphysics.cpp
-	runtime/shared/src/shared_iltphysics.cpp
-	runtime/server/src/server_iltsoundmgr.cpp
-	runtime/shared/src/transformlt_impl.cpp
-	runtime/server/src/world_server_bsp.cpp
-	runtime/world/src/world_shared_bsp.cpp
-	runtime/shared/src/interface_linkage.cpp
-	runtime/model/src/animtracker.cpp
-	runtime/shared/src/bdefs.cpp
-	runtime/kernel/src/sys/win/bindmgr.cpp
-	runtime/shared/src/classbind.cpp
-	runtime/server/src/classmgr.cpp
-	runtime/shared/src/collision.cpp
-	runtime/shared/src/compress.cpp
-	runtime/shared/src/concommand.cpp
-	runtime/shared/src/conparse.cpp
-	runtime/model/src/sys/d3d/d3d_model_load.cpp
-	runtime/world/src/de_mainworld.cpp
-	runtime/world/src/de_nodes.cpp
-	runtime/world/src/de_objects.cpp
-	runtime/kernel/src/debugging.cpp
-	runtime/shared/src/dhashtable.cpp
-	runtime/kernel/src/sys/win/dutil.cpp
-	runtime/shared/src/engine_vars.cpp
-	runtime/shared/src/findobj.cpp
-	runtime/shared/src/ftserv.cpp
-	runtime/world/src/fullintersectline.cpp
-	runtime/server/src/game_serialize.cpp
-	runtime/shared/src/gamemath.cpp
-	runtime/shared/src/genericprop_setup.cpp
-	runtime/shared/src/genltstream.cpp
-	runtime/shared/src/geometry.cpp
-	runtime/shared/src/geomroutines.cpp
-	runtime/shared/src/impl_common.cpp
-	runtime/server/src/interlink.cpp
-	runtime/world/src/intersect_line.cpp
-	runtime/world/src/intersectsweptsphere.cpp
-	runtime/shared/src/leech.cpp
-	runtime/world/src/light_table.cpp
-	runtime/shared/src/lightmap_planes.cpp
-	runtime/kernel/net/src/localdriver.cpp
-	runtime/shared/src/ltmessage.cpp
-	runtime/server/src/ltmessage_server.cpp
-	sdk/inc/ltmodule.cpp
-	sdk/inc/ltobjref.cpp
-	sdk/inc/ltquatbase.cpp
-	runtime/shared/src/lttimer.cpp
-	runtime/model/src/model.cpp
-	runtime/model/src/model_load.cpp
-	runtime/model/src/modelallocations.cpp
-	runtime/shared/src/motion.cpp
-	runtime/shared/src/moveobject.cpp
-	runtime/shared/src/moveplayer.cpp
-	runtime/kernel/net/src/netmgr.cpp
-	runtime/shared/src/nexus.cpp
-	runtime/shared/src/objectmgr.cpp
-	runtime/kernel/net/src/packet.cpp
-	runtime/shared/src/parse_world_info.cpp
-	runtime/shared/src/ratetracker.cpp
-	runtime/server/src/s_client.cpp
-	runtime/server/src/s_concommand.cpp
-	runtime/server/src/s_intersect.cpp
-	runtime/server/src/s_net.cpp
-	runtime/server/src/s_object.cpp
-	runtime/server/src/server_consolestate.cpp
-	runtime/server/src/server_extradata.cpp
-	runtime/server/src/server_filemgr.cpp
-	runtime/kernel/src/server_interface.cpp
-	runtime/server/src/server_loaderthread.cpp
-	runtime/server/src/serverde_impl.cpp
-	runtime/server/src/serverevent.cpp
-	runtime/server/src/servermgr.cpp
-	runtime/server/src/sloaderthread.cpp
-	runtime/server/src/smoveabstract.cpp
-	runtime/sound/src/sounddata.cpp
-	runtime/server/src/soundtrack.cpp
-	runtime/shared/src/spritecontrolimpl.cpp
-	runtime/shared/src/stacktrace.cpp
-	runtime/shared/src/stdlterror.cpp
-	runtime/kernel/src/sys/win/stringmgr.cpp
-	runtime/shared/src/strtools.cpp
-	runtime/model/src/transformmaker.cpp
-	runtime/kernel/net/src/sys/win/udpdriver.cpp
-	runtime/sound/src/wave.cpp
-	runtime/world/src/world_blind_object_data.cpp
-	runtime/world/src/world_blocker_data.cpp
-	runtime/world/src/world_blocker_math.cpp
-	runtime/world/src/world_particle_blocker_data.cpp
-	runtime/world/src/world_tree.cpp
-	#win32
-	runtime/kernel/src/sys/win/counter.cpp
-	runtime/kernel/io/src/sys/win/de_file.cpp
-	runtime/kernel/mem/src/sys/win/de_memory.cpp
-	runtime/kernel/src/sys/win/dsys_interface.cpp
-	runtime/kernel/src/sys/win/lthread.cpp
-	runtime/kernel/src/sys/win/ltlibraryloader.cpp
-	runtime/kernel/src/sys/win/ltthread.cpp
-	runtime/kernel/src/sys/win/streamsim.cpp
-	runtime/kernel/src/sys/win/systeminfo.cpp
-	runtime/kernel/src/sys/win/timemgr.cpp)
-set_target_properties(DLL_Server
-	PROPERTIES OUTPUT_NAME Server)
-			   #CMAKE_LINK_DEF_FILE_FLAG Server.def)
-target_link_libraries(DLL_Server
-	Lib_Info
-	Lib_Lith
-	Lib_StdLith
-	ltmem
-	Lib_RezMgr
-	winmm.lib)
-set_property(TARGET DLL_Server
-	PROPERTY COMPILE_DEFINITIONS DE_SERVER_COMPILE
-								 DIRECTENGINE_COMPILE
-								 STDLITH_ALLOC_OVERRIDE
-								 LT15_COMPAT
-								 NO_PRAGMA_LIBS)
+# move to Lib_UI CMakeLists.txt?
+if(USE_INTERNAL_FREETYPE)	
+	#set freetype vars
+else(USE_INTERNAL_FREETYPE)
+	find_package(Freetype)
+endif(USE_INTERNAL_FREETYPE)
+
+if(MSVC)
+	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+endif(MSVC)
+
+if(NOT DEBUG)
+	add_definitions(-D_FINAL)
+endif(NOT DEBUG)
+
+add_subdirectory(libs/lith)						# Lib_Lith
+add_subdirectory(libs/stdlith)					# Lib_StdLith
+add_subdirectory(libs/ltmem)					# ltmem
+add_subdirectory(libs/rezmgr)					# Lib_RezMgr
+
+if(BUILD_ENGINE)
+	add_subdirectory(runtime/ui)				# Lib_UI
+	add_subdirectory(runtime/info)				# Lib_Info
+	add_subdirectory(runtime/sound)				# Lib_ILTSound
+	add_subdirectory(runtime/server)			# DLL_Server 
+	add_subdirectory(runtime/client)			# EXE_Lithtech
+	if(ENABLE_D3D)
+		add_subdirectory(runtime/render_a/src/sys/d3d)
+	endif(ENABLE_D3D)
+
+	if(ENABLE_DIRECTX)
+		add_subdirectory(runtime/sound/src/sys/s_dx8)
+	endif(ENABLE_DIRECTX)
+
+	if(ENABLE_DIRECTSHOW)
+		add_subdirectory(libs/Lib_DShow)
+	endif(ENABLE_DIRECTSHOW)
+
+	if(WIN32)
+		add_subdirectory(runtime/winbuild/ltmsg)
+	endif(WIN32)
+endif(BUILD_ENGINE)
+
+if(BUILD_NOLF2)
+	add_subdirectory(NOLF2/ClientFxDLL)			# ClientFXDLL
+	add_subdirectory(NOLF2/ClientRes/TO2)		# ClientRes
+	add_subdirectory(NOLF2/ClientShellDLL/TO2)	# ClientShellDLL
+	add_subdirectory(NOLF2/ObjectDLL/TO2)		# ObjectDLL
+	add_subdirectory(NOLF2/ServerRes/TO2)		# ServerRes
+endif(BUILD_NOLF2)
+
+if(BUILD_TRON)
+	add_subdirectory(NOLF2/ClientFxDLL)			# ClientFXDLL
+	add_subdirectory(NOLF2/ClientRes/TRON)		# ClientRes
+	add_subdirectory(NOLF2/ClientShellDLL/TRON)	# ClientShellDLL
+	add_subdirectory(NOLF2/ObjectDLL/TRON)		# ObjectDLL
+	add_subdirectory(NOLF2/ServerRes/TRON)		# ServerRes
+endif(BUILD_TRON)
+
+# *** FIXME *** Add where it should be DLL_Server and/or EXE_Lithtech
+#add_definitions (-DMODEL_SUPPORT_ABC)
+
+
 								 
-add_executable (EXE_Lithtech WIN32
-	runtime/controlfilemgr/controlfilemgr.cpp
-	runtime/client/src/client_filemgr.cpp
-	runtime/kernel/src/icommandlineargs.cpp
-	runtime/client/src/client_iltcommon.cpp
-	runtime/server/src/server_iltcommon.cpp
-	runtime/shared/src/shared_iltcommon.cpp
-	runtime/kernel/src/sys/win/lt_cursor_impl.cpp
-	runtime/client/src/client_iltmodel.cpp
-	runtime/shared/src/modellt_impl.cpp
-	runtime/server/src/server_iltmodel.cpp
-	runtime/client/src/client_iltphysics.cpp
-	runtime/server/src/server_iltphysics.cpp
-	runtime/shared/src/shared_iltphysics.cpp
-	runtime/server/src/server_iltsoundmgr.cpp
-	runtime/sound/src/soundmgr.cpp
-	runtime/shared/src/transformlt_impl.cpp
-	runtime/client/src/client_iltvideomgr.cpp
-	runtime/shared/src/interface_linkage.cpp
-	runtime/world/src/world_blind_object_data.cpp
-	runtime/world/src/world_blocker_data.cpp
-	runtime/world/src/world_blocker_math.cpp
-	runtime/client/src/world_client_bsp.cpp
-	runtime/world/src/world_particle_blocker_data.cpp
-	runtime/server/src/world_server_bsp.cpp
-	runtime/world/src/world_shared_bsp.cpp
-	runtime/model/src/animtracker.cpp
-	runtime/shared/src/bdefs.cpp
-	runtime/kernel/src/sys/win/bindmgr.cpp
-	runtime/kernel/src/sys/win/binkvideomgrimpl.cpp
-	runtime/shared/src/classbind.cpp
-	runtime/server/src/classmgr.cpp
-	runtime/kernel/src/sys/win/client.cpp
-	runtime/client/src/client_formatmgr.cpp
-	runtime/client/src/client_graphmgr.cpp
-	runtime/client/src/client_ticks.cpp
-	runtime/client/src/clientde_impl.cpp
-	runtime/client/src/clientmgr.cpp
-	runtime/client/src/clientshell.cpp
-	runtime/client/src/cmoveabstract.cpp
-	runtime/client/src/cnet.cpp
-	runtime/client/src/cobject.cpp
-	runtime/shared/src/collision.cpp
-	runtime/shared/src/compress.cpp
-	runtime/shared/src/concommand.cpp
-	runtime/shared/src/conparse.cpp
-	runtime/client/src/console.cpp
-	runtime/client/src/consolecommands.cpp
-	runtime/kernel/src/sys/win/counter.cpp
-	runtime/client/src/sys/win/customfontfilemgr.cpp
-	runtime/client/src/cutil.cpp
-	runtime/model/src/sys/d3d/d3d_model_load.cpp
-	runtime/render_b/src/sys/d3d/d3ddrawprim.cpp
-	runtime/render_b/src/sys/d3d/d3dtexinterface.cpp
-	runtime/kernel/io/src/sys/win/de_file.cpp
-	runtime/world/src/de_mainworld.cpp
-	runtime/kernel/mem/src/sys/win/de_memory.cpp
-	runtime/world/src/de_nodes.cpp
-	runtime/world/src/de_objects.cpp
-	runtime/shared/src/debuggeometry.cpp
-	runtime/kernel/src/debugging.cpp
-	runtime/client/src/debuggraphmgr.cpp
-	runtime/shared/src/dhashtable.cpp
-	runtime/kernel/src/sys/win/dshowvideomgrimpl.cpp
-	runtime/shared/src/sys/win/dstreamopenqueuemgr.cpp
-	runtime/kernel/src/sys/win/dsys_interface.cpp
-	runtime/shared/src/dtxmgr.cpp
-	runtime/kernel/src/sys/win/dutil.cpp
-	runtime/shared/src/engine_vars.cpp
-	runtime/client/src/errorlog.cpp
-	runtime/shared/src/findobj.cpp
-	runtime/shared/src/ftclient.cpp
-	runtime/shared/src/ftserv.cpp
-	runtime/world/src/fullintersectline.cpp
-	runtime/server/src/game_serialize.cpp
-	runtime/shared/src/gamemath.cpp
-	runtime/shared/src/genericprop_setup.cpp
-	runtime/shared/src/genltstream.cpp
-	runtime/shared/src/geometry.cpp
-	runtime/shared/src/geomroutines.cpp
-	runtime/shared/src/impl_common.cpp
-	runtime/kernel/src/sys/win/input.cpp
-	runtime/kernel/src/sys/win/InputSim.cpp
-	runtime/kernel/src/sys/win/interface_helpers.cpp
-	runtime/server/src/interlink.cpp
-	runtime/world/src/intersect_line.cpp
-	runtime/world/src/intersectsweptsphere.cpp
-	runtime/shared/src/leech.cpp
-	runtime/world/src/light_table.cpp
-	runtime/shared/src/lightmap_compress.cpp
-	runtime/shared/src/lightmap_planes.cpp
-	runtime/client/src/linesystem.cpp
-	runtime/kernel/src/sys/win/load_pcx.cpp
-	runtime/kernel/net/src/localdriver.cpp
-	runtime/client/src/ltbenchmark_impl.cpp
-	runtime/kernel/src/sys/win/ltdirectmusic_impl.cpp
-	runtime/kernel/src/sys/win/ltdirectmusiccontrolfile.cpp
-	runtime/kernel/src/sys/win/ltdirectmusicloader.cpp
-	sdk/inc/lterror.cpp
-	runtime/kernel/src/sys/win/lthread.cpp
-	runtime/client/src/ltinfo_impl.cpp
-	runtime/kernel/src/sys/win/ltlibraryloader.cpp
-	runtime/kernel/mem/src/ltmemory.cpp
-	runtime/shared/src/ltmessage.cpp
-	runtime/client/src/ltmessage_client.cpp
-	runtime/server/src/ltmessage_server.cpp
-	sdk/inc/ltmodule.cpp
-	sdk/inc/ltobjref.cpp
-	sdk/inc/ltquatbase.cpp
-	runtime/kernel/src/sys/win/ltrendermgr_impl.cpp
-	runtime/client/src/lttexturestring.cpp
-	runtime/kernel/src/sys/win/ltthread.cpp
-	runtime/shared/src/lttimer.cpp
-	runtime/client/src/memorywatch.cpp
-	runtime/model/src/model.cpp
-	runtime/model/src/model_load.cpp
-	runtime/model/src/modelallocations.cpp
-	runtime/shared/src/motion.cpp
-	runtime/shared/src/moveobject.cpp
-	runtime/shared/src/moveplayer.cpp
-	runtime/kernel/src/sys/win/musicdriver.cpp
-	runtime/kernel/net/src/netmgr.cpp
-	runtime/shared/src/nexus.cpp
-	#runtime/model/src/sys/null/nullmodel_load.cpp
-	runtime/shared/src/objectmgr.cpp
-	runtime/kernel/net/src/packet.cpp
-	runtime/shared/src/parse_world_info.cpp
-	runtime/client/src/particlesystem.cpp
-	runtime/shared/src/pixelformat.cpp
-	runtime/client/src/polygrid.cpp
-	runtime/client/src/predict.cpp
-	runtime/shared/src/ratetracker.cpp
-	runtime/kernel/src/sys/win/render.cpp
-	runtime/server/src/s_client.cpp
-	runtime/server/src/s_concommand.cpp
-	runtime/server/src/S_Intersect.cpp
-	runtime/server/src/s_net.cpp
-	runtime/server/src/s_object.cpp
-	runtime/server/src/server_consolestate.cpp
-	runtime/server/src/server_extradata.cpp
-	runtime/server/src/server_filemgr.cpp
-	runtime/server/src/serverde_impl.cpp
-	runtime/server/src/serverevent.cpp
-	runtime/server/src/servermgr.cpp
-	runtime/client/src/setupobject.cpp
-	runtime/client/src/shellnet.cpp
-	runtime/client/src/shelltransfer.cpp
-	runtime/client/src/shellutil.cpp
-	runtime/server/src/smoveabstract.cpp
-	runtime/sound/src/soundbuffer.cpp
-	runtime/sound/src/sounddata.cpp
-	runtime/sound/src/soundinstance.cpp
-	runtime/server/src/soundtrack.cpp
-	runtime/client/src/sprite.cpp
-	runtime/shared/src/spritecontrolimpl.cpp
-	runtime/shared/src/stacktrace.cpp
-	runtime/shared/src/stdlterror.cpp
-	runtime/kernel/src/sys/win/streamsim.cpp
-	runtime/kernel/src/sys/win/stringmgr.cpp
-	runtime/shared/src/strtools.cpp
-	runtime/kernel/src/sys/win/systeminfo.cpp
-	runtime/kernel/src/sys/win/text_mgr.cpp
-	runtime/client/src/texturestring.cpp
-	runtime/client/src/sys/win/texturestringimage.cpp
-	runtime/kernel/src/sys/win/timemgr.cpp
-	runtime/model/src/transformmaker.cpp
-	runtime/kernel/net/src/sys/win/udpdriver.cpp
-	runtime/shared/src/version_info.cpp
-	runtime/kernel/src/sys/win/version_resource.cpp
-	runtime/kernel/src/sys/win/videomgr.cpp
-	runtime/client/src/volumeeffect.cpp
-	runtime/client/src/watermark.cpp
-	runtime/sound/src/wave.cpp
-	runtime/client/src/sys/win/winclientde_impl.cpp
-	runtime/client/src/sys/win/winconsole_impl.cpp
-	runtime/world/src/world_tree.cpp)
-set_target_properties(EXE_Lithtech
-	PROPERTIES OUTPUT_NAME Lithtech)
-set_property(TARGET EXE_Lithtech
-	PROPERTY COMPILE_DEFINITIONS DE_LOCAL_SERVERBIND
-								 DE_CLIENT_COMPILE
-								 DSNDMGR_NO_MFC
-								 DIRECTENGINE_COMPILE)
-target_link_libraries(EXE_Lithtech
-	winmm.lib
-	ddraw.lib
-	d3dx9.lib
-	d3d9.lib
-	DxErr9.lib
-	dxguid.lib
-	dplayx.lib
-	dinput8.lib
-	strmiids.lib
-	Lib_Lith
-	Lib_StdLith
-	Lib_ZLib
-	Lib_DShow
-	ltmem
-	Lib_RezMgr
-	Lib_Info
-	LIB_D3DRender
-	Lib_ILTSound
-	Lib_UI)
+
 	

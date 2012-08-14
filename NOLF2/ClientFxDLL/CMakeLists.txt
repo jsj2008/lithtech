@@ -1,7 +1,7 @@
 # FIXME: Looks like the codes in Engine/clientfx is newer
 cmake_minimum_required (VERSION 2.8)
-project (ClientFXDLL)
-add_library (ClientFXDLL SHARED
+project (NOLF2_ClientFXDLL)
+add_library (NOLF2_ClientFXDLL SHARED
 	BaseFX.cpp
 	bouncychunkfx.cpp
 	camjitterfx.cpp
@@ -16,8 +16,8 @@ add_library (ClientFXDLL SHARED
 	lightningfx.cpp
 	LTBbouncychunkfx.cpp
 	ltbmodelfx.cpp
-	../../sdk/inc/ltmodule.cpp
-	../../sdk/inc/ltquatbase.cpp
+	../../Engine/sdk/inc/ltmodule.cpp
+	../../Engine/sdk/inc/ltquatbase.cpp
 	nullfx.cpp
 	ParticleSystemFX.cpp
 	playrandomsoundfx.cpp
@@ -27,10 +27,10 @@ add_library (ClientFXDLL SHARED
 	spritefx.cpp
 	spritesystemfx.cpp
 	stdafx.cpp)
-set_target_properties(ClientFXDLL
+set_target_properties(NOLF2_ClientFXDLL
 	PROPERTIES OUTPUT_NAME ClientFx
 	SUFFIX .fxd)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS -DNOPS2 -DMEMTRACK_CLIENTFX -D_NOMFC)
+add_definitions (-DNOPS2 -DMEMTRACK_CLIENTFX)
 include_directories (../Shared 
 	../../sdk/inc
 	../../libs/MFCStub

@@ -79,6 +79,27 @@ add_library(LIB_D3DRender STATIC
 	texturescriptmgr.cpp
 	texturescriptvarmgr.cpp
 	VertexBufferController.cpp)
-include_directories (server/src)
+include_directories (.
+	../../../../../sdk/inc
+	../../../../../sdk/inc/physics
+	../../../../../libs/stdlith
+	../../../../shared/src
+	../../../../shared/src/sys/win
+	../../../../kernel/src
+	../../../../kernel/mem/src
+	../../../../kernel/src/sys/win
+	../../../../kernel/io/src
+	../../../../client/src
+	../../../../world/src
+	../../../../model/src
+	../../../../lithtemplate)
 set_property(TARGET LIB_D3DRender
 	PROPERTY COMPILE_DEFINITIONS_DEBUG D3D_DEBUG_INFO)
+	
+if(WIN32) # FIXME: find directx path
+	include_directories("C:\\Program Files (x86)\\Microsoft DirectX SDK (February 2006)\\Include")
+endif(WIN32)
+
+if(MSVC)
+	set_target_properties(LIB_D3DRender PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)
