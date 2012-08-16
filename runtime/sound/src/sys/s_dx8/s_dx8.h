@@ -496,7 +496,8 @@ public:
 	// for decompressing streams
 	BYTE*				m_pCompressedBuffer;
 	BYTE*				m_pDecompressedBuffer;
-		WaveFile			m_WaveStream[MAX_WAVE_STREAMS];
+	
+	WaveFile			m_WaveStream[MAX_WAVE_STREAMS];
 	
 private:
 

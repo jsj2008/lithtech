@@ -275,11 +275,11 @@ add_library (NOLF2_ClientShellDLL SHARED
 	TO2HUDMgr.cpp
 	TO2InterfaceMgr.cpp
 	TO2LayoutMgr.cpp
-	../../Shared/TO2MissionButeMgr.cpp
+	../../Shared/TO2/TO2MissionButeMgr.cpp
 	TO2PlayerMgr.cpp
 	TO2PlayerStats.cpp
 	TO2ScreenMgr.cpp
-	../../Shared/TO2VersionMgr.cpp)
+	../../Shared/TO2/TO2VersionMgr.cpp)
 set_target_properties(NOLF2_ClientShellDLL 
 	PROPERTIES OUTPUT_NAME CShell)
 add_definitions (-D_CLIENTBUILD -DNOPS2 -DMEMTRACK_CLIENT)
@@ -307,3 +307,7 @@ target_link_libraries(NOLF2_ClientShellDLL
 	LTGUIMgr
 	ServerDir
 	winmm)
+	
+if(MSVC)
+	set_target_properties(NOLF2_ClientShellDLL PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

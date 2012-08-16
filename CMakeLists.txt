@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.8)
 project (Lithtech)
 
 option(BUILD_ENGINE "Build engine" ON)
-option(BUILD_NOLF2 "Build No One Lives Forever 2 game code" OFF)
+option(BUILD_NOLF2 "Build No One Lives Forever 2 game code" ON)
 option(BUILD_TRON "Build Tron 2.0 game code" OFF)
 option(BUILD_BLOOD2 "Build Blood II game code" OFF)
 option(BUILD_FEAR "Build F.E.A.R. game code" OFF)
@@ -70,6 +70,13 @@ if(BUILD_ENGINE)
 endif(BUILD_ENGINE)
 
 if(BUILD_NOLF2)
+	add_subdirectory(libs/MFCStub)
+	add_subdirectory(libs/ButeMgr)
+	add_subdirectory(libs/CryptMgr)
+	add_subdirectory(libs/RegMgr)
+	add_subdirectory(libs/LTGUIMgr)
+	add_subdirectory(libs/ServerDir)
+	add_subdirectory(libs/WONAPI)
 	add_subdirectory(NOLF2/ClientFxDLL)			# ClientFXDLL
 	add_subdirectory(NOLF2/ClientRes/TO2)		# ClientRes
 	add_subdirectory(NOLF2/ClientShellDLL/TO2)	# ClientShellDLL
@@ -78,15 +85,21 @@ if(BUILD_NOLF2)
 endif(BUILD_NOLF2)
 
 if(BUILD_TRON)
-	add_subdirectory(NOLF2/ClientFxDLL)			# ClientFXDLL
+	if(NOT BUILD_NOLF2)
+		add_subdirectory(libs/MFCStub)
+		add_subdirectory(libs/ButeMgr)
+		add_subdirectory(libs/CryptMgr)
+		add_subdirectory(libs/RegMgr)
+		add_subdirectory(libs/LTGUIMgr)
+		add_subdirectory(libs/ServerDir)
+		add_subdirectory(libs/WONAPI)
+		add_subdirectory(NOLF2/ClientFxDLL)			# ClientFXDLL
+	endif(NOT BUILD_NOLF2)
 	add_subdirectory(NOLF2/ClientRes/TRON)		# ClientRes
 	add_subdirectory(NOLF2/ClientShellDLL/TRON)	# ClientShellDLL
 	add_subdirectory(NOLF2/ObjectDLL/TRON)		# ObjectDLL
 	add_subdirectory(NOLF2/ServerRes/TRON)		# ServerRes
 endif(BUILD_TRON)
-
-# *** FIXME *** Add where it should be DLL_Server and/or EXE_Lithtech
-#add_definitions (-DMODEL_SUPPORT_ABC)
 
 
 								 

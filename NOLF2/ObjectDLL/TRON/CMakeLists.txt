@@ -1,7 +1,7 @@
 cmake_minimum_required (VERSION 2.8)
 project (TRON_ObjectDLL)
 
-add_library (ObjectDLL SHARED
+add_library (TRON_ObjectDLL SHARED
 	../../Shared/ActivateTypeMgr.cpp
 	../ObjectShared/ActiveWorldModel.cpp
 	../ObjectShared/AI.cpp
@@ -365,3 +365,7 @@ target_link_libraries(TRON_ObjectDLL
 	RegMgr
 	Lib_StdLith
 	ServerDir)
+	
+if(MSVC)
+	set_target_properties(TRON_ObjectDLL PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

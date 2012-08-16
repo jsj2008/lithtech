@@ -163,7 +163,7 @@ add_library (TRON_ClientShellDLL SHARED
 	../ClientShellShared/RandomSparksFX.cpp
 	../../Shared/SaveLoadMgr.cpp
 	../ClientShellShared/ScatterFX.cpp
-	../Shared/ScmdConsole.cpp
+	../../Shared/ScmdConsole.cpp
 	../ClientShellShared/ScmdConsoleDriver_CShell.cpp
 	../ClientShellShared/ScreenMgr.cpp
 	../ClientShellShared/ScreenPostload.cpp
@@ -260,7 +260,7 @@ add_library (TRON_ClientShellDLL SHARED
 	ScreenRatings.cpp
 	ScreenSave.cpp
 	ScreenSingle.cpp
-	ScreenSubroutinues.cpp
+	ScreenSubroutines.cpp
 	Stdafx.cpp
 	SubroutineMgr.cpp
 	TRONClientWeaponAllocator.cpp
@@ -298,3 +298,7 @@ target_link_libraries(TRON_ClientShellDLL
 	LTGUIMgr
 	ServerDir
 	winmm)
+	
+if(MSVC)
+	set_target_properties(TRON_ClientShellDLL PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

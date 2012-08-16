@@ -1,4 +1,4 @@
-# FIXME: Looks like the codes in Engine/clientfx is newer
+# FIXME: Looks like the code in Engine/clientfx is newer
 cmake_minimum_required (VERSION 2.8)
 project (NOLF2_ClientFXDLL)
 add_library (NOLF2_ClientFXDLL SHARED
@@ -16,8 +16,8 @@ add_library (NOLF2_ClientFXDLL SHARED
 	lightningfx.cpp
 	LTBbouncychunkfx.cpp
 	ltbmodelfx.cpp
-	../../Engine/sdk/inc/ltmodule.cpp
-	../../Engine/sdk/inc/ltquatbase.cpp
+	../../sdk/inc/ltmodule.cpp
+	../../sdk/inc/ltquatbase.cpp
 	nullfx.cpp
 	ParticleSystemFX.cpp
 	playrandomsoundfx.cpp
@@ -35,3 +35,7 @@ include_directories (../Shared
 	../../sdk/inc
 	../../libs/MFCStub
 	../../libs/stdlith)
+	
+if(MSVC)
+	set_target_properties(NOLF2_ClientFXDLL PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

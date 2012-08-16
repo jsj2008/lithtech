@@ -11,4 +11,6 @@ add_library (Lib_Lith STATIC
 	lithsimpary.cpp
 	lithsimparystat.cpp
 	virtlist.cpp)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS)
+if(MSVC)
+	set_target_properties(Lib_Lith PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

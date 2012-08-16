@@ -15,5 +15,5 @@ add_library (LTGUIMgr STATIC
 	ltguitextitemctrl.cpp
 	ltguitoggle.cpp
 	ltguiwindow.cpp)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS -D_LITHTECH2 -DLT15_COMPAT)
-include_directories (../../Engine/sdk/inc)
+add_definitions (-D_LITHTECH2 -DLT15_COMPAT)
+include_directories (../../sdk/inc)

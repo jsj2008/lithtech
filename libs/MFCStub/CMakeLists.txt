@@ -4,8 +4,7 @@ add_library (MFCStub STATIC
 	mfcs_point.cpp
 	mfcs_rect.cpp
 	mfcs_string.cpp)
-#	mfcstub.cpp)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS)
 include_directories (../stdlith) 
-#	../stdlith 
-#	../lith)
+if(MSVC)
+	set_target_properties(MFCStub PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

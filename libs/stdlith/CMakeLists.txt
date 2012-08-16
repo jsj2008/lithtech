@@ -14,4 +14,6 @@ add_library (Lib_StdLith STATIC
 	stringholder.cpp
 	struct_bank.cpp
 	zfstream.cpp)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS)
+if(MSVC)
+	set_target_properties(Lib_StdLith PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)

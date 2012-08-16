@@ -356,3 +356,7 @@ target_link_libraries(NOLF2_ObjectDLL
 	RegMgr
 	Lib_StdLith
 	ServerDir)
+	
+if(MSVC)
+	set_target_properties(NOLF2_ObjectDLL PROPERTIES COMPILE_FLAGS "/wd4996")
+endif(MSVC)
