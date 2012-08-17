@@ -146,6 +146,10 @@ include_directories(src
 	../render_b/src
 	../ui/src
 	../controlfilemgr)
+	
+if(NOT MSVC)	# FIXME: this is a hack for geomroutines.h:309
+	include_directories(../../tools/PreProcessor)
+endif(NOT MSVC)
 
 if(WIN32)
 	include_directories(../kernel/src/sys/win
@@ -165,16 +169,22 @@ add_library (DLL_Server SHARED ${libsources})
 set_target_properties(DLL_Server
 	PROPERTIES OUTPUT_NAME Server)
 target_link_libraries(DLL_Server
+	Lib_RezMgr
 	Lib_Info
 	Lib_Lith
 	Lib_StdLith
-	ltmem
-	Lib_RezMgr)
+	ltmem)
+	
+if(WIN32)
+	target_link_libraries(DLL_Server 
+		winmm
+		ws2_32)
+endif(WIN32)
 
 if(MSVC)
 	set_target_properties(DLL_Server PROPERTIES COMPILE_FLAGS "/wd4996")
 endif(MSVC)
-	
-if(WIN32)
-	target_link_libraries(DLL_Server winmm)
-endif(WIN32)
+
+if(CMAKE_COMPILER_IS_GNUCXX)
+	set_target_properties(DLL_Server PROPERTIES COMPILE_FLAGS "-fpermissive")
+endif(CMAKE_COMPILER_IS_GNUCXX)

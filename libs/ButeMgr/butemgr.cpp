@@ -1102,7 +1102,11 @@ bool CButeMgr::Save(const char* szNewFileName)
 	ifstream is(m_sAttributeFilename, ios::nocreate | ios::binary);
 #endif // VC7
 
-	long nFileLength=0;
+#if _MSC_VER >= 1300
+	std::streamoff nFileLength=0;
+#else
+	streamoff nFileLength=0;
+#endif
 	if (is.is_open())
 	{
 #if _MSC_VER >= 1300

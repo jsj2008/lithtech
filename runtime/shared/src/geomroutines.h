@@ -29,7 +29,17 @@
 #define	LOCATE_POINT_STACKSIZE	4000
 #define ALL_FLAGS		(uint32)0xFFFFFFFF
 
+#ifndef ZERO
+#define ZERO 0
+#endif
 
+#ifndef NF_IN
+#define NF_IN 1
+#endif
+
+#ifndef NF_OUT
+#define NF_OUT 2  
+#endif
 
 // Functions....
 
@@ -296,7 +306,11 @@ T* g_IntersectRay( T *pRoot, TVector3<F> &pt, TVector3<F> &dir, F &t, TVector3<F
 	return LTNULL;
 }
 
-
+#ifndef _MSC_VER
+#define PVector LTVector
+#define PReal float
+#include "node.h"
+#endif
 
 // ----------------------------------------------------------------------- //
 //      Routine:        g_LocatePointInTree
@@ -321,9 +335,12 @@ int g_LocatePointInTree( M *pWorld, TVector3<F> &point, int iRoot )
 		if( pRoot->m_Sides[side] >= 0 )
 			iRoot = pRoot->m_Sides[side];
 		else
-			return (side == FrontSide) ? iRoot : NODE_OUT;
+			return (side == FrontSide) ? iRoot : (int)NODE_OUT;
 	}
 }
+
+#undef NODE_IN
+#undef NODE_OUT
 
 
 // ----------------------------------------------------------------------- //

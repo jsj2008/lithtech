@@ -130,7 +130,7 @@ public:
 	//sorts the points so that max > min
 	void Sort()
 	{
-		TVector2<T> vOldMin = m_vMin;
+		LTVector2<T> vOldMin = m_vMin;
 		m_vMin.Min(m_vMax);
 		m_vMax.Max(vOldMin);
 	}

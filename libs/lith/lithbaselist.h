@@ -13,6 +13,10 @@
 #ifndef __LITHBASELIST_H__
 #define __LITHBASELIST_H__
 
+#ifndef NULL
+#define NULL 0
+#endif
+
 template<class ItemType>
 class CLithBaseList;
 

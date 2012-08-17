@@ -2,7 +2,7 @@
 #define __MEMORY_H__
 
     #ifndef __NEW_H__
-    #ifndef _LINUX
+    #ifndef __GNUC__
     #include <new.h>
     #define __NEW_H__
     #endif

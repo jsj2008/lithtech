@@ -1,6 +1,10 @@
 
 #include "bdefs.h"
+#ifdef _MSC_VER
 #include <new.h>
+#else
+#include <new>
+#endif
 #include "de_memory.h"
 #include "build_options.h"
 #include "sysdebugging.h"
@@ -24,7 +28,12 @@ static uint32 g_nAllocations;
 uint32 g_nTotalAllocations, g_nTotalFrees;
 
 static int g_MemRefCount=0;
+#ifdef _MSC_VER
 static _PNH g_OldNewHandler;
+#else
+static std::new_handler g_OldNewHandler;
+#define _set_new_handler std::set_new_handler
+#endif
 
 // PlayDemo profile info.
 uint32 g_PD_Malloc=0;
@@ -53,12 +62,18 @@ void dm_HeapCompact()
 	}
 }
 
-
+#ifdef _MSC_VER
 static int dm_NewHandler(size_t size)
 {
 	dsi_OnMemoryFailure();
 	return 0;
 }
+#else
+static void dm_NewHandler()
+{
+	dsi_OnMemoryFailure();
+}
+#endif
 
 
 void dm_Init()

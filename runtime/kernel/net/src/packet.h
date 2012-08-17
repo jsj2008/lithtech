@@ -415,11 +415,11 @@ public:
 	CPacket_Read()
 		: m_nStart(0)
 	{
-#ifdef __LINUX
+#ifdef _MSC_VER
+		Init(CPacket_Write());
+#else	
 		CPacket_Write cPacketWrite;
 		Init(cPacketWrite);
-#else	
-		Init(CPacket_Write());
 #endif
 
 	}

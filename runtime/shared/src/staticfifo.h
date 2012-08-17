@@ -116,10 +116,10 @@ struct CStaticFIFO_Iterator : public CStaticFIFO_Iterator_Base<T,SIZE>
 	CStaticFIFO_Iterator(const t_This &cOther) : t_Parent(cOther) {}
 	t_This &operator=(const t_This &cOther) { new(this) t_This(cOther); return *this; }
 
-	T& operator*() const { return *m_pIndex; }
+	T& operator*() const { return *CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex; }
 	T* operator->() const { return &(operator*()); }
-	t_This &operator++() { m_pIndex = m_pFIFO->_next(m_pIndex); return *this; }
-	t_This &operator--() { m_pIndex = m_pFIFO->_prev(m_pIndex); return *this; }
+	t_This &operator++() { CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex = CStaticFIFO_Iterator_Base<T,SIZE>::m_pFIFO->_next(CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex); return *this; }
+	t_This &operator--() {CStaticFIFO_Iterator_Base<T,SIZE>:: m_pIndex = CStaticFIFO_Iterator_Base<T,SIZE>::m_pFIFO->_prev(CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex); return *this; }
 private:
 	CStaticFIFO_Iterator(const t_FIFO *pFIFO, T *pIndex) : t_Parent(pFIFO, pIndex) {}
 };
@@ -138,10 +138,10 @@ struct CStaticFIFO_Iterator_Const : public CStaticFIFO_Iterator_Base<T,SIZE>
 	CStaticFIFO_Iterator_Const(const t_Parent &cOther) : t_Parent(cOther) {}
 	t_This &operator=(const t_Parent &cOther) { new(this) t_This(cOther); return *this; }
 
-	const T& operator*() const { return *m_pIndex; }
+	const T& operator*() const { return *CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex; }
 	const T* operator->() const { return &(operator*()); }
-	t_This &operator++() { m_pIndex = m_pFIFO->_next(m_pIndex); return *this; }
-	t_This &operator--() { m_pIndex = m_pFIFO->_prev(m_pIndex); return *this; }
+	t_This &operator++() { CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex = CStaticFIFO_Iterator_Base<T,SIZE>::m_pFIFO->_next(CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex); return *this; }
+	t_This &operator--() { CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex = CStaticFIFO_Iterator_Base<T,SIZE>::m_pFIFO->_prev(CStaticFIFO_Iterator_Base<T,SIZE>::m_pIndex); return *this; }
 private:
 	CStaticFIFO_Iterator_Const(const t_FIFO *pFIFO, T *pIndex) : t_Parent(pFIFO, pIndex) {}
 };

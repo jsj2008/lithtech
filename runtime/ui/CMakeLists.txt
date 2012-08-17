@@ -59,3 +59,7 @@ include_directories (src
 	../kernel/src/sys/win)
 
 add_library(Lib_UI STATIC ${libsources})
+
+if(CMAKE_COMPILER_IS_GNUCXX)
+	set_target_properties(Lib_UI PROPERTIES COMPILE_FLAGS "-fpermissive")
+endif(CMAKE_COMPILER_IS_GNUCXX)

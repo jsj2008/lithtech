@@ -1613,8 +1613,8 @@ template<class T, int size>
 class ObjArray : public BaseObjArray<T> {
 public:
     ObjArray() {
-        m_pArray = m_Array;
-        m_MaxListSize = size;
+        BaseObjArray<T>::m_pArray = m_Array;
+        BaseObjArray<T>::m_MaxListSize = size;
     }
 
 private:

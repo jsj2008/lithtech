@@ -1093,7 +1093,7 @@ public:
 		const LTMatrix3f M = RotationMatrix( a, u );
 		const LTMatrix3f v = M * (this->m_O - p0);
 
-		this->m_O = p0 + v;//new position
+		this->m_O = p0 + (const LTVector3f)v;//new position
 
 		//rotate the local axes
 		this->Rotate( a, u );

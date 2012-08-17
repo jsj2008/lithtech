@@ -6,6 +6,10 @@
 #include "matrix.h"
 #endif
 
+#ifndef sqrtf
+#define sqrtf sqrt
+#endif
+
 
 //---------------------------------------------------------------------------//
 /*!

@@ -11,20 +11,20 @@ typedef char			int8;
 typedef short int		int16;
 typedef int				int32;
 
-#ifdef __LINUX
-typedef long long       int64;
-#else
+#ifdef _MSC_VER
 typedef __int64         int64;
+#else
+typedef long long       int64;
 #endif
 
 typedef unsigned char		uint8;
 typedef unsigned short int	uint16;
 typedef unsigned int		uint32;
 
-#ifdef __LINUX
-typedef unsigned long long  uint64;
-#else
+#ifdef _MSC_VER
 typedef unsigned __int64    uint64;
+#else
+typedef unsigned long long  uint64;
 #endif
 
 #endif

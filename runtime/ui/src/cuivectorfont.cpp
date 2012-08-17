@@ -31,7 +31,11 @@
 #include "iltclient.h"
 #include "interface_helpers.h"
 
+#ifdef _MSC_VER
 #include <TCHAR.h>
+#else
+#include <string>
+#endif
 
 // get the ILTTexInterface from the interface database
 static ILTTexInterface *pTexInterface = NULL;

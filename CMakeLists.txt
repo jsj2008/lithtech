@@ -33,13 +33,21 @@ else(USE_INTERNAL_FREETYPE)
 	find_package(Freetype)
 endif(USE_INTERNAL_FREETYPE)
 
+if(WIN32)
+	add_definitions(-D_WINDOWS)
+else(WIN32)
+	add_definitions(-D_LINUX -D__LINUX)
+endif(WIN32)
+
 if(MSVC)
 	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 endif(MSVC)
 
-if(NOT DEBUG)
+if(DEBUG)
+	add_definitions(-D_DEBUG)
+else(DEBUG)
 	add_definitions(-D_FINAL)
-endif(NOT DEBUG)
+endif(DEBUG)
 
 add_subdirectory(libs/lith)						# Lib_Lith
 add_subdirectory(libs/stdlith)					# Lib_StdLith

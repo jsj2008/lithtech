@@ -1,6 +1,5 @@
 cmake_minimum_required (VERSION 2.8)
 project (ltmem)
-export (PACKAGE ltmem)
 add_library (ltmem STATIC 
 	ltmem.cpp
 	ltmemdebug.cpp
@@ -8,9 +7,11 @@ add_library (ltmem STATIC
 	ltmemstats.cpp
 	ltmemtrack.cpp
 	StdAfx.cpp)
-add_definitions (-D_CRT_SECURE_NO_WARNINGS)
 include_directories (../../sdk/inc
 	../../runtime/shared/src
 	../../runtime/kernel/src
 	../stdlith
 	../../runtime/kernel/mem/src)
+if(CMAKE_COMPILER_IS_GNUCXX)
+	set_target_properties(ltmem PROPERTIES COMPILE_FLAGS "-fpermissive")
+endif(CMAKE_COMPILER_IS_GNUCXX)

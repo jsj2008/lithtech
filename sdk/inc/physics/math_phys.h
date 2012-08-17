@@ -12,7 +12,11 @@
 #endif
 
 #ifndef __CSTDLIB__
+#ifdef __BCPLUSPLUS__
+#include <stdlib.h>
+#else
 #include <cstdlib>
+#endif
 #define __CSTDLIB__
 #endif
 
@@ -20,6 +24,13 @@
 #include "quaternion.h"
 #endif
 
+#ifndef cosf
+#define cosf cos
+#endif
+
+#ifndef sinf
+#define sinf sin
+#endif
 
 //---------------------------------------------------------------------------//
 // Types
@@ -163,17 +174,37 @@ inline	T DEGREES_TO_RADIANS( T a )	{ return a*RADIANS_PER_DEGREE; }
 
 //---------------------------------------------------------------------------//
 //read time stamp (cycle) counter
+// TODO: should replace with Windows QueryPerformanceCounter()
+// and POSIX clock_gettime()
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 #ifdef _WIN32
+#ifdef _MSC_VER
+#include <intrin.h>
+#endif
+#ifdef __BCPLUSPLUS__
+int32 rdtsc()
+#else
 inline int32 rdtsc()
+#endif
 {
     int t;
-
+#ifdef _MSC_VER
+	t = (int)__rdtsc();
+#else
+#ifdef __GNUC__
+    __asm__ __volatile__ (
+    "        xorl %%eax,%%eax \n"
+    "        cpuid"      // serialize
+    ::: "%rax", "%rbx", "%rcx", "%rdx");
+    __asm__ __volatile__ ("rdtsc" : "=a" (t));
+#else
     __asm
     {
         rdtsc
         mov t, eax
     }
+#endif
+#endif
 
     return t;
 }

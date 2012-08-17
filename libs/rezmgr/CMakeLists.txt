@@ -11,3 +11,6 @@ include_directories (../../sdk/inc
 if(MSVC)
 	set_target_properties(Lib_RezMgr PROPERTIES COMPILE_FLAGS "/wd4996")
 endif(MSVC)
+if(CMAKE_COMPILER_IS_GNUCXX)
+	set_target_properties(Lib_RezMgr PROPERTIES COMPILE_FLAGS "-fpermissive")
+endif(CMAKE_COMPILER_IS_GNUCXX)

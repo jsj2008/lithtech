@@ -21,7 +21,6 @@
 		};
 
 		// Enumerations
-
 		enum eDataType
 		{
 			STRING,

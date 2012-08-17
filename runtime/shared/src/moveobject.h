@@ -59,7 +59,9 @@ public:
 
 	void			SetupCall()
 	{
+	#ifdef _DEBUG
 		ASSERT(Verify());
+	#endif
 		m_bServer = m_pAbstract->IsServer();
 	}
 

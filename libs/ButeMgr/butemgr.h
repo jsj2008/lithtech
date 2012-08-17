@@ -229,10 +229,10 @@ public:
 
 #if _MSC_VER >= 1300
 	bool Parse( std::istream& iStream, int decryptCode = 0);
-	bool Parse( std::istream& iCrypt, int nLen, const char* cryptKey);
+	bool Parse( std::istream& iCrypt, std::streamsize nLen, const char* cryptKey);
 #else
 	bool Parse( istream& iStream, int decryptCode = 0);
-	bool Parse( istream& iCrypt, int nLen, const char* cryptKey);
+	bool Parse( istream& iCrypt, streamsize nLen, const char* cryptKey);
 #endif // VC7
 
 #if defined(_USE_REZFILE_)
@@ -514,14 +514,14 @@ inline bool CButeMgr::Parse( istream& iStream, int decryptCode)
 }
 
 #if _MSC_VER >= 1300
-inline bool CButeMgr::Parse( std::istream& iCrypt, int nLen, const char* cryptKey)
+inline bool CButeMgr::Parse( std::istream& iCrypt, std::streamsize nLen, const char* cryptKey)
 #else
-inline bool CButeMgr::Parse( istream& iCrypt, int nLen, const char* cryptKey)
+inline bool CButeMgr::Parse( istream& iCrypt, streamsize nLen, const char* cryptKey)
 #endif // VC7
 {
 	m_bCrypt = true;
 	m_cryptMgr.SetKey(cryptKey);
-	char* buf2 = new char[nLen];
+	char* buf2 = new char[(unsigned int)nLen];
 #if _MSC_VER >= 1300
 	std::ostrstream* pOss = new std::ostrstream(buf2, nLen);
 #else
@@ -695,7 +695,7 @@ inline bool CButeMgr::Parse(CString sAttributeFilename, const char* cryptKey)
 #else
 	pIs->seekg(0, ios::end);
 #endif // VC7
-	long len = pIs->tellg();
+	std::streamoff len = pIs->tellg();
 
 	pIs->seekg(0);
 

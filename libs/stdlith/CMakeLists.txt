@@ -14,6 +14,10 @@ add_library (Lib_StdLith STATIC
 	stringholder.cpp
 	struct_bank.cpp
 	zfstream.cpp)
+include_directories(../zlib)
+target_link_libraries(Lib_StdLith
+	Lib_ZLib)
 if(MSVC)
 	set_target_properties(Lib_StdLith PROPERTIES COMPILE_FLAGS "/wd4996")
 endif(MSVC)
+

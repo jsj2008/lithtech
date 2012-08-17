@@ -252,12 +252,12 @@ struct CListQueue_Iterator : public CListQueue_Iterator_Base<T>
 	CListQueue_Iterator() {}
 	CListQueue_Iterator(const CListQueue_Iterator<T> &cOther) : CListQueue_Iterator_Base<T>(cOther.m_pFinger) {}
 	CListQueue_Iterator &operator=(const CListQueue_Iterator<T> &cOther) {
-		m_pFinger = cOther.m_pFinger;
+		CListQueue_Iterator_Base<T>::m_pFinger = cOther.m_pFinger;
 		return *this;
 	}
-	T &operator*() const { return m_pFinger->m_cValue; }
-	T *operator->() const { return &m_pFinger->m_cValue; }
-	CListQueue_Iterator &operator++() { m_pFinger = m_pFinger->m_pNext; return *this; }
+	T &operator*() const { return CListQueue_Iterator_Base<T>::m_pFinger->m_cValue; }
+	T *operator->() const { return &CListQueue_Iterator_Base<T>::m_pFinger->m_cValue; }
+	CListQueue_Iterator &operator++() { CListQueue_Iterator_Base<T>::m_pFinger = CListQueue_Iterator_Base<T>::m_pFinger->m_pNext; return *this; }
 private:
 	CListQueue_Iterator(typename CListQueue<T>::CItem *pItem) : CListQueue_Iterator_Base<T>(pItem) {}
 };
@@ -277,12 +277,12 @@ struct CListQueue_Const_Iterator : public CListQueue_Iterator_Base<T>
 			return *this;
 		}
 		
-		m_pFinger = cOther.m_pFinger;
+		CListQueue_Iterator_Base<T>::m_pFinger = cOther.m_pFinger;
 		return *this;
 	}
-	const T &operator*() const { return m_pFinger->m_cValue; }
-	const T *operator->() const { return &m_pFinger->m_cValue; }
-	CListQueue_Const_Iterator &operator++() { m_pFinger = m_pFinger->m_pNext; return *this; }
+	const T &operator*() const { return CListQueue_Iterator_Base<T>::m_pFinger->m_cValue; }
+	const T *operator->() const { return &CListQueue_Iterator_Base<T>::m_pFinger->m_cValue; }
+	CListQueue_Const_Iterator &operator++() { CListQueue_Iterator_Base<T>::m_pFinger = CListQueue_Iterator_Base<T>::m_pFinger->m_pNext; return *this; }
 private:
 	CListQueue_Const_Iterator(const typename CListQueue<T>::CItem *pItem) : CListQueue_Iterator_Base<T>(const_cast< typename CListQueue<T>::CItem*>(pItem)) {}
 };

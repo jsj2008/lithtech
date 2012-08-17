@@ -82,12 +82,14 @@ static bool StartClient(ClientGlob *pGlob)
     char strVersion[32];
     uint32 nResTrees;
 
+#ifdef _M_IX86
     short control;
     _asm {  
         fstcw   control      // Get FPU control word
         and control, 0xfcff  // PC field = 00 for single precision  
         fldcw   control 
     }
+#endif
 
     // Init the client mugger.
     pGlob->m_bHost = command_line_args->FindArgDash("host") != NULL;

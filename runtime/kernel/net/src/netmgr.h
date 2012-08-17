@@ -130,6 +130,7 @@ enum EDisconnectReason { DISCONNECTREASON_VOLUNTARY_CLIENTSIDE =0,
                          DISCONNECTREASON_KICKED =6 };
 
 class BaseService;
+class CNetMgr;
 // Base class for a network driver (such as DirectPlay).
 class CBaseDriver
 {
