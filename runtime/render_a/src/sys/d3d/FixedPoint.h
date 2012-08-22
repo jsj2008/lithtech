@@ -5,15 +5,32 @@
 // The original code was written by Chris Hecker (checker@netcom.com).  Additional
 // modifications by Scott H. Pultz
 
+#ifndef _M_IX86
+#ifdef _MSC_VER
+// From http://opensource.apple.com/source/JavaScriptCore/JavaScriptCore-621.1/wtf/MathExtras.h
+inline float roundf(float num)
+{
+    float integer = ceilf(num);
+    if (num > 0)
+        return integer - num > 0.5f ? integer - 1.0f : integer;
+    return integer - num >= 0.5f ? integer - 1.0f : integer;
+}
+inline long lroundf(float num) { return static_cast<long>(roundf(num)); }
+#endif
+#endif
+
 inline int RoundFloatToInt(float f)
 {
 	int nResult;
-
+#ifdef _M_IX86
 	__asm
 	{
 		fld f
 		fistp nResult
 	}
+#else
+	nResult = lroundf(f);
+#endif
 	return nResult;
 }
 

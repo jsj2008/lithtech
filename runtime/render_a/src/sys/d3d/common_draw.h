@@ -77,6 +77,7 @@ void d3d_IncrementFrameCode(RenderContext *pContext);
 
 inline void d3d_SetFPState()
 {
+#ifdef _M_IX86
 	short control;
 
 	_asm {	
@@ -84,6 +85,7 @@ inline void d3d_SetFPState()
 		and	control, 0xfcff  // PC field = 00 for single precision	
 		fldcw   control	
 	}
+#endif
 }
 
 #endif  // __COMMON_DRAW_H__

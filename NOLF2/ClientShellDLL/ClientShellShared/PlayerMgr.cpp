@@ -4865,8 +4865,7 @@ void CPlayerMgr::UpdateSoundFilters(uint8 nSoundFilterId)
 {
 #ifndef USE_EAX20_HARDWARE_FILTERS
 	return;
-#endif // USE_EAX20_HARDWARE_FILTERS
-
+#else
 	if (g_vtUseSoundFilters.GetFloat())
 	{
 		if ( m_nSoundFilterId != nSoundFilterId )
@@ -4931,7 +4930,7 @@ void CPlayerMgr::UpdateSoundFilters(uint8 nSoundFilterId)
 		
 		}
 	}
-
+#endif // USE_EAX20_HARDWARE_FILTERS
 }
 
 

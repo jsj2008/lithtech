@@ -2,7 +2,7 @@
 #include "bdefs.h"
 #include "dhashtable.h"
 
-extern void* dalloc(uint32 size);
+extern void* dalloc(size_t size);
 extern void dfree(void *ptr);
 
 

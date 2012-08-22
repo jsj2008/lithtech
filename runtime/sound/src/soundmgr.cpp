@@ -228,9 +228,11 @@ CSoundMgr::CSoundMgr()
 		m_abUseGlobalVolume[i] = true;
 	}
 
+#ifdef USE_EAX20_HARDWARE_FILTERS
 	m_FilterData.bUseFilter = false;
 	m_FilterData.pSoundFilter = NULL;
 	m_FilterData.uiFilterType = NULL_FILTER;
+#endif
 
     memset(&m_PrimaryBufferWaveFormat, 0, sizeof(m_PrimaryBufferWaveFormat));
 }

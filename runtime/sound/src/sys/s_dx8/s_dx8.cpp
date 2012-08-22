@@ -2140,10 +2140,10 @@ void CDx8SoundSys::Reset( )
 	m_dwMinHardwareBuffers = 0;
 #ifdef USE_EAX20_HARDWARE_FILTERS
 	m_bSupportsEAX20Filtering = false;
+	g_iCurrentEAXDirectSetting = 0;
 #endif
 	m_pKSPropertySet = NULL;
-	g_iCurrentEAXDirectSetting = 0;
-
+	
 	m_cEvent_SampleLoopActive.Clear();
 	m_cEvent_StreamingActive.Clear();
 	m_cEvent_Shutdown.Clear();
@@ -2477,7 +2477,7 @@ struct FormatEnumProcData
 static BOOL CALLBACK FormatEnumProc(
   HACMDRIVERID hadid,
   LPACMFORMATDETAILS pafd,
-  DWORD dwInstance,
+  DWORD_PTR dwInstance,
   DWORD fdwSupport
 )
 {
@@ -2557,7 +2557,7 @@ struct SDriverEnumInfo
 	TSupportFlagsList m_aSupportFlags;
 };
 
-BOOL CALLBACK AcmDriverEnumProc( HACMDRIVERID hDriverId, unsigned long uiInstanceData, unsigned long uiSupportFlags )
+BOOL CALLBACK AcmDriverEnumProc( HACMDRIVERID hDriverId, DWORD_PTR uiInstanceData, DWORD uiSupportFlags )
 {
 	// Add the driver to our list
 	SDriverEnumInfo *cEnumInfo = reinterpret_cast<SDriverEnumInfo*>( uiInstanceData );
@@ -2911,7 +2911,6 @@ S32	CDx8SoundSys::Startup( void )
 		m_hAcmMP3DriverId == NULL ||
 		m_hAcmPCMDriverId == NULL )
 	{
-
 		mmResult = acmDriverEnum( AcmDriverEnumProc, ( uint32 )&sEnumResults, 0 );
 		if( mmResult != 0 )
 			return LS_ERROR;
@@ -3645,7 +3644,11 @@ LH3DSAMPLE CDx8SoundSys::Allocate3DSampleHandle( LHPROVIDER hLib )
 
 
 	// Make sure we have our propertyset interface setup.
+#ifdef USE_EAX20_HARDWARE_FILTERS
 	if( m_bSupportsEAX20Filtering && !m_pKSPropertySet )
+#else
+	if( !m_pKSPropertySet )
+#endif
 	{
 		HRESULT hRes = p3DSample->m_sample.m_pDSBuffer->QueryInterface( IID_IKsPropertySet, ( LPVOID* )&m_pKSPropertySet );
 		if( FAILED( hRes ))

@@ -4603,9 +4603,9 @@ BOOL HookWindow()
 
 	// Get the window procedure
 #ifdef STRICT
-	g_pfnMainWndProc = (WNDPROC)GetWindowLong(g_hMainWnd,GWL_WNDPROC);
+	g_pfnMainWndProc = (WNDPROC)GetWindowLongPtr(g_hMainWnd,GWLP_WNDPROC);
 #else
-	g_pfnMainWndProc = (FARPROC)GetWindowLong(g_hMainWnd,GWL_WNDPROC);
+	g_pfnMainWndProc = (FARPROC)GetWindowLongPtr(g_hMainWnd,GWLP_WNDPROC);
 #endif
 
 	if(!g_pfnMainWndProc)
@@ -4615,7 +4615,7 @@ BOOL HookWindow()
 	}
 
 	// Replace it with ours
-	if(!SetWindowLong(g_hMainWnd,GWL_WNDPROC,(LONG)HookedWindowProc))
+	if(!SetWindowLongPtr(g_hMainWnd,GWLP_WNDPROC, (LONG_PTR)HookedWindowProc))
 	{
 		TRACE("HookWindow - ERROR - could not set the window procedure!\n");
 		return FALSE;
@@ -4636,7 +4636,7 @@ void UnhookWindow()
 {
 	if(g_pfnMainWndProc && g_hMainWnd)
 	{
-		SetWindowLong(g_hMainWnd, GWL_WNDPROC, (LONG)g_pfnMainWndProc);
+		SetWindowLongPtr(g_hMainWnd, GWLP_WNDPROC, (LONG_PTR)g_pfnMainWndProc);
 		g_hMainWnd = 0;
 		g_pfnMainWndProc = NULL;
 	}

@@ -117,7 +117,7 @@ uint32 dm_GetNumAllocations()
 	return g_nAllocations;
 }
 
-void* dalloc(uint32 size)
+void* dalloc(size_t size)
 {
 	//[DLK] Removed to avoid allocation errors with D3DXEffectCompiler
 	/*
@@ -166,7 +166,7 @@ void* dalloc(uint32 size)
 }
 
 
-void* dalloc_z(uint32 size)
+void* dalloc_z(size_t size)
 {
 	void *ret;
 

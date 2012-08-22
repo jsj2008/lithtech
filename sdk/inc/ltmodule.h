@@ -1008,7 +1008,7 @@ int32 CAPIHolderBase::Version() {
         #if defined(__LINUX)
             #define BREAK1()
         #else
-            #define BREAK1() __asm {int 3}
+            #define BREAK1() __debugbreak()
         #endif
         #define BREAK(expression) if (expression) {BREAK1();}
     #else

@@ -10,8 +10,10 @@
 
 // uncomment one of these for filter support
 // #define USE_DX8_SOFTWARE_FILTERS
+#ifdef _M_IX86
 #ifndef USE_EAX20_HARDWARE_FILTERS
 #define USE_EAX20_HARDWARE_FILTERS
+#endif
 #endif
 
 /*!  Base sound mgr interface.  (shared between client and server) */

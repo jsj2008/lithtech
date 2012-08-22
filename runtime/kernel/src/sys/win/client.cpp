@@ -173,7 +173,7 @@ static bool StartClient(ClientGlob *pGlob)
 }
 
 
-static long WINAPI MainWndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
+static LRESULT WINAPI MainWndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
     ClientGlob *pGlob;
     char messageString[256], fileName[_MAX_PATH + 1];
     int i;

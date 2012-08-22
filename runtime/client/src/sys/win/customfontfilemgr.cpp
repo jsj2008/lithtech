@@ -22,8 +22,8 @@ define_holder(IClientFileMgr, client_filemgr);
 static void BroadcastFontChangeMessage()
 {
 	static const uint32 knTimeoutMS = 30;
-	DWORD nResult;
-	SendMessageTimeout(HWND_BROADCAST, WM_FONTCHANGE, (WPARAM)0, (LPARAM)0, SMTO_ABORTIFHUNG | SMTO_BLOCK, knTimeoutMS, &nResult); 
+	PDWORD_PTR nResult;
+	SendMessageTimeout(HWND_BROADCAST, WM_FONTCHANGE, (WPARAM)0, (LPARAM)0, SMTO_ABORTIFHUNG | SMTO_BLOCK, knTimeoutMS, nResult); 
 }
 
 //-------------------------------------------

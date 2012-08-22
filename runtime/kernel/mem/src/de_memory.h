@@ -24,8 +24,8 @@ uint32 dm_GetNumAllocations();
 extern void* operator new(size_t size, void *ptr, char z);
 
 // C dalloc/dfree functions.
-void* dalloc(uint32 size);
-void* dalloc_z(uint32 size);	// Allocate and zero-init.
+void* dalloc(size_t size);
+void* dalloc_z(size_t size);	// Allocate and zero-init.
 
 void dfree(void *ptr);
 

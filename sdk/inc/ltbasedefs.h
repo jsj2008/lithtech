@@ -263,13 +263,13 @@ inline void LTStrnCpy(char* pDest, const char* pSrc, uint32 destBytes, uint32 sr
 /*!
 Safe string concatenation (strncat doesn't always null terminate, but this does).
 */
-inline void LTStrCat(char *pDest, const char *pSrc, uint32 destBytes)
+inline void LTStrCat(char *pDest, const char *pSrc, size_t destBytes)
 {
 	if (destBytes == 0)
 		return;
 
-	uint32 destLen = strlen(pDest);
-	uint32 catLen = destBytes - destLen - 1;
+	size_t destLen = strlen(pDest);
+	size_t catLen = destBytes - destLen - 1;
 
 #ifndef _FINAL 
 	// do a sanity check to make sure we don't truncate source's data.
@@ -316,13 +316,13 @@ inline void LTStrCat(wchar_t *pDest, const wchar_t *pSrc, uint32 nBufferChars)
 /*!
 Safe substring concatenation (strncat doesn't always terminate, but this does).
 */
-inline void LTStrnCat(char* pDest, const char* pSrc, uint32 destBytes, uint32 srcLen)
+inline void LTStrnCat(char* pDest, const char* pSrc, size_t destBytes, size_t srcLen)
 {
 	if( destBytes == 0 )
 		return;
 
-	uint32 destLen = strlen(pDest);
-	uint32 catLen = ((destBytes - destLen) <= srcLen) ? (destBytes-destLen-1) : srcLen;
+	size_t destLen = strlen(pDest);
+	size_t catLen = ((destBytes - destLen) <= srcLen) ? (destBytes-destLen-1) : srcLen;
 
 #ifndef _FINAL
 	// do a sanity check to make sure we don't truncate source's data.

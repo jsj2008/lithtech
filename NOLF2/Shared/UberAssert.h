@@ -24,7 +24,7 @@
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, description )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 
@@ -34,35 +34,35 @@
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, desc, d1 )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 	#define UBER_ASSERT2( exp, desc, d1, d2 ) \
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, desc, d1, d2 )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 	#define UBER_ASSERT3( exp, desc, d1, d2, d3 ) \
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, desc, d1, d2, d3 )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 	#define UBER_ASSERT4( exp, desc, d1, d2, d3, d4 ) \
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, desc, d1, d2, d3, d4 )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 	#define UBER_ASSERT5( exp, desc, d1, d2, d3, d4, d5 ) \
 		if ( !(exp) ) { \
 			if( UberAssert( __LINE__, __FILE__, #exp, desc, d1, d2, d3, d4, d5 )) \
 			{ \
-				_asm { int 3 } \
+				__debugbreak(); \
 			} \
 		}   
 

@@ -17,7 +17,7 @@ void CreateMediaMetrixEditControl(HWND theParent)
                                      0, 0, 100, 50,  // arbitrary size
                                      theParent,		 // parent window
                                      (HMENU) NULL,   // edit control ID
-                                     (HINSTANCE) GetWindowLong(theParent, GWL_HINSTANCE),
+                                     (HINSTANCE) GetWindowLongPtr(theParent, GWLP_HINSTANCE),
                                      NULL);          // pointer not needed
 }
   

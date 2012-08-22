@@ -26,8 +26,8 @@ extern RenderStruct* g_pStruct;
 extern uint32	g_ScreenWidth, g_ScreenHeight;
 extern HWND		g_hWnd;
 
-void*	dalloc(unsigned long size);
-void*	dalloc_z(unsigned long size);
+void*	dalloc(size_t size);
+void*	dalloc_z(size_t size);
 void	dfree(void *ptr);
 void	AddDebugMessage(uint32 debugLevel, const char *pMsg, ...);
 void	d3d_CreateConsoleVariables();

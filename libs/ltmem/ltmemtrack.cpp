@@ -174,8 +174,8 @@ void LTMemTrackAllocStart(unsigned int nLineNum, const char* sFileName, unsigned
 		g_curAllocInfo.m_sFileName[0] = '\0';
 	else
 	{
-		uint32 nStrLen = strlen(sFileName);
-		uint32 nOffset = 0;
+		size_t nStrLen = strlen(sFileName);
+		size_t nOffset = 0;
 		if (nStrLen >= CMEMTRACKFILENAMESIZE) nOffset = nStrLen - CMEMTRACKFILENAMESIZE + 1;
 		strncpy(g_curAllocInfo.m_sFileName, sFileName + nOffset, CMEMTRACKFILENAMESIZE);
 		g_curAllocInfo.m_sFileName[CMEMTRACKFILENAMESIZE-1] = '\0';

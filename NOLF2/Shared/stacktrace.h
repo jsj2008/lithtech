@@ -59,6 +59,10 @@ DO_NOT_WORK_AROUND_SRCLINE_BUG - Define this to NOT work around the
                                  lookups fail after the first lookup.
 ----------------------------------------------------------------------*/
 
+#ifdef _M_X64
+#define _IMAGEHLP64
+#endif
+
 #include "imagehlp.h"
 #include <tchar.h>
 
@@ -213,12 +217,22 @@ struct CImageHlp_Line : public IMAGEHLP_LINE
 } ;
 
 // Typedefs for the new source and line functions.
+#ifdef _M_IX86
 typedef
 BOOL (__stdcall *PFNSYMGETLINEFROMADDR)
                               ( IN  HANDLE         hProcess         ,
                                 IN  DWORD          dwAddr           ,
                                 OUT PDWORD         pdwDisplacement  ,
                                 OUT PIMAGEHLP_LINE Line              ) ;
+#else
+typedef
+BOOL (__stdcall *PFNSYMGETLINEFROMADDR)
+                              ( IN  HANDLE         hProcess         ,
+                                IN  DWORD64          dwAddr           ,
+                                OUT PDWORD         pdwDisplacement  ,
+                                OUT PIMAGEHLP_LINE64 Line              ) ;
+#endif
+
 typedef
 BOOL (__stdcall *PFNSYMGETLINEFROMNAME)
                               ( IN     HANDLE         hProcess      ,
@@ -472,9 +486,15 @@ public      :
                                          UserContext          ) ) ;
     }
 
+#ifdef _M_IX86
     BOOL SymGetSymFromAddr ( IN  DWORD               dwAddr          ,
                              OUT PDWORD              pdwDisplacement ,
                              OUT PIMAGEHLP_SYMBOL    Symbol           )
+#else
+	BOOL SymGetSymFromAddr ( IN  DWORD               dwAddr          ,
+                             OUT PDWORD64            pdwDisplacement ,
+                             OUT PIMAGEHLP_SYMBOL    Symbol           )
+#endif
     {
         return ( ::SymGetSymFromAddr ( m_hProcess       ,
                                        dwAddr           ,
@@ -659,9 +679,15 @@ public      :
         return ( :: SymSetSearchPath ( m_hProcess , SearchPath ) ) ;
     }
 
+#ifdef _M_IX86
     BOOL SymRegisterCallback ( IN PSYMBOL_REGISTERED_CALLBACK
                                                        CallbackFunction,
-                               IN PVOID                UserContext    )
+                               IN PVOID              UserContext    )
+#else
+	BOOL SymRegisterCallback ( IN PSYMBOL_REGISTERED_CALLBACK
+                                                       CallbackFunction,
+                               IN ULONG64                UserContext    )
+#endif
     {
         return ( ::SymRegisterCallback ( m_hProcess         ,
                                          CallbackFunction   ,

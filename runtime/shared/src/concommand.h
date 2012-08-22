@@ -102,7 +102,7 @@ struct ConsoleState
 	void			(*ConsolePrint)(const char *pMsg, ...);
 	
 	// Function to allocate/free memory.
-	void*			(*Alloc)(uint32	 size);
+	void*			(*Alloc)(size_t	 size);
 	void			(*Free)(void *ptr);
 
 	// Called when a variable is added.
