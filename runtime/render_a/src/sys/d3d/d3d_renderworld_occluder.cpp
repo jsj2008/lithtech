@@ -426,21 +426,21 @@ PolySide COccludee::SplitPlane(const LTPlane &cPlane, bool bSplitOccluded)
 			{
 				case FrontSide : 
 					++iCurOutline;
-					break;
+					goto endLoop;
 				case BackSide : 
 					if ((iCurOutline + 1) != m_aVisible.end())
 						*iCurOutline = m_aVisible.back();
 					m_aVisible.pop_back();
 					ASSERT(sOccluded.size() > 2);
 					m_aOccluded.push_back(sOccluded);
-					break;
+					goto endLoop;
 				case Intersect :
 					ASSERT(sVisible.size() > 2);
 					*iCurOutline = sVisible;
 					++iCurOutline;
 					ASSERT(sOccluded.size() > 2);
 					m_aOccluded.push_back(sOccluded);
-					break;
+					goto endLoop;
 			}
 		}
 	}
@@ -461,21 +461,22 @@ PolySide COccludee::SplitPlane(const LTPlane &cPlane, bool bSplitOccluded)
 					m_aOccluded.pop_back();
 					ASSERT(sVisible.size() > 2);
 					m_aVisible.push_back(sVisible);
-					break;
+					goto endLoop;
 				case BackSide :
 					++iCurOutline;
-					break;
+					goto endLoop;
 				case Intersect :
 					ASSERT(sOccluded.size() > 2);
 					*iCurOutline = sOccluded;
 					++iCurOutline;
 					ASSERT(sVisible.size() > 2);
 					m_aVisible.push_back(sVisible);
-					break;
+					goto endLoop;
 			}
 		}
 	}
 
+	endLoop:
 	if (m_aVisible.empty())
 		return BackSide;
 	if (m_aOccluded.empty())

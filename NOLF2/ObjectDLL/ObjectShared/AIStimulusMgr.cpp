@@ -1351,7 +1351,7 @@ void CAIStimulusMgr::UpdateSensingList()
 		// Call HandleSenses to increment/decrement sense values after a
 		// a stimulus has been found, or the list has been exhausted.
 
-		if( ( itRecordPair == m_stmStimuliMap.end() ) ||
+		if( ( pRecord == NULL) ||
 			( pSensing->GetDoneProcessingStimuli() ) )
 		{
 			// Handle senses in the AI's sense recorder.  This will check the cycle stamp to

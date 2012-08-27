@@ -43,7 +43,7 @@
 // Uncomment one of these to use filtering, only one can be active
 //#define USE_DX8_SOFTWARE_FILTERS
 // We don't have the EAX library for x64 and USE_DX8_SOFTWARE_FILTERS seems to be broken too
-#ifdef _M_IX8
+#ifdef _M_IX86
 #ifndef USE_EAX20_HARDWARE_FILTERS
 #define USE_EAX20_HARDWARE_FILTERS
 #endif

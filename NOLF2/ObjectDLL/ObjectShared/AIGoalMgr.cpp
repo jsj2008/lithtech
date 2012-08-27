@@ -997,6 +997,7 @@ void CAIGoalMgr::UpdateGoals()
 			if( pGoal->GetDeleteGoalNextUpdate() )
 			{
 				RemoveGoal( pGoal->GetGoalType() );
+				it = m_lstGoals.begin();
 			}
 			else {
 				++it;
